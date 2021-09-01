@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) {
+    body{
+        /* background: #FF940A; */
+        background: #ddd;
+    }    
+    .content{
+        /* height: 100vh; */
+        /* margin: 80px auto 0; */
+        border-radius: 5px;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background: #fff;
+    }    
+    .content{
+        margin: 0 -15px;
+    }
+}
+
+.margin-none{
+    margin: 0 !important;
+}
+
+.padding-none{
+    padding: 0 !important;
+}
+
+.content{
+    min-height: 600px;
+    /* height: calc(100vh - 160px); */
+    height: 100vh;
+    /* padding: 0px 20px; */
+    /* margin: 80px auto 0; */
+    background: #fff;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 5px 20px rgba(0,0,0,0.2); */
+    /* overflow: hidden; */
+}
+
+.content .row .col-md-6{
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* background-color: #bbb; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+    .content-content{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-content{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+.content-content{
+    /* width: 400px; */
+    margin: 60px auto;
+    /* background: #eee; */
+}
+
+.app{
+    height: 70px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid #eee;
+}
+
+.form-control{
+    height: 42px;
+}
+
+.form-control-feedback{
+    line-height: 42px;
+    height: 42px;
+    font-size: 20px;
+}
+
+form a:not(.btn):hover{
+    text-decoration: underline !important;
+}
+
+.footer{
+    width: 100%;
+    color: #bbb;
+    padding: 10px 0px 0px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    /* border-top: 1px solid #ddd; */
+}
+
+.auth-login-bg{
+    text-align: center !important;
+    overflow: hidden;
+    position: relative;
+    background-position-x: 0px !important;
+    background-size: cover !important;
+}
+
+.auth-login-bg div{
+    background: #4a5678;
+    /* background: #FF940A; */
+    opacity: 0.8;
+    filter: opacity(80);
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.auth-login-bg img{
+    width: auto;
+    height: auto;
+}
