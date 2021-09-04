@@ -63,19 +63,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
-                    <form action="{{route('favourite.add.deal', $deal->id)}}" method="POST">
-                        @csrf
+                    <form action="">
                         <ul class="ul-inline pull-right mt-1">
                             <li>
-                                @if(auth()->check() && auth()->user()->isFavouriteDeal($deal->id))
-                                    <button type="submit" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
-                                        <span class="fas fa-heart" style="position: relative; top: 1px;"></span>
-                                    </button>
-                                @else
-                                    <button type="submit" class="btn btn-transparent-orange btn-xs hover-bg-black" title="Favourite" data-widget="collapse" data-toggle="tooltip">
-                                        <span class="fas fa-heart" style="position: relative; top: 1px;"></span>
-                                    </button>
-                                @endif
+                                <button type="submit" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
+                                    <span class="fas fa-heart" style="position: relative; top: 1px;"></span>
+                                </button>
                             </li>
                             <li>
                                 <a class="p-0" title="Share Deal" data-widget="collapse" data-toggle="tooltip">
@@ -101,26 +94,26 @@
 
                 <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/category/deals/category1">{{$deal->category->name}}</a></li>
-                        <li class="breadcrumb-item"><a href="/category/deals/category1">{{$deal->subCategory->name}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{$deal->id}}</li>
+                        <li class="breadcrumb-item"><a href="/category/deals/category1">Category name</a></li>
+                        <li class="breadcrumb-item"><a href="/category/deals/category1">Subcategory name</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">0923903290230902</li>
                     </ol>
                 </div>
 
                 <div id="overview">
                     <div>
                         <h4 class="font-bold">
-                           {{$deal->title}}
+                            I will create awesome & on-point podcast script for your episodes
                         </h4>
                     </div>
                     <div class="details-title-sub floated-content mt-10">
                         <div class="pull-left">
                             <a href="/user/abcde12345" class="user-img-text">
                                 <div>
-                                    <img src="{{asset($deal->owner->getFirstMediaUrl('profile') ? $deal->owner->getFirstMediaUrl('profile') : 'img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
                                 </div>
                                 <div class="hover-underline">
-                                    {{$deal->owner->name}}
+                                    Olawale Lawal
                                 </div>
                             </a>
                         </div>
@@ -129,7 +122,7 @@
                             <div class="rating-box rating-box-eee mt-2">
                                 <div>
                                     <div></div>
-                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                    <div style="width: 75%;"></div>
                                 </div>
                                 <div>
                                     3.75 (233)
@@ -138,7 +131,7 @@
                         </div>
                         <div class="pull-left">|</div>
                         <div class="pull-left">
-                            {{$deal->created_at->diffForHumans()}}
+                            2 weeks ago
                         </div>
                     </div>
                 </div>
@@ -148,18 +141,22 @@
                     <div id="demo" class="carousel slide deals-slider" data-ride="carousel">
                         <!-- Indicators -->
                         <ul class="carousel-indicators">
-                            @foreach ($deal->media as $media)
-                                <li data-target="#demo" data-slide-to="{{$loop->index}}" class="@if($loop->first) active @endif"></li>
-                            @endforeach
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1" class=""></li>
+                            <li data-target="#demo" data-slide-to="2" class=""></li>
                         </ul>
                       
                         <!-- The slideshow -->
                         <div class="carousel-inner">
-                            @foreach ($deal->media as $media)
-                                <div class="carousel-item @if($loop->first) active @endif">
-                                    <img src="{{asset($media->getUrl())}}" alt="name" class="dp-contain" />
-                                </div> 
-                            @endforeach
+                            <div class="carousel-item active">
+                                <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="name" class="dp-contain" />
+                            </div> 
+                            <div class="carousel-item">
+                                <img src="{{asset('img/app/samples/user.png')}}" alt="name" class="dp-contain" />
+                            </div> 
+                            <div class="carousel-item">
+                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="name" class="dp-contain" />
+                            </div> 
                         </div>
                       
                         <!-- Left and right controls -->
@@ -179,7 +176,7 @@
                     </div>
                     <div class="line-height-25">
 
-                        {{$deal->description}}
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
                     </div>
                     <div class="mt-10">
@@ -187,11 +184,18 @@
                             <div class="item-labels-prefix">
                                 Tags & Skills:
                             </div>
-                            @foreach ($deal->tags as $tag)
-                                <div class="item-labels-tags">
-                                    {{$tag}}
-                                </div>
-                            @endforeach
+                            <div class="item-labels-tags">
+                                tag name
+                            </div>
+                            <div class="item-labels-tags">
+                                tag name
+                            </div>
+                            <div class="item-labels-tags">
+                                tag name
+                            </div>
+                            <div class="item-labels-tags">
+                                tag name
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,83 +204,90 @@
                     {{-- Mobile screen --}}
                     <div>
                         <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                            @foreach ($deal->active_types() as $type)
-                                <li class="nav-item">
-                                    <a class="nav-link @if($loop->first) active @endif" data-toggle="tab" href="#type-{{$type->type}}">
-                                        {{$type->type}}
-                                    </a>
-                                </li>
-                            @endforeach
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#price_1_basic">
+                                    Basic
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#price_1_standard">
+                                    Standard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#price_1_premium">
+                                    Premium
+                                </a>
+                            </li>
                         </ul>
                           
                         <form action="/cart">
                             <div class="tab-content">
-                                @foreach ($deal->active_types() as $type)
-                                    <div class="tab-pane container @if($loop->first) active @endif" id="type-{{$type->type}}">
-                                        <div class="pt-20 pb-20">
-                                            <div>
-                                                <div class="pull-right font-20 font-bold text-blue">
-                                                    ${{$type->price}}
-                                                </div>
-                                                <div class="overflow-hidden pt-10">
-                                                    {{$type->name}}
-                                                </div>
+                                
+                                <div class="tab-pane container active" id="price_1_basic">
+                                    <div class="pt-20 pb-20">
+                                        <div>
+                                            <div class="pull-right font-20 font-bold text-blue">
+                                                $150
                                             </div>
-                                            <div class="text-fade mt-15">
-                                                {{$type->description}}
+                                            <div class="overflow-hidden pt-10">
+                                                Basic Designs
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
-                                                    <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
-                                                            Delivery Date
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        {{$type->delivery_timeframe}} day(s) delivery
+                                        <div class="text-fade mt-15">
+                                            2 basic logo designs with JPEG or JPG format and PNG format.
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-left-right">
+                                            <div class="bg-eee">
+                                                <div>
+                                                    <span class="fa fa-history"></span>
+                                                    <div class="overflow-hidden">
+                                                        Delivery Date
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div>
-                                                        <span class="fa fa-dot-circle"></span>
-                                                        <div class="overflow-hidden">
-                                                            Revisions
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        {{$type->revision_num}} revision(s)
-                                                    </div>
-                                                </div>
-                                                <div class="bg-eee">
-                                                    <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
-                                                            Delivery Format
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        Work & Deliver
-                                                    </div>
+                                                    1 day delivery
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="pt-20 pb-20">
-                                           <a href="{{route('cart.cart', $type->id)}}" class="btn btn-blue btn-block">
-                                                Continue (${{$type->price}})
-                                           </a>
-                                            <div class="mt-10">
-                                                <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
-                                                    Contact Seller
-                                                </a>
+                                            <div>
+                                                <div>
+                                                    <span class="fa fa-refresh"></span>
+                                                    <div class="overflow-hidden">
+                                                        Revisions
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    4 revisions
+                                                </div>
+                                            </div>
+                                            <div class="bg-eee">
+                                                <div>
+                                                    <span class="fa fa-star"></span>
+                                                    <div class="overflow-hidden">
+                                                        Delivery Format
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    Work & Deliver
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach
+                                    <div class="pt-20 pb-20">
+                                        <button class="btn btn-blue btn-block">
+                                            Continue ($150)
+                                        </button>
+                                        <div class="mt-10">
+                                            <a href="" class="btn btn-transparent-black btn-block">
+                                                Contact Seller
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                {{-- <div class="tab-pane container" id="price_1_standard">
+                                <div class="tab-pane container" id="price_1_standard">
                                     <div class="pt-20 pb-20">
                                         <div>
                                             <div class="pull-right font-20 font-bold text-blue">
@@ -305,7 +316,7 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-dot-circle"></span>
+                                                    <span class="fa fa-refresh"></span>
                                                     <div class="overflow-hidden">
                                                         Revisions
                                                     </div>
@@ -328,11 +339,11 @@
                                         </div>
                                     </div>
                                     <div class="pt-20 pb-20">
-                                        <button type="submit" class="btn btn-blue btn-block">
+                                        <button class="btn btn-blue btn-block">
                                             Continue ($250)
                                         </button>
                                         <div class="mt-10">
-                                            <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
+                                            <a href="" class="btn btn-transparent-black btn-block">
                                                 Contact Seller
                                             </a>
                                         </div>
@@ -368,7 +379,7 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-dot-circle"></span>
+                                                    <span class="fa fa-refresh"></span>
                                                     <div class="overflow-hidden">
                                                         Revisions
                                                     </div>
@@ -391,16 +402,16 @@
                                         </div>
                                     </div>
                                     <div class="pt-20 pb-20">
-                                        <button type="submit" class="btn btn-blue btn-block">
+                                        <button class="btn btn-blue btn-block">
                                             Continue ($400)
                                         </button>
                                         <div class="mt-10">
-                                            <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
+                                            <a href="" class="btn btn-transparent-black btn-block">
                                                 Contact Seller
                                             </a>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div>
 
                             </div>
                         </form>
@@ -419,7 +430,7 @@
                         <div>
                             <div class="copy-link mt-5">
                                 <div class="input-group">
-                                    <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="<?=$share_link;?>" readonly />
+                                    <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
                                     <div class="input-group-btn">
                                         <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
                                             <span class="fa fa-copy"></span>
@@ -445,10 +456,10 @@
                     <div>
                         <a href="/user/abcde12345" class="user-img-text user-img-text-md">
                             <div>
-                                <img src="{{asset($deal->owner->getFirstMediaUrl('profile') ? $deal->owner->getFirstMediaUrl('profile') : 'img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                                <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
                             </div>
                             <div class="pt-5 underline-none">
-                                {{$deal->owner->name}}
+                                Olawale Lawal
                                 <div class="pt-1">
                                     <button class="btn btn-transparent-black btn-xs hover-bg-black">
                                         View seller's profile
@@ -494,7 +505,7 @@
                         </div>
                     </div>
                     <div class="line-height-20 bt-1-ddd pt-10">
-                       {{$deal->owner->escription ?? '-'}}
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </div>
                 </div>
 
@@ -820,86 +831,93 @@
                 <div class="sticky-top d-none d-lg-block">
                     <div class="section">
                         <div>
+
                             {{-- web --}}
                             <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                                @foreach ($deal->active_types() as $type)
-                                    <li class="nav-item">
-                                        <a class="nav-link @if($loop->first) active @endif" data-toggle="tab" href="#type-web-{{$type->type}}">
-                                            {{$type->type}}
-                                        </a>
-                                    </li>
-                                @endforeach
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#price_2_basic">
+                                        Basic
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#price_2_standard">
+                                        Standard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#price_2_premium">
+                                        Premium
+                                    </a>
+                                </li>
                             </ul>
                               
                             <form action="/cart">
                                 <div class="tab-content">
-                                    @foreach ($deal->active_types() as $type)
-                                        <div class="tab-pane container @if($loop->first) active @endif" id="type-web-{{$type->type}}">
-                                            <div class="pt-20 pb-20">
-                                                <div>
-                                                    <div class="pull-right font-20 font-bold text-blue">
-                                                        ${{$type->price}}
-                                                    </div>
-                                                    <div class="overflow-hidden pt-10">
-                                                        {{$type->name}}
-                                                    </div>
+                                    
+                                    <div class="tab-pane container active" id="price_2_basic">
+                                        <div class="pt-20 pb-20">
+                                            <div>
+                                                <div class="pull-right font-20 font-bold text-blue">
+                                                    $150
                                                 </div>
-                                                <div class="text-fade mt-15">
-                                                   {{$type->description}}
+                                                <div class="overflow-hidden pt-10">
+                                                    Basic Designs
                                                 </div>
                                             </div>
-                                            <div>
-                                                <div class="text-left-right">
-                                                    <div class="bg-eee">
-                                                        <div>
-                                                            <span class="fa fa-history"></span>
-                                                            <div class="overflow-hidden">
-                                                                Delivery Date
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            {{$type->delivery_timeframe}} day(s) delivery
+                                            <div class="text-fade mt-15">
+                                                2 basic logo designs with JPEG or JPG format and PNG format.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="text-left-right">
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-history"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Date
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <div>
-                                                            <span class="fa fa-dot-circle"></span>
-                                                            <div class="overflow-hidden">
-                                                                Revisions
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            {{$type->revision_num}} revision(s)
-                                                        </div>
-                                                    </div>
-                                                    <div class="bg-eee">
-                                                        <div>
-                                                            <span class="fa fa-star"></span>
-                                                            <div class="overflow-hidden">
-                                                                Delivery Format
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            Work & Deliver
-                                                        </div>
+                                                        1 day delivery
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pt-20 pb-20">
-                                                <a href="{{route('cart.cart', $type->id)}}" class="btn btn-blue btn-block">
-                                                    Continue (${{$type->price}})
-                                                </a>
-                                                <div class="mt-10">
-                                                    <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
-                                                        Contact Seller
-                                                    </a>
+                                                <div>
+                                                    <div>
+                                                        <span class="fa fa-refresh"></span>
+                                                        <div class="overflow-hidden">
+                                                            Revisions
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        4 revisions
+                                                    </div>
+                                                </div>
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-star"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Format
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        Work & Deliver
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                    @endforeach
+                                        <div class="pt-20 pb-20">
+                                            <button class="btn btn-blue btn-block">
+                                                Continue ($150)
+                                            </button>
+                                            <div class="mt-10">
+                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                    Contact Seller
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    {{-- <div class="tab-pane container" id="price_2_standard">
+                                    <div class="tab-pane container" id="price_2_standard">
                                         <div class="pt-20 pb-20">
                                             <div>
                                                 <div class="pull-right font-20 font-bold text-blue">
@@ -928,7 +946,7 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-dot-circle"></span>
+                                                        <span class="fa fa-refresh"></span>
                                                         <div class="overflow-hidden">
                                                             Revisions
                                                         </div>
@@ -951,18 +969,18 @@
                                             </div>
                                         </div>
                                         <div class="pt-20 pb-20">
-                                            <button type="submit" class="btn btn-blue btn-block">
+                                            <button class="btn btn-blue btn-block">
                                                 Continue ($250)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
+                                                <a href="" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
                                         </div>
-                                    </div> --}}
+                                    </div>
 
-                                    {{-- <div class="tab-pane container" id="price_2_premium">
+                                    <div class="tab-pane container" id="price_2_premium">
                                         <div class="pt-20 pb-20">
                                             <div>
                                                 <div class="pull-right font-20 font-bold text-blue">
@@ -991,7 +1009,7 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-dot-circle"></span>
+                                                        <span class="fa fa-refresh"></span>
                                                         <div class="overflow-hidden">
                                                             Revisions
                                                         </div>
@@ -1014,17 +1032,17 @@
                                             </div>
                                         </div>
                                         <div class="pt-20 pb-20">
-                                            <button type="submit" class="btn btn-blue btn-block">
+                                            <button class="btn btn-blue btn-block">
                                                 Continue ($400)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
+                                                <a href="" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
                                         </div>
-                                    </div> --}}
-
+                                    </div>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -1041,7 +1059,7 @@
                             <div>
                                 <div class="copy-link mt-5">
                                     <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="<?=$share_link;?>" readonly />
+                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
                                         <div class="input-group-btn">
                                             <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-2')" style="border-radius: 0 !important; height: 35px;">
                                                 <span class="fa fa-copy"></span>
@@ -1091,31 +1109,38 @@
                         {{-- tab --}}
                         <div>
                             <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                                @foreach ($deal->active_types() as $type)
-                                    <li class="nav-item">
-                                        <a class="nav-link @if($loop->first) active @endif" data-toggle="tab" href="#type-tab-{{$type->type}}">
-                                            {{$type->type}}
-                                        </a>
-                                    </li>
-                                @endforeach
-
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#price_3_basic">
+                                        Basic
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#price_3_standard">
+                                        Standard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#price_3_premium">
+                                        Premium
+                                    </a>
+                                </li>
                             </ul>
                             
                             <form action="/cart">
                                 <div class="tab-content">
-                                    @foreach ($deal->active_types() as $type)
-                                    <div class="tab-pane container @if($loop->first) active @endif p-0" id="type-tab-{{$type->type}}">
+                                    
+                                    <div class="tab-pane container active p-0" id="price_3_basic">
                                         <div class="pt-20 pb-20">
                                             <div>
                                                 <div class="pull-right ml-10 font-20 font-bold text-blue">
-                                                    ${{$type->price}}
+                                                    $150
                                                 </div>
                                                 <div class="overflow-hidden pt-5">
-                                                    {{$type->name}}
+                                                    Basic Designs
                                                 </div>
                                             </div>
                                             <div class="text-fade mt-15">
-                                                {{$type->description}}
+                                                2 basic logo designs with JPEG or JPG format and PNG format.
                                             </div>
                                         </div>
                                         <div>
@@ -1128,18 +1153,18 @@
                                                         </div>
                                                     </div>
                                                     <div class="pl-10 pr-10">
-                                                    {{$type->delivery_timeframe}} day(s) delivery
+                                                        1 day delivery
                                                     </div>
                                                 </div>
                                                 <div>
                                                     <div class="w-100 pull-none">
-                                                        <span class="fa fa-dot-circle"></span>
+                                                        <span class="fa fa-refresh"></span>
                                                         <div class="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
                                                     <div class="pl-10 pr-10">
-                                                        {{$type->revision_num}} revision(s)
+                                                        4 revisions
                                                     </div>
                                                 </div>
                                                 <div class="bg-eee">
@@ -1156,18 +1181,142 @@
                                             </div>
                                         </div>
                                         <div class="pt-20 pb-20">
-                                            <a href="{{route('cart.cart', $type->id)}}" class="btn btn-blue btn-block">
-                                                Continue (${{$type->price}})
-                                            </a>
+                                            <button class="btn btn-blue btn-block">
+                                                Continue ($150)
+                                            </button>
                                             <div class="mt-10">
-                                                <a href="/messages/user1234" class="btn btn-transparent-black btn-block">
+                                                <a href="" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    @endforeach
-
+    
+                                    <div class="tab-pane container p-0" id="price_3_standard">
+                                        <div class="pt-20 pb-20">
+                                            <div>
+                                                <div class="pull-right ml-10 font-20 font-bold text-blue">
+                                                    $250
+                                                </div>
+                                                <div class="overflow-hidden pt-5">
+                                                    Recommended (Super-fast delivery)
+                                                </div>
+                                            </div>
+                                            <div class="text-fade mt-15">
+                                                2 unique logo designs with facebook and twitter covers. All vector files; and unlimited revision.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="text-left-right">
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-history"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Date
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        1 day delivery
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span class="fa fa-refresh"></span>
+                                                        <div class="overflow-hidden">
+                                                            Revisions
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        4 revisions
+                                                    </div>
+                                                </div>
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-star"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Format
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        Work & Deliver
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-20 pb-20">
+                                            <button class="btn btn-blue btn-block">
+                                                Continue ($250)
+                                            </button>
+                                            <div class="mt-10">
+                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                    Contact Seller
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="tab-pane container p-0" id="price_3_premium">
+                                        <div class="pt-20 pb-20">
+                                            <div>
+                                                <div class="pull-right ml-10 font-20 font-bold text-blue">
+                                                    $400
+                                                </div>
+                                                <div class="overflow-hidden pt-5">
+                                                    Bespoke Designs (All branding packs)
+                                                </div>
+                                            </div>
+                                            <div class="text-fade mt-15">
+                                                5 supreme logo designs with social media covers, stationery designs, priority support, and all source files used in the making of all 5 logo designs.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="text-left-right">
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-history"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Date
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        1 day delivery
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span class="fa fa-refresh"></span>
+                                                        <div class="overflow-hidden">
+                                                            Revisions
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        4 revisions
+                                                    </div>
+                                                </div>
+                                                <div class="bg-eee">
+                                                    <div>
+                                                        <span class="fa fa-star"></span>
+                                                        <div class="overflow-hidden">
+                                                            Delivery Format
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        Work & Deliver
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-20 pb-20">
+                                            <button class="btn btn-blue btn-block">
+                                                Continue ($400)
+                                            </button>
+                                            <div class="mt-10">
+                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                    Contact Seller
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </form>
@@ -1187,7 +1336,7 @@
                             <div>
                                 <div class="copy-link mt-5">
                                     <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="<?=$share_link;?>" readonly />
+                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
                                         <div class="input-group-btn">
                                             <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
                                                 <span class="fa fa-copy"></span>
@@ -1221,35 +1370,40 @@
         <div class="section">
             {{-- -double, -lg-6  ||  -mini, -lg-3 --}}
             <div class="deal-list deal-list-mini row">
-                @forelse ($deal->owner->deals as $deal)
-                    <div class="col-sm-6 col-lg-3">
-                        @include('front.common.deal', ['deal' => $deal])
-                    </div>
-                @empty
-                    <div class="">
-                        'no deal'
-                    </div>
-                    
-                @endforelse
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
             </div>
         </div>
             
         <hr>
 
         <div class="font-18 font-bold pb-10 text-center b-none">
-            Similar {{$deal->category->name}} Deals
+            Similar Category_Name Deals
         </div>
         <div class="section">
             <div class="deal-list deal-list-mini row">
-                @forelse ($deal->category->deals as $deal)
-                    <div class="col-sm-6 col-lg-3">
-                         @include('front.common.deal', ['deal' => $deal])
-                    </div> 
-                @empty
-                    <div class="">
-                        no deal
-                    </div>
-                @endforelse
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div>
             </div>
         </div>
             

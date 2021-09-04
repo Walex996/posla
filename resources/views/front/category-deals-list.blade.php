@@ -44,7 +44,6 @@
                     $(".posla-slider-max-input").val(ui.values[1]);
                 }
             });
-
         });
     </script>
 @endsection
@@ -86,10 +85,10 @@
                 <div class="mb-20">
                     <div class="text-center">
                         <div class="font-20 font-bold">
-                            {{$category->name}}
+                            Category name
                         </div>
                         <div class="font-12 text-fade">
-                            ({{$category->deals->count()}} active projects)
+                            (30 active deals)
                         </div>
                     </div>
                 </div>
@@ -103,7 +102,7 @@
                         </button>
                         
                         <div class="font-bold d-none d-md-inline mt-10 pull-left">
-                           Showing {{$category->deals->firstItem()}} - {{$category->deals->lastItem()}} of {{$category->deals->total()}}
+                            Showing 1 - 15 of 31
                         </div>
 
                         <form method="get" action="" class="pull-right">
@@ -129,14 +128,16 @@
                     </div>
 
                     <div class="deal-list deal-list-double">
-                        @foreach ($category->deals as $deal)
-                            @include('front.common.deal')
-                        @endforeach 
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
                     </div>
                 </div>
 
                 <div class="section">
-                    {{$category->deals->appends(request()->input())->onEachSide(2)->links()}}
+                    //pagination here
                 </div>
 
             </div>
@@ -152,9 +153,7 @@
                         Featured Deals
                     </div>
                     <div class="deal-list deal-list-single">
-                        @foreach ($feature_deals as $deal)
-                            @include('front.common.deal')
-                        @endforeach
+                        @include('front.common.deal')
                     </div>
                 </div>
 

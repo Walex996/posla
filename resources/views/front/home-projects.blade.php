@@ -40,12 +40,48 @@
                         </div>
 
                         <div class="home-category-list mt-5">
-                            @foreach ($categories as $category)
-                                <a href="{{route('front.category.projects' , $category->slug)}}">
-                                    <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
-                                    {{$category->name}}
-                                </a>
-                            @endforeach
+
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/business/projects">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            
                         </div>
 
                     </div>
@@ -62,17 +98,48 @@
                 
                 <div class="sticky-top">
                     <div class="home-category-list">
-                        @foreach ($categories as $category)
-                        <a href="{{route('front.category.projects' , $category->slug)}}">
-                            {{$category->name}}
-                            <span class="fa fa-angle-right"></span>
-                        </a>     
-                        @endforeach
-                        {{-- <a href="/category/projects/category1">
-                            Graphics Design
+
+                        <a href="/category/business/projects">
+                            Category Name
                             <span class="fa fa-angle-right"></span>
                         </a>
-                        --}}
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/business/projects">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        
                     </div>
                     
                     <div class="mt-10">
@@ -91,7 +158,7 @@
                     <div class="col-sm-6 col-lg-12">
                         
                         <div class="section">
-                            <form action="{{route('project.create.view')}}" class="post-project">
+                            <form action="/account/projects/create" class="post-project">
                                 <div class="section-title">
                                     <span class="fa fa-edit"></span>
                                     Create New Project
@@ -139,7 +206,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="{{route('front.deal')}}" class="btn btn-orange btn-block">
+                                <a href="/deals" class="btn btn-orange btn-block">
                                     Switch to Buying
                                 </a>
                             </div>
@@ -157,54 +224,208 @@
                     </a>
                 </div>
                 
-                @if($feature_projects->isNotEmpty())
-                    <div class="section">
-                        <div class="section-title">
-                            Featured Projects
-                        </div>
-                        <div class="project-list project-list-wide">
-                                @foreach ($feature_projects as $project)
-                                    @include('front.common.project')
-                                @endforeach
-                            </div>
-                    </div>
-                @endif
-
-
-                @foreach ($categories_projects as $projects) 
-                    <div class="section">
-                        <div class="section-title">
-                            {{$projects->first()->category->name}}
-                            <a href="{{route('front.category.projects', $projects->first()->category->slug)}}" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
-                        </div>
-                        @foreach ($projects as $project)
-                            <div class="project-list project-list-wide">
-                                @include('front.common.project', ['project' => $project])
-                            </div>
-                        @endforeach
-                       
-                        <a href="{{route('front.category.projects', $projects->first()->category->slug)}}" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
-                            View All {{$projects->first()->category->name}} Projects
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                    </div>
-                @endforeach
-
-
-
-                {{-- <div class="section">
+                <div class="section">
                     <div class="section-title">
-                        Category 2
-                        <a href="/category/projects/category1" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        Featured Projects
                     </div>
                     <div class="project-list project-list-wide">
                         @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
                     </div>
-                    <a href="/category/projects/category1" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                </div>
+
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
                         <span class="fa fa-angle-right"></span>
                     </a>
-                </div> --}}
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category 2
+                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="project-list project-list-wide">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
+                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All Category 2 Projects
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+
+
             </div>
             
             <div class="col-lg-3 d-none d-lg-block">
@@ -225,7 +446,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="{{route('front.deal')}}" class="btn btn-orange btn-block">
+                        <a href="/deals" class="btn btn-orange btn-block">
                             Switch to Buying
                         </a>
                     </div>
@@ -235,11 +456,18 @@
                     <div class="section-title">
                         Latest Projects
                     </div>
-                    @foreach ($latest_projects as $project)
-                        <div class="project-list project-list-mini">
-                            @include('front.common.project')
-                        </div>
-                    @endforeach
+                    <div class="project-list project-list-mini">
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                    </div>
                 </div>
 
             </div>

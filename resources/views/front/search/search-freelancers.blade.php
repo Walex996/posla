@@ -29,9 +29,7 @@
             <div class="col-md-4 col-lg-3 d-none d-md-block">
 
                 <div class="section sticky-top">
-                    @include('front.common.filter-search', [           
-                        'users_total' => $users->total(),
-                    ])
+                    @include('front.common.filter-search')
                     @include('front.common.filter-freelancers')
                 </div>
 
@@ -49,10 +47,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="p-10">
-                                    @include('front.common.filter-search', [
-                                        'users_total' => $users->total(),
-
-                                    ])
+                                    @include('front.common.filter-search')
                                     @include('front.common.filter-freelancers')
                                 </div>
                             </div>
@@ -67,7 +62,7 @@
                             Search Result (Freelancers)
                         </div>
                         <div class="font-12 text-fade">
-                            {{-- ({{$users->count()}} freelancers) --}}
+                            (10 freelancers)
                         </div>
                     </div>
                 </div>
@@ -86,21 +81,12 @@
 
                         <form method="get" action="" class="pull-right">
                             <select class="form-control-md" onchange="this.form.submit()" style="width: 100px; padding: 0px !important;">
-                                @if(isset($qid))
-                                    <option value="new" @if($qid =="new") selected @endif>Newest First</option>
-                                    <option value="old" @if($qid =="old") selected @endif>Oldest First</option>
-                                    <option value="az" @if($qid =="az") selected @endif>A-Z</option>
-                                    <option value="za" @if($qid =="za") selected @endif>Z-A</option>
-                                    <option value="ratings_high_low" @if($qid =="ratings_high_low") selected @endif>Ratings - High to Low</option>
-                                    <option value="ratings_low_high" @if($qid =="ratings_low_high") selected @endif>Ratings - Low to High</option>
-                                @else
-                                    <option value="new" selected>Newest First</option>
-                                    <option value="old">Oldest First</option>
-                                    <option value="az">A-Z</option>
-                                    <option value="za">Z-A</option>
-                                    <option value="ratings_high_low">Ratings - High to Low</option>
-                                    <option value="ratings_low_high">Ratings - Low to High</option>
-                                @endif
+                                <option value="new" selected>Newest First</option>
+                                <option value="old">Oldest First</option>
+                                <option value="az">A-Z</option>
+                                <option value="za">Z-A</option>
+                                <option value="ratings_high_low">Ratings - High to Low</option>
+                                <option value="ratings_low_high">Ratings - Low to High</option>
                             </select>
                         </form>
 

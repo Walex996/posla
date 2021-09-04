@@ -58,9 +58,7 @@
             <div class="col-md-4 col-lg-3 d-none d-md-block">
 
                 <div class="section sticky-top">
-                    @include('front.common.filter-search', [
-                        'deals_total' => $deals->total(),
-                    ])
+                    @include('front.common.filter-search')
                     @include('front.common.filter-deals')
                 </div>
 
@@ -78,9 +76,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="p-10">
-                                    @include('front.common.filter-search', [
-                                        'deals_total' => $deals->total(),
-                                    ])
+                                    @include('front.common.filter-search')
                                     @include('front.common.filter-deals')
                                 </div>
                             </div>
@@ -95,7 +91,7 @@
                             Search Result (Deals)
                         </div>
                         <div class="font-12 text-fade">
-                            ({{$deals->total()}} active deals)
+                            (10 active deals)
                         </div>
                     </div>
                 </div>
@@ -109,40 +105,48 @@
                         </button>
                         
                         <div class="font-bold d-none d-md-inline mt-10 pull-left">
-                            Showing {{$deals->firstItem()}} - {{$deals->lastItem()}} of {{$deals->total()}}
+                            Showing 1 - 20 of 65
                         </div>
 
                         <form method="get" action="" class="pull-right">
                             <select class="form-control-md" onchange="this.form.submit()" style="width: 100px; padding: 0px !important;">
-                                @if(isset($qid))
-                                    <option value="new" @if($qid =="new") selected @endif>Newest First</option>
-                                    <option value="old" @if($qid =="old") selected @endif>Oldest First</option>
-                                    <option value="budget_high_low" @if($qid =="budget_high_low") selected @endif>Budget - High to Low</option>
-                                    <option value="budget_low_high" @if($qid =="budget_low_high") selected @endif>Budget - Low to High</option>
-                                    <option value="ratings_high_low" @if($qid =="ratings_high_low") selected @endif>Ratings - High to Low</option>
-                                    <option value="ratings_low_high" @if($qid =="ratings_low_high") selected @endif>Ratings - Low to High</option>
-                                @else
-                                    <option value="new" selected>Newest First</option>
-                                    <option value="old">Oldest First</option>
-                                    <option value="budget_high_low">Budget - High to Low</option>
-                                    <option value="budget_low_high">Budget - Low to High</option>
-                                    <option value="ratings_high_low">Ratings - High to Low</option>
-                                    <option value="ratings_low_high">Ratings - Low to High</option>
-                                @endif
+                                <option value="new" selected>Newest First</option>
+                                <option value="old">Oldest First</option>
+                                <option value="budget_high_low">Budget - High to Low</option>
+                                <option value="budget_low_high">Budget - Low to High</option>
+                                <option value="ratings_high_low">Ratings - High to Low</option>
+                                <option value="ratings_low_high">Ratings - Low to High</option>
                             </select>
                         </form>
 
                     </div>
 
                     <div class="deal-list deal-list-double">
-                        @foreach ($deals as $deal)
-                            @include('front.common.deal') 
-                        @endforeach
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
                     </div>
                 </div>
 
                 <div class="section">
-                   {{$deals->appends(request()->input())->onEachSide(2)->links()}}
+                   //pagination here
                 </div>
 
             </div>
@@ -158,6 +162,9 @@
                         Featured Deals
                     </div>
                     <div class="deal-list deal-list-single">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
                         @include('front.common.deal')
                     </div>
                 </div>

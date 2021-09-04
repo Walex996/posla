@@ -18,6 +18,35 @@
 
 @section('css')
     <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/jquery-ui.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/components/Price-Range-Slider-jQuery-UI/price_range_style.css') }}">
+@endsection
+
+
+@section('js')
+    <script src="{{ asset('/js/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('/components/Price-Range-Slider-jQuery-UI/price_range_script.js') }}" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $(".posla-slider-range").slider({
+                range:true,
+                orientation:"horizontal",
+                min: 0,
+                max: 10000,
+                values: [0, 10000],
+                step: 100,
+                slide:function (event, ui) {
+                    if (ui.values[0] == ui.values[1]) {
+                        return false;
+                    }
+                    $(".posla-slider-min-input").val(ui.values[0]);
+                    $(".posla-slider-max-input").val(ui.values[1]);
+                }
+            });
+
+        });
+    </script>
 @endsection
 
 
@@ -29,9 +58,7 @@
             <div class="col-md-4 col-lg-3 d-none d-md-block">
 
                 <div class="section sticky-top">
-                    @include('front.common.filter-search', [
-                        'projects_total' => $projects->total(),
-                    ])
+                    @include('front.common.filter-search')
                     @include('front.common.filter-projects')
                 </div>
 
@@ -49,9 +76,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="p-10">
-                                    @include('front.common.filter-search', [
-                                        'projects_total' => $projects->total(),
-                                    ])
+                                    @include('front.common.filter-search')
                                     @include('front.common.filter-projects')
                                 </div>
                             </div>
@@ -66,7 +91,7 @@
                             Search Result (Projects)
                         </div>
                         <div class="font-12 text-fade">
-                            ({{$projects->total()}} active projects)
+                            (10 active projects)
                         </div>
                     </div>
                 </div>
@@ -80,40 +105,33 @@
                         </button>
                         
                         <div class="font-bold d-none d-md-inline mt-10 pull-left">
-                            Showing {{$projects->firstItem()}} - {{$projects->lastItem()}} of {{$projects->total()}}
+                            Showing 1 - 10 of 10
                         </div>
 
                         <form method="get" action="" class="pull-right">
                             <select class="form-control-md" onchange="this.form.submit()" style="width: 100px; padding: 0px !important;">
-                                @if(isset($qid)) 
-                                    <option value="new" @if($qid =="new") selected @endif>Newest First</option>
-                                    <option value="old" @if($qid =="old") selected @endif>Oldest First</option>
-                                    <option value="budget_high_low" @if($qid =="budget_high_low") selected @endif>Budget - High to Low</option>
-                                    <option value="budget_low_high" @if($qid =="budget_low_high") selected @endif>Budget - Low to High</option>
-                                    <option value="proposals_high_low" @if($qid =="proposals_high_low") selected @endif>Proposals - High to Low</option>
-                                    <option value="proposals_low_high" @if($qid =="proposals_low_high") selected @endif>Proposals - Low to High</option>
-                                @else
-                                    <option value="new" selected>Newest First</option>
-                                    <option value="old">Oldest First</option>
-                                    <option value="budget_high_low">Budget - High to Low</option>
-                                    <option value="budget_low_high">Budget - Low to High</option>
-                                    <option value="proposals_high_low">Proposals - High to Low</option>
-                                    <option value="proposals_low_high">Proposals - Low to High</option>
-                                @endif
+                                <option value="new" selected>Newest First</option>
+                                <option value="old">Oldest First</option>
+                                <option value="budget_high_low">Budget - High to Low</option>
+                                <option value="budget_low_high">Budget - Low to High</option>
+                                <option value="proposals_high_low">Proposals - High to Low</option>
+                                <option value="proposals_low_high">Proposals - Low to High</option>
                             </select>
                         </form>
 
                     </div>
 
                     <div class="project-list project-list-wide">
-                        @foreach ($projects as $project)
-                            @include('front.common.project')
-                        @endforeach
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
                     </div>
                 </div>
 
                 <div class="section">
-                    {{$projects->appends(request()->input())->onEachSide(2)->links()}}
+                    //pagination here
                 </div>
 
             </div>

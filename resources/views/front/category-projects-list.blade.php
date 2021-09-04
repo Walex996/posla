@@ -44,7 +44,6 @@
                     $(".posla-slider-max-input").val(ui.values[1]);
                 }
             });
-
         });
     </script>
 @endsection
@@ -86,10 +85,10 @@
                 <div class="mb-20">
                     <div class="text-center">
                         <div class="font-20 font-bold">
-                            {{$category->name}}
+                            Category name
                         </div>
                         <div class="font-12 text-fade">
-                            ({{$category->projects->count()}} active projects)
+                            (30 active projects)
                         </div>
                     </div>
                 </div>
@@ -103,7 +102,7 @@
                         </button>
                         
                         <div class="font-bold d-none d-md-inline mt-10 pull-left">
-                            Showing {{$category->projects->firstItem()}} - {{$category->projects->lastItem()}} of {{$category->projects->total()}}
+                            Showing 1 - 15 of 31
                         </div>
 
                         <form method="get" action="" class="pull-right">
@@ -129,14 +128,16 @@
                     </div>
 
                     <div class="project-list project-list-wide">
-                        @foreach ($category->projects as $project)
-                            @include('front.common.project')
-                        @endforeach                   
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
+                        @include('front.common.project')
                     </div>
                 </div>
 
                 <div class="section">
-                    {{$category->projects->appends(request()->input())->onEachSide(2)->links()}}
+                    //pagination here
                 </div>
 
             </div>

@@ -2,7 +2,7 @@
 <div class="navbar navbar-expand-md navbar-dark shadow-sm">
     <div class="container">
 
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="/">
             <img src="{{ asset('/img/app/icons/logo-full-fff.png') }}" class="dp-contain" alt="Posla">
         </a>
 
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
             <div class="navbar-nav mr-auto ml-auto layout-search">
-                <form action="{{route('search.all')}}" method="get" class="input-group">
+                <form action="/search" method="get" class="input-group">
                     <input type="search" name="q" class="form-control" placeholder="Search projects, deals, and freelancers..." />
                     <div class="input-group-btn">
                         <button type="submit" class="btn btn-default btn-md">
@@ -34,13 +34,13 @@
 
             <ul class="navbar-nav navbar-nav-links-nav ml-auto d-none d-lg-flex">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{route('deals.create.rule')}}">Post Deals</a>
+                    <a class="nav-link active" href="/account/deals/create">Post Deals</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('front.deal')}}">Find Deals</a>
+                    <a class="nav-link" href="/deals">Find Deals</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('front.project')}}">Find Projects</a>
+                    <a class="nav-link" href="/">Find Projects</a>
                 </li>
             </ul>
 
@@ -51,13 +51,13 @@
                         Menu
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{route('deals.create.rule')}}">
+                        <a class="dropdown-item" href="/account/deals/create">
                             Post Deals
                         </a>
-                        <a class="dropdown-item" href="{{route('front.deal')}}">
+                        <a class="dropdown-item" href="/deals">
                             Find Deals
                         </a>
-                        <a class="dropdown-item" href="{{route('front.project')}}">
+                        <a class="dropdown-item" href="/">
                             Find Projects
                         </a>
                     </div>
@@ -65,8 +65,8 @@
             </ul>
 
             <ul class="navbar-nav navbar-nav-links-auth ml-auto">
-                                
-                @guest
+                      
+                    <!-- 
                     <li class="nav-item">
                         <a class="nav-link btn-login cursor-pointer">
                             Login
@@ -77,28 +77,29 @@
                             Register
                         </a>
                     </li>
-                @else
+                    -->
+
                
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle no-after nowrap floated-content" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <span class="fa fa-caret-down icon-16 pull-right ml-5"></span>
-                            {{auth()->user()->username}}
+                            Username
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('account.dashboard')}}">
+                            <a class="dropdown-item" href="/account/dashboard">
                                 Dashboard
                             </a>
-                            <a class="dropdown-item" href="{{route('account.profile')}}">
+                            <a class="dropdown-item" href="/account/profile">
                                 Profile
                             </a>
                             <a class="dropdown-item" href="/account/orders">
                                 My Orders
                             </a>
-                            <a class="dropdown-item" href="{{route('account.deals')}}">
+                            <a class="dropdown-item" href="/account/deals">
                                 My Deals
                             </a>
-                            <a class="dropdown-item" href="{{route('account.projects')}}">
+                            <a class="dropdown-item" href="/account/projects">
                                 My Projects
                             </a>
                             <a class="dropdown-item" href="/account/project-bids">
@@ -122,17 +123,13 @@
                             <a class="dropdown-item" href="/account/settings">
                                 Account Settings
                             </a>
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                            <a class="dropdown-item" href="">
+                                Logout
                             </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
                         </div>
                     </li>
                     
-                @endguest
+                
             </ul>
 
         </div>
@@ -178,8 +175,7 @@
     <div id="sidebar_links">
         <ul>
 
-            @guest
-
+            <!--
                 <li class="sidebar-login nav-auth-out">
                     <a class="btn-login">
                         <span class="fa fa-user-circle" style="font-size: 17px;"></span>
@@ -192,98 +188,96 @@
                         <span>Register</span>
                     </a>
                 </li>
+            -->
 
-            @else
 
-                <li class="dropdown">
-                    <a class="dropdown-toggle no-after" data-toggle="dropdown">
-                        <span class="fa fa-user-circle" style="font-size: 17px;"></span>
-                        <span>My Account</span>
-                        <span class="fa fa-caret-down pull-right"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="sidebar-account-dashboard">
-                            <a href="/account/dashboard">
-                                <span class="fa fa-th-large"></span>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-profile">
-                            <a href="/account/profile">
-                                <span class="fa fa-user"></span>
-                                <span>Profile</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-orders">
-                            <a href="/account/orders">
-                                <span class="fa fa-shopping-cart"></span>
-                                <span>My Orders</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-deals">
-                            <a href="/account/deals">
-                                <span class="fa fa-share-alt"></span>
-                                <span>My Deals</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-projects">
-                            <a href="/account/projects">
-                                <span class="fa fa-star"></span>
-                                <span>My Projects</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-project-bids">
-                            <a href="/account/project-bids">
-                                <span class="fa fa-star-half-alt"></span>
-                                <span>My Projects Bids</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-favourites">
-                            <a href="/account/favourites">
-                                <span class="fa fa-heart"></span>
-                                <span>Favourites</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-messages">
-                            <a href="/messages">
-                                <span class="fa fa-envelope"></span>
-                                <span>Messages</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-earnings">
-                            <a href="/account/earnings-withdrawals/">
-                                <span class="fa fa-credit-card"></span>
-                                <span>Earnings & Withdrawals</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-wallet">
-                            <a href="/account/wallet">
-                                <span class="fa fa-wallet"></span>
-                                <span>My Wallet</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-reviews">
-                            <a href="/account/reviews">
-                                <span class="fa fa-star"></span>
-                                <span>My Reviews</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-account-settings">
-                            <a href="/account/settings" id="acc-sidebar-settings">
-                                <span class="fa fa-user-cog"></span>
-                                <span>Account Settings</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle no-after" data-toggle="dropdown">
+                    <span class="fa fa-user-circle" style="font-size: 17px;"></span>
+                    <span>My Account</span>
+                    <span class="fa fa-caret-down pull-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="sidebar-account-dashboard">
+                        <a href="/account/dashboard">
+                            <span class="fa fa-th-large"></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-profile">
+                        <a href="/account/profile">
+                            <span class="fa fa-user"></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-orders">
+                        <a href="/account/orders">
+                            <span class="fa fa-shopping-cart"></span>
+                            <span>My Orders</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-deals">
+                        <a href="/account/deals">
+                            <span class="fa fa-share-alt"></span>
+                            <span>My Deals</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-projects">
+                        <a href="/account/projects">
+                            <span class="fa fa-star"></span>
+                            <span>My Projects</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-project-bids">
+                        <a href="/account/project-bids">
+                            <span class="fa fa-star-half-alt"></span>
+                            <span>My Projects Bids</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-favourites">
+                        <a href="/account/favourites">
+                            <span class="fa fa-heart"></span>
+                            <span>Favourites</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-messages">
+                        <a href="/messages">
+                            <span class="fa fa-envelope"></span>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-earnings">
+                        <a href="/account/earnings-withdrawals/">
+                            <span class="fa fa-credit-card"></span>
+                            <span>Earnings & Withdrawals</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-wallet">
+                        <a href="/account/wallet">
+                            <span class="fa fa-wallet"></span>
+                            <span>My Wallet</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-reviews">
+                        <a href="/account/reviews">
+                            <span class="fa fa-star"></span>
+                            <span>My Reviews</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-account-settings">
+                        <a href="/account/settings" id="acc-sidebar-settings">
+                            <span class="fa fa-user-cog"></span>
+                            <span>Account Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                
-            @endguest
             
             <hr class="hr-blue hr-2">
 
             <li class="sidebar-home">
-                <a href="{{url('/')}}">
+                <a href="/">
                     <span class="fa fa-home"></span>
                     <span>Home</span>
                 </a>
@@ -296,31 +290,31 @@
                 </a>
                 <ul class="dropdown-menu sidebar-category-all">
                     <li class="sidebar-category-category-url">
-                        <a href="/category/category-url">
+                        <a href="/category/business/projects">
                             <span class="fa fa-list-alt"></span>
                             <span>Category 1</span>
                         </a>
                     </li>
                     <li class="sidebar-category-category-url">
-                        <a href="/category/category-url">
+                        <a href="/category/business/projects">
                             <span class="fa fa-list-alt"></span>
                             <span>Category 2</span>
                         </a>
                     </li>
                     <li class="sidebar-category-category-url">
-                        <a href="/category/category-url">
+                        <a href="/category/business/projects">
                             <span class="fa fa-list-alt"></span>
                             <span>Category 3</span>
                         </a>
                     </li>
                     <li class="sidebar-category-category-url">
-                        <a href="/category/category-url">
+                        <a href="/category/business/projects">
                             <span class="fa fa-list-alt"></span>
                             <span>Category 4</span>
                         </a>
                     </li>
                     <li class="sidebar-category-category-url">
-                        <a href="/category/category-url">
+                        <a href="/category/business/projects">
                             <span class="fa fa-list-alt"></span>
                             <span>Category 5</span>
                         </a>
@@ -328,25 +322,25 @@
                 </ul>
             </li>
             <li class="sidebar-post-deals">
-                <a href="{{route('deals.create.rule')}}">
+                <a href="/account/deals/create">
                     <span class="fa fa-star"></span>
                     <span>Post Deals</span>
                 </a>
             </li>
             <li class="sidebar-find-deals">
-                <a href="{{route('front.deal')}}">
+                <a href="/deals">
                     <span class="fa fa-star"></span>
                     <span>Find Deals</span>
                 </a>
             </li>
             <li class="sidebar-post-projects">
-                <a href="{{url('/account/projects/create')}}">
+                <a href="/">
                     <span class="fa fa-star"></span>
                     <span>Post Projects</span>
                 </a>
             </li>
             <li class="sidebar-find-projects">
-                <a href="{{route('front.project')}}">
+                <a href="/">
                     <span class="fa fa-star"></span>
                     <span>Find Projects</span>
                 </a>
@@ -453,16 +447,13 @@
                 </a>
             </li>
 
-            @guest
-            @else
-                <hr class="hr-blue hr-2">
-                <li class="nav-auth-in">
-                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <span class="fa fa-sign-out-alt"></span>
-                        <span>{{ __('Logout') }}</span>
-                    </a>
-                </li>
-            @endguest
+            <hr class="hr-blue hr-2">
+            <li class="nav-auth-in">
+                <a href="">
+                    <span class="fa fa-sign-out-alt"></span>
+                    <span>Logout</span>
+                </a>
+            </li>
             
         </ul>
     </div>

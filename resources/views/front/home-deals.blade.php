@@ -39,12 +39,40 @@
                         </div>
 
                         <div class="home-category-list mt-5">
-                            @foreach ($categories as $category)
-                                <a href="{{route('front.category.deals' , $category->slug)}}">
-                                    <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
-                                    {{$category->name}}
-                                </a>
-                            @endforeach
+                            
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+                            <a href="/category/music-audio/deals">
+                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                                Category Name
+                            </a>
+
                         </div>
 
                     </div>
@@ -61,17 +89,52 @@
 
                 <div class="sticky-top">
                     <div class="home-category-list">
-                        @foreach ($categories as $category)
-                            <a href="{{route('front.category.deals' , $category->slug)}}">
-                            {{$category->name}}
-                                <span class="fa fa-angle-right"></span>
-                            </a>     
-                        @endforeach
-                        {{-- <a href="/category/deals/category1">
-                            Graphics Design
+
+                        <a href="/category/music-audio/deals">
+                            Category Name
                             <span class="fa fa-angle-right"></span>
                         </a>
-                        --}}
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        <a href="/category/music-audio/deals">
+                            Category Name
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                        
                     </div>
 
                     <div class="mt-10">
@@ -90,7 +153,7 @@
                     <div class="col-sm-6 col-lg-12">
 
                         <div class="section">
-                            <form action="{{route('deals.create.rule')}}" class="post-project">
+                            <form action="/account/deals/create" class="post-project">
                                 <div class="section-title">
                                     <span class="fa fa-edit"></span>
                                     Create New Deal
@@ -138,7 +201,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="{{route('front.project')}}" class="btn btn-orange btn-block">
+                                <a href="/" class="btn btn-orange btn-block">
                                     Switch to Selling
                                 </a>
                             </div>
@@ -156,53 +219,122 @@
                 </div>
                 
 
-                @if($feature_deals->isNotEmpty())
-                    <div class="section">
-                        <div class="section-title">
-                            Featured Deals
-                        </div>
-                        <div class="deal-list deal-list-double">
-                                @foreach ($feature_deals as $deal)
-                                    @include('front.common.deal')
-                                @endforeach
-                            </div>
-                    </div>
-                @endif
-
-
-                @foreach ($categories_deals as $deals) 
                 <div class="section">
                     <div class="section-title">
-                        {{$deals->first()->category->name}}
-                        <a href="/category/deals/category1" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
-                    </div>
-                    <div class="deal-list deal-list-double">
-                        @foreach ($deals as $deal)
-                            @include('front.common.deal')
-                        @endforeach
-                    </div>
-                    
-                    <a href="/category/deals/category1" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
-                        View All {{$deals->first()->category->name}} Deals
-                        <span class="fa fa-angle-right"></span>
-                    </a>
-                </div>
-                @endforeach
-
-                {{-- <div class="section">
-                    <div class="section-title">
-                        Category 2
-                        <a href="/category/deals/category1" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        Featured Deals
                     </div>
                     <div class="deal-list deal-list-double">
                         @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
                     </div>
-                    <a href="/category/deals/category1" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
-                        View All Category 2 Deals
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category Name
+                        <a href="/category/music-audio/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="deal-list deal-list-double">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
+                    
+                    <a href="/category/music-audio/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All CategoryName Deals
                         <span class="fa fa-angle-right"></span>
                     </a>
-                </div> --}}
+                </div>
 
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category Name
+                        <a href="/category/music-audio/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="deal-list deal-list-double">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
+                    
+                    <a href="/category/music-audio/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All CategoryName Deals
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category Name
+                        <a href="/category/music-audio/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="deal-list deal-list-double">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
+                    
+                    <a href="/category/music-audio/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All CategoryName Deals
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category Name
+                        <a href="/category/music-audio/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="deal-list deal-list-double">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
+                    
+                    <a href="/category/music-audio/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All CategoryName Deals
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="section">
+                    <div class="section-title">
+                        Category Name
+                        <a href="/category/music-audio/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                    </div>
+                    <div class="deal-list deal-list-double">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
+                    
+                    <a href="/category/music-audio/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        View All CategoryName Deals
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
 
 
 
@@ -226,7 +358,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="{{route('front.project')}}" class="btn btn-orange btn-block">
+                        <a href="/" class="btn btn-orange btn-block">
                             Switch to Selling
                         </a>
                     </div>
@@ -236,11 +368,18 @@
                     <div class="section-title">
                         Latest Deals
                     </div>
-                    @foreach ($latest_deals as $deal)
-                        <div class="deal-list deal-list-single">
-                            @include('front.common.deal')
-                        </div>
-                    @endforeach
+                    <div class="deal-list deal-list-single">
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                        @include('front.common.deal')
+                    </div>
                 </div>
 
             </div>
