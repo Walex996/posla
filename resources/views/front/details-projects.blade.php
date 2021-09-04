@@ -1715,11 +1715,11 @@
                         <div class="modal-footer">
                             <button type="button" class="close btn btn-transparent-black btn-sm icon-left" data-dismiss="modal">
                                 <span class="fa fa-times"></span>
-                                Cancel
+                                Cancel  
                             </button>
                             <button type="submit" class="btn btn-blue btn-sm add-question-btn icon-left">
                                 <span class="fa fa-paper-plane"></span>
-                                Submit Proposal
+                                Submit Proposal  
                             </button>
                         </div>
                     </div>
@@ -1770,7 +1770,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    10
+                                    15
                                 </div>
                             </div>
                             <div>
