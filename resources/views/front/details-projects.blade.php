@@ -1858,7 +1858,7 @@
                     <div class="section">
                         <div>
                             <button type="button" class="btn btn-blue btn-block" data-toggle="modal" data-target="#send_proposal">
-                                Send Proposal qwdqw
+                                Send Proposal
                             </button>
                         </div>
                         <div class="mt-15 mb-10">
