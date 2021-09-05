@@ -1770,7 +1770,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    15
+                                    15  
                                 </div>
                             </div>
                             <div>
@@ -1781,7 +1781,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    90%
+                                    90%  
                                 </div>
                             </div>
                             <div class="bg-eee">
@@ -1858,7 +1858,7 @@
                     <div class="section">
                         <div>
                             <button type="button" class="btn btn-blue btn-block" data-toggle="modal" data-target="#send_proposal">
-                                Send Proposal
+                                Send Proposal qwdqw
                             </button>
                         </div>
                         <div class="mt-15 mb-10">
