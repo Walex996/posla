@@ -130,29 +130,6 @@ Route::group(['middleware' => ['auth','verified']],function () {
         });
     });
     
-    // cart in -progress
-    Route::group(['namespace' => 'Front', 'as' =>'cart.'],function () {
-        
-        // paystack
-        Route::get('cart/{id}', 'CartController@cart')->name('cart');
-        Route::get('checkout/{id}', 'CartController@checkout')->name('checkout');
-        Route::post('checkout/paystack/{id}', 'CartController@processPaystack')->name('paystack');
-        Route::get('checkout/paystack/callback', 'CartController@paystackCallback')->name('paystack.callback');
-
-        // paypal
-
-        Route::post('checkout/paypal/{id}', 'CartController@processPayPal')->name('process.paypal');
-        Route::get('checkout/paypal/callback', 'CartController@payPalCallback')->name('paypal.callback');
-
-        // Route::get('handle-payment', 'CartController@handlePayment')->name('paypal');
-        // Route::get('cancel-payment', 'CartController@paymentCancel')->name('cancel.paypal');
-        // Route::get('payment-success', 'CartController@paymentSuccess')->name('success.paypal');
-
-
-
-        Route::get('checkout/status/', 'CartController@status')->name('status');
-    });
-
 
     // helper/api routes
     // Route::get('/category/{category_id}', 'HelperController@getSubCategories');
@@ -590,17 +567,17 @@ Route::get('/user/abcde12345/reviews', function () {
 
 //  cart - in progress
 
-    // Route::get('/cart', function () {
-    //     return view('front.cart-checkout.cart');
-    // });
+Route::get('/cart', function () {
+    return view('front.cart-checkout.cart');
+});
 
-    // Route::get('/checkout', function () {
-    //     return view('front.cart-checkout.checkout');
-    // });
+Route::get('/checkout', function () {
+    return view('front.cart-checkout.checkout');
+});
 
-    // Route::get('/checkout/status', function () {
-        // return view('front.cart-checkout.checkout-status');
-    // });
+Route::get('/checkout/status', function () {
+    return view('front.cart-checkout.checkout-status');
+});
 
 
 // account => support center

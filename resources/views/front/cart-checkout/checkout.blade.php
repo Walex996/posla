@@ -49,8 +49,7 @@
                         
                             <div class="row checkout-payment-options">
                                 <div class="col-sm-6">
-                                    {{-- <form action="{{ url('charge') }}" method="POST"> --}}
-                                    <form action="{{ route('cart.process.paypal', $type->id) }}" method="POST">
+                                    <form action="" method="POST">
                                         @csrf
                                         <input type="hidden" name="amount" value="100"/>
 
@@ -65,7 +64,7 @@
                                     </form>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form action="{{route('cart.paystack', $type->id)}}" method="POST">
+                                    <form action="" method="POST">
                                         @csrf
 
                                         <button type="submit">
@@ -97,21 +96,21 @@
                         <div>
 
                             <div class="">
-                                <a href="/deal/12345678" class="deal pb-10" style="height: auto;">
+                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="deal pb-10" style="height: auto;">
                                     <div class="deal-info-top">
                                         <div>
-                                            src="{{asset($type->deal->getFirstMediaUrl() ? $type->deal->getFirstMediaUrl() : 'img/app/samples/deal-1.png')}}" alt="Olawale Lawal" class="dp-cover" />
+                                            <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" class="dp-cover" />
                                         </div>
                                         <div class="">
                                             <div>
-                                                <img ssrc="{{asset($type->deal->owner->getFirstMediaUrl('profile') ? $type->deal->owner->getFirstMediaUrl('profile') : 'img/app/samples/user.png')}}"  alt="Olawale Lawal" class="dp-contain" />
+                                                <img src="{{asset('img/app/samples/user.png')}}"  alt="Olawale Lawal" class="dp-contain" />
                                             </div>
                                             <div class="text-fade font-13 ellipsis">
-                                                {{$type->deal->owner->name}}
+                                                Olawale lawal
                                             </div>
                                         </div>
                                         <div class="font-bold ellipsis-2-lines mt-5 pr-10 pl-10">
-                                            {{$type->deal->title}}
+                                            I will create awesome & on-point podcast script for your episodes
                                         </div>
                                     </div>
                                 </a>
@@ -123,7 +122,7 @@
                                         Subtotal:
                                     </div>
                                     <div class="text-right">
-                                        ${{$type->price}}
+                                        $100
                                     </div>
                                 </div>
                                 <div>
@@ -131,7 +130,7 @@
                                         Service fee & VAT:
                                     </div>
                                     <div class="text-right">
-                                         ${{$type->service_fee_and_vat}}
+                                        $50
                                     </div>
                                 </div>
                                 <hr class="mt-10 mb-10 hr-2">
@@ -140,7 +139,7 @@
                                         Total:
                                     </div>
                                     <div class="font-bold text-right">
-                                        ${{$type->total}}
+                                        $150
                                     </div>
                                 </div>
                                 <div>
@@ -148,7 +147,7 @@
                                         Delivery Time:
                                     </div>
                                     <div class="text-right">
-                                         {{$type->delivery_timeframe}} day(s)
+                                        1 day
                                     </div>
                                 </div>
                             </div>

@@ -27,11 +27,6 @@
 @section('content')
 
 
-    <?php
-        $link_text = 'I will create awesome & on-point podcast script for your episodes';
-        $share_link = 'http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f';
-        $share_text = urlencode($link_text);
-    ?>
     @include('front.common.share-modal')
     
     <div class="container">
@@ -280,7 +275,7 @@
                                             Continue ($150)
                                         </button>
                                         <div class="mt-10">
-                                            <a href="" class="btn btn-transparent-black btn-block">
+                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                 Contact Seller
                                             </a>
                                         </div>
@@ -343,7 +338,7 @@
                                             Continue ($250)
                                         </button>
                                         <div class="mt-10">
-                                            <a href="" class="btn btn-transparent-black btn-block">
+                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                 Contact Seller
                                             </a>
                                         </div>
@@ -406,7 +401,7 @@
                                             Continue ($400)
                                         </button>
                                         <div class="mt-10">
-                                            <a href="" class="btn btn-transparent-black btn-block">
+                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                 Contact Seller
                                             </a>
                                         </div>
@@ -910,7 +905,7 @@
                                                 Continue ($150)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
@@ -973,7 +968,7 @@
                                                 Continue ($250)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
@@ -1036,7 +1031,7 @@
                                                 Continue ($400)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
@@ -1185,7 +1180,7 @@
                                                 Continue ($150)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
@@ -1248,7 +1243,7 @@
                                                 Continue ($250)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>
@@ -1311,7 +1306,7 @@
                                                 Continue ($400)
                                             </button>
                                             <div class="mt-10">
-                                                <a href="" class="btn btn-transparent-black btn-block">
+                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
                                                     Contact Seller
                                                 </a>
                                             </div>

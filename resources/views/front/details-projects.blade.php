@@ -31,11 +31,6 @@
 
 @section('content')
     
-    <?php
-        $link_text = 'I need an accountant for my new logistics business';
-        $share_link = 'http://localhost:8001/project/c1d00230-a423-4b84-a121-7105239ff8d8';
-        $share_text = urlencode($link_text);
-    ?>
     @include('front.common.share-modal')
 
     <div class="container">
@@ -107,7 +102,7 @@
                 <div id="overview">
                     <div>
                         <h4 class="font-bold">
-                           {{$project->title}}
+                            I Need An Accountant For My New Logistics Busine
                         </h4>
                     </div>
                     <div class="details-title-sub floated-content mt-10">
@@ -117,13 +112,13 @@
                                     <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
                                 </div>
                                 <div class="hover-underline">
-                                    {{$project->owner->name}}
+                                    Olawale Lawal
                                 </div>
                             </a>
                         </div>
                         <div class="pull-left">|</div>
                         <div class="pull-left">
-                            {{$project->created_at->diffForHumans()}}
+                            5 months ago
                         </div>
                     </div>
                 </div>
@@ -132,7 +127,7 @@
                     <div class="row">
                         <div class="col-6 col-sm-3 col-md-6 col-lg-3 text-center br-2-ddd pt-10 pb-10">
                             <div class="font-20 font-bold">
-                                ${{$project->budget}}
+                                $1500
                             </div>
                             <div class="text-fade">
                                 Budget
@@ -171,27 +166,38 @@
                         Description
                     </div>
                     <div class="line-height-25">
-                        {{$project->description}}
-                        {{-- Application Type: iOS (Native) <br>
+                        Application Type: iOS (Native) <br>
                         Brief: App Based Security and Community management System. <br>
                         Some Similar Apps/Websites: Mygate<br>
                         Features: 3 Modules, Guard Resident and tenant Admin/Super Admin  <br>
                         Designs: Need to be developed<br>
                         APIs Status: Need to be developed<br>
                         Backend Technology (APIs): APIs need to be developed in NodeJS<br>
-                        Send a Proposal if you can do it and I will send a detailed Requirement Documents for further discussion if I shortlist your Proposal. --}}
+                        Send a Proposal if you can do it and I will send a detailed Requirement Documents for further discussion if I shortlist your Proposal.
                     </div>
                     <div class="mt-10">
                         <div class="pt-10 bt-1-ddd item-labels item-labels-tags-all d-block">
                             <div class="item-labels-prefix">
                                 Tags & Skills:
                             </div>
-                            @foreach ($project->tags as $tag)
-                                <div class="item-labels-tags">
-                                    {{$tag}}
-                                </div>
-                            @endforeach
-                            
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
+                            <div class="item-labels-tags">
+                                tag1
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,7 +221,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    {{$project->owner->name}}
+                                    Firstname lastname
                                 </div>
                             </div>
                             <div>
@@ -276,7 +282,7 @@
                             <div>
                                 <div class="copy-link mt-5">
                                     <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-1')" id="direct-share-link-1" value="<?=$share_link;?>" readonly />
+                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-1')" id="direct-share-link-1" value="$share_link" readonly />
                                         <div class="input-group-btn">
                                             <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-1')" style="border-radius: 0 !important; height: 35px;">
                                                 <span class="fa fa-copy"></span>
@@ -306,7 +312,7 @@
                                 <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
                             </div>
                             <div class="pt-5 underline-none">
-                                {{$project->owner->name}}
+                                Firstname lastname
                                 <div class="pt-1">
                                     <button class="btn btn-transparent-black btn-xs hover-bg-black">
                                         View buyer's profile
@@ -1808,7 +1814,7 @@
                             <div>
                                 <div class="copy-link mt-5">
                                     <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="<?=$share_link;?>" readonly />
+                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="share_link" readonly />
                                         <div class="input-group-btn">
                                             <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-2')" style="border-radius: 0 !important; height: 35px;">
                                                 <span class="fa fa-copy"></span>
@@ -1934,7 +1940,7 @@
                             <div>
                                 <div class="copy-link mt-5">
                                     <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="<?=$share_link;?>" readonly />
+                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="share_link" readonly />
                                         <div class="input-group-btn">
                                             <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
                                                 <span class="fa fa-copy"></span>

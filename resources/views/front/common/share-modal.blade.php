@@ -17,7 +17,7 @@
                             <label>Direct Link</label>
                             <div class="input-group">
                                 <input type="text" class="form-control readonly" id="direct-share-link" onfocus="highlightShareLink()" readonly
-                                value="<?=$share_link;?>" />
+                                value="share_link" />
                                 <button type="button" class="btn btn-blue btn-sm" onclick="copyShareLink()" style="border-radius: 0 !important; height: 35px;">
                                     <i class="fa fa-copy"></i>
                                     Copy
@@ -34,27 +34,27 @@
                     <div class="connection-modal-social">
 
 
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?=$share_text . $share_link;?>" target="_blank" class="fb_color_bg">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="fb_color_bg">
                             <span class="fab fa-facebook-f"></span>
                         </a>
 
-                        <a href="https://twitter.com/home?status=<?=$share_text . $share_link;?>" class="twitter_color_bg" target="_blank">
+                        <a href="https://twitter.com/home?status=" class="twitter_color_bg" target="_blank">
                             <span class="fab fa-twitter"></span>
                         </a>
 
-                        <a href="whatsapp://send?text=<?=$share_text . $share_link;?>" target="_blank" class="whatsapp_color_bg">
+                        <a href="whatsapp://send?text=" target="_blank" class="whatsapp_color_bg">
                             <span class="fab fa-whatsapp"></span>
                         </a>
 
-                        <a href="mailto:?subject=<?=$share_text;?>&body=<?=$share_text . $share_link;?>" target="_blank" style="background: #f66;">
+                        <a href="mailto:?subject=share_text&body=" target="_blank" style="background: #f66;">
                             <span class="fa fa-envelope"></span>
                         </a>
 
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?=$share_text . $share_link;?>" target="_blank" class="linkedin_color_bg">
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" class="linkedin_color_bg">
                             <span class="fab fa-linkedin"></span>
                         </a>
 
-                        <a href="http://pinterest.com/pin/create/button/?url=<?=$share_text . $share_link;?>" target="_blank" class="pinterest_color_bg">
+                        <a href="http://pinterest.com/pin/create/button/?url=" target="_blank" class="pinterest_color_bg">
                             <span class="fab fa-pinterest"></span>
                         </a>
 

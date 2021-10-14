@@ -59,21 +59,21 @@
                                         <td>
                                             <div class="overflow-hidden">
                                                 <a href="/deal/12345678" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
-                                                    <img src="{{asset($type->deal->getFirstMediaUrl() ? $type->deal->getFirstMediaUrl():'img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
+                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                 </a>
                                                 <a href="/deal/12345678" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
-                                                    <img src="{{asset($type->deal->getFirstMediaUrl() ? $type->deal->getFirstMediaUrl():'img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
+                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                 </a>
                                                 <div class="overflow-hidden">
                                                     <a href="/deal/12345678" class="font-bold mt-10 d-inline-block hover-underline">
-                                                        {{$type->deal->title}}
+                                                        deal title here
                                                     </a>
                                                     <div class="text-fade mt-10">
                                                         <div>
-                                                             {{$type->deal->category->name}} ({{$type->deal->subcategory->name}})
+                                                            Category name (subcategory name)
                                                         </div>
                                                         <div class="mt-5">
-                                                            Package: {{$type->type}}
+                                                            Package: basic designs
                                                         </div>
                                                         <div class="mt-5" data-toggle="collapse" data-target="#package-details">
                                                             Package Details
@@ -83,10 +83,10 @@
                                                             <div class="p-10 pl-15 pr-15 mt-5 b-1-ddd d-inline-block">
                                                                 <ul class="list-style">
                                                                     <li>
-                                                                        {{$type->delivery_timeframe}}-day(s) delivery
+                                                                        2-days delivery
                                                                     </li>
                                                                     <li>
-                                                                        {{$type->revision_num}} revision(s)
+                                                                        4 revisions
                                                                     </li>
                                                                     <li>
                                                                         Work & Deliver
@@ -100,7 +100,7 @@
                                             <div class="d-block d-sm-none bt-1-ddd mt-10 pt-10">
                                                 <div class="mt-10 pull-right">
                                                     Price:
-                                                    ${{$type->price}}
+                                                    $500
                                                 </div>
                                                 <form action="">
                                                     <div class="input-group input-group-attach mt-2" style="width: 100px;">
@@ -128,12 +128,12 @@
                                             </form>
                                             <div class="d-block d-md-none d-lg-block d-xl-none mt-10 text-left">
                                                 Price:
-                                                 ${{$type->price}}
+                                                $500
                                             </div>
                                         </td>
                                         <td class="d-none d-md-table-cell d-lg-none d-xl-table-cell">
                                             <div class="text-center mt-10">
-                                                 ${{$type->price}}
+                                                 $500
                                             </div>
                                         </td>
                                     </tr>
@@ -161,7 +161,7 @@
                                         Subtotal:
                                     </div>
                                     <div class="text-right">
-                                      ${{$type->price}}
+                                      $100
                                     </div>
                                 </div>
                                 <div>
@@ -169,7 +169,7 @@
                                         Service fee & VAT:
                                     </div>
                                     <div class="text-right">
-                                        ${{$type->serviceFeeAndVat}}
+                                        $50
                                     </div>
                                 </div>
                                 <hr class="mt-10 mb-10 hr-2">
@@ -178,7 +178,7 @@
                                         Total:
                                     </div>
                                     <div class="font-bold text-right">
-                                        ${{$type->total}}
+                                        $150
                                     </div>
                                 </div>
                                 <div>
@@ -186,14 +186,14 @@
                                         Delivery Time:
                                     </div>
                                     <div class="text-right">
-                                        {{$type->delivery_timeframe}} day(s)
+                                        1 day(s)
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mt-10 pb-10">
                                 <div>
-                                    <a href="{{route('cart.checkout', $type->id)}}" class="btn btn-primary btn-block">
+                                    <a href="/checkout" class="btn btn-primary btn-block">
                                         Continue to Checkout
                                     </a>
                                 </div>
@@ -228,11 +228,20 @@
         </div>
         <div class="section">
             <div class="deal-list deal-list-mini row">
-                @foreach ($type->deal->category->deals as $deal)
-                    <div class="col-sm-6 col-lg-3">
-                        @include('front.common.deal')
-                    </div> 
-                @endforeach
+                
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div> 
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div> 
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div> 
+                <div class="col-sm-6 col-lg-3">
+                    @include('front.common.deal')
+                </div> 
+            
             </div>
         </div>
             
