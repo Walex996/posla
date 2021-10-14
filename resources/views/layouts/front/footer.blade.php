@@ -28,11 +28,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Get Started</h4>
             <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="{{route('deals.create.rule')}}">Post Deals</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="{{route('front.deal')}}">Find Deals</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="{{url('/account/projects/create')}}">Post Projects</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="{{route('front.project')}}">Find Projects</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="{{url('/search')}}">Search All</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="/deals/create/rule">Post Deals</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="/deals">Find Deals</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="/account/projects/create">Post Projects</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="/">Find Projects</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="/search">Search All</a></li>
             </ul>
           </div>
 

@@ -1,16 +1,15 @@
 {{-- <div class="section mb-0 account-sidebar" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"> --}}
-@php $user =  $user ?? auth()->user() @endphp
-
     <div class="section mb-0 account-sidebar">
+
     <div class="account-sidebar-info text-center">
         <div>
-            <img src="{{asset($user->getFirstMediaUrl('profile') ? $user->getFirstMediaUrl('profile') : 'img/app/samples/user.png')}}"alt="{{$user->name}}" class="dp-cover" />
+            <img src="{{asset('img/app/samples/user.png')}}"alt="User name" class="dp-cover" />
         </div>
         <div class="font-bold">
-            {{$user->name}}
+            Olawale Laeal
         </div>
         <div class="text-fade">
-            {{$user->short_description}}
+            short description short description short description short description
         </div>
         <div>
             <div class="rating-box mt-5">
@@ -29,7 +28,7 @@
             </div>
         </div>
         <div class="text-center mt-5">
-            <a href="{{route('account.profile.edit')}}" class="btn btn-transparent-grey btn-sm mt-5">
+            <a href="/account/profile/edit" class="btn btn-transparent-grey btn-sm mt-5">
                 Edit Profile
             </a>
             <a href="" class="btn btn-transparent-grey btn-sm mt-5">
@@ -51,12 +50,12 @@
 
 <div class="section p-0 mt-5 account-sidebar-links overflow-hidden">
     <div>
-        <a href="{{route('account.dashboard')}}" class="account-sidebar-dashboard">
+        <a href="/account/dashboard" class="account-sidebar-dashboard">
             Dashboard
         </a>
     </div>
     <div>
-        <a href="{{route('account.profile')}}" class="account-sidebar-profile">
+        <a href="/account/profile" class="account-sidebar-profile">
             Profile
         </a>
     </div>
@@ -66,12 +65,12 @@
         </a>
     </div>
     <div>
-        <a href="{{route('account.deals')}}" class="account-sidebar-deals">
+        <a href="/account/deals" class="account-sidebar-deals">
             My Deals
         </a>
     </div>
     <div>
-        <a href="{{route('account.projects')}}" class="account-sidebar-projects">
+        <a href="/account/projects" class="account-sidebar-projects">
             My Projects
         </a>
     </div>

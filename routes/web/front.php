@@ -46,6 +46,7 @@ Route::group(['prefix' => 'search', 'as'=> 'search.', 'namespace' => 'Front'], f
     Route::get('/freelancers', 'SearchController@users')->name('users');
 });
 
+/*
 // pages that require login
 Route::group(['middleware' => ['auth','verified']],function () {
 
@@ -139,7 +140,7 @@ Route::group(['middleware' => ['auth','verified']],function () {
 // Route::post('charge', 'PaymentController@charge');
 // Route::get('paymentsuccess', 'PaymentController@payment_success');
 // Route::get('paymenterror', 'PaymentController@payment_error');
-
+*/
 
 
   Route::get('/category/{category_id}', 'HelperController@getSubCategories');
@@ -224,48 +225,48 @@ Route::get('/password-reset/success', function () {
 
 // DONE account pages
 
-    // Route::get('/account', function () {
-    //     return view('front.account.index');
-    // });
+Route::get('/account', function () {
+    return view('front.account.index');
+});
 
-    // Route::get('/account/dashboard', function () {
-    //     return view('front.account.dashboard');
-    // });
+Route::get('/account/dashboard', function () {
+    return view('front.account.dashboard');
+});
 
-    // Route::get('/account/profile', function () {
-    //     return view('front.account.profile.index');
-    // });
+Route::get('/account/profile', function () {
+    return view('front.account.profile.index');
+});
 
-    // Route::get('/account/profile/edit', function () {
-    //     return view('front.account.profile.edit');
-    // });
+Route::get('/account/profile/edit', function () {
+    return view('front.account.profile.edit');
+});
 
 
 // account =>  IN PROGRESS orders
 
-    // Route::get('/account/orders', function () {
-    //     return view('front.account.orders.index');
-    // });
+Route::get('/account/orders', function () {
+    return view('front.account.orders.index');
+});
 
-    // Route::get('/account/orders/123456789012', function () {
-    //     return view('front.account.orders.details');
-    // });
+Route::get('/account/orders/123456789012', function () {
+    return view('front.account.orders.details');
+});
 
-    // Route::get('/account/orders/123456789012', function () {
-    //     return view('front.account.orders.details');
-    // });
+Route::get('/account/orders/123456789012', function () {
+    return view('front.account.orders.details');
+});
 
-    Route::get('/account/orders/review/123456789012', function () {
-        return view('front.account.orders.review');
-    });
+Route::get('/account/orders/review/123456789012', function () {
+    return view('front.account.orders.review');
+});
 
-    // Route::get('/account/orders/requirements/123456789012', function () {
-    //     return view('front.account.orders.requirements');
-    // });
+Route::get('/account/orders/requirements/123456789012', function () {
+    return view('front.account.orders.requirements');
+});
 
-    // Route::get('/account/orders/deliver/123456789012', function () {
-    //     return view('front.account.orders.deliver');
-    // });
+Route::get('/account/orders/deliver/123456789012', function () {
+    return view('front.account.orders.deliver');
+});
 
 
 
@@ -283,9 +284,9 @@ Route::get('/account/resolution/orders/123456789012', function () {
 
 // DONE: account => deals
 
-    // Route::get('/account/deals', function () {
-    //     return view('front.account.deals.list');
-    // });
+Route::get('/account/deals', function () {
+    return view('front.account.deals.list');
+});
 
 Route::get('/account/deals/paused', function () {
     return view('front.account.deals.list-paused');
@@ -301,67 +302,67 @@ Route::get('/account/deals/delete/1234', function () {
 
 // DONE: account => deals create
 
-    // Route::get('/account/deals/create', function () {
-    //     return view('front.account.deals.create-rules');
-    // });
+Route::get('/account/deals/create', function () {
+    return view('front.account.deals.create-rules');
+});
 
-    // Route::get('/account/deals/create/1234/info', function () {
-    //     return view('front.account.deals.create-info');
-    // });
+Route::get('/account/deals/create/1234/info', function () {
+    return view('front.account.deals.create-info');
+});
 
-    // Route::get('/account/deals/create/1234/pricing', function () {
-    //     return view('front.account.deals.create-pricing');
-    // });
+Route::get('/account/deals/create/1234/pricing', function () {
+    return view('front.account.deals.create-pricing');
+});
 
-    // Route::get('/account/deals/create/1234/requirements', function () {
-    //     return view('front.account.deals.create-requirements');
-    // });
+Route::get('/account/deals/create/1234/requirements', function () {
+    return view('front.account.deals.create-requirements');
+});
 
-    // Route::get('/account/deals/create/1234/publish', function () {
-    //     return view('front.account.deals.create-publish');
-    // });
+Route::get('/account/deals/create/1234/publish', function () {
+    return view('front.account.deals.create-publish');
+});
 
-    // Route::get('/account/deals/create/1234/success', function () {
-    //     return view('front.account.deals.create-success');
-    // });
+Route::get('/account/deals/create/1234/success', function () {
+    return view('front.account.deals.create-success');
+});
 
 // account => deals edit
 
-    // Route::get('/account/deals/edit/1234', function () {
-    //     return view('front.account.deals.edit-rules');
-    // });
+Route::get('/account/deals/edit/1234', function () {
+    return view('front.account.deals.edit-rules');
+});
 
-    // Route::get('/account/deals/edit/1234/rules', function () {
-    //     return view('front.account.deals.edit-rules');
-    // });
+Route::get('/account/deals/edit/1234/rules', function () {
+    return view('front.account.deals.edit-rules');
+});
 
-    // Route::get('/account/deals/edit/1234/info', function () {
-    //     return view('front.account.deals.edit-info');
-    // });
+Route::get('/account/deals/edit/1234/info', function () {
+    return view('front.account.deals.edit-info');
+});
 
-    // Route::get('/account/deals/edit/1234/pricing', function () {
-    //     return view('front.account.deals.edit-pricing');
-    // });
+Route::get('/account/deals/edit/1234/pricing', function () {
+    return view('front.account.deals.edit-pricing');
+});
 
-    // Route::get('/account/deals/edit/1234/requirements', function () {
-    //     return view('front.account.deals.edit-requirements');
-    // });
+Route::get('/account/deals/edit/1234/requirements', function () {
+    return view('front.account.deals.edit-requirements');
+});
 
-    // Route::get('/account/deals/edit/1234/publish', function () {
-    //     return view('front.account.deals.edit-publish');
-    // });
+Route::get('/account/deals/edit/1234/publish', function () {
+    return view('front.account.deals.edit-publish');
+});
 
-    // Route::get('/account/deals/edit/1234/success', function () {
-    //     return view('front.account.deals.edit-success');
-    // });
+Route::get('/account/deals/edit/1234/success', function () {
+    return view('front.account.deals.edit-success');
+});
 
 
 
 // account => projects
 // DONE
-    // Route::get('/account/projects', function () {
-    //     return view('front.account.projects.list');
-    // });
+Route::get('/account/projects', function () {
+    return view('front.account.projects.list');
+});
 
 Route::get('/account/projects/paused', function () {
     return view('front.account.projects.list-paused');
@@ -377,29 +378,29 @@ Route::get('/account/projects/delete/1234', function () {
 
 // DONE: account => projects create
 
-    // Route::get('/account/projects/create', function () {
-    //     return view('front.account.projects.create-rules');
-    // });
+Route::get('/account/projects/create', function () {
+    return view('front.account.projects.create-rules');
+});
 
-    // Route::get('/account/projects/create/1234/info', function () {
-    //     return view('front.account.projects.create-info');
-    // });
+Route::get('/account/projects/create/1234/info', function () {
+    return view('front.account.projects.create-info');
+});
 
-    // Route::get('/account/projects/create/1234/pricing', function () {
-    //     return view('front.account.projects.create-pricing');
-    // });
+Route::get('/account/projects/create/1234/pricing', function () {
+    return view('front.account.projects.create-pricing');
+});
 
-    // Route::get('/account/projects/create/1234/requirements', function () {
-    //     return view('front.account.projects.create-requirements');
-    // });
+Route::get('/account/projects/create/1234/requirements', function () {
+    return view('front.account.projects.create-requirements');
+});
 
-    // Route::get('/account/projects/create/1234/publish', function () {
-    //     return view('front.account.projects.create-publish');
-    // });
+Route::get('/account/projects/create/1234/publish', function () {
+    return view('front.account.projects.create-publish');
+});
 
-    // Route::get('/account/projects/create/1234/success', function () {
-    //     return view('front.account.projects.create-success');
-    // });
+Route::get('/account/projects/create/1234/success', function () {
+    return view('front.account.projects.create-success');
+});
 
 // account => projects edit - in progress
 
@@ -450,17 +451,17 @@ Route::get('/account/project-bids/rejected', function () {
 
 // account => favourites = IN PROGRESS
 
-    // Route::get('/account/favourites', function () {
-    //     return view('front.account.favourites.deals');
-    // });
+Route::get('/account/favourites', function () {
+    return view('front.account.favourites.deals');
+});
 
-    // Route::get('/account/favourites/deals', function () {
-    //     return view('front.account.favourites.deals');
-    // });
+Route::get('/account/favourites/deals', function () {
+    return view('front.account.favourites.deals');
+});
 
-    // Route::get('/account/favourites/projects', function () {
-    //     return view('front.account.favourites.projects');
-    // });
+Route::get('/account/favourites/projects', function () {
+    return view('front.account.favourites.projects');
+});
 
 
 // account => messages
