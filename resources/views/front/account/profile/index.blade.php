@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Profile - {{$user->name}}
+    Username - Profile
 @endsection
 
 
@@ -41,7 +41,7 @@
 
                 <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('account.dashboard')}}">Account</a></li>
+                        <li class="breadcrumb-item"><a href="/">Account</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Profile</li>
                     </ol>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="section">
                     <div class="section-title section-title-sm">
                         My Profile
-                        <a href="{{route('account.profile.edit')}}" class="btn btn-blue btn-sm pull-right">Edit Profile</a>
+                        <a href="/account/profile/edit" class="btn btn-blue btn-sm pull-right">Edit Profile</a>
                     </div>
                     <div>
 
@@ -69,7 +69,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                {{$user->name}}
+                                                Olawale Lawal
                                             </div>
                                         </div>
                                         <div>
@@ -80,7 +80,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                {{$user->username}}
+                                                username
                                             </div>
                                         </div>
                                         <div class="bg-eee">
@@ -91,7 +91,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                               {{$user->email}}
+                                               emailaddress@emaiw.ewfwe
                                             </div>
                                         </div>
                                         <div>
@@ -102,7 +102,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                {{$user->phone ?? '-'}}
+                                                080987676565
                                             </div>
                                         </div>
                                     </div>
@@ -135,7 +135,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                {{$user->gender ?? '-'}}
+                                                Male
                                             </div>
                                         </div>
                                         <div class="bg-eee">
@@ -146,7 +146,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                {{$user->dob ? $user->dob->format('Y-m-d') : '-'}}
+                                                Dec 25, 2021
                                             </div>
                                         </div>
                                     </div>
@@ -164,13 +164,13 @@
                                             Short Description:
                                         </div>
                                         <div class="mt-5">
-                                            {{$user->short_description ?? '-'}}
+                                            Frontend Developer with expecience in UIUX & Graphcis Design
                                         </div>
                                         <div class="text-fade mt-25">
                                             Long Description :
                                         </div>
                                         <div class="mt-5 text-justify">
-                                            {{$user->long_description ?? '-'}}
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                         </div>
                                     </div>
                                 </div>
@@ -183,32 +183,18 @@
                                 </div>
                                 <div class="b-1-ddd bt-none">
                                     <div class="text-left-right text-left-right-40-60">
-                                        @forelse  ($user->languages as $language => $level)
-                                            <div @if($loop->even) class="bg-eee" @endif>
-                                                    <div>
-                                                        <span class="fa fa-book"></span>
-                                                        <div class="overflow-hidden">
-                                                            {{$language}}
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        {{$level}}
-                                                    </div>
+                                        <div class="bg-eee">
+                                            <div>
+                                                <span class="fa fa-book"></span>
+                                                <div class="overflow-hidden">
+                                                    English
                                                 </div>
-                                        @empty
-                                           <div class="bg-eee">
-                                                    <div>
-                                                        <span class="fa fa-book"></span>
-                                                        <div class="overflow-hidden">
-                                                            Non
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        Not Language set
-                                                    </div>
-                                                </div>
-                                        @endforelse
-                                        {{-- <div>
+                                            </div>
+                                            <div>
+                                                Fluent
+                                            </div>
+                                        </div>
+                                        <div>
                                             <div>
                                                 <span class="fa fa-book"></span>
                                                 <div class="overflow-hidden">
@@ -218,8 +204,8 @@
                                             <div>
                                                 Average
                                             </div>
-                                        </div> --}}
-                                        {{-- <div class="bg-eee">
+                                        </div>
+                                        <div class="bg-eee">
                                             <div>
                                                 <span class="fa fa-book"></span>
                                                 <div class="overflow-hidden">
@@ -229,7 +215,7 @@
                                             <div>
                                                 Average
                                             </div>
-                                        </div> --}}
+                                        </div>
                                     </div>
                                 </div>
 
@@ -238,13 +224,31 @@
                                 </div>
                                 <div class="b-1-ddd bt-none">
                                     <div class="p-15 pt-20 item-labels item-labels-md item-labels-tags-all">
-                                        @forelse ($user->skillset as $skill)
-                                            <div class="item-labels-tags">
-                                                {{$skill}}
-                                            </div>
-                                        @empty
-                                            no skillset 
-                                        @endforelse
+                                        
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+                                        
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+
+                                        <div class="item-labels-tags">
+                                            Skills 1
+                                        </div>
+
                                     </div>
                                 </div>
 

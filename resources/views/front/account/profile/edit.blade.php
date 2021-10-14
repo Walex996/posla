@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Edit Profile - {{$user->name}}
+    Edit Profile
 @endsection
 
 
@@ -123,9 +123,8 @@
                     </div>
                     <div>
 
-                        <form action="{{route('account.profile.update')}}" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            @method('PUT')
+                        <form action="/" method="POST" enctype="multipart/form-data">
+                            
                             <div class="row">
                                 <div class="col-sm-6 mb-30">
 
@@ -138,35 +137,35 @@
                                             <label for="name" class="control-label">
                                                 Full name:
                                             </label>
-                                            <input type="text" name="name" class="form-control" placeholder="" value="{{$user->name}}">
+                                            <input type="text" name="name" class="form-control" placeholder="" value="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="username" class="control-label">
                                                 Username:
                                             </label>
-                                            <input type="text" name="username" class="form-control" disabled readonly value="{{$user->username}}"">
+                                            <input type="text" name="username" class="form-control" disabled readonly value="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="email" class="control-label">
                                                 Email Address:
                                             </label>
-                                            <input type="email" name="email" class="form-control" disabled readonly value="{{$user->email}}">
+                                            <input type="email" name="email" class="form-control" disabled readonly value="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="phone" class="control-label">
                                                 Phone Number:
                                             </label>
-                                            <input type="tel" name="phone" class="form-control" value="{{$user->phone}}">
+                                            <input type="tel" name="phone" class="form-control" value="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="dob" class="control-label">
                                                 Date of Birth:
                                             </label>
-                                            <input type="date" name="dob" class="form-control" value="{{$user->dob ? $user->dob->format('Y-m-d') : ''}}">
+                                            <input type="date" name="dob" class="form-control" value="">
                                         </div>
 
                                         <div class="form-group">
@@ -175,8 +174,8 @@
                                             </label>
                                             <select name="gender" id="gender">
                                                 <option value="">- Select -</option>
-                                                <option value="male" @if ($user->gender == 'male') selected @endif>Male</option>
-                                                <option value="female" @if ($user->gender == 'female' ) selected @endif>Female</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
                                             </select>
                                         </div>
 
@@ -213,7 +212,6 @@
                                         </div>
 
                                         {{-- if profile picture exist --}}
-                                        @if($user->getFirstMediaUrl('profile'))
                                             <div class="">
                                                 <div class="pull-left mr-10">
                                                     <label class="control-label mt-15">
@@ -223,12 +221,11 @@
                                                 <div class="overflow-hidden">
                                                     <div class="">
                                                         <div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; background: #000;">
-                                                            <img src="{{asset($user->getFirstMediaUrl('profile'))}}" alt="Firstname lastname" class="dp-cover" />
+                                                            <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="Firstname lastname" class="dp-cover" />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        @endif
                                         {{-- end if --}}
 
                                     </div>
@@ -243,14 +240,14 @@
                                             <label for="short_description" class="control-label">
                                                 Short Description:
                                             </label>
-                                            <input type="text" name="short_description" id="short_description" class="form-control" value="{{$user->short_description}}">
+                                            <input type="text" name="short_description" id="short_description" class="form-control" value="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="long_description" class="control-label">
                                                 Full Description:
                                             </label>
-                                            <textarea name="long_description" id="long_description" class="form-control resize-none" style="height: 200px;">{{$user->long_description}}</textarea>
+                                            <textarea name="long_description" id="long_description" class="form-control resize-none" style="height: 200px;"></textarea>
                                         </div>
 
                                     </div>
@@ -273,18 +270,16 @@
                                         </div>
 
                                         <div class="item-labels item-labels-md item-labels-tags-all mt-5">
-                                            @foreach ($user->skillset as $skill)
-                                                <div class="item-labels-tags">
-                                                    {{$skill}}
-                                                    <input type="hidden" name="skillset[]" readonly value="{{$skill}}">
-                                                    <span class="fa fa-times item-labels-tags-close"></span>
-                                                </div> 
-                                            @endforeach
-                                            {{-- <div class="item-labels-tags">
+                                            <div class="item-labels-tags">
+                                                Graphics Design
+                                                <input type="hidden" name="skillset[]" readonly value="">
+                                                <span class="fa fa-times item-labels-tags-close"></span>
+                                            </div>
+                                            <div class="item-labels-tags">
                                                 iOS App Designer
                                                 <input type="hidden" name="skillset[]" readonly value="Mobile App">
                                                 <span class="fa fa-times item-labels-tags-close"></span>
-                                            </div> --}}
+                                            </div>
                                         </div>
 
                                     </div>
@@ -315,26 +310,24 @@
                                         <div class="table-responsive b-1-ddd mt-10">
                                             <table class="table table-tr-lines">
                                                 <tbody class="language-row-all">
-                                                    @foreach ($user->languages as $language => $level)
-                                                        <tr>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="hidden" name="languages[{{$language}}]" value="{{$level}}">
-                                                                    {{$language}}
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="text-fade">
-                                                                    {{$level}}
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div>
-                                                                    <span class="fa fa-times icon-red cursor-pointer language-row-close"></span>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    @endforeach
+                                                    <tr>
+                                                        <td>
+                                                            <div>
+                                                                English
+                                                            </div>
+                                                             <input type="hidden" name="languages[French]" value="average">
+                                                        </td>
+                                                        <td>
+                                                            <div class="text-fade">
+                                                                Fluent
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <span class="fa fa-times icon-red cursor-pointer language-row-close"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                     <tr>
                                                         <td>
                                                             <div>
