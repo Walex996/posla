@@ -37,12 +37,16 @@
                     <div class="mt-10">
                         <div class="mw-300 mx-auto text-center">
                             <div>
-                                <a href="/" class="btn btn-blue btn-block">
+                                <a href="/" class="btn btn-blue btn-block m-0">
                                     Goto Homepage
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <div class="mw-300 mx-auto text-center">
                             <div>
-                               <button type="submit" class="btn btn-orange btn-block ">
+                                <button type="submit" class="btn btn-orange btn-block m-0">
                                     Resend Link
                                 </button>
                             </div>

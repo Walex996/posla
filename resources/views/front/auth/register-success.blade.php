@@ -19,14 +19,14 @@
     
     <div class="container">
         <div class="mw-600 pt-20 pb-50 mx-auto bg-fff">
-        <form action="{{route('verification.resend')}}" method="POST">
+        <form action="" method="POST">
             @csrf
             <div class="page-alert">
                 <div>
                     <img src="{{ asset('/img/app/icons/envelope.jpg') }}" class="dp-contain" />
                 </div>
                 <div class="pt-15">
-                    {{session('resent') ? 'Email Verification Link Re-sent' : 'Welcome, Please Verify Your Email'}}
+                    Welcome, Please Verify Your Email
                     
                 </div>
                 <div>

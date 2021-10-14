@@ -152,21 +152,21 @@ Route::group(['middleware' => ['auth','verified']],function () {
 
 //DONE: auth
 
-    // Route::get('/welcome', function () {
-    //     return view('front.auth.register-success');
-    // });
+Route::get('/welcome', function () {
+    return view('front.auth.register-success');
+});
 
-    // Route::get('/forgot-password/success', function () {
-    //     return view('front.auth.forgot-password-success');
-    // });
+Route::get('/forgot-password/success', function () {
+    return view('front.auth.forgot-password-success');
+});
 
-    // Route::get('/password-reset', function () {
-    //     return view('front.auth.password-reset');
-    // });
+Route::get('/password-reset', function () {
+    return view('front.auth.password-reset');
+});
 
-    // Route::get('/password-reset/success', function () {
-    //     return view('front.auth.password-reset-success');
-    // });
+Route::get('/password-reset/success', function () {
+    return view('front.auth.password-reset-success');
+});
 
 
 // Done: list pages

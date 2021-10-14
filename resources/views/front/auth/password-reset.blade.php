@@ -33,13 +33,13 @@
             </div>
         
             @include('layouts.common.errors-messages')
-            <form ction="{{ route('password.update') }}" class="mw-400 mt-30 mx-auto p-30 b-1-ddd" method="POST">
+            <form ction="" class="mw-400 mt-30 mx-auto p-30 b-1-ddd" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="email" class="control-label">
                         Email Address:
                     </label>
-                    <input type="email" id="email" name="email" class="form-control" value="{{ old('email') ?? app('request')->input('email') }}">
+                    <input type="email" id="email" name="email" class="form-control" value="">
                 </div>
                 <div class="input-group mb-10">
                     <label for="password" class="control-label">
