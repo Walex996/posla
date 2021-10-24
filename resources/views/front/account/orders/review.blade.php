@@ -156,14 +156,14 @@
                         </div>
                         <div class="col-sm-6 col-lg-12">
                             <div class="floated-content p-10 mb-30 b-1-ddd">
-                                <a href="/deal/1234" class="pull-left mr-10 d-block d-lg-none d-xl-block overflow-hidden" style="width: 70px; height: 70px;">
+                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left mr-10 d-block d-lg-none d-xl-block overflow-hidden" style="width: 70px; height: 70px;">
                                     <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
                                 </a>
-                                <a href="/deal/1234" class="mr-10 d-none d-lg-block d-xl-none overflow-hidden" style="width: 70px; height: 70px;">
+                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="mr-10 d-none d-lg-block d-xl-none overflow-hidden" style="width: 70px; height: 70px;">
                                     <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
                                 </a>
                                 <div class="overflow-hidden">
-                                    <a href="/deal/1234" class="font-bold hover-underline">
+                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="font-bold hover-underline">
                                         I will design a beautiful logo for your business
                                     </a>
                                     <div class="text-fade mt-5">

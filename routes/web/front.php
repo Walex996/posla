@@ -277,8 +277,8 @@ Route::get('/account/resolution/orders', function () {
 });
 
 Route::get('/account/resolution/orders/123456789012', function () {
-    return view('front.account.resolution.each-seller');            // for seller only
-    // return view('front.account.resolution.each-buyer');          // for buyer only
+    // return view('front.account.resolution.each-seller');            // for seller only
+    return view('front.account.resolution.each-buyer');          // for buyer only
 });
 
 

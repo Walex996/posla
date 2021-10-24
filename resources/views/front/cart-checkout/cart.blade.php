@@ -58,14 +58,14 @@
                                     <tr>
                                         <td>
                                             <div class="overflow-hidden">
-                                                <a href="/deal/12345678" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
+                                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
                                                     <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                 </a>
-                                                <a href="/deal/12345678" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
+                                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
                                                     <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                 </a>
                                                 <div class="overflow-hidden">
-                                                    <a href="/deal/12345678" class="font-bold mt-10 d-inline-block hover-underline">
+                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="font-bold mt-10 d-inline-block hover-underline">
                                                         deal title here
                                                     </a>
                                                     <div class="text-fade mt-10">

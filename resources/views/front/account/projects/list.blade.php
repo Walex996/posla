@@ -91,7 +91,7 @@
                                             Manage
                                         </div>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                            <a class="dropdown-item" href="/project/12345678">
+                                            <a class="dropdown-item" href="/project/c1d00230-a423-4b84-a121-7105239ff8d8678">
                                                 Preview
                                             </a>
                                             <a class="dropdown-item" href="/account/projects/pause/1234">
@@ -118,7 +118,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/project/12345678">
+                                        <a class="dropdown-item" href="/project/c1d00230-a423-4b84-a121-7105239ff8d8678">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/projects/pause/1234">

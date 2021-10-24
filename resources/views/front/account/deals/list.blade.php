@@ -121,7 +121,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/deal/12345678">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">
@@ -149,7 +149,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/deal/12345678">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">
@@ -177,7 +177,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/deal/12345678">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">
@@ -205,7 +205,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/deal/12345678">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">
@@ -233,7 +233,7 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="/deal/12345678">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">

@@ -136,7 +136,7 @@
             $('#simply-countdown-losange').simplyCountdown({
                 year: 2021,
                 month: 10,
-                day:  28,
+                day:  29,
                 hours: 10,
                 minutes: 05,
                 seconds: 00,
@@ -171,8 +171,6 @@
 
                     
                     {{-- order-status-not-started --}}
-                    {{-- order-status-in-progress --}}
-                    {{-- order-status-completed --}}
                     {{--                     
                     <div class="order-status order-status-not-started">
                         <div class="pull-right">
@@ -185,6 +183,7 @@
                     </div>
                     --}}
 
+                    {{-- order-status-in-progress --}}
                     <div class="order-status order-status-in-progress">
                         <div class="pull-right">
                             $45
@@ -195,6 +194,7 @@
                         </div>
                     </div>
                     
+                    {{-- order-status-completed --}}
                     {{--                     
                     <div class="order-status order-status-completed">
                         <div class="pull-right">
@@ -219,14 +219,14 @@
                                         <tr>
                                             <td>
                                                 <div class="overflow-hidden">
-                                                    <a href="/deal/12345678" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
+                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
                                                         <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                     </a>
-                                                    <a href="/deal/12345678" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
+                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
                                                         <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
                                                     </a>
                                                     <div class="overflow-hidden">
-                                                        <a href="/deal/12345678" class="font-bold mt-10 d-inline-block hover-underline">
+                                                        <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="font-bold mt-10 d-inline-block hover-underline">
                                                             I will design a beautiful logo for your business
                                                         </a>
                                                         <div class="text-fade mt-10">
@@ -358,7 +358,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="/project/12345" class="btn btn-transparent-black btn-sm">
+                                            <a href="/project/c1d00230-a423-4b84-a121-7105239ff8d8" class="btn btn-transparent-black btn-sm">
                                                 View project details
                                             </a>
                                         </div>
@@ -894,7 +894,7 @@
                                     <div class="text-center">
                                         {{-- if it's an image, display it directly --}}
                                         <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
-                                        {{-- else, display the right stuff --}}
+                                        {{-- else, display the right icon --}}
                                         {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" /> --}}
                                         {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" /> --}}
                                         {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" /> --}}
@@ -1455,7 +1455,7 @@
                             </div>
                         </div>
                         <div>
-                            <a href="/project/12345" class="btn btn-transparent-black btn-sm">
+                            <a href="/project/c1d00230-a423-4b84-a121-7105239ff8d8" class="btn btn-transparent-black btn-sm">
                                 View project details
                             </a>
                         </div>
