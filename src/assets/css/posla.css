@@ -1,0 +1,43 @@
+@layer base {
+    @font-face {
+        font-family: "Boing";
+        font-weight: 300;
+        src: local("Boing"), url("../fonts/Boing/Boing-Light.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Boing";
+        font-weight: 400;
+        src: local("Boing"), url("../fonts/Boing/Boing-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Boing";
+        font-weight: 500;
+        src: local("Boing"), url("../fonts/Boing/Boing-Medium.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Boing";
+        font-weight: 600;
+        src: local("Boing"), url("../fonts/Boing/Boing-Semibold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Boing";
+        font-weight: 700;
+        src: local("Boing"), url("../fonts/Boing/Boing-Bold.ttf") format("truetype");
+    }
+
+    body {
+        color: #333;
+        font-size: 15px;
+        font-family: "Boing", sans-serif;
+    }
+}
+
+@layer utilities {
+    .font-tiny {
+        font-size: 10px;
+    }
+}
