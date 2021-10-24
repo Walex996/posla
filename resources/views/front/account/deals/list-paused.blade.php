@@ -93,13 +93,9 @@
                                         <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
-                                        <a class="dropdown-item cursor-pointer" onclick="event.preventDefault(); document.getElementById('resume-form').submit();">
+                                        <a class="dropdown-item cursor-pointer">
                                             Resume
                                         </a>
-                                        <form id="resume-form" action="" method="POST" class="d-none">
-                                            @csrf
-                                            {{-- hidden input with deal id --}}
-                                        </form>
                                         <a class="dropdown-item" href="/account/deals/edit/1234">
                                             Edit
                                         </a>
@@ -124,13 +120,9 @@
                                         <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
-                                        <a class="dropdown-item cursor-pointer" onclick="event.preventDefault(); document.getElementById('resume-form').submit();">
+                                        <a class="dropdown-item cursor-pointer">
                                             Resume
                                         </a>
-                                        <form id="resume-form" action="" method="POST" class="d-none">
-                                            @csrf
-                                            {{-- hidden input with deal id --}}
-                                        </form>
                                         <a class="dropdown-item" href="/account/deals/edit/1234">
                                             Edit
                                         </a>
@@ -155,13 +147,9 @@
                                         <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
-                                        <a class="dropdown-item cursor-pointer" onclick="event.preventDefault(); document.getElementById('resume-form').submit();">
+                                        <a class="dropdown-item cursor-pointer">
                                             Resume
                                         </a>
-                                        <form id="resume-form" action="" method="POST" class="d-none">
-                                            @csrf
-                                            {{-- hidden input with deal id --}}
-                                        </form>
                                         <a class="dropdown-item" href="/account/deals/edit/1234">
                                             Edit
                                         </a>

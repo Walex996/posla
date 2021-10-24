@@ -78,9 +78,9 @@
                     
 
                         <div class="deal-list deal-list-mini mt-20 row">
-                            @forelse ($deals as $deal)
+                            
                             <div class="col-sm-6 col-lg-4 deal-mgmt">
-                                @include('front.common.deal', ['deal' => $deal])
+                                @include('front.common.deal')
                                 <div class="dropdown">
                                     <label class="label label-fff label-sm mr-5 pull-right" style="margin-top: 7px;">
                                         Pending Approval
@@ -90,13 +90,13 @@
                                         Manage
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                        <a class="dropdown-item" href="{{route('front.deal.detail', $deal->id)}}">
+                                        <a class="dropdown-item" href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f">
                                             Preview
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/pause/1234">
                                             Pause
                                         </a>
-                                        <a class="dropdown-item" href="{{route('deal.edit.rule', $deal->id)}}">
+                                        <a class="dropdown-item" href="/account/deals/edit/1234">
                                             Edit
                                         </a>
                                         <a class="dropdown-item" href="/account/deals/delete/1234">
@@ -105,10 +105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            @empty
-
-                            @endforelse
-
+                            
 
                             <div class="col-sm-6 col-lg-4 deal-mgmt">
                                 @include('front.common.deal')
