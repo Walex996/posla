@@ -135,8 +135,8 @@
         $(document).ready(function(){
             $('#simply-countdown-losange').simplyCountdown({
                 year: 2021,
-                month: 06,
-                day:  11,
+                month: 10,
+                day:  28,
                 hours: 10,
                 minutes: 05,
                 seconds: 00,

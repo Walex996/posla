@@ -315,7 +315,7 @@
                                                             <div>
                                                                 English
                                                             </div>
-                                                             <input type="hidden" name="languages[French]" value="average">
+                                                             <input type="hidden" name="" value="average">
                                                         </td>
                                                         <td>
                                                             <div class="text-fade">
@@ -333,7 +333,7 @@
                                                             <div>
                                                                 French
                                                             </div>
-                                                             <input type="hidden" name="languages[French]" value="average">
+                                                             <input type="hidden" name="" value="average">
                                                         </td>
                                                         <td>
                                                             <div class="text-fade">
@@ -351,7 +351,7 @@
                                                             <div>
                                                                 Spanish
                                                             </div>
-                                                             <input type="hidden" name="languages[Spanish]" value="slightly">
+                                                             <input type="hidden" name="" value="slightly">
                                                         </td>
                                                         <td>
                                                             <div class="text-fade">

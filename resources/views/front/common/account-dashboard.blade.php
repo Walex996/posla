@@ -37,6 +37,8 @@
                         <div class="project-list project-list-wide">
                             {{-- maximum of 3 projects where status == active --}}
                             @include('front.common.project')
+                            @include('front.common.project')
+                            @include('front.common.project')
                         </div>
                     </div>
                     <div>

@@ -6,7 +6,7 @@
             <img src="{{asset('img/app/samples/user.png')}}"alt="User name" class="dp-cover" />
         </div>
         <div class="font-bold">
-            Olawale Laeal
+            Olawale Lawal
         </div>
         <div class="text-fade">
             short description short description short description short description
@@ -39,13 +39,13 @@
 </div>
 
 {{-- if vacation mode is on --}}
-{{-- 
+
 <div class="section p-0 mt-0 mb-0 bg-red overflow-hidden" style="border-top-left-radius: 0; border-top-right-radius: 0;">
     <a href="/account/settings/vacation-mode" class="pt-5 pb-5 pl-10 pr-10 d-block text-fff text-center">
         Vacation Mode [On]
     </a>
 </div>
---}}
+
 {{-- end if --}}
 
 <div class="section p-0 mt-5 account-sidebar-links overflow-hidden">
@@ -110,12 +110,9 @@
         </a>
     </div>
     <div>
-        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            {{ __('Logout') }}
+        <a href="/">
+            Logout
         </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
     </div>
 </div>
 
