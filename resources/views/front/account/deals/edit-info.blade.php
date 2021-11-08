@@ -71,8 +71,8 @@
                 
                 <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('account.dashboard')}}">Account</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('account.deals')}}">Deals</a></li>
+                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
+                        <li class="breadcrumb-item"><a href="/account/deals">Deals</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Edit Deal</li>
                     </ol>
                 </div>
@@ -89,9 +89,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deal.edit.info.update', $deal->id)}}" method="POST" enctype="multipart/form-data">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/edit/1234/pricing" enctype="multipart/form-data">
+                                    
                                     <div class="b-1-ddd">
 
                                         <div class="p-20">
@@ -102,7 +101,7 @@
                                                         <label for="title" class="control-label">
                                                             Deal Title:
                                                         </label>
-                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I will...">{{old('title') ?? $deal->title}}</textarea>
+                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I will..."></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -110,10 +109,12 @@
                                                         <label for="category" class="control-label">
                                                             Category:
                                                         </label>
-                                                        <select name="category_id" id="category" onchange="fetchSubCategory()" required id="category">
-                                                            @foreach ($categories as $category)
-                                                                <option value="{{$category->id}}" @if (old('category_id') == $category->id ) selected @elseif ($deal->category_id == $category->id)  selected @endif>{{$category->name}}</option>
-                                                            @endforeach
+                                                        <select name="category_id" id="category" required id="category">
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
@@ -122,9 +123,10 @@
                                                         </label>
                                                         <select name="subcategory_id" id="subCategory">
                                                             <option value="">- Select -</option>
-                                                            @foreach ($deal->category->children as $subcategory)
-                                                                <option value="{{$subcategory->id}}"  @if (old('subcategory_id') == $subcategory->id ) selected @elseif  ($deal->subcategory->id == $subcategory->id)  selected @endif>{{$subcategory->name}}</option>
-                                                            @endforeach
+                                                            <option value="">Subcategory 1</option>
+                                                            <option value="">Subcategory 1</option>
+                                                            <option value="">Subcategory 1</option>
+                                                            <option value="">Subcategory 1</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -134,28 +136,27 @@
                                             
                                             <div class="row">
                                                 <div class="col-sm-12 file-upload-box-container">
-                                                    @forelse ($deal->media as $media)
+                                                    
                                                         <div class="file-upload-box">
                                                             <label class="" for="picture_2">
-                                                                <img src="{{asset($media->getUrl())}}" alt="">
-                                                                {{-- <div>
+                                                                <div>
                                                                     <span class="fa fa-plus icon-50"></span>
                                                                 </div>
                                                                 <div>
                                                                     Add Picture
                                                                     <br />
                                                                     (jpg, jpeg, png, gif)
-                                                                </div> --}}
+                                                                </div>
                                                                 <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
                                                                     <span class="fa fa-times"></span>
                                                                     Delete
                                                                 </button>
-                                                                <input type="checkbox" name="delete_image[]" value="{{$media->id}}">
+                                                                <input type="checkbox" name="delete_image[]" value="" class="d-none">
+                                                                {{-- Hidden checkbox for delete --}}
                                                             </label>
-                                                            {{-- <input type="file" name="picture_2" id="picture_2" accept="image/*" /> --}}
+                                                            <input type="file" name="picture_2" id="picture_2" accept="image/*" />
                                                         </div> 
-                                                        {{-- Hidden checkbox for delete --}}
-                                                    @empty
+                                                    
                                                         <div class="file-upload-box">
                                                             <label class="" for="picture_3">
                                                                 <div>
@@ -172,8 +173,7 @@
                                                                 </button>
                                                             </label>
                                                             <input type="file"  name="pictures[]" id="picture_3" accept="image/*" />
-                                                        </div>  
-                                                    @endforelse
+                                                        </div> 
                                                     
                                                     
                                                     <div class="file-upload-box">
@@ -204,7 +204,7 @@
                                                         <label for="description" class="control-label">
                                                             Deal Description:
                                                         </label>
-                                                        <textarea name="description" id="description" class="form-control resize-none" style="height: 99px;">{{$deal->description}}</textarea>
+                                                        <textarea name="description" id="description" class="form-control resize-none" style="height: 99px;"></textarea>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="visibility" class="control-label">
@@ -212,8 +212,8 @@
                                                         </label>
                                                         <select name="status" id="visibility">
                                                             <option value="">- Select -</option>
-                                                            <option value="1" @if($deal->status == 1) selected @endif>Public</option>
-                                                            <option value="0" @if($deal->status == 0) selected @endif >Private</option>
+                                                            <option value="1">Public</option>
+                                                            <option value="0">Private</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -224,19 +224,22 @@
                                                         </label>
 
                                                         {{-- let's do comman separated value for now.. onsave, explode input with comma --}}
-                                                        <input type="search" name="tags" class="form-control" placeholder="Search" value="{{$deal->getTagsList()}}">
+                                                        <input type="search" name="tags" class="form-control" placeholder="Search" value="">
                                                     </div>
                                                     <div>
                                                         <div class="item-labels item-labels-tags-all" style="margin-left: -2px;">
-                                                            @forelse ($deal->tags as $tag)
-                                                                <div class="item-labels-tags cursor-pointer">
-                                                                    {{$tag}}
-                                                                </div>
-                                                            @empty
-                                                                <div class="item-labels-tags cursor-pointer">
-                                                                -
-                                                                </div>
-                                                            @endforelse
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                tag here
+                                                            </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                tag here
+                                                            </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                tag here
+                                                            </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                tag here
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -246,7 +249,7 @@
 
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deal.edit.rule', $deal->id)}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/edit/1234/rules" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

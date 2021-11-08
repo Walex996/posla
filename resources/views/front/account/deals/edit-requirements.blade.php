@@ -153,9 +153,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deal.edit.requirement.update', $deal->id)}}" method="POST">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/edit/1234/publish">
+                                    
                                     <div class="b-1-ddd">
 
                                         <div class="p-20">
@@ -173,8 +172,6 @@
 
                                                 <div class="mt-20 deal-crud-requirement-all">
 
-                                                    {{-- start: foreach loop --}}
-                                                    @forelse ($deal->requirements as $requirement)
                                                         <div class="deal-crud-requirement">
                                                             <div>
                                                                 <div class="pull-right">
@@ -187,34 +184,13 @@
                                                                 </div>
                                                             </div>
                                                             <div>
-                                                                <input name="questions[{{$requirement->id}}][question]" class="form-control  mt-10" type="text" value="{{$requirement->question}}" placeholder=" What is your age range?">
-                                                                {{-- What is your printer configuration format? --}}
+                                                                What is your age range something?
                                                             </div>
                                                             <input type="hidden" name="">
                                                         </div>
                                                         
-                                                    @empty
+                                                        
                                                         <div class="deal-crud-requirement">
-                                                            <div>
-                                                                <div class="pull-right">
-                                                                    <button type="button" class="btn btn-danger btn-xs deal-crud-requirement-cancel">
-                                                                        <span class="fa fa-times"></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="text-fade overflow-hidden">
-                                                                    Free Text
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                {{-- What is your age range something? --}}
-                                                            </div>
-                                                            <input type="hidden" name="">
-                                                        </div>
-                                                        
-                                                    @endforelse
-                                                        
-                                                        
-                                                        {{-- <div class="deal-crud-requirement">
                                                             <div>
                                                                 <div class="pull-right">
                                                                     <button type="button" class="btn btn-danger btn-xs deal-crud-requirement-cancel">
@@ -229,8 +205,7 @@
                                                                 What color variations would you like?
                                                             </div>
                                                             <input type="hidden" name="">
-                                                        </div> --}}
-                                                    {{-- end: foreach loop --}}
+                                                        </div>
 
                                                 </div>
 
@@ -248,7 +223,7 @@
                                         
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deal.edit.pricing', $deal->id)}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/edit/1234/pricing" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

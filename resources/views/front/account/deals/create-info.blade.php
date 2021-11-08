@@ -89,7 +89,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deals.create.save.info')}}" method="POST" enctype="multipart/form-data">
+                                <form action="/account/deals/create/1234/pricing" enctype="multipart/form-data">
                                     @csrf
                                     <div class="b-1-ddd">
 
@@ -101,7 +101,7 @@
                                                         <label for="title" class="control-label">
                                                             Deal Title:
                                                         </label>
-                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I will...">{{old('title') ?? session()->get('title')}}</textarea>
+                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I will..."></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -111,9 +111,11 @@
                                                         </label>
                                                         <select name="category_id" id="category" onchange="fetchSubCategory()" required>
                                                             <option value="" selected disabled>- Select -</option>
-                                                            @foreach ($categories as $category)
-                                                                <option value="{{$category->id}}" @if ($category->id == old('category_id')) selected @endif>{{$category->name}}</option>
-                                                            @endforeach
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">Category 1</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
@@ -121,7 +123,13 @@
                                                             Sub Category:
                                                         </label>
                                                         <select name="subcategory_id" id="subCategory" required>
-                                                                <option value="" >- Select -</option>
+                                                            <option value="" >- Select -</option>
+                                                            <option value="" >Sub category 1</option>
+                                                            <option value="" >Sub category 1</option>
+                                                            <option value="" >Sub category 1</option>
+                                                            <option value="" >Sub category 1</option>
+                                                            <option value="" >Sub category 1</option>
+                                                            <option value="" >Sub category 1</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -251,7 +259,7 @@
                                                         <label for="description" class="control-label">
                                                             Deal Description:
                                                         </label>
-                                                        <textarea name="description" id="description" class="form-control resize-none" style="height: 99px;">{{old('description')}}</textarea>
+                                                        <textarea name="description" id="description" class="form-control resize-none" style="height: 99px;"></textarea>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="visibility" class="control-label">
@@ -277,6 +285,15 @@
                                                             <div class="item-labels-tags cursor-pointer">
                                                                 Mobile App
                                                             </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                Mobile App
+                                                            </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                Mobile App
+                                                            </div>
+                                                            <div class="item-labels-tags cursor-pointer">
+                                                                Mobile App
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -286,7 +303,7 @@
 
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deals.create.rule')}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/create" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

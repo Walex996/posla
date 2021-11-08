@@ -58,9 +58,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deal.edit.publish.update', $deal->id)}}" method="POST">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/edit/1234/success">
+                                    
                                     <div class="b-1-ddd">
 
                                         <div class="p-20">
@@ -107,7 +106,7 @@
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <label class="checkbox-inline cursor-pointer d-block">
-                                                            <input type="checkbox" name="boosted" @if($deal->boosted) checked @endif class="mr-10 pull-left" value="1">
+                                                            <input type="checkbox" name="boosted" class="mr-10 pull-left" value="1">
                                                             <div class="overflow-hidden">
                                                                 Show my deal to more buyers
                                                             </div>
@@ -142,7 +141,7 @@
                                         
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deal.edit.requirement', $deal->id)}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/edit/1234/requirements" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

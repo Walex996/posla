@@ -7,12 +7,7 @@
 
 
 @section('og')
-    <meta name="description" content="Create Deal - Posla">
-    <meta name="keywords" content="create, deal, user, Posla, Posla.com">
-    <meta name="tags" content="create deal dashboard user posla posla.com">
-    <meta property="og:type" content="home"/>
-    <meta property="og:title" content="{{ config('app.name') }}"/>
-    <meta property="og:description" content="{{ config('app.name') }}"/>
+    
 @endsection
 
 
@@ -134,9 +129,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deals.create.save.pricing', $deal->id)}}" method="POST">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/create/1234/requirements">
+                                    
                                     <input type="hidden" name="stage" value="pricing">
                                     <div class="b-1-ddd">
 
@@ -344,7 +338,7 @@
 
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deal.edit.info', $deal->id)}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/create/1234/info" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

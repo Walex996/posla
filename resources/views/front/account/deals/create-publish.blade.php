@@ -58,9 +58,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deals.create.save.publish', $deal->id)}}" method="POST">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/create/1234/success">
+                                    
                                     <input type="hidden" name="stage" value="publish">
                                     <div class="b-1-ddd">
 
@@ -143,7 +142,7 @@
                                         
                                         <div class="p-15 mt-15 bt-1-ddd floated-content">
                                             <div class="pull-right">
-                                                <a href="{{route('deal.edit.requirement', $deal->id)}}" class="btn btn-transparent-black btn-sm icon-left">
+                                                <a href="/account/deals/create/1234/requirements" class="btn btn-transparent-black btn-sm icon-left">
                                                     <span class="fa fa-angle-left"></span>
                                                     Back
                                                 </a>

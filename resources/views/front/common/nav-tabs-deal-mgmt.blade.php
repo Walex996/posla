@@ -1,11 +1,7 @@
 <ul class="nav nav-tabs posla-tabs posla-tabs-5 nav-tabs-style-1 nav-tabs-style-1-lg-responsive">
     
     <li class="nav-item">
-        @if(!isset($deal))
-            <a @if($active > 1) href="{{route('deals.create.rule')}}" @endif class="nav-link @if($active == 1) active @endif">
-        @else
-            <a @if($active > 1) href="{{route('deal.edit.rule', $deal->id)}}" @endif class="nav-link @if($active == 1) active @endif">
-        @endif
+        <a href="/account/deals/create" class="nav-link active">
             <div class="font-20 font-bold">
                 1
             </div>
@@ -15,7 +11,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a @if($active > 2) href="{{route('deal.edit.info', $deal->id)}}" @endif class="nav-link @if($active == 2) active @endif">
+        <a href="/account/deals/create/1234/info" class="nav-link">
             <div class="font-20 font-bold">
                 2
             </div>
@@ -25,7 +21,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a @if($active > 3) href="{{route('deal.edit.pricing', $deal->id)}}" @endif class="nav-link @if($active == 3) active @endif">
+        <a href="/account/deals/create/1234/pricing" class="nav-link">
             <div class="font-20 font-bold">
                 3
             </div>
@@ -35,7 +31,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a @if($active > 4) href="{{route('deal.edit.requirement', $deal->id)}}" @endif class="nav-link @if($active == 4) active @endif">
+        <a href="/account/deals/create/1234/requirement" class="nav-link">
             <div class="font-20 font-bold">
                 4
             </div>
@@ -45,7 +41,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a @if($active > 5) href="/account/deals/edit/1234/publish" @endif class="nav-link @if($active == 5) active @endif">
+        <a href="/account/deals/edit/1234/publish" class="nav-link">
             <div class="font-20 font-bold">
                 5
             </div>

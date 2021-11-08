@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Edit - Deal - Account - {{$deal->title}}
+    Edit - Deal - Account
 @endsection
 
 
@@ -41,8 +41,8 @@
                 
                 <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('account.dashboard')}}">Account</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('account.deals')}}">Deals</a></li>
+                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
+                        <li class="breadcrumb-item"><a href="/account/deals">Deals</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Edit Deal</li>
                     </ol>
                 </div>
@@ -58,9 +58,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('deal.edit.rule.update', $deal->id)}}" method="POST">
-                                    @csrf
-                                    @method('PUT')
+                                <form action="/account/deals/edit/1234/info">
+                                    
                                     <div class="b-1-ddd">
 
                                         <div class="p-20">
