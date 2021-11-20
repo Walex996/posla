@@ -62,7 +62,7 @@
                             <li class="nav-item">
                                 <a href="/account/favourites/deals" class="nav-link active">
                                     <div class="text-center">
-                                        Deals ({{$user->dealFavourites->count()}})
+                                        Deals (10)
                                     </div>
                                 </a>
                             </li>
@@ -77,14 +77,9 @@
                     
 
                         <div class="deal-list deal-list-mini mt-20 row">
+
+                            
                             <div class="col-sm-6 col-lg-4 deal-mgmt">
-                                @foreach ($user->dealFavourites as $favourite)
-                                    @include('front.common.deal', ['deal' => $favourite->deal])
-                                @endforeach
-                            </div>
-
-
-                            {{-- <div class="col-sm-6 col-lg-4 deal-mgmt">
                                 @include('front.common.deal')
                             </div>
 
@@ -106,7 +101,12 @@
 
                             <div class="col-sm-6 col-lg-4 deal-mgmt">
                                 @include('front.common.deal')
-                            </div> --}}
+                            </div>
+
+
+                            <div class="col-sm-6 col-lg-4 deal-mgmt">
+                                @include('front.common.deal')
+                            </div>
 
 
                         </div>
