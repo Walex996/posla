@@ -72,7 +72,7 @@
                                     <div class="mt-10">
                                         <div class="mw-300 mx-auto text-center">
                                             <div>
-                                                <a href="{{route('account.projects')}}" class="btn btn-blue">
+                                                <a href="/account/projects" class="btn btn-blue">
                                                     My Projects
                                                 </a>
                                             </div>

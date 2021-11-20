@@ -88,8 +88,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active">
 
-                                <form action="{{route('project.create.save.info')}}" method="POST" enctype="multipart/form-data">
-                                    @csrf
+                                <form action="/account/projects/create/1234/publish" enctype="multipart/form-data">
+                                    
                                     <div class="b-1-ddd">
 
                                         <div class="p-20">
@@ -100,7 +100,7 @@
                                                         <label for="title" class="control-label">
                                                             Project Title:
                                                         </label>
-                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I need...">{{old('title') ?? session()->get('deal_title')}}</textarea>
+                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I need..."></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -110,9 +110,9 @@
                                                         </label>
                                                         <select name="category_id" id="category" onchange="fetchSubCategory()" required>
                                                             <option value="" selected disabled>- Select -</option>
-                                                            @foreach ($categories as $category)
-                                                                <option value="{{$category->id}}" @if ($category->id == old('category_id')) selected @endif>{{$category->name}}</option>
-                                                            @endforeach
+                                                            <option value="123">Category 1</option>
+                                                            <option value="123">Category 2</option>
+                                                            <option value="123">Category 3</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
@@ -120,14 +120,10 @@
                                                             SubCategory:
                                                         </label>
                                                         <select name="subcategory_id" id="subCategory">
-                                                            @if(old('subcategory_id'))
-                                                                <option value="" >- Select -</option>
-                                                                @foreach ($category->children as $subcategory)
-                                                                <option value="{{$subcategory->id}}" >{{$subcategory->name}}</option>
-                                                                @endforeach
-                                                            @else
-                                                                <option value="" >- Select -</option>
-                                                            @endif
+                                                            <option value="" >- Select -</option>
+                                                            <option value="123">Subcategory 1</option>
+                                                            <option value="123">Subcategory 2</option>
+                                                            <option value="123">Subcategory 3</option>
                                                         </select>
                                                     </div>
                                                 </div>

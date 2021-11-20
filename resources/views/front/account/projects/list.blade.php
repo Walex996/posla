@@ -79,34 +79,33 @@
                         
                         <div class="project-list project-list-mini mt-20 row">
 
-                            @foreach ($projects as $project)
-                                <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
-                                    @include('front.common.project')
-                                    <div class="dropdown">
-                                        <label class="label label-fff label-sm mr-5 pull-right" style="margin-top: 7px;">
-                                            {{-- Pending Approval --}}
-                                            Status (Active)
-                                        </label>
-                                        <div id="navbarDropdown" class="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Manage
-                                        </div>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
-                                            <a class="dropdown-item" href="/project/c1d00230-a423-4b84-a121-7105239ff8d8678">
-                                                Preview
-                                            </a>
-                                            <a class="dropdown-item" href="/account/projects/pause/1234">
-                                                Pause
-                                            </a>
-                                            <a class="dropdown-item" href="/account/projects/edit/1234">
-                                                Edit
-                                            </a>
-                                            <a class="dropdown-item" href="/account/projects/delete/1234">
-                                                Delete
-                                            </a>
-                                        </div>
+                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                                @include('front.common.project')
+                                <div class="dropdown">
+                                    <label class="label label-fff label-sm mr-5 pull-right" style="margin-top: 7px;">
+                                        {{-- Pending Approval --}}
+                                        Status (Active)
+                                    </label>
+                                    <div id="navbarDropdown" class="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Manage
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-top: -20px;">
+                                        <a class="dropdown-item" href="/project/c1d00230-a423-4b84-a121-7105239ff8d8678">
+                                            Preview
+                                        </a>
+                                        <a class="dropdown-item" href="/account/projects/pause/1234">
+                                            Pause
+                                        </a>
+                                        <a class="dropdown-item" href="/account/projects/edit/1234">
+                                            Edit
+                                        </a>
+                                        <a class="dropdown-item" href="/account/projects/delete/1234">
+                                            Delete
+                                        </a>
                                     </div>
                                 </div>
-                            @endforeach
+                            </div>
+                        
                             <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                                 <div class="dropdown">

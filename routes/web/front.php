@@ -386,14 +386,6 @@ Route::get('/account/projects/create/1234/info', function () {
     return view('front.account.projects.create-info');
 });
 
-Route::get('/account/projects/create/1234/pricing', function () {
-    return view('front.account.projects.create-pricing');
-});
-
-Route::get('/account/projects/create/1234/requirements', function () {
-    return view('front.account.projects.create-requirements');
-});
-
 Route::get('/account/projects/create/1234/publish', function () {
     return view('front.account.projects.create-publish');
 });
@@ -414,14 +406,6 @@ Route::get('/account/projects/edit/1234/rules', function () {
 
 Route::get('/account/projects/edit/1234/info', function () {
     return view('front.account.projects.edit-info');
-});
-
-Route::get('/account/projects/edit/1234/pricing', function () {
-    return view('front.account.projects.edit-pricing');
-});
-
-Route::get('/account/projects/edit/1234/requirements', function () {
-    return view('front.account.projects.edit-requirements');
 });
 
 Route::get('/account/projects/edit/1234/publish', function () {
