@@ -21,7 +21,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -45,7 +45,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1548958921-c5c0fe1b307d.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -69,7 +69,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -100,7 +100,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1548958921-c5c0fe1b307d.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -124,7 +124,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -148,7 +148,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -179,7 +179,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -203,7 +203,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -227,7 +227,7 @@ function Testimony() {
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
                                                     <img src="https://cdn.tuk.dev/assets/photo-1548958921-c5c0fe1b307d.jfif" alt className="h-full w-full object-cover rounded-full overflow-hidden" />
                                                 </div>
-                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. posla is exactly what our business has been lacking. posla is worth a fortune to my company.</p>
+                                                <p className="text-base text-gray-600 leading-8">It really saves me time and effort. Tegdaffy is exactly what our business has been lacking. Tegdaffy is worth a fortune to my company.</p>
                                                 <div className="flex justify-end mt-2">
                                                     <svg width={44} height={37} xmlns="http://www.w3.org/2000/svg">
                                                         <path

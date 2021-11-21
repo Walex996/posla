@@ -19,7 +19,7 @@ class Error404 extends Component {
                         Oops! It seems like the page you are looking for is not available! Please try again with another page or go back to home.
                     </div>
 
-                    <Link to="/" className="btn btn-block btn-lg btn-posla-red mt-8 w-full animate hover:scale-110">
+                    <Link to="/" className="btn btn-block btn-lg btn-tegdaffy-red mt-8 w-full animate hover:scale-110">
                         Goto Home
                     </Link>
 

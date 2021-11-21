@@ -5,11 +5,11 @@ import Footer from "components/common/footer.jsx";
 const NullLayout = (props) => {
     return ( 
         <React.Fragment>
-            {/* <Header /> */}
+            <Header />
             <div>
-                {/* {props.children} */}
+                {props.children}
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </React.Fragment>
      );
 }

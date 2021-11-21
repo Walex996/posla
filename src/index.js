@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import 'assets/css/index.css';
-import 'assets/css/posla.css';
+import 'assets/css/tegdaffy.css';
 
 
 ReactDOM.render(

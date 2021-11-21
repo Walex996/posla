@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'posla-blue': '#0069a3',
-        'posla-red': '#fc151e',
+        'tegdaffy-blue': '#0069a3',
+        'tegdaffy-red': '#fc151e',
       }
     },
   },

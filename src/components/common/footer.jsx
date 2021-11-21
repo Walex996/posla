@@ -10,13 +10,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <div className="bg-black pt-14">
-                    <div className="container text-white">
-
-                        footer
-
-                    </div>
-                </div>
+                
             </>
         );
     }
