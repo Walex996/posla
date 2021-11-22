@@ -24,7 +24,7 @@
     .body{
         min-height: 500px;
     }
-    
+
     .form-group {
         @apply mb-5 space-y-1;
     }
@@ -118,7 +118,7 @@
     }
 
     .dropdown-content {
-        @apply bg-white absolute z-10 rounded shadow-lg overflow-hidden;
+        @apply bg-white absolute z-50 rounded shadow-lg overflow-hidden;
         min-width: 100px;
         max-width: 200px;
         /* width: 150px; */

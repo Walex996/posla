@@ -5,7 +5,7 @@ import GeneralLayout from './components/layouts/generalLayout';
 import NullLayout from './components/layouts/nullLayout';
 import Error404 from './components/misc/error404';
 
-import Home from './components/pages/home';
+import HomeDeals from './components/pages/home-deals';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -78,7 +78,7 @@ function App() {
                     {/* <RouteLayout exact path="/page" layout={GeneralLayout} component={Home} /> */}
 
                     <RouteLayout exact path="/404" layout={NullLayout} component={Error404} />
-                    <RouteLayout exact path="/" layout={GeneralLayout} component={Home} />
+                    <RouteLayout exact path="/" layout={GeneralLayout} component={HomeDeals} />
                     <Redirect to="/404" />
 
                 </Switch>

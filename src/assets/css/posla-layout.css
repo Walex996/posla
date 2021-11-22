@@ -1072,8 +1072,7 @@
   }
   
   .btn-blue {
-    background-color: #0073B1 !important;
-    border-color: #0073B1 !important;
+      @apply bg-posla-blue border-posla-blue;
   }
   
   .btn-success,
