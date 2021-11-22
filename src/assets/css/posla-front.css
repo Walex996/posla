@@ -396,12 +396,12 @@ body{
 }
 
 .navbar-nav-links-nav a{
-  /* color: #fff !important; */
-  /* border-bottom: 1px solid transparent; */
+  color: #fff !important;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar-nav-links-nav a:hover{
-  /* border-bottom-color: #fff; */
+  border-bottom-color: #fff;
 }
 
 .navbar-nav-links-auth a{

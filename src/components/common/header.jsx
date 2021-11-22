@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Dropdown from "utils/dropdown";
 import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from "assets/img/app/icons/logo.png";
 import logoWhiteFull from "assets/img/app/icons/logo-full-fff.png";
-import { ReactComponent as IconNav } from "assets/images/icons/Navicon-v.svg";
 
 class Header extends Component {
     state = {};
@@ -54,27 +52,32 @@ class Header extends Component {
                                 </li>
                             </ul>
 
-                            <ul className="navbar-nav navbar-nav-links-menu ml-auto d-none d-md-flex d-lg-none">
-                                <li className="nav-item dropdown">
-                                    <Link id="navbarDropdown" className="nav-link dropdown-toggle no-after nowrap floated-content" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="fa fa-caret-down icon-16 pull-right ml-5"></span>
-                                        Menu
-                                    </Link>
-                                    <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <Link className="dropdown-item" to="/account/deals/create">
-                                            Post Deals
-                                        </Link>
-                                        <Link className="dropdown-item" to="/deals">
-                                            Find Deals
-                                        </Link>
-                                        <Link className="dropdown-item" to="/">
-                                            Find Projects
-                                        </Link>
-                                    </div>
+                            <ul className="navbar-nav navbar-nav-links-menu ml-auto mr-2 d-none d-md-flex d-lg-none">
+                                <li className="nav-item">
+                                    <Dropdown>
+                                        <div className="btn btn-sm nowrap">
+                                            <span>
+                                                Menu
+                                            </span>
+                                            <span className="fa fa-caret-down icon-16 ml-2"></span>
+                                        </div>
+                                        <div>
+                                            <Link className="dropdown-item" to="/account/deals/create">
+                                                Post Deals
+                                            </Link>
+                                            <Link className="dropdown-item" to="/deals">
+                                                Find Deals
+                                            </Link>
+                                            <Link className="dropdown-item" to="/">
+                                                Find Projects
+                                            </Link>
+                                        </div>
+                                    </Dropdown>
+
                                 </li>    
                             </ul>
 
-                            <ul className="navbar-nav navbar-nav-links-auth ml-auto">
+                            <ul className="navbar-nav ml-auto">
                                 
                                 {/* 
                                 <li className="nav-item">
@@ -94,7 +97,7 @@ class Header extends Component {
                                     
                                     <Dropdown>
                                         <div className="btn btn-transparent-white btn-sm nowrap">
-                                            <span className="">
+                                            <span>
                                                 Username
                                             </span>
                                             <span className="fa fa-caret-down icon-16 ml-2"></span>
