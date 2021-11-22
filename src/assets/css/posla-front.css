@@ -396,22 +396,22 @@ body{
 }
 
 .navbar-nav-links-nav a{
-  color: #fff !important;
-  border-bottom: 1px solid transparent;
+  /* color: #fff !important; */
+  /* border-bottom: 1px solid transparent; */
 }
 
 .navbar-nav-links-nav a:hover{
-  border-bottom-color: #fff;
+  /* border-bottom-color: #fff; */
 }
 
 .navbar-nav-links-auth a{
-  padding: 3px 12px !important;
-  border: 1px solid #fff;
+  /* padding: 3px 12px !important; */
+  /* border: 1px solid #fff; */
 }
 
 .navbar-nav-links-auth a:hover{
-  color: #0073B1 !important;
-  background: #fff;
+  /* color: #0073B1 !important; */
+  /* background: #fff; */
 }
 
 .dropdown-menu a{

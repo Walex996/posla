@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Dropdown from "utils/dropdown";
 import { Link, NavLink } from "react-router-dom";
-import { Menu } from "@headlessui/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from "assets/img/app/icons/logo.png";
 import logoWhiteFull from "assets/img/app/icons/logo-full-fff.png";
+import { ReactComponent as IconNav } from "assets/images/icons/Navicon-v.svg";
 
 class Header extends Component {
     state = {};
@@ -88,56 +89,60 @@ class Header extends Component {
                                 </li>
                                     */}
 
-                        
-                                <li className="nav-item dropdown">
-                                    <Link id="navbarDropdown" className="nav-link dropdown-toggle no-after nowrap floated-content" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="fa fa-caret-down icon-16 pull-right ml-5"></span>
-                                        Username
-                                    </Link>
-
-                                    <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <Link className="dropdown-item" to="/account/dashboard">
-                                            Dashboard
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/profile">
-                                            Profile
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/orders">
-                                            My Orders
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/deals">
-                                            My Deals
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/projects">
-                                            My Projects
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/project-bids">
-                                            My Project Bids
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/favourites">
-                                            Favourites
-                                        </Link>
-                                        <Link className="dropdown-item" to="/messages">
-                                            Messages
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/earnings-withdrawals/">
-                                            Earnings & Withdrawals
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/wallet">
-                                            My Wallet
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/reviews">
-                                            My Reviews
-                                        </Link>
-                                        <Link className="dropdown-item" to="/account/settings">
-                                            Account Settings
-                                        </Link>
-                                        <Link to="#" className="dropdown-item">
-                                            Logout
-                                        </Link>
-                                    </div>
-                                </li>
                                 
+                                <li className="nav-item">
+                                    
+                                    <Dropdown>
+                                        <div className="btn btn-transparent-white btn-sm nowrap">
+                                            <span className="">
+                                                Username
+                                            </span>
+                                            <span className="fa fa-caret-down icon-16 ml-2"></span>
+                                        </div>
+                                        <div>
+                                            <Link className="dropdown-item" to="/account/dashboard">
+                                                Dashboard
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/profile">
+                                                Profile
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/orders">
+                                                My Orders
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/deals">
+                                                My Deals
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/projects">
+                                                My Projects
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/project-bids">
+                                                My Project Bids
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/favourites">
+                                                Favourites
+                                            </Link>
+                                            <Link className="dropdown-item" to="/messages">
+                                                Messages
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/earnings-withdrawals/">
+                                                Earnings & Withdrawals
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/wallet">
+                                                My Wallet
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/reviews">
+                                                My Reviews
+                                            </Link>
+                                            <Link className="dropdown-item" to="/account/settings">
+                                                Account Settings
+                                            </Link>
+                                            <Link to="#" className="dropdown-item">
+                                                Logout
+                                            </Link>
+                                        </div>
+                                    </Dropdown>
+                        
+                                </li>
                             
                             </ul>
 

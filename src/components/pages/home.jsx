@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Dropdown from "utils/dropdown";
 // import logo from "assets/images/icons/logo.jpg";
 // import { Link, NavLink } from "react-router-dom";
 
