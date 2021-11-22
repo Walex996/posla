@@ -21,6 +21,10 @@
 }
 
 @layer utilities {
+    .body{
+        min-height: 500px;
+    }
+    
     .form-group {
         @apply mb-5 space-y-1;
     }

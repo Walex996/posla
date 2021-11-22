@@ -6,7 +6,7 @@ const GeneralLayout = (props) => {
     return (
         <React.Fragment>
             <Header />
-            <div className="p-6 sm:p-10">{props.children}</div>
+            <div className="body p-6 sm:p-10">{props.children}</div>
             <Footer />
         </React.Fragment>
     );
