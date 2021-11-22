@@ -16,7 +16,7 @@ class Footer extends Component {
 
                                 <div className="col-lg-3 col-md-6 footer-info">
                                     <img src={logoOrange} className="dp-contain" alt="Posla" />
-                                    <p className="mt-10">
+                                    <div className="mt-10">
                                         Posla.com is a reputable freelance platform aimed at: <br />
                                         <ul className="list-style">
                                             <li>
@@ -32,7 +32,7 @@ class Footer extends Component {
                                         </ul>
                                         <br />
                                         <Link to="/about" className="underline">Read More</Link>
-                                    </p>
+                                    </div>
                                 </div>
 
                                 <div className="col-lg-3 col-md-6 footer-links">
