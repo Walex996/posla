@@ -5,7 +5,10 @@ import GeneralLayout from './components/layouts/generalLayout';
 import NullLayout from './components/layouts/nullLayout';
 import Error404 from './components/misc/error404';
 
-import HomeDeals from './components/pages/home-deals';
+import HomeDeals from './components/pages/homeDeals';
+import HomeProjects from './components/pages/homeProjects';
+import CategoryDealsList from './components/pages/CategoryDealsList';
+// import CategoryProjectsList from './components/pages/CategoryProjectsList';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -75,7 +78,9 @@ function App() {
             <BrowserRouter>
                 <Switch>
 
-                    {/* <RouteLayout exact path="/page" layout={GeneralLayout} component={Home} /> */}
+                    <RouteLayout exact path="/projects" layout={GeneralLayout} component={HomeProjects} />
+                    <RouteLayout exact path="/category/deals/:slug" layout={GeneralLayout} component={CategoryDealsList} />
+                    {/* <RouteLayout exact path="/category/projects/:slug" layout={GeneralLayout} component={CategoryProjectsList} /> */}
 
                     <RouteLayout exact path="/404" layout={NullLayout} component={Error404} />
                     <RouteLayout exact path="/" layout={GeneralLayout} component={HomeDeals} />

@@ -11,7 +11,7 @@ class Deal extends Component {
 
         return (
 
-            <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="deal">
+            <Link to="/deal/4567543234/i-will-make-a-nice-banner-for-your-business" className="deal">
                 
                 <div className="deal-info-top">
                     <div>

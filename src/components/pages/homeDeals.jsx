@@ -31,35 +31,35 @@ class Home extends Component {
 
                                     <div className="home-category-list mt-5">
                                         
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
-                                        <Link to="/category/music-audio/deals">
+                                        <Link to="/category/deals/music-audio">
                                             <span className="fa fa-angle-right icon-000 icon-18 float-right d-inline"></span>
                                             Category Name
                                         </Link>
@@ -81,47 +81,47 @@ class Home extends Component {
                             <div className="sticky-top">
                                 <div className="home-category-list">
 
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
-                                    <Link to="/category/music-audio/deals">
+                                    <Link to="/category/deals/music-audio">
                                         Category Name
                                         <span className="fa fa-angle-right"></span>
                                     </Link>
@@ -169,7 +169,7 @@ class Home extends Component {
                                     <div className="section d-none d-sm-block d-md-none">
                                         <button type="button" data-toggle="modal" data-target="#modalCategories" className="d-block text-black">
                                             <span className="fa fa-list-alt pull-left icon-18 mr-2.5 icon-blue"></span>
-                                            <span className="relative -top-0.5">View all deal categories</span>
+                                            <span className="relative -top-0.5">View all deal categories 1</span>
                                             <span className="fa fa-angle-right icon-18 ml-3"></span>
                                         </button>
                                     </div>
@@ -192,7 +192,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div>
-                                            <Link to="/" className="btn btn-orange btn-block">
+                                            <Link to="/projects" className="btn btn-orange btn-block">
                                                 Switch to Selling
                                             </Link>
                                         </div>
@@ -204,7 +204,7 @@ class Home extends Component {
                             <div className="section d-block d-sm-none">
                                 <button type="button" data-toggle="modal" data-target="#modalCategories" className="d-block text-black">
                                     <span className="fa fa-list-alt pull-left icon-18 mr-2.5 icon-blue"></span>
-                                    <span className="relative -top-0.5">View all deal categories</span>
+                                    <span className="relative -top-0.5">View all deal categories 2</span>
                                     <span className="fa fa-angle-right icon-18 ml-3"></span>
                                 </button>
                             </div>
@@ -232,7 +232,7 @@ class Home extends Component {
                             <div className="section">
                                 <div className="section-title">
                                     Category Name
-                                    <Link to="/category/music-audio/deals" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
+                                    <Link to="/category/deals/music-audio" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
                                 </div>
                                 <div className="deal-list deal-list-double">
                                     <Deal />
@@ -241,7 +241,7 @@ class Home extends Component {
                                     <Deal />
                                 </div>
                                 
-                                <Link to="/category/music-audio/deals" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
+                                <Link to="/category/deals/music-audio" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
                                     View All CategoryName Deals
                                     <span className="fa fa-angle-right ml-2"></span>
                                 </Link>
@@ -252,7 +252,7 @@ class Home extends Component {
                             <div className="section">
                                 <div className="section-title">
                                     Category Name
-                                    <Link to="/category/music-audio/deals" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
+                                    <Link to="/category/deals/music-audio" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
                                 </div>
                                 <div className="deal-list deal-list-double">
                                     <Deal />
@@ -261,7 +261,7 @@ class Home extends Component {
                                     <Deal />
                                 </div>
                                 
-                                <Link to="/category/music-audio/deals" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
+                                <Link to="/category/deals/music-audio" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
                                     View All CategoryName Deals
                                     <span className="fa fa-angle-right ml-2"></span>
                                 </Link>
@@ -272,7 +272,7 @@ class Home extends Component {
                             <div className="section">
                                 <div className="section-title">
                                     Category Name
-                                    <Link to="/category/music-audio/deals" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
+                                    <Link to="/category/deals/music-audio" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
                                 </div>
                                 <div className="deal-list deal-list-double">
                                     <Deal />
@@ -281,7 +281,7 @@ class Home extends Component {
                                     <Deal />
                                 </div>
                                 
-                                <Link to="/category/music-audio/deals" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
+                                <Link to="/category/deals/music-audio" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
                                     View All CategoryName Deals
                                     <span className="fa fa-angle-right ml-2"></span>
                                 </Link>
@@ -292,7 +292,7 @@ class Home extends Component {
                             <div className="section">
                                 <div className="section-title">
                                     Category Name
-                                    <Link to="/category/music-audio/deals" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
+                                    <Link to="/category/deals/music-audio" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
                                 </div>
                                 <div className="deal-list deal-list-double">
                                     <Deal />
@@ -301,7 +301,7 @@ class Home extends Component {
                                     <Deal />
                                 </div>
                                 
-                                <Link to="/category/music-audio/deals" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
+                                <Link to="/category/deals/music-audio" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
                                     View All CategoryName Deals
                                     <span className="fa fa-angle-right ml-2"></span>
                                 </Link>
@@ -312,7 +312,7 @@ class Home extends Component {
                             <div className="section">
                                 <div className="section-title">
                                     Category Name
-                                    <Link to="/category/music-audio/deals" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
+                                    <Link to="/category/deals/music-audio" className="btn btn-transparent-black btn-xs float-right hover-bg-orange">View All</Link>
                                 </div>
                                 <div className="deal-list deal-list-double">
                                     <Deal />
@@ -321,7 +321,7 @@ class Home extends Component {
                                     <Deal />
                                 </div>
                                 
-                                <Link to="/category/music-audio/deals" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
+                                <Link to="/category/deals/music-audio" className="d-block text-center pt-2.5 pb-2.5 b-1-ddd bg-eee hover-bg-orange">
                                     View All CategoryName Deals
                                     <span className="fa fa-angle-right ml-2"></span>
                                 </Link>
@@ -349,7 +349,7 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <Link to="/" className="btn btn-orange btn-block">
+                                    <Link to="/projects" className="btn btn-orange btn-block">
                                         Switch to Selling
                                     </Link>
                                 </div>

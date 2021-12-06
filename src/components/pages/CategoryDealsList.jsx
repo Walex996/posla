@@ -45,7 +45,7 @@ class Home extends Component {
                             </div>
 
 
-                            <div className="mb-20">
+                            <div className="mb-4">
                                 <div className="text-center">
                                     <div className="font-20 font-bold">
                                         Category name
@@ -56,7 +56,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            <div className="section mb-5 pb-5">
+                            <div className="section">
                                 <div className="section-title floated-content">
 
                                     <button className="btn btn-transparent-black d-block d-md-none pull-left btn-sm" data-toggle="modal" data-target="#filter">
@@ -89,6 +89,7 @@ class Home extends Component {
                                     {/* @include('front.common.deal') */}
                                 </div>
                             </div>
+                            
 
                             <div className="section">
                                 //pagination here

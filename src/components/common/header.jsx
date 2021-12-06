@@ -308,31 +308,31 @@ class Header extends Component {
                                 </Link>
                                 <ul className="dropdown-menu sidebar-category-all">
                                     <li className="sidebar-category-category-url">
-                                        <Link to="/category/business/projects">
+                                        <Link to="/category/projects/music">
                                             <span className="fa fa-list-alt"></span>
                                             <span>Category 1</span>
                                         </Link>
                                     </li>
                                     <li className="sidebar-category-category-url">
-                                        <Link to="/category/business/projects">
+                                        <Link to="/category/projects/music">
                                             <span className="fa fa-list-alt"></span>
                                             <span>Category 2</span>
                                         </Link>
                                     </li>
                                     <li className="sidebar-category-category-url">
-                                        <Link to="/category/business/projects">
+                                        <Link to="/category/projects/music">
                                             <span className="fa fa-list-alt"></span>
                                             <span>Category 3</span>
                                         </Link>
                                     </li>
                                     <li className="sidebar-category-category-url">
-                                        <Link to="/category/business/projects">
+                                        <Link to="/category/projects/music">
                                             <span className="fa fa-list-alt"></span>
                                             <span>Category 4</span>
                                         </Link>
                                     </li>
                                     <li className="sidebar-category-category-url">
-                                        <Link to="/category/business/projects">
+                                        <Link to="/category/projects/music">
                                             <span className="fa fa-list-alt"></span>
                                             <span>Category 5</span>
                                         </Link>
