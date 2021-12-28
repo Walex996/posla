@@ -85,7 +85,7 @@
     }
 
     .form-input-checkbox {
-        /* @apply appearance-none text-ep-yellow bg-white border-2 border-gray-300 rounded cursor-pointer; */
+        /* @apply appearance-none text-posla-yellow bg-white border-2 border-gray-300 rounded cursor-pointer; */
         @apply appearance-none bg-white border-2 border-gray-300 rounded cursor-pointer;
     }
 
@@ -222,19 +222,36 @@
     }
 
     .pagination-items {
-        @apply w-8 h-8 flex bg-blue-100 cursor-pointer hover:bg-blue-500;
+        @apply h-8 px-3 text-xs flex space-x-2 rounded-md cursor-pointer hover:bg-gray-200;
+        @apply mr-1 !important;
+    }
+
+    .pagination-items-null {
+        @apply h-8 px-2 text-xs flex space-x-2 rounded-md;
+        @apply mr-px !important;
+    }
+
+    .pagination-items > div,
+    .pagination-items-null > div{
+        @apply my-auto;
     }
 
     .pagination-items-icon {
-        @apply w-4 h-4 m-auto text-blue-600 group-hover:text-white;
+        @apply w-4 h-3 m-auto;
     }
 
     .pagination-items.disabled {
         @apply bg-gray-100 cursor-default hover:bg-gray-100;
     }
 
-    .pagination-items-icon.disabled {
+    .pagination-items-icon.disabled,
+    .pagination-items-icon.disabled > div {
         @apply text-gray-300 group-hover:text-gray-300;
+    }
+
+    .pagination-items-active,
+    .pagination-items-active > div{
+        @apply text-white bg-posla-blue hover:bg-posla-blue;
     }
 
     .tab-pill {

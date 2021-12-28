@@ -78,7 +78,7 @@ class Home extends Component {
                         
                         <div className="col-md-4 col-lg-3 d-none d-md-block">
 
-                            <div className="sticky-top">
+                            <div className="sticky-top mb-8">
                                 <div className="home-category-list">
 
                                     <Link to="/category/deals/music-audio">
@@ -128,7 +128,7 @@ class Home extends Component {
                                     
                                 </div>
 
-                                <div className="mt-2.5">
+                                <div className="mt-3">
                                     <Link to="/support" className="text-fade d-inline hover-underline">
                                         Suggest a category
                                         <span className="fa fa-angle-right icon-grey ml-2"></span>

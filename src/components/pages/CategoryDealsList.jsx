@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Pagination from 'utils/pagination';
+import Deal from "components/common/deal.jsx";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Dropdown from "utils/dropdown";
 // import logo from "assets/images/icons/logo.jpg";
@@ -82,17 +84,22 @@ class Home extends Component {
                                 </div>
 
                                 <div className="deal-list deal-list-double">
-                                    {/* @include('front.common.deal') */}
-                                    {/* @include('front.common.deal') */}
-                                    {/* @include('front.common.deal') */}
-                                    {/* @include('front.common.deal') */}
-                                    {/* @include('front.common.deal') */}
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
                                 </div>
                             </div>
                             
 
-                            <div className="section">
-                                //pagination here
+                            <div className="section -mt-4">
+                                <Pagination data="" url={this.props.location.search} limit="20" />
                             </div>
 
                         </div>
@@ -108,7 +115,16 @@ class Home extends Component {
                                     Featured Deals
                                 </div>
                                 <div className="deal-list deal-list-single">
-                                    {/* @include('front.common.deal') */}
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
+                                    <Deal />
                                 </div>
                             </div>
 
