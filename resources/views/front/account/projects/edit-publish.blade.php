@@ -100,7 +100,7 @@
                                             
                                             </div>
 
-                                            <div class="mx-auto mw-600 mt-20">
+                                            <div class="hidden mx-auto mw-600 mt-20">
 
                                                 <div class="row">
                                                     <div class="col-sm-6">
