@@ -90,7 +90,7 @@ class Header extends Component {
                                         Register
                                     </Link>
                                 </li>
-                                    */}
+                                */}
 
                                 
                                 <li className="nav-item">

@@ -140,6 +140,10 @@
         @apply border-t-0;
     }
 
+    .sticky-top{
+        z-index: 40 !important;
+    }
+
     .box {
         @apply p-4 xl:p-6 bg-white rounded-lg shadow overflow-hidden;
     }

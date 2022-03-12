@@ -35,7 +35,7 @@ class Deal extends Component {
                         <span className="font-size-2.5 text-fade">Starting At&nbsp;</span>
                         $400
                     </div>
-                    <div className="item-labels">
+                    <div className="item-labels" style={{width: "100%"}}>
                         <div className="item-labels-new">
                             New
                         </div>
