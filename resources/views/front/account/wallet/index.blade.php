@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-wallet{
             color: #FF940A !important;
@@ -38,76 +38,76 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Wallet</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Wallet</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         My Wallet
-                        <a href="/account/wallet/deposit" class="btn btn-blue btn-sm pull-right">New Deposit</a>
+                        <Link to="/account/wallet/deposit" className="btn btn-blue btn-sm pull-right">New Deposit</Link>
                     </div>
                     <div>
 
-                        <div class="b-1-ddd p-20 pt-0">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-lg-3">
-                                    <div class="b-1-ddd p-10 mt-20">
-                                        <div class="text-center font-bold font-20">
+                        <div className="b-1-ddd p-5 pt-0">
+                            <div className="row">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="b-1-ddd p-2.5 mt-5">
+                                        <div className="text-center font-bold font-20">
                                             $15,200
                                         </div>
-                                        <div class="text-center text-fade">
+                                        <div className="text-center text-fade">
                                             Total
-                                            <br class="d-none d-lg-block">
+                                            <br className="d-none d-lg-block">
                                             Deposits
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
-                                    <div class="b-1-ddd p-10 mt-20">
-                                        <div class="text-center font-bold font-20">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="b-1-ddd p-2.5 mt-5">
+                                        <div className="text-center font-bold font-20">
                                             $6,500
                                         </div>
-                                        <div class="text-center text-fade">
+                                        <div className="text-center text-fade">
                                             Total
-                                            <br class="d-none d-lg-block">
+                                            <br className="d-none d-lg-block">
                                             Spent
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
-                                    <div class="b-1-ddd p-10 mt-20">
-                                        <div class="text-center font-bold font-20">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="b-1-ddd p-2.5 mt-5">
+                                        <div className="text-center font-bold font-20">
                                             $8,700
                                         </div>
-                                        <div class="text-center text-fade">
+                                        <div className="text-center text-fade">
                                             Available
-                                            <br class="d-none d-lg-block">
+                                            <br className="d-none d-lg-block">
                                             Balance
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
-                                    <div class="b-1-ddd p-10 mt-20">
-                                        <div class="text-center font-bold font-20">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="b-1-ddd p-2.5 mt-5">
+                                        <div className="text-center font-bold font-20">
                                             $2,500
                                         </div>
-                                        <div class="text-center text-fade">
+                                        <div className="text-center text-fade">
                                             Total
-                                            <br class="d-none d-lg-block">
+                                            <br className="d-none d-lg-block">
                                             Pending
                                         </div>
                                     </div>
@@ -117,15 +117,15 @@
 
                     </div>
 
-                    <div class="section-title section-title-sm mt-30">
+                    <div className="section-title section-title-sm mt-30">
                         History
                     </div>
 
                     
-                    <div class="table-responsive b-1-ddd">
-                        <table class="table table-tr-lines table-history">
+                    <div className="table-responsive b-1-ddd">
+                        <table className="table table-tr-lines table-history">
                             <thead>
-                                <tr class="bg-eee">
+                                <tr className="bg-eee">
                                     <th>
                                         Date
                                     </th>
@@ -159,7 +159,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-success">Success</label>
+                                            <label className="label label-success">Success</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -181,7 +181,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-danger">Failed</label>
+                                            <label className="label label-danger">Failed</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -203,7 +203,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-success">Success</label>
+                                            <label className="label label-success">Success</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -225,7 +225,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-danger">Failed</label>
+                                            <label className="label label-danger">Failed</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -247,7 +247,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-success">Success</label>
+                                            <label className="label label-success">Success</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -269,7 +269,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-danger">Failed</label>
+                                            <label className="label label-danger">Failed</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -291,7 +291,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-success">Success</label>
+                                            <label className="label label-success">Success</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -313,7 +313,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-danger">Failed</label>
+                                            <label className="label label-danger">Failed</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -335,7 +335,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-success">Success</label>
+                                            <label className="label label-success">Success</label>
                                         </div>
                                     </td>
                                 </tr>
@@ -357,7 +357,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <label class="label label-danger">Failed</label>
+                                            <label className="label label-danger">Failed</label>
                                         </div>
                                     </td>
                                 </tr>

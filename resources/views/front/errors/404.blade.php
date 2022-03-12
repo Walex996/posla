@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         
     </style>
@@ -27,31 +27,31 @@
 
 @section('content')
     
-    <div class="container">
+    <div className="container">
 
-        <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Error 404</li>
+        <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+            <ol className="breadcrumb">
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                <li className="breadcrumb-item active" aria-current="page">Error 404</li>
             </ol>
         </div>
 
         
-        <div class="page-alert mt-100">
-            <span class="fa fa-unlink"></span>
-            <div class="pt-15">
+        <div className="page-alert mt-2.50">
+            <span className="fa fa-unlink"></span>
+            <div className="pt-15">
                 404 - Page Not Found
             </div>
-            <div class="text-333">
+            <div className="text-333">
                 Sorry, the page you are trying to access could not be found.
-                If you feel this is an error from us, please <a href="/support/tickets/new" class="underline">report it to us</a>.
+                If you feel this is an error from us, please <Link to="/support/tickets/new" className="underline">report it to us</Link>.
             </div>
-            <div class="mt-10">
-                <div class="mw-300 mx-auto text-center">
+            <div className="mt-2.5">
+                <div className="mw-300 mx-auto text-center">
                     <div>
-                        <a href="/" class="btn btn-orange">
+                        <Link to="/" className="btn btn-orange">
                             Goto Homepage
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

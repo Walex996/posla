@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-deals{
             color: #FF940A !important;
@@ -107,61 +107,61 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
                 
             </div>
             
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
                 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/deals">Deals</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Edit Deal</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/deals">Deals</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Edit Deal</li>
                     </ol>
                 </div>
                 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Edit Deal
                     </div>
                     <div>
                         
                         @include('front.common.nav-tabs-deal-mgmt', ['active' => 3])
                         
-                        <div class="tab-content">
-                            <div class="tab-pane active">
+                        <div className="tab-content">
+                            <div className="tab-pane active">
 
                                 <form action="/account/deals/edit/1234/requirements">
                                     
-                                    <div class="b-1-ddd">
+                                    <div className="b-1-ddd">
 
-                                        <div class="p-20">
+                                        <div className="p-5">
                                             
-                                            <div class="table-responsive b-1-ddd">
-                                                <table class="table table-bordered table-col-padding" style="min-width: 600px;">
+                                            <div className="table-responsive b-1-ddd">
+                                                <table className="table table-bordered table-col-padding" style="min-width: 600px;">
                                                     <thead>
-                                                        <tr class="bg-eee">
+                                                        <tr className="bg-eee">
                                                             <th style="width: 120px;"></th>
                                                             <th>
-                                                                <label class="checkbox-inline">
-                                                                    <input type="checkbox" name="pricing_standard" class="deal-pricing-toggle" value="pricing_standard">
+                                                                <label className="checkbox-inline">
+                                                                    <input type="checkbox" name="pricing_standard" className="deal-pricing-toggle" value="pricing_standard">
                                                                     Basic
                                                                 </label>
                                                             </th>
                                                             <th>
-                                                                <label class="checkbox-inline">
-                                                                    <input type="checkbox" name="pricing_standard" class="deal-pricing-toggle" value="pricing_standard">
+                                                                <label className="checkbox-inline">
+                                                                    <input type="checkbox" name="pricing_standard" className="deal-pricing-toggle" value="pricing_standard">
                                                                     Standard
                                                                 </label>
                                                             </th>
                                                             <th>
-                                                                <label class="checkbox-inline">
-                                                                    <input type="checkbox" name="pricing_standard" class="deal-pricing-toggle" value="pricing_standard">
+                                                                <label className="checkbox-inline">
+                                                                    <input type="checkbox" name="pricing_standard" className="deal-pricing-toggle" value="pricing_standard">
                                                                     Premium
                                                                 </label>
                                                             </th>
@@ -171,32 +171,32 @@
                                                         <tr>
                                                             <td rowspan="2" style="width: 120px;"></td>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
                                                             </td>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
                                                             </td>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none mt-15 pricing_standard_action" style="height: 45px;" placeholder="Name"></textarea>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
                                                             </td>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
                                                             </td>
                                                             <td>
-                                                                <textarea name="" id="" class="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
+                                                                <textarea name="" id="" className="form-control resize-none pricing_standard_action" style="height: 85px;" placeholder="Short Description"></textarea>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 
-                                                <hr class="mt-20 mb-20">
+                                                <hr className="mt-5 mb-5">
 
-                                                <table class="table table-bordered table-col-padding" style="min-width: 600px;">
+                                                <table className="table table-bordered table-col-padding" style="min-width: 600px;">
                                                     <tbody>
                                                         <tr>
                                                             <td style="width: 120px;">
@@ -205,7 +205,7 @@
                                                                 </span>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1 day</option>
                                                                     <option value="2">2 days</option>
@@ -221,7 +221,7 @@
                                                                 </select>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1 day</option>
                                                                     <option value="2">2 days</option>
@@ -237,7 +237,7 @@
                                                                 </select>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1 day</option>
                                                                     <option value="2">2 days</option>
@@ -260,7 +260,7 @@
                                                                 </span>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
@@ -271,7 +271,7 @@
                                                                 </select>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
@@ -282,7 +282,7 @@
                                                                 </select>
                                                             </td>
                                                             <td>
-                                                                <select name="" id="" class="pricing_standard_action">
+                                                                <select name="" id="" className="pricing_standard_action">
                                                                     <option value="">- Select -</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
@@ -300,33 +300,33 @@
                                                                 </span>
                                                             </td>
                                                             <td>
-                                                                <div class="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-md">
-                                                                            <span class="font-18">$</span>
+                                                                <div className="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
+                                                                    <div className="input-group-btn">
+                                                                        <button type="button" className="btn btn-md">
+                                                                            <span className="font-18">$</span>
                                                                         </button>
                                                                     </div>
-                                                                    <input type="number" class="form-control pricing_standard_action">
+                                                                    <input type="number" className="form-control pricing_standard_action">
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-md">
-                                                                            <span class="font-18">$</span>
+                                                                <div className="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
+                                                                    <div className="input-group-btn">
+                                                                        <button type="button" className="btn btn-md">
+                                                                            <span className="font-18">$</span>
                                                                         </button>
                                                                     </div>
-                                                                    <input type="number" class="form-control pricing_standard_action">
+                                                                    <input type="number" className="form-control pricing_standard_action">
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div class="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-md">
-                                                                            <span class="font-18">$</span>
+                                                                <div className="input-group input-group-attach input-group-attach-transparent input-group-attach-transparent-left">
+                                                                    <div className="input-group-btn">
+                                                                        <button type="button" className="btn btn-md">
+                                                                            <span className="font-18">$</span>
                                                                         </button>
                                                                     </div>
-                                                                    <input type="number" class="form-control pricing_standard_action">
+                                                                    <input type="number" className="form-control pricing_standard_action">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -336,15 +336,15 @@
                                             
                                         </div>
 
-                                        <div class="p-15 mt-15 bt-1-ddd floated-content">
-                                            <div class="pull-right">
-                                                <a href="/account/deals/edit/1234/info" class="btn btn-transparent-black btn-sm icon-left">
-                                                    <span class="fa fa-angle-left"></span>
+                                        <div className="p-15 mt-15 bt-1-ddd floated-content">
+                                            <div className="pull-right">
+                                                <Link to="/account/deals/edit/1234/info" className="btn btn-transparent-black btn-sm icon-left">
+                                                    <span className="fa fa-angle-left"></span>
                                                     Back
-                                                </a>
-                                                <button type="submit" class="btn btn-blue btn-sm icon-right">
+                                                </Link>
+                                                <button type="submit" className="btn btn-blue btn-sm icon-right">
                                                     Proceed
-                                                    <span class="fa fa-angle-right"></span>
+                                                    <span className="fa fa-angle-right"></span>
                                                 </button>
                                             </div>
                                         </div>

@@ -17,35 +17,35 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
 @endsection
 
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
+    <div className="container">
+        <div className="row">
             
-            <div class="col-md-4 col-lg-3 d-none d-md-block">
+            <div className="col-md-4 col-lg-3 d-none d-md-block">
 
-                <div class="section sticky-top">
+                <div className="section sticky-top">
                     @include('front.common.filter-search')
                 </div>
 
             </div>
 
-            <div class="col-md-8 col-lg-6">
+            <div className="col-md-8 col-lg-6">
 
 
-                <div class="modal" id="filter">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Filter</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div className="modal" id="filter">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h4 className="modal-title">Filter</h4>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
-                                <div class="p-10">
+                            <div className="modal-body">
+                                <div className="p-2.5">
                                     @include('front.common.filter-search')
                                 </div>
                             </div>
@@ -54,90 +54,90 @@
                 </div>
 
 
-                <div class="mb-20">
-                    <div class="text-center">
-                        <div class="font-20 font-bold">
+                <div className="mb-5">
+                    <div className="text-center">
+                        <div className="font-20 font-bold">
                             Search Result (All)
                         </div>
-                        <div class="font-12 text-fade">
+                        <div className="font-12 text-fade">
                             (30 results found)
                         </div>
-                        <div class="mt-10">
-                            <button class="btn btn-transparent-black d-block d-md-none mx-auto btn-sm" data-toggle="modal" data-target="#filter">
-                                <span class="fa fa-filter"></span>
+                        <div className="mt-2.5">
+                            <button className="btn btn-transparent-black d-block d-md-none mx-auto btn-sm" data-toggle="modal" data-target="#filter">
+                                <span className="fa fa-filter"></span>
                                 Filter search result
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="section">
-                    <div class="section-title floated-content">
+                <div className="section">
+                    <div className="section-title floated-content">
                         Deals (10)
-                        <a href="/search/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/search/deals" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="deal-list deal-list-double">
+                    <div className="deal-list deal-list-double">
                         @include('front.common.deal')
                         @include('front.common.deal')
                         @include('front.common.deal')
                         @include('front.common.deal')
                     </div>
-                    <a href="/search/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/search/deals" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Deals (10)
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
-                <div class="section">
-                    <div class="section-title floated-content">
+                <div className="section">
+                    <div className="section-title floated-content">
                         Projects (10)
-                        <a href="/search/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/search/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/search/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/search/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Projects (10)
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
-                <div class="section">
-                    <div class="section-title floated-content">
+                <div className="section">
+                    <div className="section-title floated-content">
                         Freelancers (10)
-                        <a href="/search/freelancers" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/search/freelancers" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="freelancers-list freelancers-list-double">
+                    <div className="freelancers-list freelancers-list-double">
                         @include('front.common.freelancer')
                         @include('front.common.freelancer')
                         @include('front.common.freelancer')
                         @include('front.common.freelancer')
                     </div>
-                    <a href="/search/freelancers" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/search/freelancers" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Freelancers (10)
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
             </div>
             
-            <div class="col-lg-3 d-none d-lg-block">
+            <div className="col-lg-3 d-none d-lg-block">
                 
-                <div class="sticky-top">
-                    <a href="" class="posla-ad-space">
-                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" class="dp-contain" alt="Ad">
-                    </a>
+                <div className="sticky-top">
+                    <Link to="" className="posla-ad-space">
+                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" className="dp-contain" alt="Ad">
+                    </Link>
 
-                    <a href="" class="posla-ad-space">
-                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" class="dp-contain" alt="Ad">
-                    </a>
+                    <Link to="" className="posla-ad-space">
+                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" className="dp-contain" alt="Ad">
+                    </Link>
 
-                    <a href="" class="posla-ad-space">
-                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" class="dp-contain" alt="Ad">
-                    </a>
+                    <Link to="" className="posla-ad-space">
+                        <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" className="dp-contain" alt="Ad">
+                    </Link>
                 </div>
 
             </div>

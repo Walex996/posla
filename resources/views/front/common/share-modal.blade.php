@@ -1,25 +1,25 @@
-<div class="modal" id="shareModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div className="modal" id="shareModal">
+    <div className="modal-dialog">
+        <div className="modal-content">
 
-            <div class="modal-header">
-                <h4 class="modal-title">Share</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div className="modal-header">
+                <h4 className="modal-title">Share</h4>
+                <button type="button" className="close" data-dismiss="modal">&times;</button>
             </div>
 
-            <div class="modal-body">
+            <div className="modal-body">
                 
-                <div class="connection-modal">
+                <div className="connection-modal">
                     
-                    <div class="connection-modal-single">
+                    <div className="connection-modal-single">
 
-                        <div class="form-group mx-auto mt-20" style="max-width: 350px;">
+                        <div className="form-group mx-auto mt-5" style="max-width: 350px;">
                             <label>Direct Link</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control readonly" id="direct-share-link" onfocus="highlightShareLink()" readonly
+                            <div className="input-group">
+                                <input type="text" className="form-control readonly" id="direct-share-link" onfocus="highlightShareLink()" readonly
                                 value="share_link" />
-                                <button type="button" class="btn btn-blue btn-sm" onclick="copyShareLink()" style="border-radius: 0 !important; height: 35px;">
-                                    <i class="fa fa-copy"></i>
+                                <button type="button" className="btn btn-blue btn-sm" onclick="copyShareLink()" style="border-radius: 0 !important; height: 35px;">
+                                    <i className="fa fa-copy"></i>
                                     Copy
                                 </button>
                             </div>
@@ -27,36 +27,36 @@
 
                     </div>    
 
-                    <div class="text-center bt-1-ddd bb-1-ddd pt-10 pb-10 mt-20 mb-20 mr-65 ml-65">
+                    <div className="text-center bt-1-ddd bb-1-ddd pt-2.5 pb-10 mt-5 mb-5 mr-65 ml-65">
                         Share on Social Media
                     </div>
 
-                    <div class="connection-modal-social">
+                    <div className="connection-modal-social">
 
 
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="fb_color_bg">
-                            <span class="fab fa-facebook-f"></span>
-                        </a>
+                        <Link to="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" className="fb_color_bg">
+                            <span className="fab fa-facebook-f"></span>
+                        </Link>
 
-                        <a href="https://twitter.com/home?status=" class="twitter_color_bg" target="_blank">
-                            <span class="fab fa-twitter"></span>
-                        </a>
+                        <Link to="https://twitter.com/home?status=" className="twitter_color_bg" target="_blank">
+                            <span className="fab fa-twitter"></span>
+                        </Link>
 
-                        <a href="whatsapp://send?text=" target="_blank" class="whatsapp_color_bg">
-                            <span class="fab fa-whatsapp"></span>
-                        </a>
+                        <Link to="whatsapp://send?text=" target="_blank" className="whatsapp_color_bg">
+                            <span className="fab fa-whatsapp"></span>
+                        </Link>
 
-                        <a href="mailto:?subject=share_text&body=" target="_blank" style="background: #f66;">
-                            <span class="fa fa-envelope"></span>
-                        </a>
+                        <Link to="mailto:?subject=share_text&body=" target="_blank" style="background: #f66;">
+                            <span className="fa fa-envelope"></span>
+                        </Link>
 
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" class="linkedin_color_bg">
-                            <span class="fab fa-linkedin"></span>
-                        </a>
+                        <Link to="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" className="linkedin_color_bg">
+                            <span className="fab fa-linkedin"></span>
+                        </Link>
 
-                        <a href="http://pinterest.com/pin/create/button/?url=" target="_blank" class="pinterest_color_bg">
-                            <span class="fab fa-pinterest"></span>
-                        </a>
+                        <Link to="http://pinterest.com/pin/create/button/?url=" target="_blank" className="pinterest_color_bg">
+                            <span className="fab fa-pinterest"></span>
+                        </Link>
 
                     </div>
 
@@ -64,8 +64,8 @@
 
             </div>
 
-            <div class="modal-footer">
-                {{-- <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button> --}}
+            <div className="modal-footer">
+                {{-- <button type="button" className="btn btn-danger btn-sm" data-dismiss="modal">Close</button> --}}
             </div>
 
         </div>

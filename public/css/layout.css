@@ -2072,7 +2072,7 @@ a.a_underline:hover,
 }
 
 @media screen and (min-width: 769px) {
-  .pl-50-md{
+  .pl-1.50-md{
     padding-left: 50px;
   }
 }

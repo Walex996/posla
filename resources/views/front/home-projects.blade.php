@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
 @endsection
 
 
@@ -25,62 +25,62 @@
 
 
 
-    <div class="modal" id="modalCategories">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Project Categories</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div className="modal" id="modalCategories">
+        <div className="modal-dialog">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h4 className="modal-title">Project Categories</h4>
+                    <button type="button" className="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <div class="p-10">
+                <div className="modal-body">
+                    <div className="p-2.5">
                         
-                        <div class="font-bold">
+                        <div className="font-bold">
                             Select a category:
                         </div>
 
-                        <div class="home-category-list mt-5">
+                        <div className="home-category-list mt-1.5">
 
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
-                            <a href="/category/business/projects">
-                                <span class="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
+                            </Link>
+                            <Link to="/category/business/projects">
+                                <span className="fa fa-angle-right icon-000 icon-18 pull-right d-inline"></span>
                                 Category Name
-                            </a>
+                            </Link>
                             
                         </div>
 
@@ -91,124 +91,124 @@
     </div>
         
 
-    <div class="container">
+    <div className="container">
         @include('layouts.common.errors-messages')
-        <div class="row">
-            <div class="col-md-4 col-lg-3 d-none d-md-block">
+        <div className="row">
+            <div className="col-md-4 col-lg-3 d-none d-md-block">
                 
-                <div class="sticky-top">
-                    <div class="home-category-list">
+                <div className="sticky-top">
+                    <div className="home-category-list">
 
-                        <a href="/category/business/projects">
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
-                        <a href="/category/business/projects">
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
+                        <Link to="/category/business/projects">
                             Category Name
-                            <span class="fa fa-angle-right"></span>
-                        </a>
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
                         
                     </div>
                     
-                    <div class="mt-10">
-                        <a href="/support" class="text-fade d-inline hover-underline">
+                    <div className="mt-2.5">
+                        <Link to="/support" className="text-fade d-inline hover-underline">
                             Suggest a category
-                            <span class="fa fa-angle-right icon-grey ml-2"></span>
-                        </a>
+                            <span className="fa fa-angle-right icon-grey ml-2"></span>
+                        </Link>
                     </div>
                 </div>
                 
             </div>
             
-            <div class="col-md-8 col-lg-6">
+            <div className="col-md-8 col-lg-6">
                 
-                <div class="row">
-                    <div class="col-sm-6 col-lg-12">
+                <div className="row">
+                    <div className="col-sm-6 col-lg-12">
                         
-                        <div class="section">
-                            <form action="/account/projects/create" class="post-project">
-                                <div class="section-title">
-                                    <span class="fa fa-edit"></span>
+                        <div className="section">
+                            <form action="/account/projects/create" className="post-project">
+                                <div className="section-title">
+                                    <span className="fa fa-edit"></span>
                                     Create New Project
                                 </div>
-                                <div class="form-group">
-                                    <textarea name="title" id="" class="form-control" placeholder="I need..." style="height: 50px;"></textarea>
+                                <div className="form-group">
+                                    <textarea name="title" id="" className="form-control" placeholder="I need..." style="height: 50px;"></textarea>
                                 </div>
-                                <div class="floated-content">
-                                    <div class="form-group pull-left d-none">
-                                        <select name="privacy" id="privacy" class="form-control">
+                                <div className="floated-content">
+                                    <div className="form-group pull-left d-none">
+                                        <select name="privacy" id="privacy" className="form-control">
                                             <option value="">-- Select Privacy --</option>
                                         </select>
                                     </div>
-                                    <button class="btn btn-blue btn-sm pull-right">
+                                    <button className="btn btn-blue btn-sm pull-right">
                                         Continue
-                                        <span class="fa fa-angle-right"></span>
+                                        <span className="fa fa-angle-right"></span>
                                     </button>
                                 </div>
                             </form>
                         </div>
                         
-                        <div class="section d-none d-sm-block d-md-none">
-                            <a data-toggle="modal" data-target="#modalCategories" class="d-block">
-                                <span class="fa fa-angle-right pull-right icon-18"></span>
-                                <span class="fa fa-list-alt pull-left icon-18 mr-10 icon-blue"></span>
+                        <div className="section d-none d-sm-block d-md-none">
+                            <Link data-toggle="modal" data-target="#modalCategories" className="d-block">
+                                <span className="fa fa-angle-right pull-right icon-18"></span>
+                                <span className="fa fa-list-alt pull-left icon-18 mr-2.5 icon-blue"></span>
                                 View all project categories
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
-                    <div class="col-sm-6">
-                        <div class="home-section-user bg-fff shadow-sm mb-30 br-4 d-block d-lg-none">
+                    <div className="col-sm-6">
+                        <div className="home-section-user bg-fff shadow-sm mb-30 br-4 d-block d-lg-none">
                             <div></div>
-                            <div class="home-section-user-info">
-                                <a href="/account">
-                                    <span class="fa fa-user"></span>
-                                </a>
+                            <div className="home-section-user-info">
+                                <Link to="/account">
+                                    <span className="fa fa-user"></span>
+                                </Link>
                                 <div>
-                                    <a href="/account" class="font-bold d-block hover-underline">
+                                    <Link to="/account" className="font-bold d-block hover-underline">
                                         Olawale Lawal
-                                    </a>
-                                    <div class="text-fade">
+                                    </Link>
+                                    <div className="text-fade">
                                         Frontend Developer, UIUX Designer, Graphics Designer
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <a href="/deals" class="btn btn-orange btn-block">
+                                <Link to="/deals" className="btn btn-orange btn-block">
                                     Switch to Buying
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -216,19 +216,19 @@
 
 
 
-                <div class="section d-block d-sm-none">
-                    <a data-toggle="modal" data-target="#modalCategories" class="d-block">
-                        <span class="fa fa-angle-right pull-right icon-18"></span>
-                        <span class="fa fa-list-alt pull-left icon-18 mr-10 icon-blue"></span>
+                <div className="section d-block d-sm-none">
+                    <Link data-toggle="modal" data-target="#modalCategories" className="d-block">
+                        <span className="fa fa-angle-right pull-right icon-18"></span>
+                        <span className="fa fa-list-alt pull-left icon-18 mr-2.5 icon-blue"></span>
                         View all project categories
-                    </a>
+                    </Link>
                 </div>
                 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Featured Projects
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
@@ -244,183 +244,183 @@
 
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Category 2
-                        <a href="/category/business/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/category/business/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
-                    <div class="project-list project-list-wide">
+                    <div className="project-list project-list-wide">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')
                     </div>
-                    <a href="/category/business/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                    <Link to="/category/business/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                         View All Category 2 Projects
-                        <span class="fa fa-angle-right"></span>
-                    </a>
+                        <span className="fa fa-angle-right"></span>
+                    </Link>
                 </div>
 
 
@@ -428,35 +428,35 @@
 
             </div>
             
-            <div class="col-lg-3 d-none d-lg-block">
+            <div className="col-lg-3 d-none d-lg-block">
                 
-                <div class="home-section-user bg-fff shadow-sm mb-30 br-4">
+                <div className="home-section-user bg-fff shadow-sm mb-30 br-4">
                     <div></div>
-                    <div class="home-section-user-info">
-                        <a href="/account">
-                            <span class="fa fa-user"></span>
-                        </a>
+                    <div className="home-section-user-info">
+                        <Link to="/account">
+                            <span className="fa fa-user"></span>
+                        </Link>
                         <div>
-                            <a href="/account" class="font-bold d-block hover-underline">
+                            <Link to="/account" className="font-bold d-block hover-underline">
                                 Olawale Lawal
-                            </a>
-                            <div class="text-fade">
+                            </Link>
+                            <div className="text-fade">
                                 Frontend Developer, UIUX Designer, Graphics Designer
                             </div>
                         </div>
                     </div>
                     <div>
-                        <a href="/deals" class="btn btn-orange btn-block">
+                        <Link to="/deals" className="btn btn-orange btn-block">
                             Switch to Buying
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
-                <div class="section pl-10 pr-10 sticky-top">
-                    <div class="section-title">
+                <div className="section pl-2.5 pr-2.5 sticky-top">
+                    <div className="section-title">
                         Latest Projects
                     </div>
-                    <div class="project-list project-list-mini">
+                    <div className="project-list project-list-mini">
                         @include('front.common.project')
                         @include('front.common.project')
                         @include('front.common.project')

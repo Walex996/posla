@@ -482,11 +482,11 @@ div > .project:last-child{
     padding: 10px 5px;
 }
 
-.text-left-right.text-left-right-p-10 > div{
+.text-left-right.text-left-right-p-2.5 > div{
     padding: 10px 10px;
 }
 
-.text-left-right.text-left-right-p-20 > div{
+.text-left-right.text-left-right-p-5 > div{
     padding: 10px 20px;
 }
 
@@ -639,8 +639,8 @@ div > .project:last-child{
 }
 
 @media screen and (min-width: 992px) {
-    .p-20-10,
-    .p-20-10-responsive,
+    .p-5-10,
+    .p-5-10-responsive,
     .user-msg{
         padding: 20px;
     }
@@ -653,8 +653,8 @@ div > .project:last-child{
 }
 
 @media screen and (max-width: 991px) {
-    .p-20-10,
-    .p-20-10-responsive,
+    .p-5-10,
+    .p-5-10-responsive,
     .user-msg{
         padding: 10px;
     }

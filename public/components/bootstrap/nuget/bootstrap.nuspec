@@ -4,7 +4,7 @@
     <id>bootstrap</id>
     <version>3.4.1</version>
     <title>Bootstrap CSS</title>
-    <authors>Twitter, Inc.</authors>
+    <Linkuthors>Twitter, Inc.</authors>
     <owners>bootstrap</owners>
     <description>The most popular front-end framework for developing responsive, mobile first projects on the web.</description>
     <releaseNotes>https://blog.getbootstrap.com/</releaseNotes>

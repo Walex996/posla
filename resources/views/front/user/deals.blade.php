@@ -17,69 +17,69 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
 @endsection
 
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-4 col-lg-3">
 
                 @include('front.common.user-sidebar')
                 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/user/abcde12345">Abcde12345</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Deals</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/user/abcde12345">Abcde12345</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Deals</li>
                     </ol>
                 </div>
                 
-                <div class="">
+                <div className="">
 
-                    <div class="section">
-                        <div class="section-title">
+                    <div className="section">
+                        <div className="section-title">
                             Firstname's Deals (6)
                         </div>
                         <div>
-                            <div class="deal-list deal-list-mini row">
-                                <div class="col-sm-6 col-lg-4">
+                            <div className="deal-list deal-list-mini row">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
-                                <div class="col-sm-6 col-lg-4">
+                                <div className="col-sm-6 col-lg-4">
                                     @include('front.common.deal')
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="section">
+                    <div className="section">
                         {{-- //for pagination --}}
                     </div>
 

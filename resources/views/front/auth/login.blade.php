@@ -1,11 +1,11 @@
 {{-- login box --}}
-<div class="auth-modal auth-modal-login @if(session()->get('show-login-modal')) auth-show-default @endif" style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
+<div className="auth-modal auth-modal-login @if(session()->get('show-login-modal')) auth-show-default @endif" style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
 
-    <button class="auth-modal-close">
-        <span class="fa fa-times"></span>
+    <button className="auth-modal-close">
+        <span className="fa fa-times"></span>
     </button>
 
-    <div class="auth-modal-title">
+    <div className="auth-modal-title">
         <div>
             Account Login
         </div>
@@ -18,39 +18,39 @@
     @include('layouts.common.errors-messages')
     
 
-    <form method="POST" class="auth-modal-form" action="{{ route('login') }}">
+    <form method="POST" className="auth-modal-form" action="{{ route('login') }}">
         @csrf
-        <div class="form-group">
-            <label for="email" class="control-label">
+        <div className="form-group">
+            <label for="email" className="control-label">
                 Email Address:
             </label>
-            <input type="email" name="email" id="email" value="{{old('email')}}" class="form-control">
+            <input type="email" name="email" id="email" value="{{old('email')}}" className="form-control">
         </div>
-        <div class="input-group">
-            <label for="password" class="control-label">
+        <div className="input-group">
+            <label for="password" className="control-label">
                 Password:
             </label>
-            <div class="input-group input-group-password">
-                <input type="password" name="password" id="password" class="form-control">
-                <button type="button" class="input-group-btn password-toggle">
-                    <span class="fa fa-eye icon-17"></span>
+            <div className="input-group input-group-password">
+                <input type="password" name="password" id="password" className="form-control">
+                <button type="button" className="input-group-btn password-toggle">
+                    <span className="fa fa-eye icon-17"></span>
                 </button>
             </div>
         </div>
-        <div class="mt-20">
-            <a class="btn-forgot-password-switch text-fade hover-underline cursor-pointer">
+        <div className="mt-5">
+            <Link className="btn-forgot-password-switch text-fade hover-underline cursor-pointer">
                 Forgot Password
-            </a>
+            </Link>
         </div>
-        <div class="mt-20">
-            <button type="submit" class="btn btn-blue btn-block">
+        <div className="mt-5">
+            <button type="submit" className="btn btn-blue btn-block">
                 Login
             </button>
         </div>
-        <div class="mt-20 text-center">
-            <a class="btn-register-switch text-fade hover-underline cursor-pointer">
+        <div className="mt-5 text-center">
+            <Link className="btn-register-switch text-fade hover-underline cursor-pointer">
                 Create New Account
-            </a>
+            </Link>
         </div>
     </form>
     
@@ -58,4 +58,4 @@
 
 
 {{-- if error occurs, add class "auth-show" to the div below --}}
-<div class="bg-fade bg-fade-auth-backend @if(session()->get('show-login-modal')) auth-show @endif"></div>
+<div className="bg-fade bg-fade-auth-backend @if(session()->get('show-login-modal')) auth-show @endif"></div>

@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         @media screen and (min-width: 768px){
             .account-sidebar-dashboard{
@@ -31,15 +31,15 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
                 
             </div>
             
-            <div class="d-none d-md-block col-12 col-md-8 col-lg-9">
+            <div className="d-none d-md-block col-12 col-md-8 col-lg-9">
                 
                 @include('front.common.account-dashboard')
 

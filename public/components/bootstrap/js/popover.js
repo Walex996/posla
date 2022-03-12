@@ -19,13 +19,13 @@
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-  Popover.VERSION  = '3.4.1'
+  Popover.VERSION = '3.4.1'
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
     trigger: 'click',
     content: '',
-    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    template: '<div className="popover" role="tooltip"><div className="arrow"></div><h3 className="popover-title"></h3><div className="popover-content"></div></div>'
   })
 
 
@@ -41,8 +41,8 @@
   }
 
   Popover.prototype.setContent = function () {
-    var $tip    = this.tip()
-    var title   = this.getTitle()
+    var $tip = this.tip()
+    var title = this.getTitle()
     var content = this.getContent()
 
     if (this.options.html) {
@@ -78,7 +78,7 @@
 
   Popover.prototype.getContent = function () {
     var $e = this.$element
-    var o  = this.options
+    var o = this.options
 
     return $e.attr('data-content')
       || (typeof o.content == 'function' ?
@@ -96,8 +96,8 @@
 
   function Plugin(option) {
     return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.popover')
+      var $this = $(this)
+      var data = $this.data('bs.popover')
       var options = typeof option == 'object' && option
 
       if (!data && /destroy|hide/.test(option)) return
@@ -108,7 +108,7 @@
 
   var old = $.fn.popover
 
-  $.fn.popover             = Plugin
+  $.fn.popover = Plugin
   $.fn.popover.Constructor = Popover
 
 

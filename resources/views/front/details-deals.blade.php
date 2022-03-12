@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         
     </style>
@@ -29,53 +29,53 @@
 
     @include('front.common.share-modal')
     
-    <div class="container">
+    <div className="container">
         
-        <div class="section d-none d-sm-block p-5">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="ul-inline details-page-top">
+        <div className="section d-none d-sm-block p-1.5">
+            <div className="row">
+                <div className="col-lg-6">
+                    <ul className="ul-inline details-page-top">
                         <li>
-                            <a href="#overview">
+                            <Link to="#overview">
                                 Overview
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#description">
+                            <Link to="#description">
                                 Description
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#about">
+                            <Link to="#about">
                                 About This Seller
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#reviews">
+                            <Link to="#reviews">
                                 Reviews
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <div className="col-lg-6 d-none d-lg-block">
                     <form action="">
-                        <ul class="ul-inline pull-right mt-1">
+                        <ul className="ul-inline pull-right mt-1">
                             <li>
-                                <button type="submit" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
-                                    <span class="fas fa-heart" style="position: relative; top: 1px;"></span>
+                                <button type="submit" className="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
+                                    <span className="fas fa-heart" style="position: relative; top: 1px;"></span>
                                 </button>
                             </li>
                             <li>
-                                <a class="p-0" title="Share Deal" data-widget="collapse" data-toggle="tooltip">
-                                    <button type="button" class="btn btn-transparent-black btn-xs hover-bg-orange" data-toggle="modal" data-target="#shareModal">
-                                        <span class="fas fa-share-alt"></span>
+                                <Link className="p-0" title="Share Deal" data-widget="collapse" data-toggle="tooltip">
+                                    <button type="button" className="btn btn-transparent-black btn-xs hover-bg-orange" data-toggle="modal" data-target="#shareModal">
+                                        <span className="fas fa-share-alt"></span>
                                     </button>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a data-toggle="modal" data-target="#flag" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Report Deal" data-widget="collapse" data-toggle="tooltip">
-                                    <span class="fas fa-flag"></span>
-                                </a>
+                                <Link data-toggle="modal" data-target="#flag" className="btn btn-transparent-black btn-xs hover-bg-orange" title="Report Deal" data-widget="collapse" data-toggle="tooltip">
+                                    <span className="fas fa-flag"></span>
+                                </Link>
                             </li>
                         </ul>
                     </form>
@@ -83,38 +83,38 @@
             </div>
         </div>
 
-        <div class="row">
+        <div className="row">
             
-            <div class="col-md-8">
+            <div className="col-md-8">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/category/deals/category1">Category name</a></li>
-                        <li class="breadcrumb-item"><a href="/category/deals/category1">Subcategory name</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">0923903290230902</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/category/deals/category1">Category name</Link></li>
+                        <li className="breadcrumb-item"><Link to="/category/deals/category1">Subcategory name</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">0923903290230902</li>
                     </ol>
                 </div>
 
                 <div id="overview">
                     <div>
-                        <h4 class="font-bold">
+                        <h4 className="font-bold">
                             I will create awesome & on-point podcast script for your episodes
                         </h4>
                     </div>
-                    <div class="details-title-sub floated-content mt-10">
-                        <div class="pull-left">
-                            <a href="/user/abcde12345" class="user-img-text">
+                    <div className="details-title-sub floated-content mt-2.5">
+                        <div className="pull-left">
+                            <Link to="/user/abcde12345" className="user-img-text">
                                 <div>
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="hover-underline">
+                                <div className="hover-underline">
                                     Olawale Lawal
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div class="pull-left d-none d-sm-inline-block d-md-none d-lg-inline-block">|</div>
-                        <div class="pull-left d-none d-sm-inline-block d-md-none d-lg-inline-block">
-                            <div class="rating-box rating-box-eee mt-2">
+                        <div className="pull-left d-none d-sm-inline-block d-md-none d-lg-inline-block">|</div>
+                        <div className="pull-left d-none d-sm-inline-block d-md-none d-lg-inline-block">
+                            <div className="rating-box rating-box-eee mt-2">
                                 <div>
                                     <div></div>
                                     <div style="width: 75%;"></div>
@@ -124,121 +124,121 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pull-left">|</div>
-                        <div class="pull-left">
+                        <div className="pull-left">|</div>
+                        <div className="pull-left">
                             2 weeks ago
                         </div>
                     </div>
                 </div>
 
-                <div class="section slider-section mt-10">
+                <div className="section slider-section mt-2.5">
                     
-                    <div id="demo" class="carousel slide deals-slider" data-ride="carousel">
+                    <div id="demo" className="carousel slide deals-slider" data-ride="carousel">
                         <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1" class=""></li>
-                            <li data-target="#demo" data-slide-to="2" class=""></li>
+                        <ul className="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" className="active"></li>
+                            <li data-target="#demo" data-slide-to="1" className=""></li>
+                            <li data-target="#demo" data-slide-to="2" className=""></li>
                         </ul>
                       
                         <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="name" class="dp-contain" />
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="name" className="dp-contain" />
                             </div> 
-                            <div class="carousel-item">
-                                <img src="{{asset('img/app/samples/user.png')}}" alt="name" class="dp-contain" />
+                            <div className="carousel-item">
+                                <img src="{{asset('img/app/samples/user.png')}}" alt="name" className="dp-contain" />
                             </div> 
-                            <div class="carousel-item">
-                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="name" class="dp-contain" />
+                            <div className="carousel-item">
+                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="name" className="dp-contain" />
                             </div> 
                         </div>
                       
                         <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </a>
+                        <Link className="carousel-control-prev" to="#demo" data-slide="prev">
+                          <span className="carousel-control-prev-icon"></span>
+                        </Link>
+                        <Link className="carousel-control-next" to="#demo" data-slide="next">
+                          <span className="carousel-control-next-icon"></span>
+                        </Link>
                     </div>
                       
                 </div>
 
-                <div class="section" id="description">
-                    <div class="section-title">
+                <div className="section" id="description">
+                    <div className="section-title">
                         Description
                     </div>
-                    <div class="line-height-25">
+                    <div className="line-height-25">
 
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
                     </div>
-                    <div class="mt-10">
-                        <div class="pt-10 bt-1-ddd item-labels item-labels-tags-all d-block">
-                            <div class="item-labels-prefix">
+                    <div className="mt-2.5">
+                        <div className="pt-2.5 bt-1-ddd item-labels item-labels-tags-all d-block">
+                            <div className="item-labels-prefix">
                                 Tags & Skills:
                             </div>
-                            <div class="item-labels-tags">
+                            <div className="item-labels-tags">
                                 tag name
                             </div>
-                            <div class="item-labels-tags">
+                            <div className="item-labels-tags">
                                 tag name
                             </div>
-                            <div class="item-labels-tags">
+                            <div className="item-labels-tags">
                                 tag name
                             </div>
-                            <div class="item-labels-tags">
+                            <div className="item-labels-tags">
                                 tag name
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="section d-block d-md-none">
+                <div className="section d-block d-md-none">
                     {{-- Mobile screen --}}
                     <div>
-                        <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#price_1_basic">
+                        <ul className="nav nav-tabs posla-tabs posla-tabs-3">
+                            <li className="nav-item">
+                                <Link className="nav-link active" data-toggle="tab" to="#price_1_basic">
                                     Basic
-                                </a>
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#price_1_standard">
+                            <li className="nav-item">
+                                <Link className="nav-link" data-toggle="tab" to="#price_1_standard">
                                     Standard
-                                </a>
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#price_1_premium">
+                            <li className="nav-item">
+                                <Link className="nav-link" data-toggle="tab" to="#price_1_premium">
                                     Premium
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                           
                         <form action="/cart">
-                            <div class="tab-content">
+                            <div className="tab-content">
                                 
-                                <div class="tab-pane container active" id="price_1_basic">
-                                    <div class="pt-20 pb-20">
+                                <div className="tab-pane container active" id="price_1_basic">
+                                    <div className="pt-5 pb-5">
                                         <div>
-                                            <div class="pull-right font-20 font-bold text-blue">
+                                            <div className="pull-right font-20 font-bold text-blue">
                                                 $150
                                             </div>
-                                            <div class="overflow-hidden pt-10">
+                                            <div className="overflow-hidden pt-2.5">
                                                 Basic Designs
                                             </div>
                                         </div>
-                                        <div class="text-fade mt-15">
+                                        <div className="text-fade mt-15">
                                             2 basic logo designs with JPEG or JPG format and PNG format.
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-left-right">
-                                            <div class="bg-eee">
+                                        <div className="text-left-right">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-history"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-history"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Date
                                                     </div>
                                                 </div>
@@ -248,8 +248,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-refresh"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-refresh"></span>
+                                                    <div className="overflow-hidden">
                                                         Revisions
                                                     </div>
                                                 </div>
@@ -257,10 +257,10 @@
                                                     4 revisions
                                                 </div>
                                             </div>
-                                            <div class="bg-eee">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-star"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-star"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Format
                                                     </div>
                                                 </div>
@@ -270,38 +270,38 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pt-20 pb-20">
-                                        <button class="btn btn-blue btn-block">
+                                    <div className="pt-5 pb-5">
+                                        <button className="btn btn-blue btn-block">
                                             Continue ($150)
                                         </button>
-                                        <div class="mt-10">
-                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                        <div className="mt-2.5">
+                                            <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                 Contact Seller
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane container" id="price_1_standard">
-                                    <div class="pt-20 pb-20">
+                                <div className="tab-pane container" id="price_1_standard">
+                                    <div className="pt-5 pb-5">
                                         <div>
-                                            <div class="pull-right font-20 font-bold text-blue">
+                                            <div className="pull-right font-20 font-bold text-blue">
                                                 $250
                                             </div>
-                                            <div class="overflow-hidden pt-10">
+                                            <div className="overflow-hidden pt-2.5">
                                                 Recommended (Super-fast delivery)
                                             </div>
                                         </div>
-                                        <div class="text-fade mt-15">
+                                        <div className="text-fade mt-15">
                                             2 unique logo designs with facebook and twitter covers. All vector files; and unlimited revision.
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-left-right">
-                                            <div class="bg-eee">
+                                        <div className="text-left-right">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-history"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-history"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Date
                                                     </div>
                                                 </div>
@@ -311,8 +311,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-refresh"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-refresh"></span>
+                                                    <div className="overflow-hidden">
                                                         Revisions
                                                     </div>
                                                 </div>
@@ -320,10 +320,10 @@
                                                     4 revisions
                                                 </div>
                                             </div>
-                                            <div class="bg-eee">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-star"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-star"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Format
                                                     </div>
                                                 </div>
@@ -333,38 +333,38 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pt-20 pb-20">
-                                        <button class="btn btn-blue btn-block">
+                                    <div className="pt-5 pb-5">
+                                        <button className="btn btn-blue btn-block">
                                             Continue ($250)
                                         </button>
-                                        <div class="mt-10">
-                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                        <div className="mt-2.5">
+                                            <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                 Contact Seller
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane container" id="price_1_premium">
-                                    <div class="pt-20 pb-20">
+                                <div className="tab-pane container" id="price_1_premium">
+                                    <div className="pt-5 pb-5">
                                         <div>
-                                            <div class="pull-right font-20 font-bold text-blue">
+                                            <div className="pull-right font-20 font-bold text-blue">
                                                 $400
                                             </div>
-                                            <div class="overflow-hidden pt-10">
+                                            <div className="overflow-hidden pt-2.5">
                                                 Bespoke Designs (All branding packs)
                                             </div>
                                         </div>
-                                        <div class="text-fade mt-15">
+                                        <div className="text-fade mt-15">
                                             5 supreme logo designs with social media covers, stationery designs, priority support, and all source files used in the making of all 5 logo designs.
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="text-left-right">
-                                            <div class="bg-eee">
+                                        <div className="text-left-right">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-history"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-history"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Date
                                                     </div>
                                                 </div>
@@ -374,8 +374,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-refresh"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-refresh"></span>
+                                                    <div className="overflow-hidden">
                                                         Revisions
                                                     </div>
                                                 </div>
@@ -383,10 +383,10 @@
                                                     4 revisions
                                                 </div>
                                             </div>
-                                            <div class="bg-eee">
+                                            <div className="bg-eee">
                                                 <div>
-                                                    <span class="fa fa-star"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-star"></span>
+                                                    <div className="overflow-hidden">
                                                         Delivery Format
                                                     </div>
                                                 </div>
@@ -396,14 +396,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pt-20 pb-20">
-                                        <button class="btn btn-blue btn-block">
+                                    <div className="pt-5 pb-5">
+                                        <button className="btn btn-blue btn-block">
                                             Continue ($400)
                                         </button>
-                                        <div class="mt-10">
-                                            <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                        <div className="mt-2.5">
+                                            <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                 Contact Seller
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -414,29 +414,29 @@
                 </div>
 
 
-                <div class="section d-block d-md-none">
-                    <div class="section-title">
+                <div className="section d-block d-md-none">
+                    <div className="section-title">
                         Share Link
                     </div>
                     <div>
-                        <div class="">
+                        <div className="">
                             This is a private deal. Copy the link below to share.
                         </div>
                         <div>
-                            <div class="copy-link mt-5">
-                                <div class="input-group">
-                                    <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
-                                            <span class="fa fa-copy"></span>
+                            <div className="copy-link mt-1.5">
+                                <div className="input-group">
+                                    <input type="search" name="q" className="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
+                                    <div className="input-group-btn">
+                                        <button type="submit" className="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
+                                            <span className="fa fa-copy"></span>
                                             <span>Copy</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center mt-10">
-                                <button type="button" class="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
-                                    <span class="fa fa-share-alt"></span>
+                            <div className="text-center mt-2.5">
+                                <button type="button" className="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
+                                    <span className="fa fa-share-alt"></span>
                                     Share this Deal
                                 </button>
                             </div>
@@ -444,121 +444,121 @@
                     </div>
                 </div>
 
-                <div class="section" id="about">
-                    <div class="section-title">
+                <div className="section" id="about">
+                    <div className="section-title">
                         About this Seller
                     </div>
                     <div>
-                        <a href="/user/abcde12345" class="user-img-text user-img-text-md">
+                        <Link to="/user/abcde12345" className="user-img-text user-img-text-md">
                             <div>
-                                <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                                <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                             </div>
-                            <div class="pt-5 underline-none">
+                            <div className="pt-1.5 underline-none">
                                 Olawale Lawal
-                                <div class="pt-1">
-                                    <button class="btn btn-transparent-black btn-xs hover-bg-black">
+                                <div className="pt-1">
+                                    <button className="btn btn-transparent-black btn-xs hover-bg-black">
                                         View seller's profile
                                     </button>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
-                    <div class="bt-1-ddd pt-10 mt-10">
-                        <div class="row">
-                            <div class="col-sm-6 mb-20">
-                                <div class="text-fade">
+                    <div className="bt-1-ddd pt-2.5 mt-2.5">
+                        <div className="row">
+                            <div className="col-sm-6 mb-5">
+                                <div className="text-fade">
                                     Country
                                 </div>
                                 <div>
                                     Ireland
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-20">
-                                <div class="text-fade">
+                            <div className="col-sm-6 mb-5">
+                                <div className="text-fade">
                                     Gender
                                 </div>
                                 <div>
                                     Female
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-20">
-                                <div class="text-fade">
+                            <div className="col-sm-6 mb-5">
+                                <div className="text-fade">
                                     Member Since
                                 </div>
                                 <div>
                                     Jan 16, 2016
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-20">
-                                <div class="text-fade">
+                            <div className="col-sm-6 mb-5">
+                                <div className="text-fade">
                                     Project Delivery Rate
                                 </div>
-                                <div class="text-orange">
+                                <div className="text-orange">
                                     90%
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="line-height-20 bt-1-ddd pt-10">
+                    <div className="line-height-20 bt-1-ddd pt-2.5">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </div>
                 </div>
 
-                <div class="section-title" id="reviews">
+                <div className="section-title" id="reviews">
                     Reviews
                 </div>
 
-                <div class="section pb-0">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="reviews-summary">
+                <div className="section pb-0">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="reviews-summary">
                                 <div>
                                     Seller communication level
-                                    <span class="font-bold">(4.5)</span>
+                                    <span className="font-bold">(4.5)</span>
                                 </div>
                                 <div>
                                     <div style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="reviews-summary">
+                        <div className="col-sm-6">
+                            <div className="reviews-summary">
                                 <div>
                                     Seller communication level
-                                    <span class="font-bold">(4.5)</span>
+                                    <span className="font-bold">(4.5)</span>
                                 </div>
                                 <div>
                                     <div style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="reviews-summary">
+                        <div className="col-sm-6">
+                            <div className="reviews-summary">
                                 <div>
                                     Seller communication level
-                                    <span class="font-bold">(4.5)</span>
+                                    <span className="font-bold">(4.5)</span>
                                 </div>
                                 <div>
                                     <div style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="reviews-summary">
+                        <div className="col-sm-6">
+                            <div className="reviews-summary">
                                 <div>
                                     Seller communication level
-                                    <span class="font-bold">(4.5)</span>
+                                    <span className="font-bold">(4.5)</span>
                                 </div>
                                 <div>
                                     <div style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="reviews-summary">
+                        <div className="col-sm-6">
+                            <div className="reviews-summary">
                                 <div>
                                     Seller communication level
-                                    <span class="font-bold">(4.5)</span>
+                                    <span className="font-bold">(4.5)</span>
                                 </div>
                                 <div>
                                     <div style="width: 80%;"></div>
@@ -568,249 +568,249 @@
                     </div>
                 </div>
 
-                <div class="section mb-0">
-                    <div class="section-title">
+                <div className="section mb-0">
+                    <div className="section-title">
                         114 Reviews
-                        <a href="" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
                     <div>
                         
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
                         
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
 
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
 
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
 
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
 
 
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
@@ -821,54 +821,54 @@
 
             </div>
 
-            <div class="col-md-4 d-none d-md-block">
+            <div className="col-md-4 d-none d-md-block">
                 
-                <div class="sticky-top d-none d-lg-block">
-                    <div class="section">
+                <div className="sticky-top d-none d-lg-block">
+                    <div className="section">
                         <div>
 
                             {{-- web --}}
-                            <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#price_2_basic">
+                            <ul className="nav nav-tabs posla-tabs posla-tabs-3">
+                                <li className="nav-item">
+                                    <Link className="nav-link active" data-toggle="tab" to="#price_2_basic">
                                         Basic
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#price_2_standard">
+                                <li className="nav-item">
+                                    <Link className="nav-link" data-toggle="tab" to="#price_2_standard">
                                         Standard
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#price_2_premium">
+                                <li className="nav-item">
+                                    <Link className="nav-link" data-toggle="tab" to="#price_2_premium">
                                         Premium
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                               
                             <form action="/cart">
-                                <div class="tab-content">
+                                <div className="tab-content">
                                     
-                                    <div class="tab-pane container active" id="price_2_basic">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container active" id="price_2_basic">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right font-20 font-bold text-blue">
+                                                <div className="pull-right font-20 font-bold text-blue">
                                                     $150
                                                 </div>
-                                                <div class="overflow-hidden pt-10">
+                                                <div className="overflow-hidden pt-2.5">
                                                     Basic Designs
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 2 basic logo designs with JPEG or JPG format and PNG format.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
@@ -878,8 +878,8 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
@@ -887,10 +887,10 @@
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
@@ -900,38 +900,38 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($150)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane container" id="price_2_standard">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container" id="price_2_standard">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right font-20 font-bold text-blue">
+                                                <div className="pull-right font-20 font-bold text-blue">
                                                     $250
                                                 </div>
-                                                <div class="overflow-hidden pt-10">
+                                                <div className="overflow-hidden pt-2.5">
                                                     Recommended (Super-fast delivery)
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 2 unique logo designs with facebook and twitter covers. All vector files; and unlimited revision.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
@@ -941,8 +941,8 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
@@ -950,10 +950,10 @@
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
@@ -963,38 +963,38 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($250)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane container" id="price_2_premium">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container" id="price_2_premium">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right font-20 font-bold text-blue">
+                                                <div className="pull-right font-20 font-bold text-blue">
                                                     $400
                                                 </div>
-                                                <div class="overflow-hidden pt-10">
+                                                <div className="overflow-hidden pt-2.5">
                                                     Bespoke Designs (All branding packs)
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 5 supreme logo designs with social media covers, stationery designs, priority support, and all source files used in the making of all 5 logo designs.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
@@ -1004,8 +1004,8 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
@@ -1013,10 +1013,10 @@
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
@@ -1026,14 +1026,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($400)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -1043,29 +1043,29 @@
                         </div>
                     </div>
 
-                    <div class="section">
-                        <div class="section-title">
+                    <div className="section">
+                        <div className="section-title">
                             Share Link
                         </div>
                         <div>
-                            <div class="">
+                            <div className="">
                                 This is a private deal. Copy the link below to share.
                             </div>
                             <div>
-                                <div class="copy-link mt-5">
-                                    <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
-                                        <div class="input-group-btn">
-                                            <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-2')" style="border-radius: 0 !important; height: 35px;">
-                                                <span class="fa fa-copy"></span>
+                                <div className="copy-link mt-1.5">
+                                    <div className="input-group">
+                                        <input type="search" name="q" className="form-control" onfocus="highlightShareLink('direct-share-link-2')" id="direct-share-link-2" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
+                                        <div className="input-group-btn">
+                                            <button type="submit" className="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-2')" style="border-radius: 0 !important; height: 35px;">
+                                                <span className="fa fa-copy"></span>
                                                 <span>Copy</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center mt-10">
-                                    <button type="button" class="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
-                                        <span class="fa fa-share-alt"></span>
+                                <div className="text-center mt-2.5">
+                                    <button type="button" className="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
+                                        <span className="fa fa-share-alt"></span>
                                         Share this Deal
                                     </button>
                                 </div>
@@ -1075,138 +1075,138 @@
                 </div>
 
 
-                <div class="section d-none d-md-block d-lg-none">
+                <div className="section d-none d-md-block d-lg-none">
                     <form action="">
-                        <ul class="ul-inline">
+                        <ul className="ul-inline">
                             <li>
-                                <button type="submit" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
-                                    <span class="fas fa-heart" style="position: relative; top: 1px;"></span>
+                                <button type="submit" className="btn btn-transparent-black btn-xs hover-bg-orange" title="Favourite" data-widget="collapse" data-toggle="tooltip">
+                                    <span className="fas fa-heart" style="position: relative; top: 1px;"></span>
                                 </button>
                             </li>
                             <li>
-                                <a class="p-0" title="Share Deal" data-widget="collapse" data-toggle="tooltip">
-                                    <button type="button" class="btn btn-transparent-black btn-xs hover-bg-orange" data-toggle="modal" data-target="#share">
-                                        <span class="fas fa-share-alt"></span>
+                                <Link className="p-0" title="Share Deal" data-widget="collapse" data-toggle="tooltip">
+                                    <button type="button" className="btn btn-transparent-black btn-xs hover-bg-orange" data-toggle="modal" data-target="#share">
+                                        <span className="fas fa-share-alt"></span>
                                     </button>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a data-toggle="modal" data-target="#flag" class="btn btn-transparent-black btn-xs hover-bg-orange" title="Report Deal" data-widget="collapse" data-toggle="tooltip">
-                                    <span class="fas fa-flag"></span>
-                                </a>
+                                <Link data-toggle="modal" data-target="#flag" className="btn btn-transparent-black btn-xs hover-bg-orange" title="Report Deal" data-widget="collapse" data-toggle="tooltip">
+                                    <span className="fas fa-flag"></span>
+                                </Link>
                             </li>
                         </ul>
                     </form>
                 </div>
 
-                <div class="sticky-top d-none d-md-block d-lg-none mb-0">
-                    <div class="section">
+                <div className="sticky-top d-none d-md-block d-lg-none mb-0">
+                    <div className="section">
                         {{-- tab --}}
                         <div>
-                            <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#price_3_basic">
+                            <ul className="nav nav-tabs posla-tabs posla-tabs-3">
+                                <li className="nav-item">
+                                    <Link className="nav-link active" data-toggle="tab" to="#price_3_basic">
                                         Basic
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#price_3_standard">
+                                <li className="nav-item">
+                                    <Link className="nav-link" data-toggle="tab" to="#price_3_standard">
                                         Standard
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#price_3_premium">
+                                <li className="nav-item">
+                                    <Link className="nav-link" data-toggle="tab" to="#price_3_premium">
                                         Premium
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                             
                             <form action="/cart">
-                                <div class="tab-content">
+                                <div className="tab-content">
                                     
-                                    <div class="tab-pane container active p-0" id="price_3_basic">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container active p-0" id="price_3_basic">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right ml-10 font-20 font-bold text-blue">
+                                                <div className="pull-right ml-2.5 font-20 font-bold text-blue">
                                                     $150
                                                 </div>
-                                                <div class="overflow-hidden pt-5">
+                                                <div className="overflow-hidden pt-1.5">
                                                     Basic Designs
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 2 basic logo designs with JPEG or JPG format and PNG format.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
-                                                    <div class="w-100 pull-none">
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
+                                                    <div className="w-100 pull-none">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
-                                                    <div class="pl-10 pr-10">
+                                                    <div className="pl-2.5 pr-2.5">
                                                         1 day delivery
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div class="w-100 pull-none">
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                    <div className="w-100 pull-none">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
-                                                    <div class="pl-10 pr-10">
+                                                    <div className="pl-2.5 pr-2.5">
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
-                                                    <div class="w-100 pull-none">
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                <div className="bg-eee">
+                                                    <div className="w-100 pull-none">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
-                                                    <div class="pl-10 pr-10">
+                                                    <div className="pl-2.5 pr-2.5">
                                                         Work & Deliver
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($150)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
     
-                                    <div class="tab-pane container p-0" id="price_3_standard">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container p-0" id="price_3_standard">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right ml-10 font-20 font-bold text-blue">
+                                                <div className="pull-right ml-2.5 font-20 font-bold text-blue">
                                                     $250
                                                 </div>
-                                                <div class="overflow-hidden pt-5">
+                                                <div className="overflow-hidden pt-1.5">
                                                     Recommended (Super-fast delivery)
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 2 unique logo designs with facebook and twitter covers. All vector files; and unlimited revision.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
@@ -1216,8 +1216,8 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
@@ -1225,10 +1225,10 @@
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
@@ -1238,38 +1238,38 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($250)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
     
-                                    <div class="tab-pane container p-0" id="price_3_premium">
-                                        <div class="pt-20 pb-20">
+                                    <div className="tab-pane container p-0" id="price_3_premium">
+                                        <div className="pt-5 pb-5">
                                             <div>
-                                                <div class="pull-right ml-10 font-20 font-bold text-blue">
+                                                <div className="pull-right ml-2.5 font-20 font-bold text-blue">
                                                     $400
                                                 </div>
-                                                <div class="overflow-hidden pt-5">
+                                                <div className="overflow-hidden pt-1.5">
                                                     Bespoke Designs (All branding packs)
                                                 </div>
                                             </div>
-                                            <div class="text-fade mt-15">
+                                            <div className="text-fade mt-15">
                                                 5 supreme logo designs with social media covers, stationery designs, priority support, and all source files used in the making of all 5 logo designs.
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="text-left-right">
-                                                <div class="bg-eee">
+                                            <div className="text-left-right">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-history"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-history"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Date
                                                         </div>
                                                     </div>
@@ -1279,8 +1279,8 @@
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <span class="fa fa-refresh"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-refresh"></span>
+                                                        <div className="overflow-hidden">
                                                             Revisions
                                                         </div>
                                                     </div>
@@ -1288,10 +1288,10 @@
                                                         4 revisions
                                                     </div>
                                                 </div>
-                                                <div class="bg-eee">
+                                                <div className="bg-eee">
                                                     <div>
-                                                        <span class="fa fa-star"></span>
-                                                        <div class="overflow-hidden">
+                                                        <span className="fa fa-star"></span>
+                                                        <div className="overflow-hidden">
                                                             Delivery Format
                                                         </div>
                                                     </div>
@@ -1301,14 +1301,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pt-20 pb-20">
-                                            <button class="btn btn-blue btn-block">
+                                        <div className="pt-5 pb-5">
+                                            <button className="btn btn-blue btn-block">
                                                 Continue ($400)
                                             </button>
-                                            <div class="mt-10">
-                                                <a href="/messages/user000000" class="btn btn-transparent-black btn-block">
+                                            <div className="mt-2.5">
+                                                <Link to="/messages/user000000" className="btn btn-transparent-black btn-block">
                                                     Contact Seller
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -1318,31 +1318,31 @@
                         </div>
                     </div>
 
-                    <div class="section">
-                        <div class="section-title">
+                    <div className="section">
+                        <div className="section-title">
                             Share Link
                         </div>
                         <div>
-                            <div class="">
+                            <div className="">
                                 This is a private deal.
-                                <br>
+                                <br />
                                 Copy the link below to share.
                             </div>
                             <div>
-                                <div class="copy-link mt-5">
-                                    <div class="input-group">
-                                        <input type="search" name="q" class="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
-                                        <div class="input-group-btn">
-                                            <button type="submit" class="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
-                                                <span class="fa fa-copy"></span>
+                                <div className="copy-link mt-1.5">
+                                    <div className="input-group">
+                                        <input type="search" name="q" className="form-control" onfocus="highlightShareLink('direct-share-link-3')" id="direct-share-link-3" value="http://localhost:8001/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" readonly />
+                                        <div className="input-group-btn">
+                                            <button type="submit" className="btn btn-blue btn-md" onclick="copyShareLink('direct-share-link-3')" style="border-radius: 0 !important; height: 35px;">
+                                                <span className="fa fa-copy"></span>
                                                 <span>Copy</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center mt-10">
-                                    <button type="button" class="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
-                                        <span class="fa fa-share-alt"></span>
+                                <div className="text-center mt-2.5">
+                                    <button type="button" className="btn btn-transparent-black btn-sm" data-toggle="modal" data-target="#shareModal">
+                                        <span className="fa fa-share-alt"></span>
                                         Share this Deal
                                     </button>
                                 </div>
@@ -1356,47 +1356,47 @@
         </div>
 
         
-        <hr>
+        <hr />
 
 
-        <div class="font-18 font-bold pb-10 text-center b-none">
+        <div className="font-18 font-bold pb-10 text-center b-none">
             Other Deals from this seller
         </div>
-        <div class="section">
+        <div className="section">
             {{-- -double, -lg-6  ||  -mini, -lg-3 --}}
-            <div class="deal-list deal-list-mini row">
-                <div class="col-sm-6 col-lg-3">
+            <div className="deal-list deal-list-mini row">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
             </div>
         </div>
             
-        <hr>
+        <hr />
 
-        <div class="font-18 font-bold pb-10 text-center b-none">
+        <div className="font-18 font-bold pb-10 text-center b-none">
             Similar Category_Name Deals
         </div>
-        <div class="section">
-            <div class="deal-list deal-list-mini row">
-                <div class="col-sm-6 col-lg-3">
+        <div className="section">
+            <div className="deal-list deal-list-mini row">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div>
             </div>

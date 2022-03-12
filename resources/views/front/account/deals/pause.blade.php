@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-deals{
             color: #FF940A !important;
@@ -29,26 +29,26 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/deals">Deals</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pause Deal</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/deals">Deals</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Pause Deal</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Pause Deal - #1234
                     </div>
                     <div>
@@ -57,50 +57,50 @@
                             Are you sure you want to pause this deal?
                         </div>
 
-                        <div class="row mt-30">
-                            <div class="col-sm-6 col-md-12 col-lg-5 col-xl-4">
+                        <div className="row mt-30">
+                            <div className="col-sm-6 col-md-12 col-lg-5 col-xl-4">
                                 @include('front.common.deal')
                             </div>
 
-                            <div class="col-sm-6 col-md-12 col-lg-7 col-xl-8">
-                                <div class="note d-inline-block">
+                            <div className="col-sm-6 col-md-12 col-lg-7 col-xl-8">
+                                <div className="note d-inline-block">
                                     Please note:
                                 </div>
-                                <ul class="list-style mt-10">
+                                <ul className="list-style mt-2.5">
                                     <li>
                                         This action cannot be undone.
                                     </li>
-                                    <li class="mt-5">
+                                    <li className="mt-1.5">
                                         Paused deals will no longer be active and visible to users on this platform.
                                     </li>
-                                    <li class="mt-5">
-                                        To keep the deal active but private, please <a href="/account/deals/edit/1234/info" class="underline">edit the visibility</a> status of this deal.
+                                    <li className="mt-1.5">
+                                        To keep the deal active but private, please <Link to="/account/deals/edit/1234/info" className="underline">edit the visibility</Link> status of this deal.
                                     </li>
-                                    <li class="mt-5">
+                                    <li className="mt-1.5">
                                         Orders already attached to this deal will not be affected.
                                     </li>
-                                    <li class="mt-5">
+                                    <li className="mt-1.5">
                                         Current payments for "featured" ad deal, will be paused.
                                     </li>
-                                    <li class="mt-5">
+                                    <li className="mt-1.5">
                                         All pending refunds on this deal will not be affected.
                                     </li>
-                                    <li class="mt-5">
+                                    <li className="mt-1.5">
                                         Earnings acquired from this deal will not be affected.
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="mt-20 pt-20 bt-1-ddd">
+                        <div className="mt-5 pt-5 bt-1-ddd">
 
-                            <form action="/account/deals" class="floated-content">
-                                <button type="submit" class="btn btn-blue btn-sm pull-right ml-10">
+                            <form action="/account/deals" className="floated-content">
+                                <button type="submit" className="btn btn-blue btn-sm pull-right ml-2.5">
                                     Pause Deal
                                 </button>
-                                <a href="/account/deals" class="btn btn-transparent-black btn-sm pull-right">
+                                <Link to="/account/deals" className="btn btn-transparent-black btn-sm pull-right">
                                     Cancel
-                                </a>
+                                </Link>
                             </form>
 
                         </div>

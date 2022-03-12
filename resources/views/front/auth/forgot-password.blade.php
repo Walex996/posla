@@ -1,11 +1,11 @@
 {{-- reset password box --}}
-<div class="auth-modal auth-modal-forgot-password  @if (session()->get('show-forgot-password-modal') ) auth-show-default " @endif  style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
+<div className="auth-modal auth-modal-forgot-password  @if (session()->get('show-forgot-password-modal') ) auth-show-default " @endif  style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
 
-    <button class="auth-modal-close">
-        <span class="fa fa-times"></span>
+    <button className="auth-modal-close">
+        <span className="fa fa-times"></span>
     </button>
 
-    <div class="auth-modal-title">
+    <div className="auth-modal-title">
         <div>
             Forgot Password
         </div>
@@ -16,10 +16,10 @@
 
     @include('layouts.common.errors-messages')
 
-    <form action="{{ route('password.email') }}" method="POST" class="auth-modal-form">
+    <form action="{{ route('password.email') }}" method="POST" className="auth-modal-form">
         @csrf
-        <div class="page-alert p-0 m-0">
-          <span class="fa fa-user-lock icon-50"></span>
+        <div className="page-alert p-0 m-0">
+          <span className="fa fa-user-lock icon-50"></span>
           <div></div>
           <div>
             Please enter the email address used in registering your account.
@@ -27,21 +27,21 @@
           </div>
         </div>
 
-        <div class="form-group mt-20">
-            <label for="email" class="control-label">
+        <div className="form-group mt-5">
+            <label for="email" className="control-label">
                 Email Address:
             </label>
-            <input type="email" name="email" value="{{ old('email') }}" id="email" class="form-control">
+            <input type="email" name="email" value="{{ old('email') }}" id="email" className="form-control">
         </div>
-        <div class="mt-20">
-            <button type="submit" class="btn btn-blue btn-block">
+        <div className="mt-5">
+            <button type="submit" className="btn btn-blue btn-block">
                 Reset Paasword
             </button>
         </div>
-        <div class="mt-20 text-center">
-            <a class="btn-login-switch text-fade hover-underline cursor-pointer">
+        <div className="mt-5 text-center">
+            <Link className="btn-login-switch text-fade hover-underline cursor-pointer">
                 Remember your password? Login
-            </a>
+            </Link>
         </div>
     </form>
 
@@ -49,4 +49,4 @@
 
 
 {{-- if error occurs, add class "auth-show" to the div below --}}
-<div class="bg-fade bg-fade-auth-backend @if (session()->get('show-forgot-password-modal') ) auth-show-default @endif "></div>
+<div className="bg-fade bg-fade-auth-backend @if (session()->get('show-forgot-password-modal') ) auth-show-default @endif "></div>

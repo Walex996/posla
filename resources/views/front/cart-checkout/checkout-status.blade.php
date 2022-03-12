@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         
     </style>
@@ -26,75 +26,75 @@
 
 @section('content')
     
-    <div class="container">
+    <div className="container">
 
-        <div class="page-alert page-alert-success mb-30">
-            <span class="fa fa-check-circle"></span>
-            <div class="pt-15">
+        <div className="page-alert page-alert-success mb-30">
+            <span className="fa fa-check-circle"></span>
+            <div className="pt-15">
                 Payment Successful
             </div>
-            <div class="font-14">
+            <div className="font-14">
                 Your payment for this deal was successful.
-                <br>
+                <br />
                 Please click the button below to start your order.
                 Thank you.
-                <br>
-                <div class="text-333">
-                    Order Number : <code class="font-bold font-14">#121212122112</code>
+                <br />
+                <div className="text-333">
+                    Order Number : <code className="font-bold font-14">#121212122112</code>
                 </div>
             </div>
         </div>
 
         {{-- 
-        <div class="page-alert page-alert-error mb-30">
-            <span class="fa fa-times-circle"></span>
-            <div class="pt-15">
+        <div className="page-alert page-alert-error mb-30">
+            <span className="fa fa-times-circle"></span>
+            <div className="pt-15">
                 Payment Failed
             </div>
-            <div class="font-14 text-fade">
+            <div className="font-14 text-fade">
                 Your payment for this deal was not successful.
-                <br>
-                Please try again later or <a href="/contact" class="underline text-fade">contact us</a> if you feel this is an error from us.
-                <br>
+                <br />
+                Please try again later or <Link to="/contact" className="underline text-fade">contact us</Link> if you feel this is an error from us.
+                <br />
                 Thank you.
             </div>
-            <div class="text-333">
-                Order Number : <code class="font-bold font-14 text-orange">#121212122112</code>
+            <div className="text-333">
+                Order Number : <code className="font-bold font-14 text-orange">#121212122112</code>
             </div>
         </div>
          --}}
 
-        <div class="section mw-600 mx-auto">
-            <div class="bg-eee p-10 text-center">
+        <div className="section mw-600 mx-auto">
+            <div className="bg-eee p-2.5 text-center">
                 Your Order
             </div>
-            <div class="">
-                <div class="mt-10">
-                    <a class="deal pb-10 bg-fff" style="height: auto;">
-                        <div class="deal-info-top">
+            <div className="">
+                <div className="mt-2.5">
+                    <Link className="deal pb-10 bg-fff" style="height: auto;">
+                        <div className="deal-info-top">
                             <div>
-                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" class="dp-cover" />
+                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
                             </div>
-                            <div class="">
+                            <div className="">
                                 <div>
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" class="dp-contain" />
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
                                 </div>
-                                <div class="text-fade font-13 ellipsis">
+                                <div className="text-fade font-13 ellipsis">
                                     Olawale Lawal
                                 </div>
                             </div>
-                            <div class="font-bold ellipsis-2-lines mt-5 pr-10 pl-10">
+                            <div className="font-bold ellipsis-2-lines mt-1.5 pr-2.5 pl-2.5">
                                 I can build a beautiful bespoke logo for your company using the style and color combination you prefer.
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
-            <div class="pt-20 pb-20 bt-1-ddd text-center">
+            <div className="pt-5 pb-5 bt-1-ddd text-center">
                 <div>
                     To keep track of your order/project, please visit
                 </div>
-                <div class="font-bold">
+                <div className="font-bold">
                     My Account
                     >
                     My Orders
@@ -102,12 +102,12 @@
                     View Details
                 </div>
                 <div>
-                    <a href="/account/orders/122121212112" class="btn btn-orange btn-block btn-md mt-10">
+                    <Link to="/account/orders/122121212112" className="btn btn-orange btn-block btn-md mt-2.5">
                         View My Order
-                    </a>
-                    <a href="/" class="btn btn-transparent-black btn-block btn-md mt-10">
+                    </Link>
+                    <Link to="/" className="btn btn-transparent-black btn-block btn-md mt-2.5">
                         Goto Homepage
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

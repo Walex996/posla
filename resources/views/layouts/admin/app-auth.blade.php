@@ -11,46 +11,46 @@
         
         <title>@yield('title') - Posla</title>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/img/app/icons/favicon.png') }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="57x57" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="76x76" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="144x144" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="icon" type="image/png" sizes="192x192" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" to="{{ asset('/img/app/icons/favicon.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" to="{{ asset('/img/app/icons/favicon.png') }}">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" to="https://fonts.gstatic.com">
+        <link to="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-        <link href="{{ asset('/components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('/css/all-font-awesome.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('/components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('/css/default.css') }}" rel="stylesheet">
-        <link href="{{ asset('/components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+        <link to="{{ asset('/components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link to="{{ asset('/css/all-font-awesome.min.css') }}" rel="stylesheet">
+        <link to="{{ asset('/components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+        <link to="{{ asset('/css/default.css') }}" rel="stylesheet">
+        <link to="{{ asset('/components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
         {{-- !! sticky-top --}}
-        <link rel="stylesheet" href="{{ asset('/css/AdminLTE.min.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('/css/all-skins.min.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('/css/toastr.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{asset('/css/select2.min.css')}}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('/css/layout.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('/css/layout-admin.css') }}" type="text/css" />
+        <link rel="stylesheet" to="{{ asset('/css/AdminLTE.min.css') }}" type="text/css" />
+        <link rel="stylesheet" to="{{ asset('/css/all-skins.min.css') }}" type="text/css" />
+        <link rel="stylesheet" to="{{ asset('/css/toastr.css') }}" type="text/css" />
+        <link rel="stylesheet" to="{{asset('/css/select2.min.css')}}" type="text/css" />
+        <link rel="stylesheet" to="{{ asset('/css/layout.css') }}" type="text/css" />
+        <link rel="stylesheet" to="{{ asset('/css/layout-admin.css') }}" type="text/css" />
 
         @yield('css')
 
     </head>
     
-    <body class="">
+    <body className="">
         <noscript>
-            <p class="alert alert-danger">
+            <p className="alert alert-danger">
                 You need to turn on your javascript. Some functionality will not work if this is disabled.
-                <a href="https://www.enable-javascript.com/" target="_blank">Read more</a>
+                <Link to="https://www.enable-javascript.com/" target="_blank">Read more</Link>
             </p>
         </noscript>
         

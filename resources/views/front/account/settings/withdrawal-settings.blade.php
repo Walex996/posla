@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-settings{
             color: #FF940A !important;
@@ -29,47 +29,47 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/settings">Settings</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Withdrawal Settings</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/settings">Settings</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Withdrawal Settings</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         Withdrawal Settings
                     </div>
                     <div>
 
                         <form action="">
-                            <div class="row">
+                            <div className="row">
 
-                                <div class="col-sm-6 col-md-12 col-lg-6">
-                                    <div class="b-1-ddd">
-                                        <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="col-sm-6 col-md-12 col-lg-6">
+                                    <div className="b-1-ddd">
+                                        <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                             Preferred Payment Method
                                         </div>
-                                        <div class="p-20">
+                                        <div className="p-5">
                                             <div>
-                                                <label class="checkbox-inline cursor-pointer">
+                                                <label className="checkbox-inline cursor-pointer">
                                                     <input type="radio" name="">
                                                     Use PayPal
                                                 </label>
                                             </div>
-                                            <div class="mt-10">
-                                                <label class="checkbox-inline cursor-pointer">
+                                            <div className="mt-2.5">
+                                                <label className="checkbox-inline cursor-pointer">
                                                     <input type="radio" name="">
                                                     Use Bank Wire Transfer
                                                 </label>
@@ -80,25 +80,25 @@
 
                             </div>
 
-                            <hr class="mt-30 mb-0">
+                            <hr className="mt-30 mb-0">
 
-                            <div class="row">
+                            <div className="row">
 
-                                <div class="col-sm-6 col-md-12 col-lg-6">
-                                    <div class="b-1-ddd mt-30">
-                                        <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="col-sm-6 col-md-12 col-lg-6">
+                                    <div className="b-1-ddd mt-30">
+                                        <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                             PayPal
                                         </div>
-                                        <div class="p-20">
-                                            <div class="form-group">
-                                                <label for="paypal_email" class="control-label">
+                                        <div className="p-5">
+                                            <div className="form-group">
+                                                <label for="paypal_email" className="control-label">
                                                     My Paypal Email Address:
                                                 </label>
-                                                <input type="email" name="paypal_email" id="paypal_email" class="form-control">
+                                                <input type="email" name="paypal_email" id="paypal_email" className="form-control">
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="currency" class="control-label">
+                                            <div className="form-group">
+                                                <label for="currency" className="control-label">
                                                     Preferred Currency:
                                                 </label>
                                                 <select name="currency" id="currency" readonly disabled>
@@ -109,14 +109,14 @@
                                     </div>
                                 </div>
                             
-                                <div class="col-sm-6 col-md-12 col-lg-6">
-                                    <div class="b-1-ddd mt-30">
-                                        <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="col-sm-6 col-md-12 col-lg-6">
+                                    <div className="b-1-ddd mt-30">
+                                        <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                             Bank Wire Transfer
                                         </div>
-                                        <div class="p-20">
-                                            <div class="form-group">
-                                                <label for="bank_name" class="control-label">
+                                        <div className="p-5">
+                                            <div className="form-group">
+                                                <label for="bank_name" className="control-label">
                                                     Bank Name:
                                                 </label>
                                                 <select name="bank_name" id="bank_name">
@@ -124,29 +124,29 @@
                                                 </select>
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="account_name" class="control-label">
+                                            <div className="form-group">
+                                                <label for="account_name" className="control-label">
                                                     Bank Account Name:
                                                 </label>
-                                                <input type="text" name="account_name" id="account_name" class="form-control">
+                                                <input type="text" name="account_name" id="account_name" className="form-control">
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="swift_code" class="control-label">
+                                            <div className="form-group">
+                                                <label for="swift_code" className="control-label">
                                                     Swift Code:
                                                 </label>
-                                                <input type="text" name="swift_code" id="swift_code" class="form-control">
+                                                <input type="text" name="swift_code" id="swift_code" className="form-control">
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="iban" class="control-label">
+                                            <div className="form-group">
+                                                <label for="iban" className="control-label">
                                                     IBAN / Bank account number
                                                 </label>
-                                                <input type="text" name="iban" id="iban" class="form-control">
+                                                <input type="text" name="iban" id="iban" className="form-control">
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="currency" class="control-label">
+                                            <div className="form-group">
+                                                <label for="currency" className="control-label">
                                                     Preferred Currency:
                                                 </label>
                                                 <select name="currency" id="currency" readonly disabled>
@@ -160,15 +160,15 @@
                                 
                             </div>
 
-                            <div class="pt-20 mt-20 bt-1-ddd">
+                            <div className="pt-5 mt-5 bt-1-ddd">
 
-                                <div class="floated-content">
-                                    <button type="submit" class="btn btn-blue btn-sm pull-right ml-10">
+                                <div className="floated-content">
+                                    <button type="submit" className="btn btn-blue btn-sm pull-right ml-2.5">
                                         Save Changes
                                     </button>
-                                    <a href="/account/settings" class="btn btn-transparent-black btn-sm pull-right">
+                                    <Link to="/account/settings" className="btn btn-transparent-black btn-sm pull-right">
                                         Cancel
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </div>

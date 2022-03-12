@@ -1,54 +1,54 @@
-<div class="section">
-    <div class="account-sidebar-info text-center">
-        <a href="/user/abcde12345" class="d-block">
-            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-cover" />
-        </a>
-        <a href="/user/abcde12345" class="font-bold hover-underline">
+<div className="section">
+    <div className="account-sidebar-info text-center">
+        <Link to="/user/abcde12345" className="d-block">
+            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-cover" />
+        </Link>
+        <Link to="/user/abcde12345" className="font-bold hover-underline">
             Firstname lastname
-        </a>
-        <div class="text-fade">
+        </Link>
+        <div className="text-fade">
             short description short description short description
         </div>
         <div>
-            <div class="rating-box mt-5">
+            <div className="rating-box mt-1.5">
                 <div>
                     <div></div>
                     <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                 </div>
                 <div>
-                    <span class="font-bold text-orange">
+                    <span className="font-bold text-orange">
                         5.0
                     </span>
-                    <span class="text-fade">
+                    <span className="text-fade">
                         (18 reviews)
                     </span>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="/messages/user000000" class="btn btn-blue btn-sm btn-block">
+        <div className="text-center mt-1.5">
+            <Link to="/messages/user000000" className="btn btn-blue btn-sm btn-block">
                 Send Message
-            </a>
+            </Link>
         </div>
     </div>
 
-    <div class="mt-10">
-        <div class="bt-1-ddd pt-10 pb-10">
-            <div class="pull-left mr-5">
-                <span class="fa fa-flag"></span>
+    <div className="mt-2.5">
+        <div className="bt-1-ddd pt-2.5 pb-10">
+            <div className="pull-left mr-1.5">
+                <span className="fa fa-flag"></span>
             </div>
-            <div class="overflow-hidden">
+            <div className="overflow-hidden">
                 Country:
                 <span>
                     Nigeria
                 </span>
             </div>
         </div>
-        <div class="bt-1-ddd pt-10 pb-10">
-            <div class="pull-left mr-5">
-                <span class="fa fa-user-circle"></span>
+        <div className="bt-1-ddd pt-2.5 pb-10">
+            <div className="pull-left mr-1.5">
+                <span className="fa fa-user-circle"></span>
             </div>
-            <div class="overflow-hidden">
+            <div className="overflow-hidden">
                 Member Since:
                 <span>
                     Jan 11, 2011
@@ -58,106 +58,106 @@
     </div>
 </div>
 
-<div class="section p-0">
+<div className="section p-0">
     <div>
 
-        <ul class="nav nav-tabs posla-tabs posla-tabs-2">
-            <li class="nav-item">
-                <a href="#buyer-stats" data-toggle="tab" class="nav-link p-10">
-                    <div class="text-center">
+        <ul className="nav nav-tabs posla-tabs posla-tabs-2">
+            <li className="nav-item">
+                <Link to="#buyer-stats" data-toggle="tab" className="nav-link p-2.5">
+                    <div className="text-center">
                         Buyer's Stats
                     </div>
-                </a>
+                </Link>
             </li>
-            <li class="nav-item">
-                <a href="#seller-stats" data-toggle="tab" class="nav-link p-10 active">
-                    <div class="text-center">
+            <li className="nav-item">
+                <Link to="#seller-stats" data-toggle="tab" className="nav-link p-2.5 active">
+                    <div className="text-center">
                         Seller's Stats
                     </div>
-                </a>
+                </Link>
             </li>
         </ul>
     
-        <div class="tab-content mt-20">
-            <div class="tab-pane" id="buyer-stats">
-                <div class="text-fade text-small pr-10 pl-10">
+        <div className="tab-content mt-5">
+            <div className="tab-pane" id="buyer-stats">
+                <div className="text-fade text-small pr-2.5 pl-2.5">
                     Information displayed below is in respect to the buyer's section of this user only.
                 </div>
 
-                <div class="text-left-right text-left-right-70-30 mt-20">
-                    <div class="bt-1-eee">
+                <div className="text-left-right text-left-right-70-30 mt-5">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-file"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-file"></span>
+                            <div className="overflow-hidden">
                                 Projects Posted:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             117
                         </div>
                     </div>
-                    <div class="bt-1-eee">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-star"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-star"></span>
+                            <div className="overflow-hidden">
                                 Projects Issuance:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             4.5
                         </div>
                     </div>
-                    <div class="bt-1-eee">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-users"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-users"></span>
+                            <div className="overflow-hidden">
                                 Sellers worked with:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             2
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="tab-pane active" id="seller-stats">
+            <div className="tab-pane active" id="seller-stats">
 
-                <div class="text-fade text-small pr-10 pl-10">
+                <div className="text-fade text-small pr-2.5 pl-2.5">
                     Information displayed below is in respect to the seller's section of this user only.
                 </div>
 
-                <div class="text-left-right text-left-right-70-30 mt-20">
-                    <div class="bt-1-eee">
+                <div className="text-left-right text-left-right-70-30 mt-5">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-file"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-file"></span>
+                            <div className="overflow-hidden">
                                 Projects Completed:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             117
                         </div>
                     </div>
-                    <div class="bt-1-eee">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-star"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-star"></span>
+                            <div className="overflow-hidden">
                                 Overall Rating:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             4.5
                         </div>
                     </div>
-                    <div class="bt-1-eee">
+                    <div className="bt-1-eee">
                         <div>
-                            <span class="fa fa-users"></span>
-                            <div class="overflow-hidden">
+                            <span className="fa fa-users"></span>
+                            <div className="overflow-hidden">
                                 Buyers worked with:
                             </div>
                         </div>
-                        <div class="text-right pr-10">
+                        <div className="text-right pr-2.5">
                             83
                         </div>
                     </div>
@@ -169,8 +169,8 @@
     </div>
 </div>
 
-<div class="section">
-    <div class="section-title">
+<div className="section">
+    <div className="section-title">
         Description
     </div>
     <div>
@@ -182,8 +182,8 @@
     </div>
 </div>
 
-<div class="section">
-    <div class="section-title">
+<div className="section">
+    <div className="section-title">
         Languages
     </div>
     <div>
@@ -194,13 +194,13 @@
             Fluent
         </div>
 
-        <div class="mt-5">
+        <div className="mt-1.5">
             French
             -
             Average
         </div>
 
-        <div class="mt-5">
+        <div className="mt-1.5">
             Spanish
             -
             Average
@@ -209,30 +209,30 @@
     </div>
 </div>
 
-<div class="section">
-    <div class="section-title">
+<div className="section">
+    <div className="section-title">
         Skillset
     </div>
     <div>
-        <div class="mt-0 item-labels item-labels-tags-all">
+        <div className="mt-0 item-labels item-labels-tags-all">
 
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 hgqwjdknq
             </div>
         
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 qwd
             </div>
         
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 yukyukuy
             </div>
         
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 ersdvcass
             </div>
         
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 bnvbnvb
             </div>
             

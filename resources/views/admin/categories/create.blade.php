@@ -13,35 +13,35 @@
 
 @section('content')
 @include('layouts.common.errors-messages')
-    <div class="box">
-        <div class="box-header">
-            <div class="box-title">
+    <div className="box">
+        <div className="box-header">
+            <div className="box-title">
                 Create Category
             </div>
-            <div class="box-tools pull-right">
-                <a href="" class="btn btn-box-tool">
-                    <i class="fa fa-plus"></i>
+            <div className="box-tools pull-right">
+                <Link to="" className="btn btn-box-tool">
+                    <i className="fa fa-plus"></i>
                     Link
-                </a>
+                </Link>
             </div>
         </div>
-        <div class="box-body">
+        <div className="box-body">
             
 
-            <form action="{{route('admin.categories.store')}}" method="post" enctype="multipart/form-data" class="mx-auto mw-600">
+            <form action="{{route('admin.categories.store')}}" method="post" enctype="multipart/form-data" className="mx-auto mw-600">
                 @csrf
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Name:</label>
-                            <input type="text" class="form-control" name="name" value="{{old('name')}}" />
+                            <input type="text" className="form-control" name="name" value="{{old('name')}}" />
                         </div>
                     </div>
                     @if(!$parents->isEmpty())
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <div className="col-md-6">
+                            <div className="form-group">
                                 <label>Parent Category:</label>
-                                <select name="parent_id" class="form-control" >
+                                <select name="parent_id" className="form-control" >
                                     <option  selected value="">-- None --</option>
                                     @foreach ($parents as $parent)
                                         <option value="{{$parent->id}}">{{$parent->name}}</option>
@@ -52,18 +52,18 @@
                         </div>
                     @endif
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Position:</label>
-                            <input type="number" class="form-control" name="position" max="100" min="1" value="{{old('position')}}" />
+                            <input type="number" className="form-control" name="position" max="100" min="1" value="{{old('position')}}" />
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        <div class="form-group">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Status:</label>
-                            <select name="status" class="form-control" required>
+                            <select name="status" className="form-control" required>
                                 <option disabled selected>-- Select --</option>
                                 <option value="1">Active</option>
                                 <option value="0">Disable</option>
@@ -73,18 +73,18 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="form-group">
                             <label>Description:</label>
-                            <textarea class="form-control" name="description" style="height: 100px;">{{old('description')}}</textarea>
+                            <textarea className="form-control" name="description" style="height: 100px;">{{old('description')}}</textarea>
                         </div>
                     </div>
                 </div>
 
-                <div class="form-footer">
-                    <input type="submit" name="" value="Create" class="btn btn-primary" />
-                    <a href="{{route('admin.categories.index')}}" class="btn btn-transparent-black">Cancel</a>
+                <div className="form-footer">
+                    <input type="submit" name="" value="Create" className="btn btn-primary" />
+                    <Link to="{{route('admin.categories.index')}}" className="btn btn-transparent-black">Cancel</Link>
                 </div>
 
             </form>

@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-projects{
             color: #FF940A !important;
@@ -29,60 +29,60 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
                 
             </div>
             
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
                 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/projects">Projects</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Edit Project</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/projects">Projects</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Edit Project</li>
                     </ol>
                 </div>
                 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Edit Project
                     </div>
                     <div>
                         
                         @include('front.common.nav-tabs-project-mgmt', ['active' => 1])
                         
-                        <div class="tab-content">
-                            <div class="tab-pane active">
+                        <div className="tab-content">
+                            <div className="tab-pane active">
 
                                 <form action="/account/projects/edit/1234/info">
-                                    <div class="b-1-ddd">
+                                    <div className="b-1-ddd">
 
-                                        <div class="p-20">
+                                        <div className="p-5">
                                             @include('front.common.create-project-rules')
                                         </div>
 
-                                        <div class="p-15 mt-15 bt-1-ddd">
-                                            <div class="row">
-                                                <div class="col-sm-8 col-md-12 col-lg-8">
-                                                    <label class="checkbox-inline">
-                                                        <div class="pull-left">
+                                        <div className="p-15 mt-15 bt-1-ddd">
+                                            <div className="row">
+                                                <div className="col-sm-8 col-md-12 col-lg-8">
+                                                    <label className="checkbox-inline">
+                                                        <div className="pull-left">
                                                             <input type="checkbox" required checked>
                                                         </div>
-                                                        <div class="overflow-hidden">
+                                                        <div className="overflow-hidden">
                                                             I agree that violating any of the rules above may lead to
                                                             my project being canceled at any time.
                                                         </div>
                                                     </label>
                                                 </div>
-                                                <div class="col-sm-4 col-md-12 col-lg-4">
-                                                    <div class="d-block d-sm-none d-md-block d-lg-none" style="height: 10px;"></div>
-                                                    <button type="submit" class="btn btn-blue btn-sm icon-right pull-right">
+                                                <div className="col-sm-4 col-md-12 col-lg-4">
+                                                    <div className="d-block d-sm-none d-md-block d-lg-none" style="height: 10px;"></div>
+                                                    <button type="submit" className="btn btn-blue btn-sm icon-right pull-right">
                                                         Proceed
-                                                        <span class="fa fa-angle-right"></span>
+                                                        <span className="fa fa-angle-right"></span>
                                                     </button>
                                                 </div>
                                             </div>

@@ -31,7 +31,7 @@ Or perhaps you're known to use [bower](http://bower.io/)?
 
 You can use [ionicons.com](http://ionicons.com) to easily find the icon you want to use. Once you've copied the desired icon's CSS classname, simply add the `icon` and icon's classname, such as `ion-home` to an HTML element.
 
-    <i class="icon ion-home"></i>
+    <i className="icon ion-home"></i>
 
 
 ## Build Instructions

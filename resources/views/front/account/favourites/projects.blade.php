@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-favourites{
             color: #FF940A !important;
@@ -32,76 +32,76 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Favourites</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Favourites</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         Favourites (9)
                     </div>
                     <div>
 
-                        <ul class="nav nav-tabs posla-tabs posla-tabs-2">
-                            <li class="nav-item">
-                                <a href="/account/favourites/deals" class="nav-link">
-                                    <div class="text-center">
+                        <ul className="nav nav-tabs posla-tabs posla-tabs-2">
+                            <li className="nav-item">
+                                <Link to="/account/favourites/deals" className="nav-link">
+                                    <div className="text-center">
                                         Deals 11
                                     </div>
-                                </a>
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a href="/account/favourites/projects" class="nav-link active">
-                                    <div class="text-center">
+                            <li className="nav-item">
+                                <Link to="/account/favourites/projects" className="nav-link active">
+                                    <div className="text-center">
                                         Projects (3)
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     
 
-                        <div class="project-list project-list-mini mt-20 row">
+                        <div className="project-list project-list-mini mt-5 row">
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
                             </div>
 

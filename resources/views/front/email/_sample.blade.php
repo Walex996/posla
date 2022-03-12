@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Posla">
         
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" to="https://fonts.gstatic.com">
+        <link to="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
         <title>Posla</title>
     </head>
@@ -17,10 +17,10 @@
             <div style="max-width: 600px; margin: 30px auto; font-size: 14px; line-height: 20px; font-weight: normal; font-family: Montserrat; box-shadow: 0px 5px 20px rgba(0,0,0,0.2);">
 
                 <div style="background: #0073B1; padding: 10px 0px; text-align: center;">
-                    <a href="https://posla.com" style="font-size: 30px; font-weight: bold; font-family: Montserrat; color: #fff; display: inline-block; text-decoration: none; padding: 10px;">
+                    <Link to="https://posla.com" style="font-size: 30px; font-weight: bold; font-family: Montserrat; color: #fff; display: inline-block; text-decoration: none; padding: 10px;">
                         <img src="{{ asset('/img/app/icons/logo-fff-blue.png') }}" alt="" style="width: 30px; height: 30px; display: inline-block; position: relative; top: 3px;">
                         POSLA.COM
-                    </a>
+                    </Link>
                 </div>
 
                 <div style="background-color: #f1f1f1; border-bottom: 1px solid #eee">
@@ -34,7 +34,7 @@
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                     
-                    <br><br>
+                    <br /><br />
                     <hr style="margin: 0px; border: 1px solid #eee;">
 
                     <div style="color: #ff940a; text-align: center; margin-top: 20px; font-weight: bold;">
@@ -88,9 +88,9 @@
                                     <div style="text-align: left;">
                                         <div style="font-weight: bold;">Lorem Ipsum</div>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                        <br>
+                                        <br />
                                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                        <br>
+                                        <br />
                                         sed diam voluptua.
                                     </div>
                                 </div>
@@ -107,14 +107,14 @@
                                             Lorem Ipsum
                                         </div>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                        <br>
+                                        <br />
                                         Opening times: Mon - Sat (8am - 6pm)
-                                        <br>
+                                        <br />
                                         qwdqwdqwdqwqwd
-                                        <br>
-                                        <a href="tel:08012345678">0801-234-5678</a>, 
-                                        <a href="tel:08012345678">0801-234-5678</a><br>
-                                        <a href="mailto:info@posla.com">info@posla.com</a>
+                                        <br />
+                                        <Link to="tel:08012345678">0801-234-5678</Link>, 
+                                        <Link to="tel:08012345678">0801-234-5678</Link><br />
+                                        <Link to="mailto:info@posla.com">info@posla.com</Link>
                                     </div>
                                 </div>
                             </div>

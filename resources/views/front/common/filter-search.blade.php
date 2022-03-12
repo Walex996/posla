@@ -1,43 +1,43 @@
 <form action="" method="get">
 
-    <div class="filter-section">
-        <div class="filter-title">
+    <div className="filter-section">
+        <div className="filter-title">
             Currently Showing
         </div>
-        <div class="filter-body pr-0 pl-0">
-            <div class="mh-150 list-icon-text filter-body-list">
-                <a href="/search" class="active">
+        <div className="filter-body pr-0 pl-0">
+            <div className="mh-150 list-icon-text filter-body-list">
+                <Link to="/search" className="active">
                     <div>
-                        <span class="fa fa-angle-right"></span>
+                        <span className="fa fa-angle-right"></span>
                     </div>
                     <div>
                         All search results (30)
                     </div>
-                </a>
-                <a href="/search/deals">
+                </Link>
+                <Link to="/search/deals">
                     <div>
-                        <span class="fa fa-angle-right"></span>
+                        <span className="fa fa-angle-right"></span>
                     </div>
                     <div>
                         Deals only (10)
                     </div>
-                </a>
-                <a href="/search/projects">
+                </Link>
+                <Link to="/search/projects">
                     <div>
-                        <span class="fa fa-angle-right"></span>
+                        <span className="fa fa-angle-right"></span>
                     </div>
                     <div>
                         Projects only (10)
                     </div>
-                </a>
-                <a href="/search/freelancers">
+                </Link>
+                <Link to="/search/freelancers">
                     <div>
-                        <span class="fa fa-angle-right"></span>
+                        <span className="fa fa-angle-right"></span>
                     </div>
                     <div>
                         Freelancers only (10)
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     </div>

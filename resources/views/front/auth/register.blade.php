@@ -1,11 +1,11 @@
 {{-- register box --}}
-<div class="auth-modal auth-modal-register @if(session()->get('show-register-modal')) auth-show-default @endif"  style="background-image: url({{asset('/img/app/bgs/auth-bg-2.png')}});">
+<div className="auth-modal auth-modal-register @if(session()->get('show-register-modal')) auth-show-default @endif"  style="background-image: url({{asset('/img/app/bgs/auth-bg-2.png')}});">
 
-    <button class="auth-modal-close">
-        <span class="fa fa-times"></span>
+    <button className="auth-modal-close">
+        <span className="fa fa-times"></span>
     </button>
 
-    <div class="auth-modal-title">
+    <div className="auth-modal-title">
         <div>
             Create New Account
         </div>
@@ -16,69 +16,69 @@
 
     @include('layouts.common.errors-messages')
 
-    <form action="{{ route('register') }}" method="POST" class="auth-modal-form">
+    <form action="{{ route('register') }}" method="POST" className="auth-modal-form">
         @csrf
-      <div class="form-group">
-            <label for="name" class="control-label">
+      <div className="form-group">
+            <label for="name" className="control-label">
                 Fullname:
             </label>
-            <input type="name" name="name" id="name" class="form-control" value="{{old('name')}}">
+            <input type="name" name="name" id="name" className="form-control" value="{{old('name')}}">
         </div>
         
-        <div class="form-group">
-            <label for="username" class="control-label">
+        <div className="form-group">
+            <label for="username" className="control-label">
                 Username:
             </label>
-            <input type="username" name="username" id="username" class="form-control"  value="{{old('username')}}">
+            <input type="username" name="username" id="username" className="form-control"  value="{{old('username')}}">
         </div>
 
-        <div class="form-group">
-            <label for="email" class="control-label">
+        <div className="form-group">
+            <label for="email" className="control-label">
                 Email Address:
             </label>
-            <input type="email" name="email" id="email" class="form-control"  value="{{old('email')}}">
+            <input type="email" name="email" id="email" className="form-control"  value="{{old('email')}}">
         </div>
 
-        <div class="form-group">
-            <label for="tel" class="control-label">
+        <div className="form-group">
+            <label for="tel" className="control-label">
                 Phone Number:
             </label>
-            <input type="tel" name="phone" id="tel" class="form-control"  value="{{old('phone')}}">
+            <input type="tel" name="phone" id="tel" className="form-control"  value="{{old('phone')}}">
         </div>
 
-        <div class="input-group">
-            <label for="password" class="control-label">
+        <div className="input-group">
+            <label for="password" className="control-label">
                 Password:
             </label>
-            <div class="input-group input-group-password">
-                <input type="password" name="password" id="password" class="form-control">
-                <button type="button" class="input-group-btn password-toggle">
-                    <span class="fa fa-eye icon-17"></span>
+            <div className="input-group input-group-password">
+                <input type="password" name="password" id="password" className="form-control">
+                <button type="button" className="input-group-btn password-toggle">
+                    <span className="fa fa-eye icon-17"></span>
                 </button>
             </div>
         </div>
-        <div class="input-group mt-10">
-            <label for="password" class="control-label">
+        <div className="input-group mt-2.5">
+            <label for="password" className="control-label">
                 Confirm Password:
             </label>
-            <div class="input-group input-group-password">
-                <input type="password" name="password_confirmation" id="password" class="form-control">
-                <button type="button" class="input-group-btn password-toggle">
-                    <span class="fa fa-eye icon-17"></span>
+            <div className="input-group input-group-password">
+                <input type="password" name="password_confirmation" id="password" className="form-control">
+                <button type="button" className="input-group-btn password-toggle">
+                    <span className="fa fa-eye icon-17"></span>
                 </button>
             </div>
         </div>
 
-        <div class="mt-20">
-            <button type="submit" class="btn btn-blue btn-block">
+        <div className="mt-5">
+            <button type="submit" className="btn btn-blue btn-block">
               Create New Account
             </button>
           </div>
           
-          <div class="mt-20 text-center">
-            <a class="btn-login-switch text-fade hover-underline cursor-pointer">
+          <div className="mt-5 text-center">
+            <Link className="btn-login-switch text-fade hover-underline cursor-pointer">
               Already have an account? Login
-            </a>
+            </Link>
         </div>
 
     </form>
@@ -87,4 +87,4 @@
 
 
 {{-- if error occurs, add class "auth-show" to the div below --}}
-<div class="bg-fade bg-fade-auth-backend  @if(session()->get('show-register-modal')) auth-show @endif"></div>
+<div className="bg-fade bg-fade-auth-backend  @if(session()->get('show-register-modal')) auth-show @endif"></div>

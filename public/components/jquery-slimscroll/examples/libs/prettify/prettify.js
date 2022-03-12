@@ -19,7 +19,7 @@
  *
  * <p>
  * For a fairly comprehensive set of languages see the
- * <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html#langs">README</a>
+ * <Link to="http://google-code-prettify.googlecode.com/svn/trunk/README.html#langs">README</Link>
  * file that came with this source.  At a minimum, the lexer should work on a
  * number of languages including C and friends, Java, Python, Bash, SQL, HTML,
  * XML, CSS, Javascript, and Makefiles.  It works passably on Ruby, PHP and Awk
@@ -39,12 +39,12 @@
  * That's it.  I wanted to keep the API as simple as possible, so there's no
  * need to specify which language the code is in, but if you wish, you can add
  * another class to the {@code <pre>} or {@code <code>} element to specify the
- * language, as in {@code <pre class="prettyprint lang-java">}.  Any class that
+ * language, as in {@code <pre className="prettyprint lang-java">}.  Any class that
  * starts with "lang-" followed by a file extension, specifies the file type.
  * See the "lang-*.js" files in this directory for code that implements
  * per-language file handlers.
  * <p>
- * Change log:<br>
+ * Change log:<br />
  * cbeust, 2006/08/22
  * <blockquote>
  *   Java annotations (start with "@") are now captured as literals ("lit")
@@ -67,47 +67,47 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
   // We use things that coerce to strings to make them compact when minified
   // and to defeat aggressive optimizers that fold large string constants.
   var FLOW_CONTROL_KEYWORDS = ["break,continue,do,else,for,if,return,while"];
-  var C_KEYWORDS = [FLOW_CONTROL_KEYWORDS,"auto,case,char,const,default," + 
-      "double,enum,extern,float,goto,int,long,register,short,signed,sizeof," +
-      "static,struct,switch,typedef,union,unsigned,void,volatile"];
-  var COMMON_KEYWORDS = [C_KEYWORDS,"catch,class,delete,false,import," +
-      "new,operator,private,protected,public,this,throw,true,try,typeof"];
-  var CPP_KEYWORDS = [COMMON_KEYWORDS,"alignof,align_union,asm,axiom,bool," +
-      "concept,concept_map,const_cast,constexpr,decltype," +
-      "dynamic_cast,explicit,export,friend,inline,late_check," +
-      "mutable,namespace,nullptr,reinterpret_cast,static_assert,static_cast," +
-      "template,typeid,typename,using,virtual,where"];
+  var C_KEYWORDS = [FLOW_CONTROL_KEYWORDS, "auto,case,char,const,default," +
+    "double,enum,extern,float,goto,int,long,register,short,signed,sizeof," +
+    "static,struct,switch,typedef,union,unsigned,void,volatile"];
+  var COMMON_KEYWORDS = [C_KEYWORDS, "catch,class,delete,false,import," +
+    "new,operator,private,protected,public,this,throw,true,try,typeof"];
+  var CPP_KEYWORDS = [COMMON_KEYWORDS, "alignof,align_union,asm,axiom,bool," +
+    "concept,concept_map,const_cast,constexpr,decltype," +
+    "dynamic_cast,explicit,export,friend,inline,late_check," +
+    "mutable,namespace,nullptr,reinterpret_cast,static_assert,static_cast," +
+    "template,typeid,typename,using,virtual,where"];
   var JAVA_KEYWORDS = [COMMON_KEYWORDS,
-      "abstract,boolean,byte,extends,final,finally,implements,import," +
-      "instanceof,null,native,package,strictfp,super,synchronized,throws," +
-      "transient"];
+    "abstract,boolean,byte,extends,final,finally,implements,import," +
+    "instanceof,null,native,package,strictfp,super,synchronized,throws," +
+    "transient"];
   var CSHARP_KEYWORDS = [JAVA_KEYWORDS,
-      "as,base,by,checked,decimal,delegate,descending,dynamic,event," +
-      "fixed,foreach,from,group,implicit,in,interface,internal,into,is,lock," +
-      "object,out,override,orderby,params,partial,readonly,ref,sbyte,sealed," +
-      "stackalloc,string,select,uint,ulong,unchecked,unsafe,ushort,var"];
+    "as,base,by,checked,decimal,delegate,descending,dynamic,event," +
+    "fixed,foreach,from,group,implicit,in,interface,internal,into,is,lock," +
+    "object,out,override,orderby,params,partial,readonly,ref,sbyte,sealed," +
+    "stackalloc,string,select,uint,ulong,unchecked,unsafe,ushort,var"];
   var COFFEE_KEYWORDS = "all,and,by,catch,class,else,extends,false,finally," +
-      "for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then," +
-      "true,try,unless,until,when,while,yes";
+    "for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then," +
+    "true,try,unless,until,when,while,yes";
   var JSCRIPT_KEYWORDS = [COMMON_KEYWORDS,
-      "debugger,eval,export,function,get,null,set,undefined,var,with," +
-      "Infinity,NaN"];
+    "debugger,eval,export,function,get,null,set,undefined,var,with," +
+    "Infinity,NaN"];
   var PERL_KEYWORDS = "caller,delete,die,do,dump,elsif,eval,exit,foreach,for," +
-      "goto,if,import,last,local,my,next,no,our,print,package,redo,require," +
-      "sub,undef,unless,until,use,wantarray,while,BEGIN,END";
+    "goto,if,import,last,local,my,next,no,our,print,package,redo,require," +
+    "sub,undef,unless,until,use,wantarray,while,BEGIN,END";
   var PYTHON_KEYWORDS = [FLOW_CONTROL_KEYWORDS, "and,as,assert,class,def,del," +
-      "elif,except,exec,finally,from,global,import,in,is,lambda," +
-      "nonlocal,not,or,pass,print,raise,try,with,yield," +
-      "False,True,None"];
+    "elif,except,exec,finally,from,global,import,in,is,lambda," +
+    "nonlocal,not,or,pass,print,raise,try,with,yield," +
+    "False,True,None"];
   var RUBY_KEYWORDS = [FLOW_CONTROL_KEYWORDS, "alias,and,begin,case,class," +
-      "def,defined,elsif,end,ensure,false,in,module,next,nil,not,or,redo," +
-      "rescue,retry,self,super,then,true,undef,unless,until,when,yield," +
-      "BEGIN,END"];
+    "def,defined,elsif,end,ensure,false,in,module,next,nil,not,or,redo," +
+    "rescue,retry,self,super,then,true,undef,unless,until,when,yield," +
+    "BEGIN,END"];
   var SH_KEYWORDS = [FLOW_CONTROL_KEYWORDS, "case,done,elif,esac,eval,fi," +
-      "function,in,local,set,then,until"];
+    "function,in,local,set,then,until"];
   var ALL_KEYWORDS = [
-      CPP_KEYWORDS, CSHARP_KEYWORDS, JSCRIPT_KEYWORDS, PERL_KEYWORDS +
-      PYTHON_KEYWORDS, RUBY_KEYWORDS, SH_KEYWORDS];
+    CPP_KEYWORDS, CSHARP_KEYWORDS, JSCRIPT_KEYWORDS, PERL_KEYWORDS +
+    PYTHON_KEYWORDS, RUBY_KEYWORDS, SH_KEYWORDS];
   var C_TYPES = /^(DIR|FILE|vector|(de|priority_)?queue|list|stack|(const_)?iterator|(multi)?(set|map)|bitset|u?(int|float)\d*)/;
 
   // token style names.  correspond to css classes
@@ -182,32 +182,32 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
 
 
 
-/**
- * A set of tokens that can precede a regular expression literal in
- * javascript
- * http://web.archive.org/web/20070717142515/http://www.mozilla.org/js/language/js20/rationale/syntax.html
- * has the full list, but I've removed ones that might be problematic when
- * seen in languages that don't support regular expression literals.
- *
- * <p>Specifically, I've removed any keywords that can't precede a regexp
- * literal in a syntactically legal javascript program, and I've removed the
- * "in" keyword since it's not a keyword in many languages, and might be used
- * as a count of inches.
- *
- * <p>The link a above does not accurately describe EcmaScript rules since
- * it fails to distinguish between (a=++/b/i) and (a++/b/i) but it works
- * very well in practice.
- *
- * @private
- * @const
- */
-var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&&=|&=|\\(|\\*|\\*=|\\+=|\\,|\\-=|\\->|\\/|\\/=|:|::|\\;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\@|\\[|\\^|\\^=|\\^\\^|\\^\\^=|\\{|\\||\\|=|\\|\\||\\|\\|=|\\~|break|case|continue|delete|do|else|finally|instanceof|return|throw|try|typeof)\\s*';
+  /**
+   * A set of tokens that can precede a regular expression literal in
+   * javascript
+   * http://web.archive.org/web/20070717142515/http://www.mozilla.org/js/language/js20/rationale/syntax.html
+   * has the full list, but I've removed ones that might be problematic when
+   * seen in languages that don't support regular expression literals.
+   *
+   * <p>Specifically, I've removed any keywords that can't precede a regexp
+   * literal in a syntactically legal javascript program, and I've removed the
+   * "in" keyword since it's not a keyword in many languages, and might be used
+   * as a count of inches.
+   *
+   * <p>The link a above does not accurately describe EcmaScript rules since
+   * it fails to distinguish between (a=++/b/i) and (a++/b/i) but it works
+   * very well in practice.
+   *
+   * @private
+   * @const
+   */
+  var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&&=|&=|\\(|\\*|\\*=|\\+=|\\,|\\-=|\\->|\\/|\\/=|:|::|\\;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\@|\\[|\\^|\\^=|\\^\\^|\\^\\^=|\\{|\\||\\|=|\\|\\||\\|\\|=|\\~|break|case|continue|delete|do|else|finally|instanceof|return|throw|try|typeof)\\s*';
 
-// CAVEAT: this does not properly handle the case where a regular
-// expression immediately follows another since a regular expression may
-// have flags for case-sensitivity and the like.  Having regexp tokens
-// adjacent is not valid in any language I'm aware of, so I'm punting.
-// TODO: maybe style special characters inside a regexp as punctuation.
+  // CAVEAT: this does not properly handle the case where a regular
+  // expression immediately follows another since a regular expression may
+  // have flags for case-sensitivity and the like.  Having regexp tokens
+  // adjacent is not valid in any language I'm aware of, so I'm punting.
+  // TODO: maybe style special characters inside a regexp as punctuation.
 
 
   /**
@@ -220,7 +220,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
    */
   function combinePrefixPatterns(regexs) {
     var capturedGroupIndex = 0;
-  
+
     var needToFoldCase = false;
     var ignoreCase = false;
     for (var i = 0, n = regexs.length; i < n; ++i) {
@@ -228,13 +228,13 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       if (regex.ignoreCase) {
         ignoreCase = true;
       } else if (/[a-z]/i.test(regex.source.replace(
-                     /\\u[0-9a-f]{4}|\\x[0-9a-f]{2}|\\[^ux]/gi, ''))) {
+        /\\u[0-9a-f]{4}|\\x[0-9a-f]{2}|\\[^ux]/gi, ''))) {
         needToFoldCase = true;
         ignoreCase = false;
         break;
       }
     }
-  
+
     var escapeCharToCodeUnit = {
       'b': 8,
       't': 9,
@@ -243,7 +243,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       'f': 0xc,
       'r': 0xd
     };
-  
+
     function decodeEscape(charsetPart) {
       var cc0 = charsetPart.charCodeAt(0);
       if (cc0 !== 92 /* \\ */) {
@@ -261,7 +261,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         return charsetPart.charCodeAt(1);
       }
     }
-  
+
     function encodeEscape(charCode) {
       if (charCode < 0x20) {
         return (charCode < 0x10 ? '\\x0' : '\\x') + charCode.toString(16);
@@ -272,18 +272,18 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       }
       return ch;
     }
-  
+
     function caseFoldCharset(charSet) {
       var charsetParts = charSet.substring(1, charSet.length - 1).match(
-          new RegExp(
-              '\\\\u[0-9A-Fa-f]{4}'
-              + '|\\\\x[0-9A-Fa-f]{2}'
-              + '|\\\\[0-3][0-7]{0,2}'
-              + '|\\\\[0-7]{1,2}'
-              + '|\\\\[\\s\\S]'
-              + '|-'
-              + '|[^-\\\\]',
-              'g'));
+        new RegExp(
+          '\\\\u[0-9A-Fa-f]{4}'
+          + '|\\\\x[0-9A-Fa-f]{2}'
+          + '|\\\\[0-3][0-7]{0,2}'
+          + '|\\\\[0-7]{1,2}'
+          + '|\\\\[\\s\\S]'
+          + '|-'
+          + '|[^-\\\\]',
+          'g'));
       var groups = [];
       var ranges = [];
       var inverse = charsetParts[0] === '^';
@@ -315,10 +315,10 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           }
         }
       }
-  
+
       // [[1, 10], [3, 4], [8, 12], [14, 14], [16, 16], [17, 17]]
       // -> [[1, 12], [14, 14], [16, 17]]
-      ranges.sort(function (a, b) { return (a[0] - b[0]) || (b[1]  - a[1]); });
+      ranges.sort(function (a, b) { return (a[0] - b[0]) || (b[1] - a[1]); });
       var consolidatedRanges = [];
       var lastRange = [NaN, NaN];
       for (var i = 0; i < ranges.length; ++i) {
@@ -329,7 +329,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           consolidatedRanges.push(lastRange = range);
         }
       }
-  
+
       var out = ['['];
       if (inverse) { out.push('^'); }
       out.push.apply(out, groups);
@@ -344,31 +344,31 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       out.push(']');
       return out.join('');
     }
-  
+
     function allowAnywhereFoldCaseAndRenumberGroups(regex) {
       // Split into character sets, escape sequences, punctuation strings
       // like ('(', '(?:', ')', '^'), and runs of characters that do not
       // include any of the above.
       var parts = regex.source.match(
-          new RegExp(
-              '(?:'
-              + '\\[(?:[^\\x5C\\x5D]|\\\\[\\s\\S])*\\]'  // a character set
-              + '|\\\\u[A-Fa-f0-9]{4}'  // a unicode escape
-              + '|\\\\x[A-Fa-f0-9]{2}'  // a hex escape
-              + '|\\\\[0-9]+'  // a back-reference or octal escape
-              + '|\\\\[^ux0-9]'  // other escape sequence
-              + '|\\(\\?[:!=]'  // start of a non-capturing group
-              + '|[\\(\\)\\^]'  // start/emd of a group, or line start
-              + '|[^\\x5B\\x5C\\(\\)\\^]+'  // run of other characters
-              + ')',
-              'g'));
+        new RegExp(
+          '(?:'
+          + '\\[(?:[^\\x5C\\x5D]|\\\\[\\s\\S])*\\]'  // a character set
+          + '|\\\\u[A-Fa-f0-9]{4}'  // a unicode escape
+          + '|\\\\x[A-Fa-f0-9]{2}'  // a hex escape
+          + '|\\\\[0-9]+'  // a back-reference or octal escape
+          + '|\\\\[^ux0-9]'  // other escape sequence
+          + '|\\(\\?[:!=]'  // start of a non-capturing group
+          + '|[\\(\\)\\^]'  // start/emd of a group, or line start
+          + '|[^\\x5B\\x5C\\(\\)\\^]+'  // run of other characters
+          + ')',
+          'g'));
       var n = parts.length;
-  
+
       // Maps captured group numbers to the number they will occupy in
       // the output or to -1 if that has not been determined, or to
       // undefined if they need not be capturing in the output.
       var capturedGroups = [];
-  
+
       // Walk over and identify back references to build the capturedGroups
       // mapping.
       for (var i = 0, groupIndex = 0; i < n; ++i) {
@@ -383,7 +383,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           }
         }
       }
-  
+
       // Renumber groups and reduce capturing groups to non-capturing groups
       // where possible.
       for (var i = 1; i < capturedGroups.length; ++i) {
@@ -405,13 +405,13 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           }
         }
       }
-  
+
       // Remove any prefix anchors so that the output will match anywhere.
       // ^^ really does mean an anchored match though.
       for (var i = 0, groupIndex = 0; i < n; ++i) {
         if ('^' === parts[i] && '^' !== parts[i + 1]) { parts[i] = ''; }
       }
-  
+
       // Expand letters to groups to handle mixing of case-sensitive and
       // case-insensitive patterns if necessary.
       if (regex.ignoreCase && needToFoldCase) {
@@ -423,26 +423,26 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           } else if (ch0 !== '\\') {
             // TODO: handle letters in numeric escapes.
             parts[i] = p.replace(
-                /[a-zA-Z]/g,
-                function (ch) {
-                  var cc = ch.charCodeAt(0);
-                  return '[' + String.fromCharCode(cc & ~32, cc | 32) + ']';
-                });
+              /[a-zA-Z]/g,
+              function (ch) {
+                var cc = ch.charCodeAt(0);
+                return '[' + String.fromCharCode(cc & ~32, cc | 32) + ']';
+              });
           }
         }
       }
-  
+
       return parts.join('');
     }
-  
+
     var rewritten = [];
     for (var i = 0, n = regexs.length; i < n; ++i) {
       var regex = regexs[i];
       if (regex.global || regex.multiline) { throw new Error('' + regex); }
       rewritten.push(
-          '(?:' + allowAnywhereFoldCaseAndRenumberGroups(regex) + ')');
+        '(?:' + allowAnywhereFoldCaseAndRenumberGroups(regex) + ')');
     }
-  
+
     return new RegExp(rewritten.join('|'), ignoreCase ? 'gi' : 'g');
   }
 
@@ -463,7 +463,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
    * </pre>
    * <p>
    * corresponds to the HTML
-   * {@code <p><b>print </b>'Hello '<br>  + 'World';</p>}.</p>
+   * {@code <p><b>print </b>'Hello '<br />  + 'World';</p>}.</p>
    *
    * <p>
    * It will produce the output:</p>
@@ -492,21 +492,21 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
    */
   function extractSourceSpans(node) {
     var nocode = /(?:^|\s)nocode(?:\s|$)/;
-  
+
     var chunks = [];
     var length = 0;
     var spans = [];
     var k = 0;
-  
+
     var whitespace;
     if (node.currentStyle) {
       whitespace = node.currentStyle.whiteSpace;
     } else if (window.getComputedStyle) {
       whitespace = document.defaultView.getComputedStyle(node, null)
-          .getPropertyValue('white-space');
+        .getPropertyValue('white-space');
     }
     var isPreformatted = whitespace && 'pre' === whitespace.substring(0, 3);
-  
+
     function walk(node) {
       switch (node.nodeType) {
         case 1:  // Element
@@ -538,9 +538,9 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           break;
       }
     }
-  
+
     walk(node);
-  
+
     return {
       sourceCode: chunks.join('').replace(/\n$/, ''),
       spans: spans
@@ -582,8 +582,8 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     for (var c = element.firstChild; c; c = c.nextSibling) {
       var type = c.nodeType;
       wrapper = (type === 1)  // Element Node
-          ? (wrapper ? element : c)
-          : (type === 3)  // Text Node
+        ? (wrapper ? element : c)
+        : (type === 3)  // Text Node
           ? (notWs.test(c.nodeValue) ? element : wrapper)
           : wrapper;
     }
@@ -743,20 +743,20 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           var lang = style.substring(5);
           // Decorate the left of the embedded source
           appendDecorations(
-              basePos + tokenStart,
-              token.substring(0, embeddedSourceStart),
-              decorate, decorations);
+            basePos + tokenStart,
+            token.substring(0, embeddedSourceStart),
+            decorate, decorations);
           // Decorate the embedded source
           appendDecorations(
-              basePos + tokenStart + embeddedSourceStart,
-              embeddedSource,
-              langHandlerForExtension(lang, embeddedSource),
-              decorations);
+            basePos + tokenStart + embeddedSourceStart,
+            embeddedSource,
+            langHandlerForExtension(lang, embeddedSource),
+            decorations);
           // Decorate the right of the embedded section
           appendDecorations(
-              basePos + tokenStart + embeddedSourceEnd,
-              token.substring(embeddedSourceEnd),
-              decorate, decorations);
+            basePos + tokenStart + embeddedSourceEnd,
+            token.substring(embeddedSourceEnd),
+            decorate, decorations);
         }
       }
       job.decorations = decorations;
@@ -784,41 +784,41 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     if (options['tripleQuotedStrings']) {
       // '''multi-line-string''', 'single-line-string', and double-quoted
       shortcutStylePatterns.push(
-          [PR_STRING,  /^(?:\'\'\'(?:[^\'\\]|\\[\s\S]|\'{1,2}(?=[^\']))*(?:\'\'\'|$)|\"\"\"(?:[^\"\\]|\\[\s\S]|\"{1,2}(?=[^\"]))*(?:\"\"\"|$)|\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$))/,
-           null, '\'"']);
+        [PR_STRING, /^(?:\'\'\'(?:[^\'\\]|\\[\s\S]|\'{1,2}(?=[^\']))*(?:\'\'\'|$)|\"\"\"(?:[^\"\\]|\\[\s\S]|\"{1,2}(?=[^\"]))*(?:\"\"\"|$)|\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$))/,
+          null, '\'"']);
     } else if (options['multiLineStrings']) {
       // 'multi-line-string', "multi-line-string"
       shortcutStylePatterns.push(
-          [PR_STRING,  /^(?:\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$)|\`(?:[^\\\`]|\\[\s\S])*(?:\`|$))/,
-           null, '\'"`']);
+        [PR_STRING, /^(?:\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$)|\`(?:[^\\\`]|\\[\s\S])*(?:\`|$))/,
+          null, '\'"`']);
     } else {
       // 'single-line-string', "single-line-string"
       shortcutStylePatterns.push(
-          [PR_STRING,
-           /^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,
-           null, '"\'']);
+        [PR_STRING,
+          /^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,
+          null, '"\'']);
     }
     if (options['verbatimStrings']) {
       // verbatim-string-literal production from the C# grammar.  See issue 93.
       fallthroughStylePatterns.push(
-          [PR_STRING, /^@\"(?:[^\"]|\"\")*(?:\"|$)/, null]);
+        [PR_STRING, /^@\"(?:[^\"]|\"\")*(?:\"|$)/, null]);
     }
     var hc = options['hashComments'];
     if (hc) {
       if (options['cStyleComments']) {
         if (hc > 1) {  // multiline hash comments
           shortcutStylePatterns.push(
-              [PR_COMMENT, /^#(?:##(?:[^#]|#(?!##))*(?:###|$)|.*)/, null, '#']);
+            [PR_COMMENT, /^#(?:##(?:[^#]|#(?!##))*(?:###|$)|.*)/, null, '#']);
         } else {
           // Stop C preprocessor declarations at an unclosed open comment
           shortcutStylePatterns.push(
-              [PR_COMMENT, /^#(?:(?:define|elif|else|endif|error|ifdef|include|ifndef|line|pragma|undef|warning)\b|[^\r\n]*)/,
-               null, '#']);
+            [PR_COMMENT, /^#(?:(?:define|elif|else|endif|error|ifdef|include|ifndef|line|pragma|undef|warning)\b|[^\r\n]*)/,
+              null, '#']);
         }
         fallthroughStylePatterns.push(
-            [PR_STRING,
-             /^<(?:(?:(?:\.\.\/)*|\/?)(?:[\w-]+(?:\/[\w-]+)+)?[\w-]+\.h|[a-z]\w*)>/,
-             null]);
+          [PR_STRING,
+            /^<(?:(?:(?:\.\.\/)*|\/?)(?:[\w-]+(?:\/[\w-]+)+)?[\w-]+\.h|[a-z]\w*)>/,
+            null]);
       } else {
         shortcutStylePatterns.push([PR_COMMENT, /^#[^\r\n]*/, null, '#']);
       }
@@ -826,29 +826,29 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     if (options['cStyleComments']) {
       fallthroughStylePatterns.push([PR_COMMENT, /^\/\/[^\r\n]*/, null]);
       fallthroughStylePatterns.push(
-          [PR_COMMENT, /^\/\*[\s\S]*?(?:\*\/|$)/, null]);
+        [PR_COMMENT, /^\/\*[\s\S]*?(?:\*\/|$)/, null]);
     }
     if (options['regexLiterals']) {
       /**
        * @const
        */
       var REGEX_LITERAL = (
-          // A regular expression literal starts with a slash that is
-          // not followed by * or / so that it is not confused with
-          // comments.
-          '/(?=[^/*])'
-          // and then contains any number of raw characters,
-          + '(?:[^/\\x5B\\x5C]'
-          // escape sequences (\x5C),
-          +    '|\\x5C[\\s\\S]'
-          // or non-nesting character sets (\x5B\x5D);
-          +    '|\\x5B(?:[^\\x5C\\x5D]|\\x5C[\\s\\S])*(?:\\x5D|$))+'
-          // finally closed by a /.
-          + '/');
+        // A regular expression literal starts with a slash that is
+        // not followed by * or / so that it is not confused with
+        // comments.
+        '/(?=[^/*])'
+        // and then contains any number of raw characters,
+        + '(?:[^/\\x5B\\x5C]'
+        // escape sequences (\x5C),
+        + '|\\x5C[\\s\\S]'
+        // or non-nesting character sets (\x5B\x5D);
+        + '|\\x5B(?:[^\\x5C\\x5D]|\\x5C[\\s\\S])*(?:\\x5D|$))+'
+        // finally closed by a /.
+        + '/');
       fallthroughStylePatterns.push(
-          ['lang-regex',
-           new RegExp('^' + REGEXP_PRECEDER_PATTERN + '(' + REGEX_LITERAL + ')')
-           ]);
+        ['lang-regex',
+          new RegExp('^' + REGEXP_PRECEDER_PATTERN + '(' + REGEX_LITERAL + ')')
+        ]);
     }
 
     var types = options['types'];
@@ -859,44 +859,44 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     var keywords = ("" + options['keywords']).replace(/^ | $/g, '');
     if (keywords.length) {
       fallthroughStylePatterns.push(
-          [PR_KEYWORD,
-           new RegExp('^(?:' + keywords.replace(/[\s,]+/g, '|') + ')\\b'),
-           null]);
+        [PR_KEYWORD,
+          new RegExp('^(?:' + keywords.replace(/[\s,]+/g, '|') + ')\\b'),
+          null]);
     }
 
-    shortcutStylePatterns.push([PR_PLAIN,       /^\s+/, null, ' \r\n\t\xA0']);
+    shortcutStylePatterns.push([PR_PLAIN, /^\s+/, null, ' \r\n\t\xA0']);
     fallthroughStylePatterns.push(
-        // TODO(mikesamuel): recognize non-latin letters and numerals in idents
-        [PR_LITERAL,     /^@[a-z_$][a-z_$@0-9]*/i, null],
-        [PR_TYPE,        /^(?:[@_]?[A-Z]+[a-z][A-Za-z_$@0-9]*|\w+_t\b)/, null],
-        [PR_PLAIN,       /^[a-z_$][a-z_$@0-9]*/i, null],
-        [PR_LITERAL,
-         new RegExp(
-             '^(?:'
-             // A hex number
-             + '0x[a-f0-9]+'
-             // or an octal or decimal number,
-             + '|(?:\\d(?:_\\d+)*\\d*(?:\\.\\d*)?|\\.\\d\\+)'
-             // possibly in scientific notation
-             + '(?:e[+\\-]?\\d+)?'
-             + ')'
-             // with an optional modifier like UL for unsigned long
-             + '[a-z]*', 'i'),
-         null, '0123456789'],
-        // Don't treat escaped quotes in bash as starting strings.  See issue 144.
-        [PR_PLAIN,       /^\\[\s\S]?/, null],
-        [PR_PUNCTUATION, /^.[^\s\w\.$@\'\"\`\/\#\\]*/, null]);
+      // TODO(mikesamuel): recognize non-latin letters and numerals in idents
+      [PR_LITERAL, /^@[a-z_$][a-z_$@0-9]*/i, null],
+      [PR_TYPE, /^(?:[@_]?[A-Z]+[a-z][A-Za-z_$@0-9]*|\w+_t\b)/, null],
+      [PR_PLAIN, /^[a-z_$][a-z_$@0-9]*/i, null],
+      [PR_LITERAL,
+        new RegExp(
+          '^(?:'
+          // A hex number
+          + '0x[a-f0-9]+'
+          // or an octal or decimal number,
+          + '|(?:\\d(?:_\\d+)*\\d*(?:\\.\\d*)?|\\.\\d\\+)'
+          // possibly in scientific notation
+          + '(?:e[+\\-]?\\d+)?'
+          + ')'
+          // with an optional modifier like UL for unsigned long
+          + '[a-z]*', 'i'),
+        null, '0123456789'],
+      // Don't treat escaped quotes in bash as starting strings.  See issue 144.
+      [PR_PLAIN, /^\\[\s\S]?/, null],
+      [PR_PUNCTUATION, /^.[^\s\w\.$@\'\"\`\/\#\\]*/, null]);
 
     return createSimpleLexer(shortcutStylePatterns, fallthroughStylePatterns);
   }
 
   var decorateSource = sourceDecorator({
-        'keywords': ALL_KEYWORDS,
-        'hashComments': true,
-        'cStyleComments': true,
-        'multiLineStrings': true,
-        'regexLiterals': true
-      });
+    'keywords': ALL_KEYWORDS,
+    'hashComments': true,
+    'cStyleComments': true,
+    'multiLineStrings': true,
+    'regexLiterals': true
+  });
 
   /**
    * Given a DOM subtree, wraps it in a list, and puts each line into its own
@@ -910,20 +910,20 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
   function numberLines(node, opt_startLineNum) {
     var nocode = /(?:^|\s)nocode(?:\s|$)/;
     var lineBreak = /\r\n?|\n/;
-  
+
     var document = node.ownerDocument;
-  
+
     var whitespace;
     if (node.currentStyle) {
       whitespace = node.currentStyle.whiteSpace;
     } else if (window.getComputedStyle) {
       whitespace = document.defaultView.getComputedStyle(node, null)
-          .getPropertyValue('white-space');
+        .getPropertyValue('white-space');
     }
     // If it's preformatted, then we need to split lines on line breaks
-    // in addition to <BR>s.
+    // in addition to <br />s.
     var isPreformatted = whitespace && 'pre' === whitespace.substring(0, 3);
-  
+
     var li = document.createElement('LI');
     while (node.firstChild) {
       li.appendChild(node.firstChild);
@@ -931,14 +931,14 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     // An array of lines.  We split below, so this is initialized to one
     // un-split line.
     var listItems = [li];
-  
+
     function walk(node) {
       switch (node.nodeType) {
         case 1:  // Element
           if (nocode.test(node.className)) { break; }
           if ('BR' === node.nodeName) {
             breakAfter(node);
-            // Discard the <BR> since it is now flush against a </LI>.
+            // Discard the <br /> since it is now flush against a </LI>.
             if (node.parentNode) {
               node.parentNode.removeChild(node);
             }
@@ -959,7 +959,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
               if (tail) {
                 var parent = node.parentNode;
                 parent.insertBefore(
-                    document.createTextNode(tail), node.nextSibling);
+                  document.createTextNode(tail), node.nextSibling);
               }
               breakAfter(node);
               if (!firstLine) {
@@ -971,7 +971,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           break;
       }
     }
-  
+
     // Split a line after the given node.
     function breakAfter(lineEndNode) {
       // If there's nothing to the right, then we can skip ending the line
@@ -981,7 +981,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         lineEndNode = lineEndNode.parentNode;
         if (!lineEndNode) { return; }
       }
-  
+
       function breakLeftOf(limit, copy) {
         // Clone shallowly if this node needs to be on both sides of the break.
         var rightSide = copy ? limit.cloneNode(false) : limit;
@@ -989,7 +989,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         if (parent) {
           // We clone the parent chain.
           // This helps us resurrect important styling elements that cross lines.
-          // E.g. in <i>Foo<br>Bar</i>
+          // E.g. in <i>Foo<br />Bar</i>
           // should be rewritten to <li><i>Foo</i></li><li><i>Bar</i></li>.
           var parentClone = breakLeftOf(parent, 1);
           // Move the clone and everything to the right of the original
@@ -1003,31 +1003,31 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         }
         return rightSide;
       }
-  
+
       var copiedListItem = breakLeftOf(lineEndNode.nextSibling, 0);
-  
+
       // Walk the parent chain until we reach an unattached LI.
       for (var parent;
-           // Check nodeType since IE invents document fragments.
-           (parent = copiedListItem.parentNode) && parent.nodeType === 1;) {
+        // Check nodeType since IE invents document fragments.
+        (parent = copiedListItem.parentNode) && parent.nodeType === 1;) {
         copiedListItem = parent;
       }
       // Put it on the list of lines for later processing.
       listItems.push(copiedListItem);
     }
-  
+
     // Split lines while there are lines left to split.
     for (var i = 0;  // Number of lines that have been split so far.
-         i < listItems.length;  // length updated by breakAfter calls.
-         ++i) {
+      i < listItems.length;  // length updated by breakAfter calls.
+      ++i) {
       walk(listItems[i]);
     }
-  
+
     // Make sure numeric indices show correctly.
-    if (opt_startLineNum === (opt_startLineNum|0)) {
+    if (opt_startLineNum === (opt_startLineNum | 0)) {
       listItems[0].setAttribute('value', opt_startLineNum);
     }
-  
+
     var ol = document.createElement('OL');
     ol.className = 'linenums';
     var offset = Math.max(0, ((opt_startLineNum - 1 /* zero index */)) | 0) || 0;
@@ -1042,7 +1042,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       }
       ol.appendChild(li);
     }
-  
+
     node.appendChild(ol);
   }
 
@@ -1052,7 +1052,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
    * @param {Object} job like <pre>{
    *    sourceCode: {string} source as plain text,
    *    spans: {Array.<number|Node>} alternating span start indices into source
-   *       and the text node or element (e.g. {@code <BR>}) corresponding to that
+   *       and the text node or element (e.g. {@code <br />}) corresponding to that
    *       span.
    *    decorations: {Array.<number|string} an array of style classes preceded
    *       by the position at which they start in job.sourceCode in order
@@ -1062,23 +1062,23 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
   function recombineTagsAndDecorations(job) {
     var isIE = /\bMSIE\b/.test(navigator.userAgent);
     var newlineRe = /\n/g;
-  
+
     var source = job.sourceCode;
     var sourceLength = source.length;
     // Index into source after the last code-unit recombined.
     var sourceIndex = 0;
-  
+
     var spans = job.spans;
     var nSpans = spans.length;
     // Index into spans after the last span which ends at or before sourceIndex.
     var spanIndex = 0;
-  
+
     var decorations = job.decorations;
     var nDecorations = decorations.length;
     // Index into decorations after the last decoration which ends at or before
     // sourceIndex.
     var decorationIndex = 0;
-  
+
     // Remove all zero-length decorations.
     decorations[nDecorations] = sourceLength;
     var decPos, i;
@@ -1091,7 +1091,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       }
     }
     nDecorations = decPos;
-  
+
     // Simplify decorations.
     for (i = decPos = 0; i < nDecorations;) {
       var startPos = decorations[i];
@@ -1105,24 +1105,24 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       decorations[decPos++] = startDec;
       i = end;
     }
-  
+
     nDecorations = decorations.length = decPos;
-  
+
     var decoration = null;
     while (spanIndex < nSpans) {
       var spanStart = spans[spanIndex];
       var spanEnd = spans[spanIndex + 2] || sourceLength;
-  
+
       var decStart = decorations[decorationIndex];
       var decEnd = decorations[decorationIndex + 2] || sourceLength;
-  
+
       var end = Math.min(spanEnd, decEnd);
-  
+
       var textNode = spans[spanIndex + 1];
       var styledText;
-      if (textNode.nodeType !== 1  // Don't muck with <BR>s or <LI>s
-          // Don't introduce spans around empty text nodes.
-          && (styledText = source.substring(sourceIndex, end))) {
+      if (textNode.nodeType !== 1  // Don't muck with <br />s or <LI>s
+        // Don't introduce spans around empty text nodes.
+        && (styledText = source.substring(sourceIndex, end))) {
         // This may seem bizarre, and it is.  Emitting LF on IE causes the
         // code to display with spaces instead of line breaks.
         // Emitting Windows standard issue linebreaks (CRLF) causes a blank
@@ -1138,14 +1138,14 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         span.appendChild(textNode);
         if (sourceIndex < spanEnd) {  // Split off a text node.
           spans[spanIndex + 1] = textNode
-              // TODO: Possibly optimize by using '' if there's no flicker.
-              = document.createTextNode(source.substring(end, spanEnd));
+            // TODO: Possibly optimize by using '' if there's no flicker.
+            = document.createTextNode(source.substring(end, spanEnd));
           parentNode.insertBefore(textNode, span.nextSibling);
         }
       }
-  
+
       sourceIndex = end;
-  
+
       if (sourceIndex >= spanEnd) {
         spanIndex += 2;
       }
@@ -1189,108 +1189,108 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       // Treat it as markup if the first non whitespace character is a < and
       // the last non-whitespace character is a >.
       extension = /^\s*</.test(source)
-          ? 'default-markup'
-          : 'default-code';
+        ? 'default-markup'
+        : 'default-code';
     }
     return langHandlerRegistry[extension];
   }
   registerLangHandler(decorateSource, ['default-code']);
   registerLangHandler(
-      createSimpleLexer(
-          [],
-          [
-           [PR_PLAIN,       /^[^<?]+/],
-           [PR_DECLARATION, /^<!\w[^>]*(?:>|$)/],
-           [PR_COMMENT,     /^<\!--[\s\S]*?(?:-\->|$)/],
-           // Unescaped content in an unknown language
-           ['lang-',        /^<\?([\s\S]+?)(?:\?>|$)/],
-           ['lang-',        /^<%([\s\S]+?)(?:%>|$)/],
-           [PR_PUNCTUATION, /^(?:<[%?]|[%?]>)/],
-           ['lang-',        /^<xmp\b[^>]*>([\s\S]+?)<\/xmp\b[^>]*>/i],
-           // Unescaped content in javascript.  (Or possibly vbscript).
-           ['lang-js',      /^<script\b[^>]*>([\s\S]*?)(<\/script\b[^>]*>)/i],
-           // Contains unescaped stylesheet content
-           ['lang-css',     /^<style\b[^>]*>([\s\S]*?)(<\/style\b[^>]*>)/i],
-           ['lang-in.tag',  /^(<\/?[a-z][^<>]*>)/i]
-          ]),
-      ['default-markup', 'htm', 'html', 'mxml', 'xhtml', 'xml', 'xsl']);
+    createSimpleLexer(
+      [],
+      [
+        [PR_PLAIN, /^[^<?]+/],
+        [PR_DECLARATION, /^<!\w[^>]*(?:>|$)/],
+        [PR_COMMENT, /^<\!--[\s\S]*?(?:-\->|$)/],
+        // Unescaped content in an unknown language
+        ['lang-', /^<\?([\s\S]+?)(?:\?>|$)/],
+        ['lang-', /^<%([\s\S]+?)(?:%>|$)/],
+        [PR_PUNCTUATION, /^(?:<[%?]|[%?]>)/],
+        ['lang-', /^<xmp\b[^>]*>([\s\S]+?)<\/xmp\b[^>]*>/i],
+        // Unescaped content in javascript.  (Or possibly vbscript).
+        ['lang-js', /^<script\b[^>]*>([\s\S]*?)(<\/script\b[^>]*>)/i],
+        // Contains unescaped stylesheet content
+        ['lang-css', /^<style\b[^>]*>([\s\S]*?)(<\/style\b[^>]*>)/i],
+        ['lang-in.tag', /^(<\/?[a-z][^<>]*>)/i]
+      ]),
+    ['default-markup', 'htm', 'html', 'mxml', 'xhtml', 'xml', 'xsl']);
   registerLangHandler(
-      createSimpleLexer(
-          [
-           [PR_PLAIN,        /^[\s]+/, null, ' \t\r\n'],
-           [PR_ATTRIB_VALUE, /^(?:\"[^\"]*\"?|\'[^\']*\'?)/, null, '\"\'']
-           ],
-          [
-           [PR_TAG,          /^^<\/?[a-z](?:[\w.:-]*\w)?|\/?>$/i],
-           [PR_ATTRIB_NAME,  /^(?!style[\s=]|on)[a-z](?:[\w:-]*\w)?/i],
-           ['lang-uq.val',   /^=\s*([^>\'\"\s]*(?:[^>\'\"\s\/]|\/(?=\s)))/],
-           [PR_PUNCTUATION,  /^[=<>\/]+/],
-           ['lang-js',       /^on\w+\s*=\s*\"([^\"]+)\"/i],
-           ['lang-js',       /^on\w+\s*=\s*\'([^\']+)\'/i],
-           ['lang-js',       /^on\w+\s*=\s*([^\"\'>\s]+)/i],
-           ['lang-css',      /^style\s*=\s*\"([^\"]+)\"/i],
-           ['lang-css',      /^style\s*=\s*\'([^\']+)\'/i],
-           ['lang-css',      /^style\s*=\s*([^\"\'>\s]+)/i]
-           ]),
-      ['in.tag']);
+    createSimpleLexer(
+      [
+        [PR_PLAIN, /^[\s]+/, null, ' \t\r\n'],
+        [PR_ATTRIB_VALUE, /^(?:\"[^\"]*\"?|\'[^\']*\'?)/, null, '\"\'']
+      ],
+      [
+        [PR_TAG, /^^<\/?[a-z](?:[\w.:-]*\w)?|\/?>$/i],
+        [PR_ATTRIB_NAME, /^(?!style[\s=]|on)[a-z](?:[\w:-]*\w)?/i],
+        ['lang-uq.val', /^=\s*([^>\'\"\s]*(?:[^>\'\"\s\/]|\/(?=\s)))/],
+        [PR_PUNCTUATION, /^[=<>\/]+/],
+        ['lang-js', /^on\w+\s*=\s*\"([^\"]+)\"/i],
+        ['lang-js', /^on\w+\s*=\s*\'([^\']+)\'/i],
+        ['lang-js', /^on\w+\s*=\s*([^\"\'>\s]+)/i],
+        ['lang-css', /^style\s*=\s*\"([^\"]+)\"/i],
+        ['lang-css', /^style\s*=\s*\'([^\']+)\'/i],
+        ['lang-css', /^style\s*=\s*([^\"\'>\s]+)/i]
+      ]),
+    ['in.tag']);
   registerLangHandler(
-      createSimpleLexer([], [[PR_ATTRIB_VALUE, /^[\s\S]+/]]), ['uq.val']);
+    createSimpleLexer([], [[PR_ATTRIB_VALUE, /^[\s\S]+/]]), ['uq.val']);
   registerLangHandler(sourceDecorator({
-          'keywords': CPP_KEYWORDS,
-          'hashComments': true,
-          'cStyleComments': true,
-          'types': C_TYPES
-        }), ['c', 'cc', 'cpp', 'cxx', 'cyc', 'm']);
+    'keywords': CPP_KEYWORDS,
+    'hashComments': true,
+    'cStyleComments': true,
+    'types': C_TYPES
+  }), ['c', 'cc', 'cpp', 'cxx', 'cyc', 'm']);
   registerLangHandler(sourceDecorator({
-          'keywords': 'null,true,false'
-        }), ['json']);
+    'keywords': 'null,true,false'
+  }), ['json']);
   registerLangHandler(sourceDecorator({
-          'keywords': CSHARP_KEYWORDS,
-          'hashComments': true,
-          'cStyleComments': true,
-          'verbatimStrings': true,
-          'types': C_TYPES
-        }), ['cs']);
+    'keywords': CSHARP_KEYWORDS,
+    'hashComments': true,
+    'cStyleComments': true,
+    'verbatimStrings': true,
+    'types': C_TYPES
+  }), ['cs']);
   registerLangHandler(sourceDecorator({
-          'keywords': JAVA_KEYWORDS,
-          'cStyleComments': true
-        }), ['java']);
+    'keywords': JAVA_KEYWORDS,
+    'cStyleComments': true
+  }), ['java']);
   registerLangHandler(sourceDecorator({
-          'keywords': SH_KEYWORDS,
-          'hashComments': true,
-          'multiLineStrings': true
-        }), ['bsh', 'csh', 'sh']);
+    'keywords': SH_KEYWORDS,
+    'hashComments': true,
+    'multiLineStrings': true
+  }), ['bsh', 'csh', 'sh']);
   registerLangHandler(sourceDecorator({
-          'keywords': PYTHON_KEYWORDS,
-          'hashComments': true,
-          'multiLineStrings': true,
-          'tripleQuotedStrings': true
-        }), ['cv', 'py']);
+    'keywords': PYTHON_KEYWORDS,
+    'hashComments': true,
+    'multiLineStrings': true,
+    'tripleQuotedStrings': true
+  }), ['cv', 'py']);
   registerLangHandler(sourceDecorator({
-          'keywords': PERL_KEYWORDS,
-          'hashComments': true,
-          'multiLineStrings': true,
-          'regexLiterals': true
-        }), ['perl', 'pl', 'pm']);
+    'keywords': PERL_KEYWORDS,
+    'hashComments': true,
+    'multiLineStrings': true,
+    'regexLiterals': true
+  }), ['perl', 'pl', 'pm']);
   registerLangHandler(sourceDecorator({
-          'keywords': RUBY_KEYWORDS,
-          'hashComments': true,
-          'multiLineStrings': true,
-          'regexLiterals': true
-        }), ['rb']);
+    'keywords': RUBY_KEYWORDS,
+    'hashComments': true,
+    'multiLineStrings': true,
+    'regexLiterals': true
+  }), ['rb']);
   registerLangHandler(sourceDecorator({
-          'keywords': JSCRIPT_KEYWORDS,
-          'cStyleComments': true,
-          'regexLiterals': true
-        }), ['js']);
+    'keywords': JSCRIPT_KEYWORDS,
+    'cStyleComments': true,
+    'regexLiterals': true
+  }), ['js']);
   registerLangHandler(sourceDecorator({
-          'keywords': COFFEE_KEYWORDS,
-          'hashComments': 3,  // ### style block comments
-          'cStyleComments': true,
-          'multilineStrings': true,
-          'tripleQuotedStrings': true,
-          'regexLiterals': true
-        }), ['coffee']);
+    'keywords': COFFEE_KEYWORDS,
+    'hashComments': 3,  // ### style block comments
+    'cStyleComments': true,
+    'multilineStrings': true,
+    'tripleQuotedStrings': true,
+    'regexLiterals': true
+  }), ['coffee']);
   registerLangHandler(createSimpleLexer([], [[PR_STRING, /^[\s\S]+/]]), ['regex']);
 
   function applyDecorator(job) {
@@ -1371,25 +1371,25 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
 
     function doWork() {
       var endTime = (window['PR_SHOULD_USE_CONTINUATION'] ?
-                     clock['now']() + 250 /* ms */ :
-                     Infinity);
+        clock['now']() + 250 /* ms */ :
+        Infinity);
       for (; k < elements.length && clock['now']() < endTime; k++) {
         var cs = elements[k];
         var className = cs.className;
         if (className.indexOf('prettyprint') >= 0) {
           // If the classes includes a language extensions, use it.
           // Language extensions can be specified like
-          //     <pre class="prettyprint lang-cpp">
+          //     <pre className="prettyprint lang-cpp">
           // the language extension "cpp" is used to find a language handler as
           // passed to PR.registerLangHandler.
           // HTML5 recommends that a language be specified using "language-"
           // as the prefix instead.  Google Code Prettify supports both.
           // http://dev.w3.org/html5/spec-author-view/the-code-element.html
           var langExtension = className.match(langExtensionRe);
-          // Support <pre class="prettyprint"><code class="language-c">
+          // Support <pre className="prettyprint"><code className="language-c">
           var wrapper;
           if (!langExtension && (wrapper = childContentWrapper(cs))
-              && "CODE" === wrapper.tagName) {
+            && "CODE" === wrapper.tagName) {
             langExtension = wrapper.className.match(langExtensionRe);
           }
 
@@ -1401,8 +1401,8 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           var nested = false;
           for (var p = cs.parentNode; p; p = p.parentNode) {
             if ((p.tagName === 'pre' || p.tagName === 'code' ||
-                 p.tagName === 'xmp') &&
-                p.className && p.className.indexOf('prettyprint') >= 0) {
+              p.tagName === 'xmp') &&
+              p.className && p.className.indexOf('prettyprint') >= 0) {
               nested = true;
               break;
             }
@@ -1412,8 +1412,8 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
             // 1-indexed number of the first line.
             var lineNums = cs.className.match(/\blinenums\b(?::(\d+))?/);
             lineNums = lineNums
-                  ? lineNums[1] && lineNums[1].length ? +lineNums[1] : true
-                  : false;
+              ? lineNums[1] && lineNums[1].length ? +lineNums[1] : true
+              : false;
             if (lineNums) { numberLines(cs, lineNums); }
 
             // do the pretty printing
@@ -1437,41 +1437,41 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     doWork();
   }
 
-   /**
-    * Find all the {@code <pre>} and {@code <code>} tags in the DOM with
-    * {@code class=prettyprint} and prettify them.
-    *
-    * @param {Function?} opt_whenDone if specified, called when the last entry
-    *     has been finished.
-    */
+  /**
+   * Find all the {@code <pre>} and {@code <code>} tags in the DOM with
+   * {@code class=prettyprint} and prettify them.
+   *
+   * @param {Function?} opt_whenDone if specified, called when the last entry
+   *     has been finished.
+   */
   window['prettyPrintOne'] = prettyPrintOne;
-   /**
-    * Pretty print a chunk of code.
-    *
-    * @param {string} sourceCodeHtml code as html
-    * @return {string} code as html, but prettier
-    */
+  /**
+   * Pretty print a chunk of code.
+   *
+   * @param {string} sourceCodeHtml code as html
+   * @return {string} code as html, but prettier
+   */
   window['prettyPrint'] = prettyPrint;
-   /**
-    * Contains functions for creating and registering new language handlers.
-    * @type {Object}
-    */
+  /**
+   * Contains functions for creating and registering new language handlers.
+   * @type {Object}
+   */
   window['PR'] = {
-        'createSimpleLexer': createSimpleLexer,
-        'registerLangHandler': registerLangHandler,
-        'sourceDecorator': sourceDecorator,
-        'PR_ATTRIB_NAME': PR_ATTRIB_NAME,
-        'PR_ATTRIB_VALUE': PR_ATTRIB_VALUE,
-        'PR_COMMENT': PR_COMMENT,
-        'PR_DECLARATION': PR_DECLARATION,
-        'PR_KEYWORD': PR_KEYWORD,
-        'PR_LITERAL': PR_LITERAL,
-        'PR_NOCODE': PR_NOCODE,
-        'PR_PLAIN': PR_PLAIN,
-        'PR_PUNCTUATION': PR_PUNCTUATION,
-        'PR_SOURCE': PR_SOURCE,
-        'PR_STRING': PR_STRING,
-        'PR_TAG': PR_TAG,
-        'PR_TYPE': PR_TYPE
-      };
+    'createSimpleLexer': createSimpleLexer,
+    'registerLangHandler': registerLangHandler,
+    'sourceDecorator': sourceDecorator,
+    'PR_ATTRIB_NAME': PR_ATTRIB_NAME,
+    'PR_ATTRIB_VALUE': PR_ATTRIB_VALUE,
+    'PR_COMMENT': PR_COMMENT,
+    'PR_DECLARATION': PR_DECLARATION,
+    'PR_KEYWORD': PR_KEYWORD,
+    'PR_LITERAL': PR_LITERAL,
+    'PR_NOCODE': PR_NOCODE,
+    'PR_PLAIN': PR_PLAIN,
+    'PR_PUNCTUATION': PR_PUNCTUATION,
+    'PR_SOURCE': PR_SOURCE,
+    'PR_STRING': PR_STRING,
+    'PR_TAG': PR_TAG,
+    'PR_TYPE': PR_TYPE
+  };
 })();

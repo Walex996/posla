@@ -1,9 +1,9 @@
-<div class="msg">
+<div className="msg">
 
-    <div class="screen-scroll msg-screen-scroll auto-scroll-bottom pt-20">
+    <div className="screen-scroll msg-screen-scroll auto-scroll-bottom pt-5">
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -15,7 +15,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -29,7 +29,7 @@
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -41,7 +41,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -55,14 +55,14 @@
         </div>
 
 
-        <div class="msg-general">
+        <div className="msg-general">
             <div>
                 May 27, 2019
             </div>
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -89,7 +89,7 @@
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -103,7 +103,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -117,7 +117,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -131,14 +131,14 @@
         </div>
 
 
-        <div class="msg-general">
+        <div className="msg-general">
             <div>
                 May 27, 2019
             </div>
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -151,7 +151,7 @@
             </div>
         </div>
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -165,7 +165,7 @@
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -179,7 +179,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -193,7 +193,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -207,14 +207,14 @@
         </div>
 
 
-        <div class="msg-general">
+        <div className="msg-general">
             <div>
                 May 27, 2019
             </div>
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -227,7 +227,7 @@
             </div>
         </div>
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -241,7 +241,7 @@
         </div>
 
 
-        <div class="msg-outbox">
+        <div className="msg-outbox">
             <div>
                 <div>
                     The actual message here the actual message here the actual message here
@@ -255,7 +255,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     The actual message here
@@ -269,7 +269,7 @@
         </div>
 
 
-        <div class="msg-inbox">
+        <div className="msg-inbox">
             <div>
                 <div>
                     last actual message is here
@@ -284,38 +284,38 @@
     </div>
 
 
-    <form class="msg-new box-shadow-mini">
-        <div class="p-sm-15-5 pb-10 bt-1-ddd bb-1-ddd bg-eee">
+    <form className="msg-new box-shadow-mini">
+        <div className="p-sm-15-5 pb-10 bt-1-ddd bb-1-ddd bg-eee">
             <div>
-                <div class="form-group">
-                    <textarea class="form-control resize-none" style="height: 45px;" placeholder="Type a message..." required></textarea>
+                <div className="form-group">
+                    <textarea className="form-control resize-none" style="height: 45px;" placeholder="Type a message..." required></textarea>
                 </div>
             </div>
-            <div class="floated-content">
-                <button type="submit" class="btn btn-blue btn-sm ml-10 pull-right icon-left">
-                    <span class="fa fa-paper-plane"></span>
+            <div className="floated-content">
+                <button type="submit" className="btn btn-blue btn-sm ml-2.5 pull-right icon-left">
+                    <span className="fa fa-paper-plane"></span>
                     Send Message
                 </button>
 
-                <button type="button" class="btn btn-transparent-black btn-sm pull-right icon-left" data-toggle="collapse" data-target="#add-attachment">
-                    <span class="fa fa-paperclip icon-333"></span>
+                <button type="button" className="btn btn-transparent-black btn-sm pull-right icon-left" data-toggle="collapse" data-target="#add-attachment">
+                    <span className="fa fa-paperclip icon-333"></span>
                     Add Attachment
-                    <span class="fa fa-angle-down icon-333"></span>
+                    <span className="fa fa-angle-down icon-333"></span>
                 </button>
 
-                <button type="submit" class="btn btn-danger btn-sm pull-left icon-left d-none d-lg-block">
-                    <span class="fa fa-times-circle"></span>
+                <button type="submit" className="btn btn-danger btn-sm pull-left icon-left d-none d-lg-block">
+                    <span className="fa fa-times-circle"></span>
                     Close Ticket
                 </button>
             </div>
-            <div id="add-attachment" class="collapse">
-                <div class="mt-10 b-1-ddd p-20-10 pt-5">
-                    <div class="row">
-                        <div class="col-sm-6 mt-10">
-                            <input type="file" class="form-control">
+            <div id="add-attachment" className="collapse">
+                <div className="mt-2.5 b-1-ddd p-5-10 pt-1.5">
+                    <div className="row">
+                        <div className="col-sm-6 mt-2.5">
+                            <input type="file" className="form-control">
                         </div>
-                        <div class="col-sm-6 mt-10">
-                            <input type="file" class="form-control">
+                        <div className="col-sm-6 mt-2.5">
+                            <input type="file" className="form-control">
                         </div>
                     </div>
                 </div>

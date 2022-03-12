@@ -1,229 +1,229 @@
-<header class="main-header">
-    <a href="" class="logo">
-      <span class="logo-mini"><b>Posla</b></span>
-      <span class="logo-lg"><b>Posla</b></span>
-    </a>
-    <nav class="navbar navbar-static-top">
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars"></span>
-        {{-- <span class="icon-bar"></span> --}}
-        {{-- <span class="icon-bar"></span> --}}
-        {{-- <span class="icon-bar"></span> --}}
-      </a>
+<header className="main-header">
+    <Link to="" className="logo">
+      <span className="logo-mini"><b>Posla</b></span>
+      <span className="logo-lg"><b>Posla</b></span>
+    </Link>
+    <nav className="navbar navbar-static-top">
+      <Link to="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span className="sr-only">Toggle navigation</span>
+        <span className="fa fa-bars"></span>
+        {{-- <span className="icon-bar"></span> --}}
+        {{-- <span className="icon-bar"></span> --}}
+        {{-- <span className="icon-bar"></span> --}}
+      </Link>
 
-      <div class="layout-mobile-title d-block d-md-none">
+      <div className="layout-mobile-title d-block d-md-none">
         Admin Panel
       </div>
       
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
+      <div className="navbar-custom-menu">
+        <ul className="nav navbar-nav">
 
           <!--
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="far fa-envelope"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+          <li className="dropdown messages-menu">
+            <Link to="#" className="dropdown-toggle" data-toggle="dropdown">
+              <i className="far fa-envelope"></i>
+              <span className="label label-success">4</span>
+            </Link>
+            <ul className="dropdown-menu">
+              <li className="header">You have 4 messages</li>
               <li>
-                <ul class="menu">
+                <ul className="menu">
                   <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="User Image">
+                    <Link to="#">
+                      <div className="pull-left">
+                        <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        <small><i className="fa fa-clock-o"></i> 5 mins</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="User Image">
+                    <Link to="#">
+                      <div className="pull-left">
+                        <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        <small><i className="fa fa-clock-o"></i> 2 hours</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="User Image">
+                    <Link to="#">
+                      <div className="pull-left">
+                        <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
+                        <small><i className="fa fa-clock-o"></i> Today</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="User Image">
+                    <Link to="#">
+                      <div className="pull-left">
+                        <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        <small><i className="fa fa-clock-o"></i> Yesterday</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="User Image">
+                    <Link to="#">
+                      <div className="pull-left">
+                        <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        <small><i className="fa fa-clock-o"></i> 2 days</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
+              <li className="footer"><Link to="#">See All Messages</Link></li>
             </ul>
           </li>
           
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="far fa-bell"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+          <li className="dropdown notifications-menu">
+            <Link to="#" className="dropdown-toggle" data-toggle="dropdown">
+              <i className="far fa-bell"></i>
+              <span className="label label-warning">10</span>
+            </Link>
+            <ul className="dropdown-menu">
+              <li className="header">You have 10 notifications</li>
               <li>
-                <ul class="menu">
+                <ul className="menu">
                   <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
+                    <Link to="#">
+                      <i className="fa fa-users text-aqua"></i> 5 new members joined today
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                    <Link to="#">
+                      <i className="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
                       page and may cause design problems
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
+                    <Link to="#">
+                      <i className="fa fa-users text-red"></i> 5 new members joined
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
+                    <Link to="#">
+                      <i className="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
-                    </a>
+                    <Link to="#">
+                      <i className="fa fa-user text-red"></i> You changed your username
+                    </Link>
                   </li>
                 </ul>
               </li>
-              <li class="footer"><a href="#">View all</a></li>
+              <li className="footer"><Link to="#">View all</Link></li>
             </ul>
           </li>
           
-          <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="far fa-flag"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
+          <li className="dropdown tasks-menu">
+            <Link to="#" className="dropdown-toggle" data-toggle="dropdown">
+              <i className="far fa-flag"></i>
+              <span className="label label-danger">9</span>
+            </Link>
+            <ul className="dropdown-menu">
+              <li className="header">You have 9 tasks</li>
               <li>
-                <ul class="menu">
+                <ul className="menu">
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <h3>
                         Design some buttons
-                        <small class="pull-right">20%</small>
+                        <small className="pull-right">20%</small>
                       </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                      <div className="progress xs">
+                        <div className="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
                              aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
+                          <span className="sr-only">20% Complete</span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <h3>
                         Create a nice theme
-                        <small class="pull-right">40%</small>
+                        <small className="pull-right">40%</small>
                       </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                      <div className="progress xs">
+                        <div className="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
                              aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
+                          <span className="sr-only">40% Complete</span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <h3>
                         Some task I need to do
-                        <small class="pull-right">60%</small>
+                        <small className="pull-right">60%</small>
                       </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                      <div className="progress xs">
+                        <div className="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
                              aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
+                          <span className="sr-only">60% Complete</span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <h3>
                         Make beautiful transitions
-                        <small class="pull-right">80%</small>
+                        <small className="pull-right">80%</small>
                       </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                      <div className="progress xs">
+                        <div className="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
                              aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
+                          <span className="sr-only">80% Complete</span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
+              <li className="footer">
+                <Link to="#">View all tasks</Link>
               </li>
             </ul>
           </li>
           -->
 
           
-          <li class="dropdown user user-menu" style="min-height: 50px;">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height: 50px;">
-              <img src="{{ asset('/img/app/samples/user.png') }}" class="user-image" alt="User Image">
-              {{-- <span class="fa fa-user"></span> --}}
-              <span class="hidden-xs" style="position: relative; top: 2px;">Fname Lname</span>
-              <span class="fa fa-angle-down" style="position: relative; top: 3px; margin-left: 5px;"></span>
-            </a>
-            <ul class="dropdown-menu">
+          <li className="dropdown user user-menu" style="min-height: 50px;">
+            <Link to="#" className="dropdown-toggle" data-toggle="dropdown" style="height: 50px;">
+              <img src="{{ asset('/img/app/samples/user.png') }}" className="user-image" alt="User Image">
+              {{-- <span className="fa fa-user"></span> --}}
+              <span className="hidden-xs" style="position: relative; top: 2px;">Fname Lname</span>
+              <span className="fa fa-angle-down" style="position: relative; top: 3px; margin-left: 5px;"></span>
+            </Link>
+            <ul className="dropdown-menu">
               
-              <li class="user-header" style="text-align: center !important; padding-top: 15px !important;">
+              <li className="user-header" style="text-align: center !important; padding-top: 15px !important;">
                 
-                <img src="{{ asset('back/img/users/user.jpg') }}" class="img-circle" alt="fname">
+                <img src="{{ asset('back/img/users/user.jpg') }}" className="img-circle" alt="fname">
 
                 <p style="text-align: center !important;">
                   Fname Lname
@@ -231,12 +231,12 @@
                 </p>
               </li>
               
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="" class="btn btn-blue">Profile</a>
+              <li className="user-footer">
+                <div className="pull-left">
+                  <Link to="" className="btn btn-blue">Profile</Link>
                 </div>
-                <div class="pull-right">
-                  <a href="" class="btn btn-danger">Logout</a>
+                <div className="pull-right">
+                  <Link to="" className="btn btn-danger">Logout</Link>
                 </div>
               </li>
               

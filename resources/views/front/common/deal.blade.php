@@ -1,59 +1,59 @@
 
-<a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="deal">
+<Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="deal">
     
-    <div class="deal-info-top">
+    <div className="deal-info-top">
         <div>
-            <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" class="dp-cover" />
+            <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
         </div>
-        <div class="">
+        <div className="">
             <div>
-                <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" class="dp-contain" />
+                <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
             </div>
-            <div class="text-fade font-13 ellipsis">
+            <div className="text-fade font-13 ellipsis">
                 Olawale Lawal
             </div>
         </div>
-        <div class="font-bold ellipsis-2-lines mt-5 pr-10 pl-10" style="min-height: 38px;">
+        <div className="font-bold ellipsis-2-lines mt-1.5 pr-2.5 pl-2.5" style="min-height: 38px;">
             I can abc build a beautiful bespoke logo for your company using the style and color combination you prefer.
         </div>
     </div>
 
-    <div class="mt-10 mr-10 ml-10 ellipsis">
-        <div class="project-price">
-            <span class="font-size-10 text-fade">Starting At</span>
+    <div className="mt-2.5 mr-2.5 ml-2.5 ellipsis">
+        <div className="project-price">
+            <span className="font-size-10 text-fade">Starting At</span>
             $400
         </div>
-        <div class="item-labels">
-            <div class="item-labels-new">
+        <div className="item-labels">
+            <div className="item-labels-new">
                 New
             </div>
-            <div class="item-labels-featured">
+            <div className="item-labels-featured">
                 Featured
             </div>
         </div>
     </div>
 
-    <div class="pt-5 bt-1-ddd" style="margin-top: -3px;">
-        <div class="mt-0 pl-10 item-labels item-labels-tags-all ellipsis">
-            <div class="item-labels-prefix">
+    <div className="pt-1.5 bt-1-ddd" style="margin-top: -3px;">
+        <div className="mt-0 pl-2.5 item-labels item-labels-tags-all ellipsis">
+            <div className="item-labels-prefix">
                 Tags & Skills:
             </div>
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 Mobile App
             </div>
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 iOS App
             </div>
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 App Store
             </div>
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 Swift Language
             </div>
-            <div class="item-labels-tags">
+            <div className="item-labels-tags">
                 Objective C
             </div>
         </div>
     </div>
     
-</a>
+</Link>

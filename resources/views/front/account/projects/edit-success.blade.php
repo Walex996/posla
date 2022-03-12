@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-projects{
             color: #FF940A !important;
@@ -29,52 +29,52 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
                 
             </div>
             
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
                 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/projects">Projects</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Create Project</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/projects">Projects</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Create Project</li>
                     </ol>
                 </div>
                 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Create Project
                     </div>
                     <div>
                         
                         @include('front.common.nav-tabs-project-mgmt', ['active' => 0])
                         
-                        <div class="tab-content">
-                            <div class="tab-pane active">
+                        <div className="tab-content">
+                            <div className="tab-pane active">
 
-                                <div class="page-alert page-alert-success">
-                                    <span class="fa fa-check-circle"></span>
-                                    <div class="pt-15">
+                                <div className="page-alert page-alert-success">
+                                    <span className="fa fa-check-circle"></span>
+                                    <div className="pt-15">
                                         Project Edited Successfully
                                     </div>
                                     <div>
                                         Your project has been successfully submitted to the admin for approval.
                                         A notification will be sent to you once approved or rejected.
-                                        <br>
+                                        <br />
                                         Thank you.
                                     </div>
-                                    <div class="mt-10">
-                                        <div class="mw-300 mx-auto text-center">
+                                    <div className="mt-2.5">
+                                        <div className="mw-300 mx-auto text-center">
                                             <div>
-                                                <a href="/account/projects" class="btn btn-blue">
+                                                <Link to="/account/projects" className="btn btn-blue">
                                                     My Projects
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

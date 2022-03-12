@@ -1,13 +1,13 @@
-<a href="/user/abcde12345" class="freelancer">
+<Link to="/user/abcde12345" className="freelancer">
     <div>
-        <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" class="dp-contain" />
+        <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
     </div>
     <div>
-        <div class="font-bold">
+        <div className="font-bold">
             Olawale Lawal
         </div>
-        <div class="text-fade font-normal ellipsis-2-lines">
+        <div className="text-fade font-normal ellipsis-2-lines">
             Frontend Developer, UIUX Designer, Graphics Designer
         </div>
     </div>    
-</a>
+</Link>

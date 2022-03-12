@@ -1,118 +1,118 @@
-{{-- <div class="section mb-0 account-sidebar" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"> --}}
-    <div class="section mb-0 account-sidebar">
+{{-- <div className="section mb-0 account-sidebar" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"> --}}
+    <div className="section mb-0 account-sidebar">
 
-    <div class="account-sidebar-info text-center">
+    <div className="account-sidebar-info text-center">
         <div>
-            <img src="{{asset('img/app/samples/user.png')}}"alt="User name" class="dp-cover" />
+            <img src="{{asset('img/app/samples/user.png')}}"alt="User name" className="dp-cover" />
         </div>
-        <div class="font-bold">
+        <div className="font-bold">
             Olawale Lawal
         </div>
-        <div class="text-fade">
+        <div className="text-fade">
             short description short description short description short description
         </div>
         <div>
-            <div class="rating-box mt-5">
+            <div className="rating-box mt-1.5">
                 <div>
                     <div></div>
                     <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                 </div>
                 <div>
-                    <span class="font-bold text-orange">
+                    <span className="font-bold text-orange">
                         5.0
                     </span>
-                    <span class="text-fade">
+                    <span className="text-fade">
                         (1809 reviews)
                     </span>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="/account/profile/edit" class="btn btn-transparent-grey btn-sm mt-5">
+        <div className="text-center mt-1.5">
+            <Link to="/account/profile/edit" className="btn btn-transparent-grey btn-sm mt-1.5">
                 Edit Profile
-            </a>
-            <a href="" class="btn btn-transparent-grey btn-sm mt-5">
+            </Link>
+            <Link to="" className="btn btn-transparent-grey btn-sm mt-1.5">
                 View As Guest
-            </a>
+            </Link>
         </div>
     </div>
 </div>
 
 {{-- if vacation mode is on --}}
 
-<div class="section p-0 mt-0 mb-0 bg-red overflow-hidden" style="border-top-left-radius: 0; border-top-right-radius: 0;">
-    <a href="/account/settings/vacation-mode" class="pt-5 pb-5 pl-10 pr-10 d-block text-fff text-center">
+<div className="section p-0 mt-0 mb-0 bg-red overflow-hidden" style="border-top-left-radius: 0; border-top-right-radius: 0;">
+    <Link to="/account/settings/vacation-mode" className="pt-1.5 pb-1.5 pl-2.5 pr-2.5 d-block text-fff text-center">
         Vacation Mode [On]
-    </a>
+    </Link>
 </div>
 
 {{-- end if --}}
 
-<div class="section p-0 mt-5 account-sidebar-links overflow-hidden">
+<div className="section p-0 mt-1.5 account-sidebar-links overflow-hidden">
     <div>
-        <a href="/account/dashboard" class="account-sidebar-dashboard">
+        <Link to="/account/dashboard" className="account-sidebar-dashboard">
             Dashboard
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/profile" class="account-sidebar-profile">
+        <Link to="/account/profile" className="account-sidebar-profile">
             Profile
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/orders" class="account-sidebar-orders">
+        <Link to="/account/orders" className="account-sidebar-orders">
             My Orders
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/deals" class="account-sidebar-deals">
+        <Link to="/account/deals" className="account-sidebar-deals">
             My Deals
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/projects" class="account-sidebar-projects">
+        <Link to="/account/projects" className="account-sidebar-projects">
             My Projects
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/project-bids" class="account-sidebar-project-bids">
+        <Link to="/account/project-bids" className="account-sidebar-project-bids">
             My Project Bids
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/favourites" class="account-sidebar-favourites">
+        <Link to="/account/favourites" className="account-sidebar-favourites">
             Favourites
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/messages" class="account-sidebar-msg">
+        <Link to="/messages" className="account-sidebar-msg">
             Messages
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/earnings-withdrawals" class="account-sidebar-earnings-withdrawals">
+        <Link to="/account/earnings-withdrawals" className="account-sidebar-earnings-withdrawals">
             Earnings & Withdrawals
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/wallet" class="account-sidebar-wallet">
+        <Link to="/account/wallet" className="account-sidebar-wallet">
             My Wallet
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/reviews" class="account-sidebar-reviews">
+        <Link to="/account/reviews" className="account-sidebar-reviews">
             My Reviews
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/account/settings" class="account-sidebar-settings">
+        <Link to="/account/settings" className="account-sidebar-settings">
             Account Settings
-        </a>
+        </Link>
     </div>
     <div>
-        <a href="/">
+        <Link to="/">
             Logout
-        </a>
+        </Link>
     </div>
 </div>
 

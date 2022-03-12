@@ -1656,7 +1656,7 @@ pre code {
 .col-md-9,
 .col-lg-9,
 .col-xs-10,
-.col-sm-10,
+.col-sm-2.5,
 .col-md-10,
 .col-lg-10,
 .col-xs-11,
@@ -1849,7 +1849,7 @@ pre code {
   .col-sm-7,
   .col-sm-8,
   .col-sm-9,
-  .col-sm-10,
+  .col-sm-2.5,
   .col-sm-11,
   .col-sm-12 {
     float: left;
@@ -1860,7 +1860,7 @@ pre code {
   .col-sm-11 {
     width: 91.66666667%;
   }
-  .col-sm-10 {
+  .col-sm-2.5 {
     width: 83.33333333%;
   }
   .col-sm-9 {

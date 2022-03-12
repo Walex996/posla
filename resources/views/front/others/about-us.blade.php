@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         
     </style>
@@ -27,16 +27,16 @@
 
 @section('content')
     
-    <div class="container">
+    <div className="container">
 
-        <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+            <ol className="breadcrumb">
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                <li className="breadcrumb-item active" aria-current="page">About Us</li>
             </ol>
         </div>
 
-        <div class="section">
+        <div className="section">
 
             <div style="height: 800px;"></div>
 

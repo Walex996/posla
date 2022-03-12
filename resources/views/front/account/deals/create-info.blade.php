@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-deals{
             color: #FF940A !important;
@@ -59,26 +59,26 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
                 
             </div>
             
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
                 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/deals">Deals</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Create Deal</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/deals">Deals</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Create Deal</li>
                     </ol>
                 </div>
                 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Create Deal
                     </div>
                         @include('layouts.common.errors-messages')
@@ -86,27 +86,27 @@
                         
                         @include('front.common.nav-tabs-deal-mgmt', ['active' => 2])
                         
-                        <div class="tab-content">
-                            <div class="tab-pane active">
+                        <div className="tab-content">
+                            <div className="tab-pane active">
 
                                 <form action="/account/deals/create/1234/pricing" enctype="multipart/form-data">
                                     @csrf
-                                    <div class="b-1-ddd">
+                                    <div className="b-1-ddd">
 
-                                        <div class="p-20">
+                                        <div className="p-5">
                                             
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="title" class="control-label">
+                                            <div className="row">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label for="title" className="control-label">
                                                             Deal Title:
                                                         </label>
-                                                        <textarea name="title" id="title" class="form-control resize-none" style="height: 99px;" placeholder="I will..."></textarea>
+                                                        <textarea name="title" id="title" className="form-control resize-none" style="height: 99px;" placeholder="I will..."></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="category" class="control-label">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label for="category" className="control-label">
                                                             Category:
                                                         </label>
                                                         <select name="category_id" id="category" onchange="fetchSubCategory()" required>
@@ -118,8 +118,8 @@
                                                             <option value="">Category 1</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label for="subcategory" class="control-label">
+                                                    <div className="form-group">
+                                                        <label for="subcategory" className="control-label">
                                                             Sub Category:
                                                         </label>
                                                         <select name="subcategory_id" id="subCategory" required>
@@ -135,113 +135,113 @@
                                                 </div>
                                             </div>
 
-                                            <hr>
+                                            <hr />
                                             
-                                            <div class="row">
-                                                <div class="col-sm-12 file-upload-box-container">
+                                            <div className="row">
+                                                <div className="col-sm-12 file-upload-box-container">
                                                 
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_1">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_1">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Main Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
                                                         <input type="file" name="deal_pictures[]" id="picture_1" accept="image/*" />
                                                     </div>
                                                     
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_2">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_2">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Add Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
                                                         <input type="file" name="deal_pictures[]" id="picture_2" accept="image/*" />
                                                     </div>
                                                     
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_3">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_3">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Add Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
                                                         <input type="file" name="deal_pictures[]" id="picture_3" accept="image/*" />
                                                     </div>
                                                     
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_4">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_4">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Add Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
                                                         <input type="file" name="deal_pictures[]" id="picture_4" accept="image/*" />
                                                     </div>
                                                     
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_5">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_5">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Add Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
                                                         <input type="file" name="deal_pictures[]" id="picture_5" accept="image/*" />
                                                     </div>
                                                     
-                                                    <div class="file-upload-box">
-                                                        <label class="" for="picture_6">
+                                                    <div className="file-upload-box">
+                                                        <label className="" for="picture_6">
                                                             <div>
-                                                                <span class="fa fa-plus icon-50"></span>
+                                                                <span className="fa fa-plus icon-50"></span>
                                                             </div>
                                                             <div>
                                                                 Add Picture
                                                                 <br />
                                                                 (jpg, jpeg, png, gif)
                                                             </div>
-                                                            <button class="btn btn-danger btn-xs file-upload-box-delete" type="button">
-                                                                <span class="fa fa-times"></span>
+                                                            <button className="btn btn-danger btn-xs file-upload-box-delete" type="button">
+                                                                <span className="fa fa-times"></span>
                                                                 Delete
                                                             </button>
                                                         </label>
@@ -251,18 +251,18 @@
                                                 </div>
                                             </div>
 
-                                            <hr>
+                                            <hr />
 
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="description" class="control-label">
+                                            <div className="row">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label for="description" className="control-label">
                                                             Deal Description:
                                                         </label>
-                                                        <textarea name="description" id="description" class="form-control resize-none" style="height: 99px;"></textarea>
+                                                        <textarea name="description" id="description" className="form-control resize-none" style="height: 99px;"></textarea>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label for="visibility" class="control-label">
+                                                    <div className="form-group">
+                                                        <label for="visibility" className="control-label">
                                                             Visiblility:
                                                         </label>
                                                         <select name="status" id="visibility">
@@ -272,26 +272,26 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="tags" class="control-label">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label for="tags" className="control-label">
                                                             Tags:
                                                         </label>
                                                         {{-- let's do comman separated value for now.. onsave, explode input with comma --}}
-                                                        <input type="search" name="tags" class="form-control" placeholder="Search">
+                                                        <input type="search" name="tags" className="form-control" placeholder="Search">
                                                     </div>
                                                     <div>
-                                                        <div class="item-labels item-labels-tags-all" style="margin-left: -2px;">
-                                                            <div class="item-labels-tags cursor-pointer">
+                                                        <div className="item-labels item-labels-tags-all" style="margin-left: -2px;">
+                                                            <div className="item-labels-tags cursor-pointer">
                                                                 Mobile App
                                                             </div>
-                                                            <div class="item-labels-tags cursor-pointer">
+                                                            <div className="item-labels-tags cursor-pointer">
                                                                 Mobile App
                                                             </div>
-                                                            <div class="item-labels-tags cursor-pointer">
+                                                            <div className="item-labels-tags cursor-pointer">
                                                                 Mobile App
                                                             </div>
-                                                            <div class="item-labels-tags cursor-pointer">
+                                                            <div className="item-labels-tags cursor-pointer">
                                                                 Mobile App
                                                             </div>
                                                         </div>
@@ -301,16 +301,16 @@
                                             
                                         </div>
 
-                                        <div class="p-15 mt-15 bt-1-ddd floated-content">
-                                            <div class="pull-right">
-                                                <a href="/account/deals/create" class="btn btn-transparent-black btn-sm icon-left">
-                                                    <span class="fa fa-angle-left"></span>
+                                        <div className="p-15 mt-15 bt-1-ddd floated-content">
+                                            <div className="pull-right">
+                                                <Link to="/account/deals/create" className="btn btn-transparent-black btn-sm icon-left">
+                                                    <span className="fa fa-angle-left"></span>
                                                     Back
-                                                </a>
+                                                </Link>
                                                 <input type="hidden" name="stage" value="info">
-                                                <button type="submit" class="btn btn-blue btn-sm icon-right">
+                                                <button type="submit" className="btn btn-blue btn-sm icon-right">
                                                     Proceed
-                                                    <span class="fa fa-angle-right"></span>
+                                                    <span className="fa fa-angle-right"></span>
                                                 </button>
                                             </div>
                                         </div>

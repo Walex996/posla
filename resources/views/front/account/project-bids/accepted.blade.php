@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-project-bids{
             color: #FF940A !important;
@@ -32,104 +32,104 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Project Bids</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Project Bids</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         My Project Bids
                     </div>
                     <div>
 
-                        <ul class="nav nav-tabs posla-tabs posla-tabs-3">
-                            <li class="nav-item">
-                                <a href="/account/project-bids/" class="nav-link">
-                                    <div class="text-center">
+                        <ul className="nav nav-tabs posla-tabs posla-tabs-3">
+                            <li className="nav-item">
+                                <Link to="/account/project-bids/" className="nav-link">
+                                    <div className="text-center">
                                         Ongoing
-                                        <span class="d-none d-sm-inline d-md-none d-lg-inline">
+                                        <span className="d-none d-sm-inline d-md-none d-lg-inline">
                                             Biddings
                                         </span>
                                         (8)
                                     </div>
-                                </a>
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a href="/account/project-bids/accepted" class="nav-link active">
-                                    <div class="text-center">
+                            <li className="nav-item">
+                                <Link to="/account/project-bids/accepted" className="nav-link active">
+                                    <div className="text-center">
                                         Accepted
-                                        <span class="d-none d-sm-inline d-md-none d-lg-inline">
+                                        <span className="d-none d-sm-inline d-md-none d-lg-inline">
                                             Biddings
                                         </span>
                                         (3)
                                     </div>
-                                </a>
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a href="/account/project-bids/rejected" class="nav-link">
-                                    <div class="text-center">
+                            <li className="nav-item">
+                                <Link to="/account/project-bids/rejected" className="nav-link">
+                                    <div className="text-center">
                                         Rejected
-                                        <span class="d-none d-sm-inline d-md-none d-lg-inline">
+                                        <span className="d-none d-sm-inline d-md-none d-lg-inline">
                                             Biddings
                                         </span>
                                         (14)
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     
                         
-                        <div class="project-list project-list-mini mt-20 row">
+                        <div className="project-list project-list-mini mt-5 row">
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -142,41 +142,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -189,41 +189,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -236,41 +236,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -283,41 +283,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -330,41 +330,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 
@@ -377,41 +377,41 @@
                             </div>
 
 
-                            <div class="col-sm-6 col-md-12 col-lg-6 project-mgmt">
+                            <div className="col-sm-6 col-md-12 col-lg-6 project-mgmt">
                                 @include('front.common.project')
 
-                                <div class="p-10 b-1-ddd bg-blue text-fff">
-                                    <a class="btn btn-fff text-333 btn-xs mt-0 mr-5 pull-right" data-toggle="modal" data-target="#proposal-1">
-                                        <span class="far fa-circle bg-333"></span>
+                                <div className="p-2.5 b-1-ddd bg-blue text-fff">
+                                    <Link className="btn btn-fff text-333 btn-xs mt-0 mr-1.5 pull-right" data-toggle="modal" data-target="#proposal-1">
+                                        <span className="far fa-circle bg-333"></span>
                                         View Proposal
-                                    </a>
+                                    </Link>
                                     My Proposal: $550
                                 </div>
 
-                                <div class="modal" id="proposal-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Proposal</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div className="modal" id="proposal-1">
+                                    <div className="modal-dialog">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h4 className="modal-title">Proposal</h4>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="p-20">
+                                            <div className="modal-body">
+                                                <div className="p-5">
                                                     
-                                                    <div class="">
+                                                    <div className="">
                                                         Proposal price:
-                                                        <div class="note font-bold font-16 pt-3 pb-3 pr-10 pl-10 d-inline">
+                                                        <div className="note font-bold font-16 pt-3 pb-3 pr-2.5 pl-2.5 d-inline">
                                                             $550
                                                         </div>
                                                     </div>
 
-                                                    <hr class="mt-20 mb-20">
+                                                    <hr className="mt-5 mb-5">
 
                                                     <div>
                                                         Proposal Message:
                                                     </div>
 
-                                                    <div class="text-fade line-height-20 mt-5">
+                                                    <div className="text-fade line-height-20 mt-1.5">
                                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                                     </div>
 

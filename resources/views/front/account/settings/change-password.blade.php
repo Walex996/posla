@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-settings{
             color: #FF940A !important;
@@ -29,64 +29,64 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/settings">Settings</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/settings">Settings</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Change Password</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         Change Password
                     </div>
                     <div>
 
                         <form action="">
-                            <div class="b-1-ddd p-20 mw-400">
+                            <div className="b-1-ddd p-5 mw-400">
 
-                                <div class="form-group">
-                                    <label class="control-label">
+                                <div className="form-group">
+                                    <label className="control-label">
                                         Old Password:
                                     </label>
-                                    <input type="password" name="" class="form-control">
+                                    <input type="password" name="" className="form-control">
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label">
+                                <div className="form-group">
+                                    <label className="control-label">
                                         New Password:
                                     </label>
-                                    <input type="password" name="" class="form-control">
+                                    <input type="password" name="" className="form-control">
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label">
+                                <div className="form-group">
+                                    <label className="control-label">
                                         Retype Password:
                                     </label>
-                                    <input type="password" name="" class="form-control">
+                                    <input type="password" name="" className="form-control">
                                 </div>
                             </div>
 
-                            <div class="pt-20 mt-20 bt-1-ddd mw-400">
+                            <div className="pt-5 mt-5 bt-1-ddd mw-400">
 
-                                <div class="floated-content">
-                                    <button type="submit" class="btn btn-blue btn-sm pull-right ml-10">
+                                <div className="floated-content">
+                                    <button type="submit" className="btn btn-blue btn-sm pull-right ml-2.5">
                                         Change Password
                                     </button>
-                                    <a href="/account/settings" class="btn btn-transparent-black btn-sm pull-right">
+                                    <Link to="/account/settings" className="btn btn-transparent-black btn-sm pull-right">
                                         Cancel
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </div>

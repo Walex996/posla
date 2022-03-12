@@ -17,8 +17,8 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/simplyCountdown.theme.default.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/simplyCountdown.theme.default.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-orders{
             color: #FF940A !important;
@@ -142,7 +142,7 @@
                 seconds: 00,
                 enableUtc: false,
             });
-            $(".simply-section").after(`<div class="simply-section simply-section-separator"><div><span class="simply-amount">:</span><span class="simply-word">&nbsp;</span></div></div>`);
+            $(".simply-section").after(`<div className="simply-section simply-section-separator"><div><span className="simply-amount">:</span><span className="simply-word">&nbsp;</span></div></div>`);
         });
     </script>
 @endsection
@@ -151,98 +151,98 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
+    <div className="container">
+        <div className="row">
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item"><a href="/account/orders">Orders</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">123456789012</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item"><Link to="/account/orders">Orders</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">123456789012</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         My Orders - #123456789012
                     </div>
 
                     
                     {{-- order-status-not-started --}}
                     {{--                     
-                    <div class="order-status order-status-not-started">
-                        <div class="pull-right">
+                    <div className="order-status order-status-not-started">
+                        <div className="pull-right">
                             $45
                         </div>
-                        <div class="overflow-hidden">
-                            <span class="fa fa-check-circle"></span>
+                        <div className="overflow-hidden">
+                            <span className="fa fa-check-circle"></span>
                             Order Not Started
                         </div>
                     </div>
                     --}}
 
                     {{-- order-status-in-progress --}}
-                    <div class="order-status order-status-in-progress">
-                        <div class="pull-right">
+                    <div className="order-status order-status-in-progress">
+                        <div className="pull-right">
                             $45
                         </div>
-                        <div class="overflow-hidden">
-                            <span class="fa fa-check-circle"></span>
+                        <div className="overflow-hidden">
+                            <span className="fa fa-check-circle"></span>
                             Order In Progress
                         </div>
                     </div>
                     
                     {{-- order-status-completed --}}
                     {{--                     
-                    <div class="order-status order-status-completed">
-                        <div class="pull-right">
+                    <div className="order-status order-status-completed">
+                        <div className="pull-right">
                             $45
                         </div>
-                        <div class="overflow-hidden">
-                            <span class="fa fa-check-circle"></span>
+                        <div className="overflow-hidden">
+                            <span className="fa fa-check-circle"></span>
                             Order Completed
                         </div>
                     </div>
                     --}}
 
 
-                    <div class="mt-0">
-                        <div class="bg-ddd p-10">
+                    <div className="mt-0">
+                        <div className="bg-ddd p-2.5">
                             Anthony's Order
                         </div>
                         <div>
-                            <div class="table-responsive b-1-ddd bt-none">
-                                <table class="table table-tr-lines table-cart">
+                            <div className="table-responsive b-1-ddd bt-none">
+                                <table className="table table-tr-lines table-cart">
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="overflow-hidden">
-                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
-                                                        <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
-                                                    </a>
-                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
-                                                        <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
-                                                    </a>
-                                                    <div class="overflow-hidden">
-                                                        <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="font-bold mt-10 d-inline-block hover-underline">
+                                                <div className="overflow-hidden">
+                                                    <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="pull-left m-2.5 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
+                                                        <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" className="dp-contain" />
+                                                    </Link>
+                                                    <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="pull-left mt-2.5 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
+                                                        <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" className="dp-contain" />
+                                                    </Link>
+                                                    <div className="overflow-hidden">
+                                                        <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="font-bold mt-2.5 d-inline-block hover-underline">
                                                             I will design a beautiful logo for your business
-                                                        </a>
-                                                        <div class="text-fade mt-10">
+                                                        </Link>
+                                                        <div className="text-fade mt-2.5">
                                                             <div>
                                                                 Category (Subcategory)
                                                             </div>
-                                                            <div class="mt-5">
+                                                            <div className="mt-1.5">
                                                                 Package: Basic Designs
                                                             </div>
-                                                            <div class="mt-5" data-toggle="collapse" data-target="#package-details">
+                                                            <div className="mt-1.5" data-toggle="collapse" data-target="#package-details">
                                                                 Package Details
-                                                                <span class="fa fa-angle-down icon-333"></span>
+                                                                <span className="fa fa-angle-down icon-333"></span>
                                                             </div>
-                                                            <div id="package-details" class="collapse">
-                                                                <div class="p-10 pl-15 pr-15 mt-5 b-1-ddd d-inline-block">
-                                                                    <ul class="list-style">
+                                                            <div id="package-details" className="collapse">
+                                                                <div className="p-2.5 pl-15 pr-15 mt-1.5 b-1-ddd d-inline-block">
+                                                                    <ul className="list-style">
                                                                         <li>
                                                                             1-day delivery
                                                                         </li>
@@ -258,15 +258,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="d-block d-sm-none d-md-block d-lg-none bt-1-ddd mt-10 pt-10">
-                                                    <div class="mt-10 pull-right">
+                                                <div className="d-block d-sm-none d-md-block d-lg-none bt-1-ddd mt-2.5 pt-2.5">
+                                                    <div className="mt-2.5 pull-right">
                                                         Price:
                                                         $100
                                                     </div>
                                                     <form action="">
-                                                        <div class="input-group input-group-attach mt-2" style="width: 100px;">
-                                                            <div class="input-group-btn b-1-ddd">
-                                                                <button type="button" class="bg-eee btn-md">
+                                                        <div className="input-group input-group-attach mt-2" style="width: 100px;">
+                                                            <div className="input-group-btn b-1-ddd">
+                                                                <button type="button" className="bg-eee btn-md">
                                                                     <span>Qty</span>
                                                                     <span>1</span>
                                                                 </button>
@@ -275,25 +275,25 @@
                                                     </form>
                                                 </div>
                                             </td>
-                                            <td class="d-none d-sm-table-cell d-md-none d-lg-table-cell">
-                                                <div class="d-none d-sm-block d-md-none mt-10"></div>
+                                            <td className="d-none d-sm-table-cell d-md-none d-lg-table-cell">
+                                                <div className="d-none d-sm-block d-md-none mt-2.5"></div>
                                                 <form action="">
-                                                    <div class="input-group input-group-attach mt-2" style="width: 100px;">
-                                                        <div class="input-group-btn b-1-ddd">
-                                                            <button type="button" class="bg-eee btn-md">
+                                                    <div className="input-group input-group-attach mt-2" style="width: 100px;">
+                                                        <div className="input-group-btn b-1-ddd">
+                                                            <button type="button" className="bg-eee btn-md">
                                                                 <span>Qty</span>
                                                                 <span>1</span>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </form>
-                                                <div class="d-block d-md-none d-lg-block d-xl-none mt-10 text-left">
+                                                <div className="d-block d-md-none d-lg-block d-xl-none mt-2.5 text-left">
                                                     Price:
                                                     $100
                                                 </div>
                                             </td>
-                                            <td class="d-none d-xl-table-cell">
-                                                <div class="text-center mt-10">
+                                            <td className="d-none d-xl-table-cell">
+                                                <div className="text-center mt-2.5">
                                                     $100
                                                 </div>
                                             </td>
@@ -304,53 +304,53 @@
                         </div>
                     </div>
 
-                    <div class="d-block d-md-none icon-right mt-10">
-                        <button class="btn btn-transparent-black btn-xs" data-toggle="collapse" data-target="#project-details">
+                    <div className="d-block d-md-none icon-right mt-2.5">
+                        <button className="btn btn-transparent-black btn-xs" data-toggle="collapse" data-target="#project-details">
                             View Project Details
-                            <span class="fa fa-angle-right"></span>
+                            <span className="fa fa-angle-right"></span>
                         </button>
                     </div>
 
                 </div>
 
 
-                <div id="project-details" class="collapse">
-                    <div class="d-block d-md-none">
-                        <div class="row">
+                <div id="project-details" className="collapse">
+                    <div className="d-block d-md-none">
+                        <div className="row">
 
-                            <div class="col-sm-6">
+                            <div className="col-sm-6">
                                 {{-- for both seller & buyer --}}
-                                <div class="section">
-                                    <div class="section-title">
+                                <div className="section">
+                                    <div className="section-title">
                                         Project Status
                                     </div>
                                     <div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Project Started
                                             </div>
                                             <div>
                                                 Jan 25, 2020 at 10:05pm
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Current Delivery Date
                                             </div>
                                             <div>
                                                 Jan 25, 2020 at 10:05pm
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Revisions Remaining
                                             </div>
                                             <div>
                                                 3 Revisions
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Delivery Format
                                             </div>
                                             <div>
@@ -358,102 +358,102 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="/project/c1d00230-a423-4b84-a121-7105239ff8d8" class="btn btn-transparent-black btn-sm">
+                                            <Link to="/project/c1d00230-a423-4b84-a121-7105239ff8d8" className="btn btn-transparent-black btn-sm">
                                                 View project details
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
 
                                     {{-- order tracking --}}
-                                    <div class="bt-1-ddd mt-20">
-                                        <div class="pt-15 pb-15 font-bold">
+                                    <div className="bt-1-ddd mt-5">
+                                        <div className="pt-15 pb-15 font-bold">
                                             Order Tracking
                                         </div>
-                                        <div class="floated-content mb-10">
-                                            <div class="bg-green pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                                <span class="fa fa-check mt-4 icon-fff"></span>
+                                        <div className="floated-content mb-10">
+                                            <div className="bg-green pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                                <span className="fa fa-check mt-4 icon-fff"></span>
                                             </div>
-                                            <div class="overflow-hidden">
+                                            <div className="overflow-hidden">
                                                 Order Placed
                                             </div>
                                         </div>
-                                        <div class="floated-content mb-10">
-                                            <div class="bg-green pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                                <span class="fa fa-check mt-4 icon-fff"></span>
+                                        <div className="floated-content mb-10">
+                                            <div className="bg-green pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                                <span className="fa fa-check mt-4 icon-fff"></span>
                                             </div>
-                                            <div class="overflow-hidden">
+                                            <div className="overflow-hidden">
                                                 Requirements Submitted
                                             </div>
                                         </div>
-                                        <div class="floated-content mb-10">
-                                            <div class="bg-orange pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                                <span class="fa fa-spinner fa-spin mt-4 icon-fff"></span>
+                                        <div className="floated-content mb-10">
+                                            <div className="bg-orange pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                                <span className="fa fa-spinner fa-spin mt-4 icon-fff"></span>
                                             </div>
-                                            <div class="overflow-hidden">
+                                            <div className="overflow-hidden">
                                                 Order In progress
                                             </div>
                                         </div>
-                                        <div class="floated-content mb-10">
-                                            <div class="bg-ccc pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                                <span class="fa fa-ellipsis-h mt-4 icon-fff"></span>
+                                        <div className="floated-content mb-10">
+                                            <div className="bg-ccc pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                                <span className="fa fa-ellipsis-h mt-4 icon-fff"></span>
                                             </div>
-                                            <div class="overflow-hidden">
+                                            <div className="overflow-hidden">
                                                 Order Delivery
                                             </div>
                                         </div>
-                                        <div class="floated-content mb-10">
-                                            <div class="bg-ccc pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                                <span class="fa fa-ellipsis-h mt-4 icon-fff"></span>
+                                        <div className="floated-content mb-10">
+                                            <div className="bg-ccc pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                                <span className="fa fa-ellipsis-h mt-4 icon-fff"></span>
                                             </div>
-                                            <div class="overflow-hidden">
+                                            <div className="overflow-hidden">
                                                 Order Completed
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="bt-1-ddd mt-20">
-                                        <div class="pt-15 pb-15 font-bold">
+                                    <div className="bt-1-ddd mt-5">
+                                        <div className="pt-15 pb-15 font-bold">
                                             Order Resolution
                                         </div>
                                         <div>
                                             Have any issues with your order?
-                                            <br>
+                                            <br />
                                             Visit the resoultion center.
-                                            <br>
-                                            <a href="/account/resolution/orders/123456789012" class="btn btn-transparent-black btn-sm mt-5">
+                                            <br />
+                                            <Link to="/account/resolution/orders/123456789012" className="btn btn-transparent-black btn-sm mt-1.5">
                                                 Resoultion Center
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
+                            <div className="col-sm-6">
                                 
-                                <div class="section">
-                                    <div class="section-title">
+                                <div className="section">
+                                    <div className="section-title">
                                         Buyer Information
                                     </div>
                                     <div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Name
                                             </div>
                                             <div>
                                                 Olawale Lawal
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Country
                                             </div>
                                             <div>
                                                 Nigeria
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Gender
                                             </div>
                                             <div>
@@ -461,36 +461,36 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="/user/abcde12345" class="btn btn-transparent-black btn-sm">
+                                            <Link to="/user/abcde12345" className="btn btn-transparent-black btn-sm">
                                                 View buyer's profile
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="section">
-                                    <div class="section-title">
+                                <div className="section">
+                                    <div className="section-title">
                                         Seller Information
                                     </div>
                                     <div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Name
                                             </div>
                                             <div>
                                                 Olawale Lawal
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Country
                                             </div>
                                             <div>
                                                 Nigeria
                                             </div>
                                         </div>
-                                        <div class="mb-15">
-                                            <div class="text-small text-color-fade">
+                                        <div className="mb-15">
+                                            <div className="text-small text-color-fade">
                                                 Gender
                                             </div>
                                             <div>
@@ -498,9 +498,9 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="/user/abcde12345" class="btn btn-transparent-black btn-sm">
+                                            <Link to="/user/abcde12345" className="btn btn-transparent-black btn-sm">
                                                 View seller's profile
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -512,14 +512,14 @@
 
 
 
-                <div class="text-center mb-0 d-block d-md-none">
-                    <hr class="mt-0 mb-0">
-                    <div class="d-inline-block bg-eee pr-15 pl-15" style="position: relative; top: -12px; z-index: 5;">
+                <div className="text-center mb-0 d-block d-md-none">
+                    <hr className="mt-0 mb-0">
+                    <div className="d-inline-block bg-eee pr-15 pl-15" style="position: relative; top: -12px; z-index: 5;">
                         Project Timeline
                     </div>
                 </div>
                 
-                <div class="section">
+                <div className="section">
                     <div>
                     
 
@@ -533,11 +533,11 @@
                                 start countdown after payment of deposit
                         --}}
                         {{-- visible to both seller & buyer --}}
-                        <div class="mb-10 text-center">
-                            <div class="text-center font-bold bg-f00 text-fff d-inline-block mx-auto pr-10 pl-10">
+                        <div className="mb-10 text-center">
+                            <div className="text-center font-bold bg-f00 text-fff d-inline-block mx-auto pr-2.5 pl-2.5">
                                 Project Deadline
                             </div>
-                            <div class="text-center">
+                            <div className="text-center">
                                 <div id="simply-countdown-losange"></div>
                             </div>
                         </div>
@@ -545,27 +545,27 @@
 
                         {{-- conversation --}}
                         {{-- from me (seller) --}}
-                        <div class="user-msg b-1-ddd">
-                            <div class="overflow-hidden">
-                                <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                </a>
-                                <div class="pull-right mt-10 text-fade d-none d-sm-block">
+                        <div className="user-msg b-1-ddd">
+                            <div className="overflow-hidden">
+                                <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                </Link>
+                                <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
                                 </div>
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="font-bold mt-10 d-none d-sm-inline-block text-blue hover-underline">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="font-bold mt-2.5 d-none d-sm-inline-block text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <a href="/user/abcde12345" class="font-bold d-inline-block d-sm-none text-blue hover-underline">
+                                    </Link>
+                                    <Link to="/user/abcde12345" className="font-bold d-inline-block d-sm-none text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <div class="text-fade text-small d-block d-sm-none">
+                                    </Link>
+                                    <div className="text-fade text-small d-block d-sm-none">
                                         Jan 12, 2019 at 9:05pm
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
@@ -574,27 +574,27 @@
 
                         {{-- conversation --}}
                         {{-- from customer (buyer) --}}
-                        <div class="user-msg b-1-ddd">
-                            <div class="overflow-hidden">
-                                <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                </a>
-                                <div class="pull-right mt-10 text-fade d-none d-sm-block">
+                        <div className="user-msg b-1-ddd">
+                            <div className="overflow-hidden">
+                                <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                </Link>
+                                <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
                                 </div>
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="font-bold mt-10 d-none d-sm-inline-block text-blue hover-underline">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="font-bold mt-2.5 d-none d-sm-inline-block text-blue hover-underline">
                                         Customerfname Customerlname
-                                    </a>
-                                    <a href="/user/abcde12345" class="font-bold d-inline-block d-sm-none text-blue hover-underline">
+                                    </Link>
+                                    <Link to="/user/abcde12345" className="font-bold d-inline-block d-sm-none text-blue hover-underline">
                                         Customerfname Customerlname
-                                    </a>
-                                    <div class="text-fade text-small d-block d-sm-none">
+                                    </Link>
+                                    <div className="text-fade text-small d-block d-sm-none">
                                         Jan 12, 2019 at 9:05pm
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
@@ -603,99 +603,99 @@
 
                         {{-- conversation with attachment --}}
                         {{-- from me (seller) --}}
-                        <div class="user-msg b-1-ddd">
-                            <div class="overflow-hidden">
-                                <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                </a>
-                                <div class="pull-right mt-10 text-fade d-none d-sm-block">
+                        <div className="user-msg b-1-ddd">
+                            <div className="overflow-hidden">
+                                <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                </Link>
+                                <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
                                 </div>
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="font-bold mt-10 d-none d-sm-inline-block text-blue hover-underline">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="font-bold mt-2.5 d-none d-sm-inline-block text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <a href="/user/abcde12345" class="font-bold d-inline-block d-sm-none text-blue hover-underline">
+                                    </Link>
+                                    <Link to="/user/abcde12345" className="font-bold d-inline-block d-sm-none text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <div class="text-fade text-small d-block d-sm-none">
+                                    </Link>
+                                    <div className="text-fade text-small d-block d-sm-none">
                                         Jan 12, 2019 at 9:05pm
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                             {{-- (with attachments) --}}
-                            <div class="floated-content mt-20">
+                            <div className="floated-content mt-5">
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's an image, display it directly --}}
-                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's a video, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's an audio, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's anything else, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -703,99 +703,99 @@
 
                         {{-- conversation with attachment --}}
                         {{-- from customer (buyer) --}}
-                        <div class="user-msg b-1-ddd">
-                            <div class="overflow-hidden">
-                                <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                </a>
-                                <div class="pull-right mt-10 text-fade d-none d-sm-block">
+                        <div className="user-msg b-1-ddd">
+                            <div className="overflow-hidden">
+                                <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                </Link>
+                                <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
                                 </div>
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="font-bold mt-10 d-none d-sm-inline-block text-blue hover-underline">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="font-bold mt-2.5 d-none d-sm-inline-block text-blue hover-underline">
                                         Customerfname Customerlname
-                                    </a>
-                                    <a href="/user/abcde12345" class="font-bold d-inline-block d-sm-none text-blue hover-underline">
+                                    </Link>
+                                    <Link to="/user/abcde12345" className="font-bold d-inline-block d-sm-none text-blue hover-underline">
                                         Customerfname Customerlname
-                                    </a>
-                                    <div class="text-fade text-small d-block d-sm-none">
+                                    </Link>
+                                    <div className="text-fade text-small d-block d-sm-none">
                                         Jan 12, 2019 at 9:05pm
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                             {{-- (with attachments) --}}
-                            <div class="floated-content mt-20">
+                            <div className="floated-content mt-5">
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's an image, display it directly --}}
-                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's a video, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's an audio, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media">
-                                    <div class="text-center">
+                                <Link to="" className="media">
+                                    <div className="text-center">
                                         {{-- if it's anything else, display this image --}}
-                                        <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" />
+                                        <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -803,22 +803,22 @@
 
                         {{-- order requirement request --}}
                         {{-- system generated --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-clipboard icon-orange"></span>
+                                <span className="fa fa-clipboard icon-orange"></span>
                             </div>
-                            <div class="text-orange">
+                            <div className="text-orange">
                                 Order Requirement
                             </div>
                             <div>
                                 Please fill in these requirements to start your order
                             </div>
-                            <div class="mt-5">
-                                <a href="/account/orders/requirements/123456789012" class="btn btn-transparent-black btn-xs hover-bg-orange">
+                            <div className="mt-1.5">
+                                <Link to="/account/orders/requirements/123456789012" className="btn btn-transparent-black btn-xs hover-bg-orange">
                                     Fill requirements
-                                </a>
+                                </Link>
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
@@ -827,22 +827,22 @@
 
                         {{-- order requirement submitted --}}
                         {{-- system generated --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-clipboard icon-blue"></span>
+                                <span className="fa fa-clipboard icon-blue"></span>
                             </div>
-                            <div class="text-blue">
+                            <div className="text-blue">
                                 Order Requirement
                             </div>
                             <div>
                                 The requirements have been filled and submitted.
                             </div>
-                            <div class="mt-5">
-                                <a href="/account/orders/requirements/123456789012" class="btn btn-transparent-black btn-xs hover-bg-blue">
+                            <div className="mt-1.5">
+                                <Link to="/account/orders/requirements/123456789012" className="btn btn-transparent-black btn-xs hover-bg-blue">
                                     View requirements
-                                </a>
+                                </Link>
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
@@ -851,19 +851,19 @@
 
                         {{-- order started --}}
                         {{-- system generated --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-hourglass-start icon-blue"></span>
+                                <span className="fa fa-hourglass-start icon-blue"></span>
                             </div>
-                            <div class="text-blue">
+                            <div className="text-blue">
                                 Order Started
                             </div>
                             <div>
                                 The countdown for this order has officially started.
-                                <br>
+                                <br />
                                 Delivery Timeframe: 1 day.
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
@@ -872,64 +872,64 @@
                         {{-- order download --}}
                         {{-- system generated --}}
                         {{-- only if "Delivery Format" != "Work & Deliver" --}}
-                        <div class="order-mgmt text-left b-1-ddd pt-0 pb-30">
-                            <div class="order-mgmt">
+                        <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
+                            <div className="order-mgmt">
                                 <div>
-                                    <span class="fa fa-file icon-orange"></span>
+                                    <span className="fa fa-file icon-orange"></span>
                                 </div>
-                                <div class="text-orange">
+                                <div className="text-orange">
                                     Your order download is ready
                                 </div>
                                 <div>
                                     Yours files are now available for download
                                 </div>
-                                <div class="order-mgmt-date text-fade text-small mt-10">
+                                <div className="order-mgmt-date text-fade text-small mt-2.5">
                                     December 15, 2020 at 9:54PM
                                 </div>
                             </div>
-                            <div class="p-20-10 b-1-ddd floated-content" style="margin-top: -20px;">
+                            <div className="p-5-10 b-1-ddd floated-content" style="margin-top: -20px;">
 
                                 {{-- click to download --}}
-                                <a href="" class="media media-lg">
-                                    <div class="text-center">
+                                <Link to="" className="media media-lg">
+                                    <div className="text-center">
                                         {{-- if it's an image, display it directly --}}
-                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                         {{-- else, display the right icon --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                                 {{-- click to download --}}
-                                <a href="" class="media media-lg">
-                                    <div class="text-center">
+                                <Link to="" className="media media-lg">
+                                    <div className="text-center">
                                         {{-- if it's an image, display it directly --}}
-                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                        <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                         {{-- else, display the right stuff --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
+                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
                                     </div>
                                     <div>
-                                        <div class="pull-right ml-5 pt-4">
-                                            <span class="text-fade text-small">(33kb)</span>
+                                        <div className="pull-right ml-1.5 pt-4">
+                                            <span className="text-fade text-small">(33kb)</span>
                                         </div>
-                                        <div class="overflow-hidden ellipsis">
-                                            <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                            <span class="">12412412412.jpg</span>
+                                        <div className="overflow-hidden ellipsis">
+                                            <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                            <span className="">12412412412.jpg</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
@@ -937,27 +937,27 @@
 
 
                         {{-- conversation --}}
-                        <div class="user-msg b-1-ddd">
-                            <div class="overflow-hidden">
-                                <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                </a>
-                                <div class="pull-right mt-10 text-fade d-none d-sm-block">
+                        <div className="user-msg b-1-ddd">
+                            <div className="overflow-hidden">
+                                <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                </Link>
+                                <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
                                 </div>
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="font-bold mt-10 d-none d-sm-inline-block text-blue hover-underline">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="font-bold mt-2.5 d-none d-sm-inline-block text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <a href="/user/abcde12345" class="font-bold d-inline-block d-sm-none text-blue hover-underline">
+                                    </Link>
+                                    <Link to="/user/abcde12345" className="font-bold d-inline-block d-sm-none text-blue hover-underline">
                                         Firstname Lastname
-                                    </a>
-                                    <div class="text-fade text-small d-block d-sm-none">
+                                    </Link>
+                                    <div className="text-fade text-small d-block d-sm-none">
                                         Jan 12, 2019 at 9:05pm
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
@@ -966,11 +966,11 @@
 
                         {{-- for me (seller) to see --}}
                         {{-- when status is after "requirement filled" but before "order completed"  --}}
-                        <div class="text-center bg-eee pt-50 pb-50 b-1-ddd">
-                            <a href="/account/orders/deliver/123456789012" class="btn btn-blue icon-left">
-                                <span class="fa fa-box-open"></span>
+                        <div className="text-center bg-eee pt-1.50 pb-1.50 b-1-ddd">
+                            <Link to="/account/orders/deliver/123456789012" className="btn btn-blue icon-left">
+                                <span className="fa fa-box-open"></span>
                                 Deliver Work
-                            </a>
+                            </Link>
                         </div>
 
 
@@ -978,71 +978,71 @@
                         {{-- order delivered --}}
                         {{-- system generated --}}
                         {{-- for both to see --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-truck icon-blue"></span>
+                                <span className="fa fa-truck icon-blue"></span>
                             </div>
-                            <div class="text-blue">
+                            <div className="text-blue">
                                 Order Delivered
                             </div>
                             <div>
                                 The project has been successfully delivered to the buyer.
-                                <br>
+                                <br />
                                 If you do not perform any action,
                                 Your order will be marked as completed within 3 days.
                             </div>
-                            <div class="mt-10">
-                                <a data-toggle="modal" data-target="#modal-delivery-accept" class="btn btn-blue btn-sm mb-5 mr-5 ml-5">Accept Delivery</a>
-                                <a data-toggle="modal" data-target="#modal-delivery-revision" class="btn btn-orange btn-sm mb-5 mr-5 ml-5">Make Revision (2 remaining) </a>
-                                <a href="/account/resolution/orders/123456789012" class="btn btn-transparent-black btn-sm mb-5 mr-5 ml-5">Reject Delivery</a>
+                            <div className="mt-2.5">
+                                <Link data-toggle="modal" data-target="#modal-delivery-accept" className="btn btn-blue btn-sm mb-1.5 mr-1.5 ml-1.5">Accept Delivery</Link>
+                                <Link data-toggle="modal" data-target="#modal-delivery-revision" className="btn btn-orange btn-sm mb-1.5 mr-1.5 ml-1.5">Make Revision (2 remaining) </Link>
+                                <Link to="/account/resolution/orders/123456789012" className="btn btn-transparent-black btn-sm mb-1.5 mr-1.5 ml-1.5">Reject Delivery</Link>
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
 
-                        <div class="modal" id="modal-delivery-accept">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Accept Delivery</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div className="modal" id="modal-delivery-accept">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h4 className="modal-title">Accept Delivery</h4>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="p-10">
+                                    <div className="modal-body">
+                                        <div className="p-2.5">
 
-                                            <div class="b-1-ddd p-20-10">
-                                                <div class="pull-left mr-20">
-                                                    <span class="fa fa-certificate icon-blue icon-30"></span>
+                                            <div className="b-1-ddd p-5-10">
+                                                <div className="pull-left mr-5">
+                                                    <span className="fa fa-certificate icon-blue icon-30"></span>
                                                 </div>
-                                                <div class="overflow-hidden">
+                                                <div className="overflow-hidden">
                                                     Satisfied with the order delivered by the seller?
-                                                    <br class="d-none d-md-block">
+                                                    <br className="d-none d-md-block">
                                                     please click the accept button below.
-                                                    <br>
+                                                    <br />
                                                     This action cannot be reversed.
                                                 </div>
                                             </div>
 
-                                            <br>
+                                            <br />
 
                                             To make adjustments,
-                                            <br>
-                                            please click <a data-toggle="modal" data-target="#modal-delivery-revision" class="underline hover-orange">I want to make a revision.</a>
+                                            <br />
+                                            please click <Link data-toggle="modal" data-target="#modal-delivery-revision" className="underline hover-orange">I want to make a revision.</Link>
                                             <div>
-                                                <div class="note mt-2 pt-3 pb-3 pl-10 pr-10 d-inline-block font-normal">
+                                                <div className="note mt-2 pt-3 pb-3 pl-2.5 pr-2.5 d-inline-block font-normal">
                                                     Revisions Remaining: 2
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="close btn btn-transparent-black btn-sm icon-left" data-dismiss="modal">
-                                            <span class="fa fa-times"></span>
+                                    <div className="modal-footer">
+                                        <button type="button" className="close btn btn-transparent-black btn-sm icon-left" data-dismiss="modal">
+                                            <span className="fa fa-times"></span>
                                             Cancel
                                         </button>
-                                        <button type="button" class="btn btn-blue btn-sm icon-left">
-                                            <span class="fa fa-check-square"></span>
+                                        <button type="button" className="btn btn-blue btn-sm icon-left">
+                                            <span className="fa fa-check-square"></span>
                                             Accept Delivery
                                         </button>
                                     </div>
@@ -1050,66 +1050,66 @@
                             </div>
                         </div>
 
-                        <div class="modal" id="modal-delivery-revision">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Delivery - Request Revision</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div className="modal" id="modal-delivery-revision">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h4 className="modal-title">Delivery - Request Revision</h4>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="p-10">
+                                    <div className="modal-body">
+                                        <div className="p-2.5">
 
-                                            <div class="note text-center">
+                                            <div className="note text-center">
                                                 Please make your revision as clear and concise as possible.
-                                                <div class="font-normal">
+                                                <div className="font-normal">
                                                     To give the seller more time to complete this revision,
-                                                    <br>
-                                                    please visit our <a href="/account/resolution/orders/123456789012" class="underline font-normal" target="_blank">order resolution center</a>
+                                                    <br />
+                                                    please visit our <Link to="/account/resolution/orders/123456789012" className="underline font-normal" target="_blank">order resolution center</Link>
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-10">
+                                            <div className="form-group mt-2.5">
                                                 <label>What to modify in the delivery:</label>
-                                                <textarea name="" id="" style="height: 125px;" class="form-control mt-5" placeholder="Enter message"></textarea>
+                                                <textarea name="" id="" style="height: 125px;" className="form-control mt-1.5" placeholder="Enter message"></textarea>
                                             </div>
 
-                                            <div class="font-bold text-red">
-                                                <button type="button" class="btn btn-transparent-black btn-sm pull-left" data-toggle="collapse" data-target="#add-attachment">
-                                                    <span class="fa fa-paperclip icon-333"></span>
+                                            <div className="font-bold text-red">
+                                                <button type="button" className="btn btn-transparent-black btn-sm pull-left" data-toggle="collapse" data-target="#add-attachment">
+                                                    <span className="fa fa-paperclip icon-333"></span>
                                                     Add attachment
-                                                    <span class="fa fa-angle-down icon-333"></span>
+                                                    <span className="fa fa-angle-down icon-333"></span>
                                                 </button>
-                                                <div class="overflow-hidden text-right font-bold text-red pt-5">
+                                                <div className="overflow-hidden text-right font-bold text-red pt-1.5">
                                                     Revisions remaining: 1
                                                 </div>
                                             </div>
-                                            <div id="add-attachment" class="collapse mt-20 b-1-ddd p-10 pt-0">
-                                                <div class="row">
-                                                    <div class="col-sm-6 mt-10">
-                                                        <input type="file" class="form-control">
+                                            <div id="add-attachment" className="collapse mt-5 b-1-ddd p-2.5 pt-0">
+                                                <div className="row">
+                                                    <div className="col-sm-6 mt-2.5">
+                                                        <input type="file" className="form-control">
                                                     </div>
-                                                    <div class="col-sm-6 mt-10">
-                                                        <input type="file" class="form-control">
+                                                    <div className="col-sm-6 mt-2.5">
+                                                        <input type="file" className="form-control">
                                                     </div>
-                                                    <div class="col-sm-6 mt-10">
-                                                        <input type="file" class="form-control">
+                                                    <div className="col-sm-6 mt-2.5">
+                                                        <input type="file" className="form-control">
                                                     </div>
-                                                    <div class="col-sm-6 mt-10">
-                                                        <input type="file" class="form-control">
+                                                    <div className="col-sm-6 mt-2.5">
+                                                        <input type="file" className="form-control">
                                                     </div>
                                                 </div>
                                             </div>
                                             
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="close btn btn-transparent-black btn-sm icon-left" data-dismiss="modal">
-                                            <span class="fa fa-times"></span>
+                                    <div className="modal-footer">
+                                        <button type="button" className="close btn btn-transparent-black btn-sm icon-left" data-dismiss="modal">
+                                            <span className="fa fa-times"></span>
                                             Cancel
                                         </button>
-                                        <button type="button" class="btn btn-orange btn-sm icon-left">
-                                            <span class="fa fa-file"></span>
+                                        <button type="button" className="btn btn-orange btn-sm icon-left">
+                                            <span className="fa fa-file"></span>
                                             Submit Revision
                                         </button>
                                     </div>
@@ -1124,69 +1124,69 @@
                         {{-- order revision --}}
                         {{-- system generated --}}
                         {{-- only if revision was submitted for this delivery --}}
-                        <div class="order-mgmt text-left b-1-ddd pt-0 pb-30">
-                            <div class="order-mgmt">
+                        <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
+                            <div className="order-mgmt">
                                 <div>
-                                    <span class="fa fa-edit icon-blue"></span>
+                                    <span className="fa fa-edit icon-blue"></span>
                                 </div>
-                                <div class="text-blue">
+                                <div className="text-blue">
                                     Order Delivery Revision
                                 </div>
                                 <div>
                                     Your requested for the following modifications to your order delivery.
                                 </div>
-                                <div class="b-1-ddd p-20-10 mt-10 text-left">
+                                <div className="b-1-ddd p-5-10 mt-2.5 text-left">
                                     <div>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                     </div>
                                     {{-- if attachments were added, show the did below; else nothing --}}
-                                    <div class="floated-content text-center mt-20">
+                                    <div className="floated-content text-center mt-5">
         
                                         {{-- click to download --}}
-                                        <a href="" class="media media-sm">
-                                            <div class="text-center">
+                                        <Link to="" className="media media-sm">
+                                            <div className="text-center">
                                                 {{-- if it's an image, display it directly --}}
-                                                <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                                <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                 {{-- else, display the right stuff --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
                                             </div>
                                             <div>
-                                                <div class="pull-right ml-5 pt-4">
-                                                    <span class="text-fade text-small">(33kb)</span>
+                                                <div className="pull-right ml-1.5 pt-4">
+                                                    <span className="text-fade text-small">(33kb)</span>
                                                 </div>
-                                                <div class="overflow-hidden ellipsis">
-                                                    <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                                    <span class="">12412412412.jpg</span>
+                                                <div className="overflow-hidden ellipsis">
+                                                    <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                                    <span className="">12412412412.jpg</span>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
         
                                         {{-- click to download --}}
-                                        <a href="" class="media media-sm">
-                                            <div class="text-center">
+                                        <Link to="" className="media media-sm">
+                                            <div className="text-center">
                                                 {{-- if it's an image, display it directly --}}
-                                                <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" class="dp-contain" />
+                                                <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                 {{-- else, display the right stuff --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" class="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" class="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" class="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
+                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
                                             </div>
                                             <div>
-                                                <div class="pull-right ml-5 pt-4">
-                                                    <span class="text-fade text-small">(33kb)</span>
+                                                <div className="pull-right ml-1.5 pt-4">
+                                                    <span className="text-fade text-small">(33kb)</span>
                                                 </div>
-                                                <div class="overflow-hidden ellipsis">
-                                                    <span class="fa fa-arrow-alt-circle-down icon-blue"></span>
-                                                    <span class="">12412412412.jpg</span>
+                                                <div className="overflow-hidden ellipsis">
+                                                    <span className="fa fa-arrow-alt-circle-down icon-blue"></span>
+                                                    <span className="">12412412412.jpg</span>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
         
                                     </div>
                                 </div>
-                                <div class="order-mgmt-date text-fade text-small mt-10">
+                                <div className="order-mgmt-date text-fade text-small mt-2.5">
                                     December 15, 2020 at 9:54PM
                                 </div>
                             </div>
@@ -1201,23 +1201,23 @@
                         {{-- order review request --}}
                         {{-- system generated --}}
                         {{-- for customer (buyer) to see --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-star icon-orange"></span>
+                                <span className="fa fa-star icon-orange"></span>
                             </div>
-                            <div class="text-orange">
+                            <div className="text-orange">
                                 Order Review
                             </div>
                             <div>
                                 Please rate this seller based on the seller's performance and project delivery.
                             </div>
 
-                            <div class="mt-5">
-                                <a href="/account/orders/review/123456789012" class="btn btn-transparent-black btn-xs hover-bg-orange">
+                            <div className="mt-1.5">
+                                <Link to="/account/orders/review/123456789012" className="btn btn-transparent-black btn-xs hover-bg-orange">
                                     Rate Seller
-                                </a>
+                                </Link>
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
@@ -1227,12 +1227,12 @@
                         {{-- order review submitted --}}
                         {{-- system generated --}}
                         {{-- for me (seller) to see --}}
-                        <div class="order-mgmt text-left b-1-ddd pt-0 pb-30">
-                            <div class="order-mgmt">
+                        <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
+                            <div className="order-mgmt">
                                 <div>
-                                    <span class="fa fa-star icon-blue"></span>
+                                    <span className="fa fa-star icon-blue"></span>
                                 </div>
-                                <div class="text-blue">
+                                <div className="text-blue">
                                     Buyer's Review
                                 </div>
                                 <div>
@@ -1244,57 +1244,57 @@
                                 </div>
                             </div>
 
-                            <div class="pb-0">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="reviews-summary">
+                            <div className="pb-0">
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <div className="reviews-summary">
                                             <div>
                                                 Seller communication level
-                                                <span class="font-bold">(4.5)</span>
+                                                <span className="font-bold">(4.5)</span>
                                             </div>
                                             <div>
                                                 <div style="width: 80%;"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="reviews-summary">
+                                    <div className="col-sm-6">
+                                        <div className="reviews-summary">
                                             <div>
                                                 Seller communication level
-                                                <span class="font-bold">(4.5)</span>
+                                                <span className="font-bold">(4.5)</span>
                                             </div>
                                             <div>
                                                 <div style="width: 80%;"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="reviews-summary">
+                                    <div className="col-sm-6">
+                                        <div className="reviews-summary">
                                             <div>
                                                 Seller communication level
-                                                <span class="font-bold">(4.5)</span>
+                                                <span className="font-bold">(4.5)</span>
                                             </div>
                                             <div>
                                                 <div style="width: 80%;"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="reviews-summary">
+                                    <div className="col-sm-6">
+                                        <div className="reviews-summary">
                                             <div>
                                                 Seller communication level
-                                                <span class="font-bold">(4.5)</span>
+                                                <span className="font-bold">(4.5)</span>
                                             </div>
                                             <div>
                                                 <div style="width: 80%;"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="reviews-summary">
+                                    <div className="col-sm-6">
+                                        <div className="reviews-summary">
                                             <div>
                                                 Seller communication level
-                                                <span class="font-bold">(4.5)</span>
+                                                <span className="font-bold">(4.5)</span>
                                             </div>
                                             <div>
                                                 <div style="width: 80%;"></div>
@@ -1304,41 +1304,41 @@
                                 </div>
                             </div>
 
-                            <div class="user-msg b-1-ddd">
-                                <div class="overflow-hidden">
-                                    <a href="/user/abcde12345" class="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
-                                    </a>
-                                    <div class="pull-right d-none d-sm-block">
-                                        <div class="rating-box mt-5">
+                            <div className="user-msg b-1-ddd">
+                                <div className="overflow-hidden">
+                                    <Link to="/user/abcde12345" className="user-msg-img pull-left">
+                                        <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    </Link>
+                                    <div className="pull-right d-none d-sm-block">
+                                        <div className="rating-box mt-1.5">
                                             <div>
                                                 <div></div>
                                                 <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                             </div>
-                                            <div class="font-bold text-orange">
+                                            <div className="font-bold text-orange">
                                                 5.0
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="overflow-hidden">
-                                        <a href="/user/abcde12345" class="font-bold hover-underline">
+                                    <div className="overflow-hidden">
+                                        <Link to="/user/abcde12345" className="font-bold hover-underline">
                                             Firstname Lastname
-                                        </a>
-                                        <div class="text-fade">
+                                        </Link>
+                                        <div className="text-fade">
                                             Published: Jan 12, 2019
                                         </div>
-                                        <div class="rating-box d-block d-sm-none">
+                                        <div className="rating-box d-block d-sm-none">
                                             <div>
                                                 <div></div>
                                                 <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                             </div>
-                                            <div class="font-bold text-orange">
+                                            <div className="font-bold text-orange">
                                                 5.0
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-10 font-normal text-justify">
+                                <div className="mt-2.5 font-normal text-justify">
                                     I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                                 </div>
                             </div>
@@ -1349,17 +1349,17 @@
                         {{-- order completed --}}
                         {{-- system generated --}}
                         {{-- for both to see --}}
-                        <div class="order-mgmt pb-15 b-1-ddd">
+                        <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
-                                <span class="fa fa-hourglass-end icon-blue"></span>
+                                <span className="fa fa-hourglass-end icon-blue"></span>
                             </div>
-                            <div class="text-blue">
+                            <div className="text-blue">
                                 Order Completed
                             </div>
                             <div>
                                 This order is now completed and all renumerations have been processed.
                             </div>
-                            <div class="order-mgmt-date text-fade text-small mt-10">
+                            <div className="order-mgmt-date text-fade text-small mt-2.5">
                                 December 15, 2020 at 9:54PM
                             </div>
                         </div>
@@ -1370,39 +1370,39 @@
                         {{-- for both to see --}}
                         {{-- before order is completed --}}
                         <form action="">
-                            <div class="order-mgmt-new-text p-15 b-1-ddd bg-eee">
+                            <div className="order-mgmt-new-text p-15 b-1-ddd bg-eee">
                                 <div>
-                                    <div class="form-group">
-                                        <textarea class="form-control resize-none" style="height: 85px;" placeholder="Type a message..."></textarea>
+                                    <div className="form-group">
+                                        <textarea className="form-control resize-none" style="height: 85px;" placeholder="Type a message..."></textarea>
                                     </div>
                                 </div>
-                                <div class="floated-content">
-                                    <button type="submit" class="btn btn-blue btn-md ml-10 pull-right">
-                                        <span class="fa fa-paper-plane"></span>
+                                <div className="floated-content">
+                                    <button type="submit" className="btn btn-blue btn-md ml-2.5 pull-right">
+                                        <span className="fa fa-paper-plane"></span>
                                         Send
                                     </button>
-                                    <button type="button" class="btn btn-transparent-black btn-md pull-right" data-toggle="collapse" data-target="#add-attachment">
-                                        <span class="fa fa-paperclip icon-333"></span>
+                                    <button type="button" className="btn btn-transparent-black btn-md pull-right" data-toggle="collapse" data-target="#add-attachment">
+                                        <span className="fa fa-paperclip icon-333"></span>
                                         Add attachment
-                                        <span class="fa fa-angle-down icon-333"></span>
+                                        <span className="fa fa-angle-down icon-333"></span>
                                     </button>
                                 </div>
-                                <div id="add-attachment" class="collapse mt-10 b-1-ddd p-20-10">
+                                <div id="add-attachment" className="collapse mt-2.5 b-1-ddd p-5-10">
                                     <div>
                                         Upload Attachments
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6 mt-10">
-                                            <input type="file" class="form-control">
+                                    <div className="row">
+                                        <div className="col-sm-6 mt-2.5">
+                                            <input type="file" className="form-control">
                                         </div>
-                                        <div class="col-sm-6 mt-10">
-                                            <input type="file" class="form-control">
+                                        <div className="col-sm-6 mt-2.5">
+                                            <input type="file" className="form-control">
                                         </div>
-                                        <div class="col-sm-6 mt-10">
-                                            <input type="file" class="form-control">
+                                        <div className="col-sm-6 mt-2.5">
+                                            <input type="file" className="form-control">
                                         </div>
-                                        <div class="col-sm-6 mt-10">
-                                            <input type="file" class="form-control">
+                                        <div className="col-sm-6 mt-2.5">
+                                            <input type="file" className="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -1415,39 +1415,39 @@
 
             </div>
 
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Project Status
                     </div>
                     <div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Project Started
                             </div>
                             <div>
                                 Jan 25, 2020 at 10:05pm
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Current Delivery Date
                             </div>
                             <div>
                                 Jan 25, 2020 at 10:05pm
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Revisions Remaining
                             </div>
                             <div>
                                 3 Revisions
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Delivery Format
                             </div>
                             <div>
@@ -1455,102 +1455,102 @@
                             </div>
                         </div>
                         <div>
-                            <a href="/project/c1d00230-a423-4b84-a121-7105239ff8d8" class="btn btn-transparent-black btn-sm">
+                            <Link to="/project/c1d00230-a423-4b84-a121-7105239ff8d8" className="btn btn-transparent-black btn-sm">
                                 View project details
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
 
                     {{-- order tracking --}}
-                    <div class="bt-1-ddd mt-20">
-                        <div class="pt-15 pb-15 font-bold">
+                    <div className="bt-1-ddd mt-5">
+                        <div className="pt-15 pb-15 font-bold">
                             Order Tracking
                         </div>
-                        <div class="floated-content mb-10">
-                            <div class="bg-green pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                <span class="fa fa-check mt-4 icon-fff"></span>
+                        <div className="floated-content mb-10">
+                            <div className="bg-green pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                <span className="fa fa-check mt-4 icon-fff"></span>
                             </div>
-                            <div class="overflow-hidden">
+                            <div className="overflow-hidden">
                                 Order Placed
                             </div>
                         </div>
-                        <div class="floated-content mb-10">
-                            <div class="bg-green pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                <span class="fa fa-check mt-4 icon-fff"></span>
+                        <div className="floated-content mb-10">
+                            <div className="bg-green pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                <span className="fa fa-check mt-4 icon-fff"></span>
                             </div>
-                            <div class="overflow-hidden">
+                            <div className="overflow-hidden">
                                 Requirements Submitted
                             </div>
                         </div>
-                        <div class="floated-content mb-10">
-                            <div class="bg-orange pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                <span class="fa fa-spinner fa-spin mt-4 icon-fff"></span>
+                        <div className="floated-content mb-10">
+                            <div className="bg-orange pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                <span className="fa fa-spinner fa-spin mt-4 icon-fff"></span>
                             </div>
-                            <div class="overflow-hidden">
+                            <div className="overflow-hidden">
                                 Order In progress
                             </div>
                         </div>
-                        <div class="floated-content mb-10">
-                            <div class="bg-ccc pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                <span class="fa fa-ellipsis-h mt-4 icon-fff"></span>
+                        <div className="floated-content mb-10">
+                            <div className="bg-ccc pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                <span className="fa fa-ellipsis-h mt-4 icon-fff"></span>
                             </div>
-                            <div class="overflow-hidden">
+                            <div className="overflow-hidden">
                                 Order Delivery
                             </div>
                         </div>
-                        <div class="floated-content mb-10">
-                            <div class="bg-ccc pull-left text-center mr-10 br-50" style="width: 20px; height: 20px;">
-                                <span class="fa fa-ellipsis-h mt-4 icon-fff"></span>
+                        <div className="floated-content mb-10">
+                            <div className="bg-ccc pull-left text-center mr-2.5 br-50" style="width: 20px; height: 20px;">
+                                <span className="fa fa-ellipsis-h mt-4 icon-fff"></span>
                             </div>
-                            <div class="overflow-hidden">
+                            <div className="overflow-hidden">
                                 Order Completed
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="bt-1-ddd mt-20">
-                        <div class="pt-15 pb-15 font-bold">
+                    <div className="bt-1-ddd mt-5">
+                        <div className="pt-15 pb-15 font-bold">
                             Order Resolution
                         </div>
                         <div>
                             Have any issues with your order?
-                            <br>
+                            <br />
                             Visit the resoultion center.
-                            <br>
-                            <a href="/account/resolution/orders/123456789012" class="btn btn-transparent-black btn-sm mt-5">
+                            <br />
+                            <Link to="/account/resolution/orders/123456789012" className="btn btn-transparent-black btn-sm mt-1.5">
                                 Resoultion Center
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
 
                 </div>
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Buyer Information
                     </div>
                     <div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Name
                             </div>
                             <div>
                                 Olawale Lawal
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Country
                             </div>
                             <div>
                                 Nigeria
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Gender
                             </div>
                             <div>
@@ -1558,36 +1558,36 @@
                             </div>
                         </div>
                         <div>
-                            <a href="/user/abcde12345" class="btn btn-transparent-black btn-sm">
+                            <Link to="/user/abcde12345" className="btn btn-transparent-black btn-sm">
                                 View buyer's profile
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Seller Information
                     </div>
                     <div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Name
                             </div>
                             <div>
                                 Olawale Lawal
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Country
                             </div>
                             <div>
                                 Nigeria
                             </div>
                         </div>
-                        <div class="mb-15">
-                            <div class="text-small text-color-fade">
+                        <div className="mb-15">
+                            <div className="text-small text-color-fade">
                                 Gender
                             </div>
                             <div>
@@ -1595,9 +1595,9 @@
                             </div>
                         </div>
                         <div>
-                            <a href="/user/abcde12345" class="btn btn-transparent-black btn-sm">
+                            <Link to="/user/abcde12345" className="btn btn-transparent-black btn-sm">
                                 View seller's profile
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

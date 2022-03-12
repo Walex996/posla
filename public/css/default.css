@@ -22,13 +22,13 @@
 .m-5 {
 	margin: 5px !important;
 }
-.m-10 {
+.m-2.5 {
 	margin: 10px !important;
 }
 .m-15 {
 	margin: 15px !important;
 }
-.m-20 {
+.m-5 {
 	margin: 20px !important;
 }
 .m-25 {
@@ -76,10 +76,10 @@
 .m-95 {
 	margin: 95px !important;
 }
-.m-100 {
+.m-2.50 {
 	margin: 100px !important;
 }
-.m-105 {
+.m-2.55 {
 	margin: 105px !important;
 }
 .m-110 {
@@ -136,7 +136,7 @@
 .m-195 {
 	margin: 195px !important;
 }
-.m-200 {
+.m-50 {
 	margin: 200px !important;
 }
 .m-250 {
@@ -163,16 +163,16 @@
 .mt-4 {
 	margin-top: 4px !important;
 }
-.mt-5 {
+.mt-1.5 {
 	margin-top: 5px !important;
 }
-.mt-10 {
+.mt-2.5 {
 	margin-top: 10px !important;
 }
 .mt-15 {
 	margin-top: 15px !important;
 }
-.mt-20 {
+.mt-5 {
 	margin-top: 20px !important;
 }
 .mt-25 {
@@ -190,10 +190,10 @@
 .mt-45 {
 	margin-top: 45px !important;
 }
-.mt-50 {
+.mt-1.50 {
 	margin-top: 50px !important;
 }
-.mt-55 {
+.mt-1.55 {
 	margin-top: 55px !important;
 }
 .mt-60 {
@@ -220,10 +220,10 @@
 .mt-95 {
 	margin-top: 95px !important;
 }
-.mt-100 {
+.mt-2.50 {
 	margin-top: 100px !important;
 }
-.mt-105 {
+.mt-2.55 {
 	margin-top: 105px !important;
 }
 .mt-110 {
@@ -280,7 +280,7 @@
 .mt-195 {
 	margin-top: 195px !important;
 }
-.mt-200 {
+.mt-50 {
 	margin-top: 200px !important;
 }
 /*-- Margin Bottom --*/
@@ -300,7 +300,7 @@
 .mb-4 {
 	margin-bottom: 4px !important;
 }
-.mb-5 {
+.mb-1.5 {
 	margin-bottom: 5px !important;
 }
 .mb-10 {
@@ -309,7 +309,7 @@
 .mb-15 {
 	margin-bottom: 15px !important;
 }
-.mb-20 {
+.mb-5 {
 	margin-bottom: 20px !important;
 }
 .mb-25 {
@@ -327,10 +327,10 @@
 .mb-45 {
 	margin-bottom: 45px !important;
 }
-.mb-50 {
+.mb-1.50 {
 	margin-bottom: 50px !important;
 }
-.mb-55 {
+.mb-1.55 {
 	margin-bottom: 55px !important;
 }
 .mb-60 {
@@ -417,7 +417,7 @@
 .mb-195 {
 	margin-bottom: 195px !important;
 }
-.mb-200 {
+.mb-50 {
 	margin-bottom: 200px !important;
 }
 
@@ -443,16 +443,16 @@
 .ml-4 {
 	margin-left: 4px !important;
 }
-.ml-5 {
+.ml-1.5 {
 	margin-left: 5px !important;
 }
-.ml-10 {
+.ml-2.5 {
 	margin-left: 10px !important;
 }
 .ml-15 {
 	margin-left: 15px !important;
 }
-.ml-20{
+.ml-5{
 	margin-left: 20px !important;
 }
 .ml-25 {
@@ -477,11 +477,11 @@
 	margin-left: 45px !important;
 }
 
-.ml-50 {
+.ml-1.50 {
 	margin-left: 50px !important;
 }
 
-.ml-55 {
+.ml-1.55 {
 	margin-left: 55px !important;
 }
 
@@ -509,7 +509,7 @@
 .ml-95 {
 	margin-left: 95px !important;
 }
-.ml-100 {
+.ml-2.50 {
 	margin-left: 100px !important;
 }
 
@@ -530,16 +530,16 @@
 .mr-4 {
 	margin-right: 4px !important;;
 }
-.mr-5 {
+.mr-1.5 {
 	margin-right: 5px !important;;
 }
-.mr-10 {
+.mr-2.5 {
 	margin-right: 10px !important;
 }
 .mr-15 {
 	margin-right: 15px !important;
 }
-.mr-20{
+.mr-5{
 	margin-right: 20px !important;
 }
 .mr-25 {
@@ -564,11 +564,11 @@
 	margin-right: 45px !important;
 }
 
-.mr-50 {
+.mr-1.50 {
 	margin-right: 50px !important;
 }
 
-.mr-55 {
+.mr-1.55 {
 	margin-right: 55px !important;
 }
 
@@ -596,7 +596,7 @@
 .mr-95 {
 	margin-right: 95px !important;
 }
-.mr-100 {
+.mr-2.50 {
 	margin-right: 100px !important;
 }
 
@@ -622,16 +622,16 @@
 .p-4 {
 	padding: 4px !important;
 }
-.p-5 {
+.p-1.5 {
 	padding: 5px !important;
 }
-.p-10 {
+.p-2.5 {
 	padding: 10px !important;
 }
 .p-15 {
 	padding: 15px !important;
 }
-.p-20 {
+.p-5 {
 	padding: 20px !important;
 }
 .p-25 {
@@ -649,10 +649,10 @@
 .p-45 {
 	padding: 45px !important;
 }
-.p-50 {
+.p-1.50 {
 	padding: 50px !important;
 }
-.p-55 {
+.p-1.55 {
 	padding: 55px !important;
 }
 .p-60 {
@@ -679,10 +679,10 @@
 .p-95 {
 	padding: 95px !important;
 }
-.p-100 {
+.p-2.50 {
 	padding: 100px !important;
 }
-.p-105 {
+.p-2.55 {
 	padding: 105px !important;
 }
 .p-110 {
@@ -739,7 +739,7 @@
 .p-195 {
 	padding: 195px !important;
 }
-.p-200 {
+.p-50 {
 	padding: 200px !important;
 }
 .p-250 {
@@ -764,16 +764,16 @@
 .pt-4 {
 	padding-top: 4px !important;
 }
-.pt-5 {
+.pt-1.5 {
 	padding-top: 5px !important;
 }
-.pt-10 {
+.pt-2.5 {
 	padding-top: 10px !important;
 }
 .pt-15 {
 	padding-top: 15px !important;
 }
-.pt-20 {
+.pt-5 {
 	padding-top: 20px !important;
 }
 .pt-25 {
@@ -791,10 +791,10 @@
 .pt-45 {
 	padding-top: 45px !important;
 }
-.pt-50 {
+.pt-1.50 {
 	padding-top: 50px !important;
 }
-.pt-55 {
+.pt-1.55 {
 	padding-top: 55px !important;
 }
 .pt-60 {
@@ -821,10 +821,10 @@
 .pt-95 {
 	padding-top: 95px !important;
 }
-.pt-100 {
+.pt-2.50 {
 	padding-top: 100px !important;
 }
-.pt-105 {
+.pt-2.55 {
 	padding-top: 105px !important;
 }
 .pt-110 {
@@ -881,7 +881,7 @@
 .pt-195 {
 	padding-top: 195px !important;
 }
-.pt-200 {
+.pt-50 {
 	padding-top: 200px !important;
 }
 .pt-250 {
@@ -904,7 +904,7 @@
 .pb-4 {
 	padding-bottom: 4px !important;
 }
-.pb-5 {
+.pb-1.5 {
 	padding-bottom: 5px !important;
 }
 .pb-10 {
@@ -913,7 +913,7 @@
 .pb-15 {
 	padding-bottom: 15px !important;
 }
-.pb-20 {
+.pb-5 {
 	padding-bottom: 20px !important;
 }
 .pb-25 {
@@ -931,10 +931,10 @@
 .pb-45 {
 	padding-bottom: 45px !important;
 }
-.pb-50 {
+.pb-1.50 {
 	padding-bottom: 50px !important;
 }
-.pb-55 {
+.pb-1.55 {
 	padding-bottom: 55px !important;
 }
 .pb-60 {
@@ -1021,7 +1021,7 @@
 .pb-195 {
 	padding-bottom: 195px !important;
 }
-.pb-200 {
+.pb-50 {
 	padding-bottom: 200px !important;
 }
 .pb-250 {
@@ -1046,16 +1046,16 @@
 .pl-4 {
 	padding-left: 4px !important;
 }
-.pl-5 {
+.pl-1.5 {
 	padding-left: 5px !important;
 }
-.pl-10 {
+.pl-2.5 {
 	padding-left: 10px !important;
 }
 .pl-15 {
 	padding-left: 15px !important;
 }
-.pl-20{
+.pl-5{
 	padding-left: 20px !important;
 }
 .pl-25 {
@@ -1080,11 +1080,11 @@
 	padding-left: 45px !important;
 }
 
-.pl-50 {
+.pl-1.50 {
 	padding-left: 50px !important;
 }
 
-.pl-55 {
+.pl-1.55 {
 	padding-left: 55px !important;
 }
 
@@ -1112,7 +1112,7 @@
 .pl-95 {
 	padding-left: 95px !important;
 }
-.pl-100 {
+.pl-2.50 {
 	padding-left: 100px !important;
 }
 
@@ -1133,16 +1133,16 @@
 .pr-4 {
 	padding-right: 4px !important;;
 }
-.pr-5 {
+.pr-1.5 {
 	padding-right: 5px !important;;
 }
-.pr-10 {
+.pr-2.5 {
 	padding-right: 10px !important;
 }
 .pr-15 {
 	padding-right: 15px !important;
 }
-.pr-20{
+.pr-5{
 	padding-right: 20px !important;
 }
 .pr-25 {
@@ -1167,11 +1167,11 @@
 	padding-right: 45px !important;
 }
 
-.pr-50 {
+.pr-1.50 {
 	padding-right: 50px !important;
 }
 
-.pr-55 {
+.pr-1.55 {
 	padding-right: 55px !important;
 }
 
@@ -1199,7 +1199,7 @@
 .pr-95 {
 	padding-right: 95px !important;
 }
-.pr-100 {
+.pr-2.50 {
 	padding-right: 100px !important;
 }
 

@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .table-cart tbody tr > td:nth-child(2) > div,
         .table-cart tbody tr > td:nth-child(3) > div{
@@ -34,54 +34,54 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
+    <div className="container">
+        <div className="row">
             
-            <div class="col-md-12 col-lg-8">
+            <div className="col-md-12 col-lg-8">
 
-                <div class="section section-cart mb-0">
-                    <div class="section-title">
+                <div className="section section-cart mb-0">
+                    <div className="section-title">
                         Cart
                     </div>
                     <div>
                         
-                        <div class="table-responsive b-1-ddd">
-                            <table class="table table-tr-lines table-cart">
+                        <div className="table-responsive b-1-ddd">
+                            <table className="table table-tr-lines table-cart">
                                 <thead>
-                                    <tr class="bg-eee">
+                                    <tr className="bg-eee">
                                         <th></th>
-                                        <th class="d-none d-sm-table-cell"></th>
-                                        <th class="d-none d-md-table-cell d-lg-none d-xl-table-cell"></th>
+                                        <th className="d-none d-sm-table-cell"></th>
+                                        <th className="d-none d-md-table-cell d-lg-none d-xl-table-cell"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div class="overflow-hidden">
-                                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left m-10 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
-                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
-                                                </a>
-                                                <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="pull-left mt-10 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
-                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" class="dp-contain" />
-                                                </a>
-                                                <div class="overflow-hidden">
-                                                    <a href="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" class="font-bold mt-10 d-inline-block hover-underline">
+                                            <div className="overflow-hidden">
+                                                <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="pull-left m-2.5 mr-15 d-none d-sm-block overflow-hidden" style="max-width: 200px; max-height: 200px;">
+                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" className="dp-contain" />
+                                                </Link>
+                                                <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="pull-left mt-2.5 mr-15 d-block d-sm-none overflow-hidden" style="max-width: 100px; max-height: 100px;">
+                                                    <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="" className="dp-contain" />
+                                                </Link>
+                                                <div className="overflow-hidden">
+                                                    <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="font-bold mt-2.5 d-inline-block hover-underline">
                                                         deal title here
-                                                    </a>
-                                                    <div class="text-fade mt-10">
+                                                    </Link>
+                                                    <div className="text-fade mt-2.5">
                                                         <div>
                                                             Category name (subcategory name)
                                                         </div>
-                                                        <div class="mt-5">
+                                                        <div className="mt-1.5">
                                                             Package: basic designs
                                                         </div>
-                                                        <div class="mt-5" data-toggle="collapse" data-target="#package-details">
+                                                        <div className="mt-1.5" data-toggle="collapse" data-target="#package-details">
                                                             Package Details
-                                                            <span class="fa fa-angle-down icon-333"></span>
+                                                            <span className="fa fa-angle-down icon-333"></span>
                                                         </div>
-                                                        <div id="package-details" class="collapse">
-                                                            <div class="p-10 pl-15 pr-15 mt-5 b-1-ddd d-inline-block">
-                                                                <ul class="list-style">
+                                                        <div id="package-details" className="collapse">
+                                                            <div className="p-2.5 pl-15 pr-15 mt-1.5 b-1-ddd d-inline-block">
+                                                                <ul className="list-style">
                                                                     <li>
                                                                         2-days delivery
                                                                     </li>
@@ -97,42 +97,42 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-block d-sm-none bt-1-ddd mt-10 pt-10">
-                                                <div class="mt-10 pull-right">
+                                            <div className="d-block d-sm-none bt-1-ddd mt-2.5 pt-2.5">
+                                                <div className="mt-2.5 pull-right">
                                                     Price:
                                                     $500
                                                 </div>
                                                 <form action="">
-                                                    <div class="input-group input-group-attach mt-2" style="width: 100px;">
-                                                        <div class="input-group-btn b-1-ddd br-none">
-                                                            <button type="button" class="bg-eee btn-md">
+                                                    <div className="input-group input-group-attach mt-2" style="width: 100px;">
+                                                        <div className="input-group-btn b-1-ddd br-none">
+                                                            <button type="button" className="bg-eee btn-md">
                                                                 <span>Qty</span>
                                                             </button>
                                                         </div>
-                                                        <input type="number" name="amount" id="amount" class="form-control" value="1">
+                                                        <input type="number" name="amount" id="amount" className="form-control" value="1">
                                                     </div>
                                                 </form>
                                             </div>
                                         </td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <div class="d-none d-sm-block d-md-none mt-10"></div>
+                                        <td className="d-none d-sm-table-cell">
+                                            <div className="d-none d-sm-block d-md-none mt-2.5"></div>
                                             <form action="">
-                                                <div class="input-group input-group-attach mt-2" style="width: 100px;">
-                                                    <div class="input-group-btn b-1-ddd br-none">
-                                                        <button type="button" class="bg-eee btn-md">
+                                                <div className="input-group input-group-attach mt-2" style="width: 100px;">
+                                                    <div className="input-group-btn b-1-ddd br-none">
+                                                        <button type="button" className="bg-eee btn-md">
                                                             <span>Qty</span>
                                                         </button>
                                                     </div>
-                                                    <input type="number" name="amount" id="amount" class="form-control" value="1">
+                                                    <input type="number" name="amount" id="amount" className="form-control" value="1">
                                                 </div>
                                             </form>
-                                            <div class="d-block d-md-none d-lg-block d-xl-none mt-10 text-left">
+                                            <div className="d-block d-md-none d-lg-block d-xl-none mt-2.5 text-left">
                                                 Price:
                                                 $500
                                             </div>
                                         </td>
-                                        <td class="d-none d-md-table-cell d-lg-none d-xl-table-cell">
-                                            <div class="text-center mt-10">
+                                        <td className="d-none d-md-table-cell d-lg-none d-xl-table-cell">
+                                            <div className="text-center mt-2.5">
                                                  $500
                                             </div>
                                         </td>
@@ -146,21 +146,21 @@
 
             </div>
 
-            <div class="col-md-12 col-lg-4">
+            <div className="col-md-12 col-lg-4">
 
-                <div class="sticky-top">
-                    <div class="section">
-                        <div class="section-title">
+                <div className="sticky-top">
+                    <div className="section">
+                        <div className="section-title">
                             Summary
                         </div>
                         <div>
 
-                            <div class="text-left-right text-left-right-p-10 text-left-right-60-40">
+                            <div className="text-left-right text-left-right-p-2.5 text-left-right-60-40">
                                 <div>
                                     <div>
                                         Subtotal:
                                     </div>
-                                    <div class="text-right">
+                                    <div className="text-right">
                                       $100
                                     </div>
                                 </div>
@@ -168,16 +168,16 @@
                                     <div>
                                         Service fee & VAT:
                                     </div>
-                                    <div class="text-right">
+                                    <div className="text-right">
                                         $50
                                     </div>
                                 </div>
-                                <hr class="mt-10 mb-10 hr-2">
-                                <div class="bg-eee">
-                                    <div class="font-bold">
+                                <hr className="mt-2.5 mb-10 hr-2">
+                                <div className="bg-eee">
+                                    <div className="font-bold">
                                         Total:
                                     </div>
-                                    <div class="font-bold text-right">
+                                    <div className="font-bold text-right">
                                         $150
                                     </div>
                                 </div>
@@ -185,19 +185,19 @@
                                     <div>
                                         Delivery Time:
                                     </div>
-                                    <div class="text-right">
+                                    <div className="text-right">
                                         1 day(s)
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="mt-10 pb-10">
+                            <div className="mt-2.5 pb-10">
                                 <div>
-                                    <a href="/checkout" class="btn btn-primary btn-block">
+                                    <Link to="/checkout" className="btn btn-primary btn-block">
                                         Continue to Checkout
-                                    </a>
+                                    </Link>
                                 </div>
-                                <div class="text-fade mt-15 text-center">
+                                <div className="text-fade mt-15 text-center">
                                     You won't be charged yet
                                 </div>
                             </div>
@@ -205,11 +205,11 @@
                         </div>
                     </div>
 
-                    <div class="section mb-0">
-                        <div class="text-center overflow-hidden" style="height: 40px;">
-                            <img src="{{asset('img/app/icons/payment-cards.png')}}" alt="Payment Options" class="dp-contain" />
+                    <div className="section mb-0">
+                        <div className="text-center overflow-hidden" style="height: 40px;">
+                            <img src="{{asset('img/app/icons/payment-cards.png')}}" alt="Payment Options" className="dp-contain" />
                         </div>
-                        <div class="text-fade mt-15 text-center d-none">
+                        <div className="text-fade mt-15 text-center d-none">
                             Secured Payment System
                         </div>
                     </div>
@@ -220,25 +220,25 @@
         </div>
 
 
-        <hr>
+        <hr />
 
 
-        <div class="font-18 font-bold pb-10 text-center b-none">
+        <div className="font-18 font-bold pb-10 text-center b-none">
             Other deals you may be interested in
         </div>
-        <div class="section">
-            <div class="deal-list deal-list-mini row">
+        <div className="section">
+            <div className="deal-list deal-list-mini row">
                 
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div> 
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div> 
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div> 
-                <div class="col-sm-6 col-lg-3">
+                <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')
                 </div> 
             

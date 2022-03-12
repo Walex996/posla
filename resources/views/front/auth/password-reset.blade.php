@@ -17,13 +17,13 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="mw-600 pb-50 mx-auto bg-fff">
+    <div className="container">
+        <div className="mw-600 pb-1.50 mx-auto bg-fff">
             
-            <div class="auth-modal-title mt-0 pt-30">
+            <div className="auth-modal-title mt-0 pt-30">
                 <div>
-                    <div class="mb-5">
-                        <span class="fa fa-lock icon-50 icon-orange"></span>
+                    <div className="mb-1.5">
+                        <span className="fa fa-lock icon-50 icon-orange"></span>
                     </div>
                     Password Reset
                 </div>
@@ -33,45 +33,45 @@
             </div>
         
             @include('layouts.common.errors-messages')
-            <form ction="" class="mw-400 mt-30 mx-auto p-30 b-1-ddd" method="POST">
+            <form ction="" className="mw-400 mt-30 mx-auto p-30 b-1-ddd" method="POST">
                 @csrf
-                <div class="form-group">
-                    <label for="email" class="control-label">
+                <div className="form-group">
+                    <label for="email" className="control-label">
                         Email Address:
                     </label>
-                    <input type="email" id="email" name="email" class="form-control" value="">
+                    <input type="email" id="email" name="email" className="form-control" value="">
                 </div>
-                <div class="input-group mb-10">
-                    <label for="password" class="control-label">
+                <div className="input-group mb-10">
+                    <label for="password" className="control-label">
                         Password:
                     </label>
-                    <div class="input-group input-group-password">
-                        <input type="password" name="password" id="password" class="form-control">
-                        <button type="button" class="input-group-btn password-toggle">
-                            <span class="fa fa-eye icon-17"></span>
+                    <div className="input-group input-group-password">
+                        <input type="password" name="password" id="password" className="form-control">
+                        <button type="button" className="input-group-btn password-toggle">
+                            <span className="fa fa-eye icon-17"></span>
                         </button>
                     </div>
                 </div>
-                <div class="input-group">
-                    <label for="rpassword" class="control-label">
+                <div className="input-group">
+                    <label for="rpassword" className="control-label">
                         Retype Password:
                     </label>
-                    <div class="input-group input-group-password">
-                        <input type="password" name="password_confirmation" id="rpassword" class="form-control">
-                        <button type="button" class="input-group-btn password-toggle">
-                            <span class="fa fa-eye icon-17"></span>
+                    <div className="input-group input-group-password">
+                        <input type="password" name="password_confirmation" id="rpassword" className="form-control">
+                        <button type="button" className="input-group-btn password-toggle">
+                            <span className="fa fa-eye icon-17"></span>
                         </button>
                     </div>
                 </div>
-                <div class="mt-20">
-                    <button type="submit" class="btn btn-blue btn-block">
+                <div className="mt-5">
+                    <button type="submit" className="btn btn-blue btn-block">
                         Reset Password
                     </button>
                 </div>
-                <div class="mt-15 text-center">
-                    <a class="btn-register-switch text-fade hover-underline cursor-pointer">
+                <div className="mt-15 text-center">
+                    <Link className="btn-register-switch text-fade hover-underline cursor-pointer">
                         Goto Homepage
-                    </a>
+                    </Link>
                 </div>
             </form>
             

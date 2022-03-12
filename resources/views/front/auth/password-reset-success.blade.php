@@ -17,26 +17,26 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="mw-600 pt-20 pb-50 mx-auto bg-fff">
+    <div className="container">
+        <div className="mw-600 pt-5 pb-1.50 mx-auto bg-fff">
             
-            <div class="page-alert">
+            <div className="page-alert">
                 <div>
-                    <img src="{{ asset('/img/app/icons/unlock.png') }}" class="dp-contain" />
+                    <img src="{{ asset('/img/app/icons/unlock.png') }}" className="dp-contain" />
                 </div>
-                <div class="pt-15">
+                <div className="pt-15">
                     Password Updated Successfully
                 </div>
                 <div>
                     Your account password has been updated successfully.
                     You can now login to your account with your registered username or email address or phone number, and your new password.
                 </div>
-                <div class="mt-10">
-                    <div class="mw-300 mx-auto text-center">
+                <div className="mt-2.5">
+                    <div className="mw-300 mx-auto text-center">
                         <div>
-                            <a href="/" class="btn btn-blue btn-block">
+                            <Link to="/" className="btn btn-blue btn-block">
                                 Goto Homepage
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

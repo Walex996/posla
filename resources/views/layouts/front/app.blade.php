@@ -13,34 +13,34 @@
 
     <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/img/app/icons/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="57x57" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" to="{{ asset('/img/app/icons/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" to="{{ asset('/img/app/icons/favicon.png') }}">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" to="https://fonts.gstatic.com">
+    <link to="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
-    <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/all-font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/default.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/toastr.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-fx-header-1.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-fx-header-2.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-fx-main-1.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-fx-main-2.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-fx-custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/layout-front.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/all-font-awesome.min.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/default.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/toastr.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-fx-header-1.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-fx-header-2.min.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-fx-main-1.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-fx-main-2.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-fx-custom.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/layout-front.css') }}" rel="stylesheet">
     @yield('css')
     
     
@@ -50,9 +50,9 @@
     <noscript id="jsc">
         <div>
             Please enable JavaScript in your browser.
-            <span class="d-none d-sm-inline">
+            <span className="d-none d-sm-inline">
                 Some functionality will not work if this is disabled.
-                <a href="https://www.enable-javascript.com/" target="_blank">Read more</a>
+                <Link to="https://www.enable-javascript.com/" target="_blank">Read more</Link>
             </span>
         </div>
         <div></div>
@@ -66,7 +66,7 @@
         
         @include('layouts.front.message-popup')
         
-        <div class="main-content">
+        <div className="main-content">
             @yield('content')
         </div>
         

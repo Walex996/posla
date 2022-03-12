@@ -17,9 +17,9 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/jquery-ui.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('/components/Price-Range-Slider-jQuery-UI/price_range_style.css') }}">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/jquery-ui.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" to="{{ asset('/components/Price-Range-Slider-jQuery-UI/price_range_style.css') }}">
 @endsection
 
 
@@ -52,30 +52,30 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
+    <div className="container">
+        <div className="row">
             
-            <div class="col-md-4 col-lg-3 d-none d-md-block">
+            <div className="col-md-4 col-lg-3 d-none d-md-block">
 
-                <div class="section sticky-top">
+                <div className="section sticky-top">
                     @include('front.common.filter-search')
                     @include('front.common.filter-deals')
                 </div>
 
             </div>
 
-            <div class="col-md-8 col-lg-6">
+            <div className="col-md-8 col-lg-6">
 
 
-                <div class="modal" id="filter">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Filter</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div className="modal" id="filter">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h4 className="modal-title">Filter</h4>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
-                                <div class="p-10">
+                            <div className="modal-body">
+                                <div className="p-2.5">
                                     @include('front.common.filter-search')
                                     @include('front.common.filter-deals')
                                 </div>
@@ -85,31 +85,31 @@
                 </div>
 
 
-                <div class="mb-20">
-                    <div class="text-center">
-                        <div class="font-20 font-bold">
+                <div className="mb-5">
+                    <div className="text-center">
+                        <div className="font-20 font-bold">
                             Search Result (Deals)
                         </div>
-                        <div class="font-12 text-fade">
+                        <div className="font-12 text-fade">
                             (10 active deals)
                         </div>
                     </div>
                 </div>
 
-                <div class="section mb-5 pb-5">
-                    <div class="section-title floated-content">
+                <div className="section mb-1.5 pb-1.5">
+                    <div className="section-title floated-content">
 
-                        <button class="btn btn-transparent-black d-block d-md-none pull-left btn-sm" data-toggle="modal" data-target="#filter">
-                            <span class="fa fa-filter"></span>
+                        <button className="btn btn-transparent-black d-block d-md-none pull-left btn-sm" data-toggle="modal" data-target="#filter">
+                            <span className="fa fa-filter"></span>
                             Filter
                         </button>
                         
-                        <div class="font-bold d-none d-md-inline mt-10 pull-left">
+                        <div className="font-bold d-none d-md-inline mt-2.5 pull-left">
                             Showing 1 - 20 of 65
                         </div>
 
-                        <form method="get" action="" class="pull-right">
-                            <select class="form-control-md" onchange="this.form.submit()" style="width: 100px; padding: 0px !important;">
+                        <form method="get" action="" className="pull-right">
+                            <select className="form-control-md" onchange="this.form.submit()" style="width: 100px; padding: 0px !important;">
                                 <option value="new" selected>Newest First</option>
                                 <option value="old">Oldest First</option>
                                 <option value="budget_high_low">Budget - High to Low</option>
@@ -121,7 +121,7 @@
 
                     </div>
 
-                    <div class="deal-list deal-list-double">
+                    <div className="deal-list deal-list-double">
                         @include('front.common.deal')
                         @include('front.common.deal')
                         @include('front.common.deal')
@@ -145,23 +145,23 @@
                     </div>
                 </div>
 
-                <div class="section">
+                <div className="section">
                    //pagination here
                 </div>
 
             </div>
             
-            <div class="col-lg-3 d-none d-lg-block">
+            <div className="col-lg-3 d-none d-lg-block">
                 
-                <a href="" class="posla-ad-space">
-                    <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" class="dp-contain" alt="Ad">
-                </a>
+                <Link to="" className="posla-ad-space">
+                    <img src="{{ asset('/img/app/samples/ad-400-200-1.jpg') }}" className="dp-contain" alt="Ad">
+                </Link>
 
-                <div class="section pl-10 pr-10 sticky-top">
-                    <div class="section-title">
+                <div className="section pl-2.5 pr-2.5 sticky-top">
+                    <div className="section-title">
                         Featured Deals
                     </div>
-                    <div class="deal-list deal-list-single">
+                    <div className="deal-list deal-list-single">
                         @include('front.common.deal')
                         @include('front.common.deal')
                         @include('front.common.deal')

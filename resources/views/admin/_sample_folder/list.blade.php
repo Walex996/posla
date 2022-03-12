@@ -13,22 +13,22 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header">
-            <div class="box-title">
+    <div className="box">
+        <div className="box-header">
+            <div className="box-title">
                 List Page
             </div>
-            <div class="box-tools pull-right">
-                <a href="" class="btn btn-box-tool">
-                    <i class="fa fa-plus"></i>
+            <div className="box-tools pull-right">
+                <Link to="" className="btn btn-box-tool">
+                    <i className="fa fa-plus"></i>
                     Link
-                </a>
+                </Link>
             </div>
         </div>
-        <div class="box-body">
+        <div className="box-body">
             
-            <div class="table-responsive">
-                <table class="table table-striped">
+            <div className="table-responsive">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <td>SN</td>
@@ -43,15 +43,15 @@
                         <tr>
                             <td>1</td>
                             <td>
-                                <div class="table-img-text">
+                                <div className="table-img-text">
                                     <div>
-                                        <img src="{{ asset('/img/app/icons/logo.png') }}" class="dp-contain" alt="">
+                                        <img src="{{ asset('/img/app/icons/logo.png') }}" className="dp-contain" alt="">
                                     </div>
                                     <div>
                                         <div>
                                             Text Main 1 Lorem Ipsum Something
                                         </div>
-                                        <div class="text-fade">
+                                        <div className="text-fade">
                                             Text Sub 1
                                         </div>
                                     </div>
@@ -67,17 +67,17 @@
                                 Aug 04, 2020
                             </td>
                             <td>
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <div className="dropdown">
+                                    <button type="button" className="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown">
                                         Action
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="" class="dropdown-item">
+                                    <div className="dropdown-menu dropdown-menu-right">
+                                        <Link to="" className="dropdown-item">
                                             Link 1
-                                        </a>
-                                        <a href="" class="dropdown-item">
+                                        </Link>
+                                        <Link to="" className="dropdown-item">
                                             Link 2
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </td>
@@ -85,15 +85,15 @@
                         <tr>
                             <td>2</td>
                             <td>
-                                <div class="table-img-text">
+                                <div className="table-img-text">
                                     <div>
-                                        <img src="{{ asset('/img/app/icons/logo.png') }}" class="dp-contain" alt="">
+                                        <img src="{{ asset('/img/app/icons/logo.png') }}" className="dp-contain" alt="">
                                     </div>
                                     <div>
                                         <div>
                                             Text Main 1 Lorem Ipsum Something
                                         </div>
-                                        <div class="text-fade">
+                                        <div className="text-fade">
                                             Text Sub 1
                                         </div>
                                     </div>
@@ -109,12 +109,12 @@
                                 Aug 04, 2020
                             </td>
                             <td>
-                                <form action="" class="form-horizontal" method="post">
+                                <form action="" className="form-horizontal" method="post">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="_method" value="delete">
-                                    <div class="btn-group">
-                                        <button type="submit" class="btn btn-danger btn-sm">
-                                            <i class="fa fa-trash"></i>
+                                    <div className="btn-group">
+                                        <button type="submit" className="btn btn-danger btn-sm">
+                                            <i className="fa fa-trash"></i>
                                             Delete
                                         </button>
                                     </div>
@@ -124,15 +124,15 @@
                         <tr>
                             <td>3</td>
                             <td>
-                                <div class="table-img-text">
+                                <div className="table-img-text">
                                     <div>
-                                        <img src="{{ asset('/img/app/icons/logo.png') }}" class="dp-contain" alt="">
+                                        <img src="{{ asset('/img/app/icons/logo.png') }}" className="dp-contain" alt="">
                                     </div>
                                     <div>
                                         <div>
                                             Text Main 1 Lorem Ipsum Something
                                         </div>
-                                        <div class="text-fade">
+                                        <div className="text-fade">
                                             Text Sub 1
                                         </div>
                                     </div>
@@ -148,17 +148,17 @@
                                 Aug 04, 2020
                             </td>
                             <td>
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <div className="dropdown">
+                                    <button type="button" className="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown">
                                         Action
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="" class="dropdown-item">
+                                    <div className="dropdown-menu dropdown-menu-right">
+                                        <Link to="" className="dropdown-item">
                                             Link 1
-                                        </a>
-                                        <a href="" class="dropdown-item">
+                                        </Link>
+                                        <Link to="" className="dropdown-item">
                                             Link 2
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </td>

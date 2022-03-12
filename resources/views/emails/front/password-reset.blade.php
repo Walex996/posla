@@ -15,35 +15,35 @@
 
 {{-- @section('content') --}}
     
-    <div class="container">
-        <div class="mw-600 pt-20 pb-50 mx-auto bg-fff">
+    <div className="container">
+        <div className="mw-600 pt-5 pb-1.50 mx-auto bg-fff">
             
-            <div class="page-alert">
+            <div className="page-alert">
                 <div>
-                    <img src="{{ asset('/img/app/icons/envelope.jpg') }}" class="dp-contain" />
+                    <img src="{{ asset('/img/app/icons/envelope.jpg') }}" className="dp-contain" />
                 </div>
-                <div class="pt-15">
+                <div className="pt-15">
                     Password Reset
                 </div>
                 <div>
                    You are receiving this email because we received a password reset request for your account.
                 </div>
-                <div class="mt-10">
-                    <div class="mw-300 mx-auto text-center">
+                <div className="mt-2.5">
+                    <div className="mw-300 mx-auto text-center">
                         <div>
                             {{-- {{dd(url( "/password/reset/?token=" . $token ))}} --}}
-                            <a href="{{url( "/password/reset/?token=" . $token )}}" class="btn btn-blue btn-block">
+                            <Link to="{{url( "/password/reset/?token=" . $token )}}" className="btn btn-blue btn-block">
                                 Reset Password
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div>
-                    This password reset link will expire in 60 minutes. <br>
+                    This password reset link will expire in 60 minutes. <br />
 
-                    If you did not request a password reset, no further action is required. <br>
+                    If you did not request a password reset, no further action is required. <br />
 
-                    Regards, <br>
+                    Regards, <br />
                     Posla Team
                 </div>
             </div>

@@ -1,14 +1,14 @@
-<div class="mx-auto mw-600">
-    <div class="mt-10">
-        <div class="pull-left mr-10">
-            <span class="fa fa-exclamation-circle icon-50 icon-yellow"></span>
+<div className="mx-auto mw-600">
+    <div className="mt-2.5">
+        <div className="pull-left mr-2.5">
+            <span className="fa fa-exclamation-circle icon-50 icon-yellow"></span>
         </div>
-        <div class="overflow-hidden">
-            <div class="font-bold font-18 mt-10">
+        <div className="overflow-hidden">
+            <div className="font-bold font-18 mt-2.5">
                 DO's
             </div>
-            <div class="text-fade">
-                <ul class="ul-style">
+            <div className="text-fade">
+                <ul className="ul-style">
                     <li> Ensure your projects are direct and concise </li> 
                     <li> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                         tempor nvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </li> 
@@ -22,16 +22,16 @@
         </div>
     </div>
     
-    <div class="mt-30">
-        <div class="pull-left mr-10">
-            <span class="fa fa-times-circle icon-50 icon-red"></span>
+    <div className="mt-30">
+        <div className="pull-left mr-2.5">
+            <span className="fa fa-times-circle icon-50 icon-red"></span>
         </div>
-        <div class="overflow-hidden">
-            <div class="font-bold font-18 mt-10">
+        <div className="overflow-hidden">
+            <div className="font-bold font-18 mt-2.5">
                 DONT's
             </div>
-            <div class="text-fade">
-                <ul class="ul-style">
+            <div className="text-fade">
+                <ul className="ul-style">
                     <li>Do not upload pornographic or other explicit content</li>
                     <li>Do not plagiarise other people’s content in your projects</li>
                     <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>

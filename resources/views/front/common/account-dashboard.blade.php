@@ -1,40 +1,40 @@
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Active Deals (6)
-                        <a href="/account/deals" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/account/deals" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
                     <div>
                         {{-- maximum of 3 deals where status == active --}}
 
-                        <div class="deal-list deal-list-mini row">
-                            <div class="col-sm-6 col-lg-4">
+                        <div className="deal-list deal-list-mini row">
+                            <div className="col-sm-6 col-lg-4">
                                 @include('front.common.deal')
                             </div>
-                            <div class="col-sm-6 col-lg-4">
+                            <div className="col-sm-6 col-lg-4">
                                 @include('front.common.deal')
                             </div>
-                            <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div className="col-sm-6 col-lg-4 d-none d-lg-block">
                                 @include('front.common.deal')
                             </div>
                         </div>
                         <div>
-                            <a href="/account/deals" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                            <Link to="/account/deals" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                                 View All Deals
-                                <span class="fa fa-angle-right"></span>
-                            </a>
+                                <span className="fa fa-angle-right"></span>
+                            </Link>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         Active Projects (6)
-                        <a href="/account/projects" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/account/projects" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
                     <div>
-                        <div class="project-list project-list-wide">
+                        <div className="project-list project-list-wide">
                             {{-- maximum of 3 projects where status == active --}}
                             @include('front.common.project')
                             @include('front.common.project')
@@ -42,27 +42,27 @@
                         </div>
                     </div>
                     <div>
-                        <a href="/account/projects" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        <Link to="/account/projects" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                             View All Projects
-                            <span class="fa fa-angle-right"></span>
-                        </a>
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
                     </div>
                 </div>
 
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-12 col-lg-6">
-                        <div class="section">
-                            <div class="section-title">
+                <div className="row">
+                    <div className="col-sm-6 col-md-12 col-lg-6">
+                        <div className="section">
+                            <div className="section-title">
                                 Stats - Seller
                             </div>
                             <div>
-                                <div class="tab-pane container p-0" id="price_3_premium">
-                                    <div class="text-left-right text-left-right-60-40">
-                                        <div class="bg-eee">
+                                <div className="tab-pane container p-0" id="price_3_premium">
+                                    <div className="text-left-right text-left-right-60-40">
+                                        <div className="bg-eee">
                                             <div>
-                                                <span class="fa fa-file"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-file"></span>
+                                                <div className="overflow-hidden">
                                                     Projects Completed:
                                                 </div>
                                             </div>
@@ -72,8 +72,8 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-star"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-star"></span>
+                                                <div className="overflow-hidden">
                                                     Overall Rating:
                                                 </div>
                                             </div>
@@ -81,10 +81,10 @@
                                                 4.5
                                             </div>
                                         </div>
-                                        <div class="bg-eee">
+                                        <div className="bg-eee">
                                             <div>
-                                                <span class="fa fa-users"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-users"></span>
+                                                <div className="overflow-hidden">
                                                     Buyers worked with:
                                                 </div>
                                             </div>
@@ -97,18 +97,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-12 col-lg-6">
-                        <div class="section">
-                            <div class="section-title">
+                    <div className="col-sm-6 col-md-12 col-lg-6">
+                        <div className="section">
+                            <div className="section-title">
                                 Stats - Buyer
                             </div>
                             <div>
-                                <div class="tab-pane container p-0" id="price_3_premium">
-                                    <div class="text-left-right text-left-right-60-40">
-                                        <div class="bg-eee">
+                                <div className="tab-pane container p-0" id="price_3_premium">
+                                    <div className="text-left-right text-left-right-60-40">
+                                        <div className="bg-eee">
                                             <div>
-                                                <span class="fa fa-file"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-file"></span>
+                                                <div className="overflow-hidden">
                                                     Projects Posted:
                                                 </div>
                                             </div>
@@ -118,8 +118,8 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-star"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-star"></span>
+                                                <div className="overflow-hidden">
                                                     Projects Issuance:
                                                 </div>
                                             </div>
@@ -127,10 +127,10 @@
                                                 2
                                             </div>
                                         </div>
-                                        <div class="bg-eee">
+                                        <div className="bg-eee">
                                             <div>
-                                                <span class="fa fa-users"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-users"></span>
+                                                <div className="overflow-hidden">
                                                     Sellers worked with:
                                                 </div>
                                             </div>
@@ -146,72 +146,72 @@
                 </div>
 
 
-                <div class="section">
-                    <div class="section-title">
+                <div className="section">
+                    <div className="section-title">
                         My Reviews
                     </div>
                     <div>
-                        <div class="rating-box rating-box-lg mt-5">
+                        <div className="rating-box rating-box-lg mt-1.5">
                             <div>
                                 <div></div>
                                 <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                             </div>
-                            <div class="font-bold text-orange">
+                            <div className="font-bold text-orange">
                                 5.0
                             </div>
                         </div>
                     </div>
-                    <div class="p-20 pb-0 mb-20 b-1-ddd">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="reviews-summary">
+                    <div className="p-5 pb-0 mb-5 b-1-ddd">
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="reviews-summary">
                                     <div>
                                         Seller communication level
-                                        <span class="font-bold">(4.5)</span>
+                                        <span className="font-bold">(4.5)</span>
                                     </div>
                                     <div>
                                         <div style="width: 80%;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="reviews-summary">
+                            <div className="col-sm-6">
+                                <div className="reviews-summary">
                                     <div>
                                         Seller communication level
-                                        <span class="font-bold">(4.5)</span>
+                                        <span className="font-bold">(4.5)</span>
                                     </div>
                                     <div>
                                         <div style="width: 80%;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="reviews-summary">
+                            <div className="col-sm-6">
+                                <div className="reviews-summary">
                                     <div>
                                         Seller communication level
-                                        <span class="font-bold">(4.5)</span>
+                                        <span className="font-bold">(4.5)</span>
                                     </div>
                                     <div>
                                         <div style="width: 80%;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="reviews-summary">
+                            <div className="col-sm-6">
+                                <div className="reviews-summary">
                                     <div>
                                         Seller communication level
-                                        <span class="font-bold">(4.5)</span>
+                                        <span className="font-bold">(4.5)</span>
                                     </div>
                                     <div>
                                         <div style="width: 80%;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="reviews-summary">
+                            <div className="col-sm-6">
+                                <div className="reviews-summary">
                                     <div>
                                         Seller communication level
-                                        <span class="font-bold">(4.5)</span>
+                                        <span className="font-bold">(4.5)</span>
                                     </div>
                                     <div>
                                         <div style="width: 80%;"></div>
@@ -220,133 +220,133 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-title">
+                    <div className="section-title">
                         1809 Reviews
-                        <a href="/account/reviews" class="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</a>
+                        <Link to="/account/reviews" className="btn btn-transparent-black btn-xs pull-right hover-bg-orange">View All</Link>
                     </div>
                     <div>
                         
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
                         
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
                         
-                        <div class="user-msg b-1-eee">
-                            <div class="overflow-hidden">
-                                <div class="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" class="dp-contain" />
+                        <div className="user-msg b-1-eee">
+                            <div className="overflow-hidden">
+                                <div className="user-msg-img pull-left">
+                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
                                 </div>
-                                <div class="pull-right d-none d-sm-block">
-                                    <div class="rating-box mt-5">
+                                <div className="pull-right d-none d-sm-block">
+                                    <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overflow-hidden">
-                                    <div class="font-bold">
+                                <div className="overflow-hidden">
+                                    <div className="font-bold">
                                         Firstname Lastname
                                     </div>
-                                    <div class="text-fade">
+                                    <div className="text-fade">
                                         Published: Jan 12, 2019
                                     </div>
-                                    <div class="rating-box d-block d-sm-none">
+                                    <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
                                             <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
                                         </div>
-                                        <div class="font-bold text-orange">
+                                        <div className="font-bold text-orange">
                                             5.0
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 font-normal text-justify">
+                            <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
                         </div>
 
-                        <a href="/account/reviews" class="d-block text-center pt-10 pb-10 b-1-ddd bg-eee hover-bg-orange">
+                        <Link to="/account/reviews" className="d-block text-center pt-2.5 pb-10 b-1-ddd bg-eee hover-bg-orange">
                             View All Reviews
-                            <span class="fa fa-angle-right"></span>
-                        </a>
+                            <span className="fa fa-angle-right"></span>
+                        </Link>
                         
                     </div>
                 </div>

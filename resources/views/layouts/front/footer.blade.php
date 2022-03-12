@@ -1,13 +1,13 @@
-<footer id="footer" class="">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+<footer id="footer" className="">
+    <div className="footer-top">
+      <div className="container">
+        <div className="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="{{ asset('/img/app/icons/logo-colored-orange.png') }}" class="dp-contain" alt="Posla">
-            <p class="mt-10">
-              Posla.com is a reputable freelance platform aimed at: <br>
-              <ul class="list-style">
+          <div className="col-lg-3 col-md-6 footer-info">
+            <img src="{{ asset('/img/app/icons/logo-colored-orange.png') }}" className="dp-contain" alt="Posla">
+            <p className="mt-2.5">
+              Posla.com is a reputable freelance platform aimed at: <br />
+              <ul className="list-style">
                     <li>
                         <p>
                             ensuring adequate & reliable delivery of their projects (for buyers);
@@ -20,51 +20,51 @@
                     </li>
               </ul>
               
-            <br>
-            <a href="{{url('/about')}}" class="underline">Read More</a>
+            <br />
+            <Link to="{{url('/about')}}" className="underline">Read More</Link>
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg-3 col-md-6 footer-links">
             <h4>Get Started</h4>
             <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="/deals/create/rule">Post Deals</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="/deals">Find Deals</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="/account/projects/create">Post Projects</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="/">Find Projects</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="/search">Search All</a></li>
+              <li><i className="fa fa-angle-right"></i> <Link to="/deals/create/rule">Post Deals</Link></li>
+              <li><i className="fa fa-angle-right"></i> <Link to="/deals">Find Deals</Link></li>
+              <li><i className="fa fa-angle-right"></i> <Link to="/account/projects/create">Post Projects</Link></li>
+              <li><i className="fa fa-angle-right"></i> <Link to="/">Find Projects</Link></li>
+              <li><i className="fa fa-angle-right"></i> <Link to="/search">Search All</Link></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-                <li><i class="fa fa-angle-right"></i> <a href="{{url('/about')}}">About Us</a></li>
-                <li><i class="fa fa-angle-right"></i> <a href="{{url('/support')}}">Support Center</a></li>
-                <li><i class="fa fa-angle-right"></i> <a href="{{url('/terms')}}">Terms of Use</a></li>
-                <li><i class="fa fa-angle-right"></i> <a href="{{url('/terms#payment')}}">Payment Policy</a></li>
-                <li><i class="fa fa-angle-right"></i> <a href="{{url('/terms#refund')}}">Refunds Policy</a></li>
+                <li><i className="fa fa-angle-right"></i> <Link to="{{url('/about')}}">About Us</Link></li>
+                <li><i className="fa fa-angle-right"></i> <Link to="{{url('/support')}}">Support Center</Link></li>
+                <li><i className="fa fa-angle-right"></i> <Link to="{{url('/terms')}}">Terms of Use</Link></li>
+                <li><i className="fa fa-angle-right"></i> <Link to="{{url('/terms#payment')}}">Payment Policy</Link></li>
+                <li><i className="fa fa-angle-right"></i> <Link to="{{url('/terms#refund')}}">Refunds Policy</Link></li>
               </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div className="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
               4, Jefferson street, Lekki Phase 1, Lekki, Lagos.
               <strong>Phone:</strong>
-              <a href="tel:08012345678">0801-234-5678</a>,
-              <a href="tel:08012345678">0801-234-5678</a>
-              <br>
+              <Link to="tel:08012345678">0801-234-5678</Link>,
+              <Link to="tel:08012345678">0801-234-5678</Link>
+              <br />
               <strong>Email:</strong>
-              <a href="mailto:info@posla.com">info@posla.com</a>
+              <Link to="mailto:info@posla.com">info@posla.com</Link>
             </p>
 
-            <div class="social-links">
-              <a target="_blank" href="" title="Visit our YouTube Channel" class="youtube"><i class="fab fa-youtube"></i></a>
-              <a target="_blank" href="" title="" class="facebook"><i class="fab fa-facebook"></i></a>
-              <a target="_blank" href="" title="" class="twitter"><i class="fab fa-twitter"></i></a>
-              <a target="_blank" href="" title="" class="instagram"><i class="fab fa-instagram"></i></a>
-              <a target="_blank" href="" title="" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <div className="social-links">
+              <Link target="_blank" to="" title="Visit our YouTube Channel" className="youtube"><i className="fab fa-youtube"></i></Link>
+              <Link target="_blank" to="" title="" className="facebook"><i className="fab fa-facebook"></i></Link>
+              <Link target="_blank" to="" title="" className="twitter"><i className="fab fa-twitter"></i></Link>
+              <Link target="_blank" to="" title="" className="instagram"><i className="fab fa-instagram"></i></Link>
+              <Link target="_blank" to="" title="" className="linkedin"><i className="fab fa-linkedin"></i></Link>
             </div>
 
           </div>
@@ -73,9 +73,9 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <?=date("Y");?> <a href="{{url('/')}}" class="font-bold hover-underline">Posla.com</a> All Rights Reserved
+    <div className="container">
+      <div className="copyright">
+        &copy; Copyright <?=date("Y");?> <Link to="{{url('/')}}" className="font-bold hover-underline">Posla.com</Link> All Rights Reserved
       </div>
     </div>
   </footer>

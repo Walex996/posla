@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         
     </style>
@@ -37,64 +37,64 @@
 
 @section('content')
     
-    <div class="container">
+    <div className="container">
 
-        <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="/support">Support</a></li>
-                <li class="breadcrumb-item"><a href="/support/tickets">Tickets</a></li>
-                <li class="breadcrumb-item active" aria-current="page">#123456789012</li>
+        <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+            <ol className="breadcrumb">
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                <li className="breadcrumb-item"><Link to="/support">Support</Link></li>
+                <li className="breadcrumb-item"><Link to="/support/tickets">Tickets</Link></li>
+                <li className="breadcrumb-item active" aria-current="page">#123456789012</li>
             </ol>
         </div>
 
-        <div class="section">
-            <div class="section-title section-title-sm">
+        <div className="section">
+            <div className="section-title section-title-sm">
                 #123456789012 - Ticket
-                <form action="" class="pull-right d-block d-lg-none">
-                    <button type="submit" class="btn btn-danger btn-sm">
-                        <span class="fa fa-times-circle"></span>
+                <form action="" className="pull-right d-block d-lg-none">
+                    <button type="submit" className="btn btn-danger btn-sm">
+                        <span className="fa fa-times-circle"></span>
                         Close Ticket
                     </button>
                 </form>
             </div>
             <div>
                 
-                <div class="row">
-                    <div class="col-md-5 col-lg-4">
+                <div className="row">
+                    <div className="col-md-5 col-lg-4">
                         
-                        <div class="d-block d-md-none">
-                            <div class="b-1-ddd bg-eee p-10">
-                                <button class="btn btn-transparent-black btn-xs" data-toggle="collapse" data-target="#ticket-details">
+                        <div className="d-block d-md-none">
+                            <div className="b-1-ddd bg-eee p-2.5">
+                                <button className="btn btn-transparent-black btn-xs" data-toggle="collapse" data-target="#ticket-details">
                                     View Ticket Details
-                                    <span class="fa fa-angle-right"></span>
+                                    <span className="fa fa-angle-right"></span>
                                 </button>
                             </div>
 
-                            <div id="ticket-details" class="collapse bg-fff">
-                                <div class="b-1-ddd mt-20">
-                                    <div class="bg-eee p-10">
+                            <div id="ticket-details" className="collapse bg-fff">
+                                <div className="b-1-ddd mt-5">
+                                    <div className="bg-eee p-2.5">
                                         Issue Raised
                                     </div>
-                                    <div class="p-10">
-                                        <div class="font-bold">
+                                    <div className="p-2.5">
+                                        <div className="font-bold">
                                             Sample of interview follow-up mails
                                         </div>
-                                        <div class="mt-10 text-fade">
+                                        <div className="mt-2.5 text-fade">
                                             Et repellendus At pariatur Voluptate eaque veniam voluptatem omnis et velit eu Et repellendus At pariatur Voluptate eaque veniam voluptatem omnis et velit eu Et repellendus At pariatur Volupt
                                         </div>
                                     </div>
                                 </div>
-                                <div class="b-1-ddd mt-20">
-                                    <div class="bg-eee p-10">
+                                <div className="b-1-ddd mt-5">
+                                    <div className="bg-eee p-2.5">
                                         Ticket Information
                                     </div>
-                                    <div class="p-10">
-                                        <div class="text-left-right">
+                                    <div className="p-2.5">
+                                        <div className="text-left-right">
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-hashtag"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-hashtag"></span>
+                                                    <div className="overflow-hidden">
                                                         Ticket ID
                                                     </div>
                                                 </div>
@@ -104,21 +104,21 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-asterisk"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-asterisk"></span>
+                                                    <div className="overflow-hidden">
                                                         Status
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <label class="label label-success label-sm">
+                                                    <label className="label label-success label-sm">
                                                         Completed
                                                     </label>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-list"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-list"></span>
+                                                    <div className="overflow-hidden">
                                                         Category
                                                     </div>
                                                 </div>
@@ -128,8 +128,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-calendar"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-calendar"></span>
+                                                    <div className="overflow-hidden">
                                                         Date Created
                                                     </div>
                                                 </div>
@@ -139,8 +139,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-calendar"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-calendar"></span>
+                                                    <div className="overflow-hidden">
                                                         Date Last Answered
                                                     </div>
                                                 </div>
@@ -150,8 +150,8 @@
                                             </div>
                                             <div>
                                                 <div>
-                                                    <span class="fa fa-user-circle"></span>
-                                                    <div class="overflow-hidden">
+                                                    <span className="fa fa-user-circle"></span>
+                                                    <div className="overflow-hidden">
                                                         Last Message
                                                     </div>
                                                 </div>
@@ -165,30 +165,30 @@
                             </div>
                         </div>
 
-                        <div class="d-none d-md-block">
-                            <div class="b-1-ddd">
-                                <div class="bg-eee p-10">
+                        <div className="d-none d-md-block">
+                            <div className="b-1-ddd">
+                                <div className="bg-eee p-2.5">
                                     Issue Raised
                                 </div>
-                                <div class="p-10">
-                                    <div class="font-bold">
+                                <div className="p-2.5">
+                                    <div className="font-bold">
                                         Sample of interview follow-up mails
                                     </div>
-                                    <div class="mt-10 text-fade">
+                                    <div className="mt-2.5 text-fade">
                                         Et repellendus At pariatur Voluptate eaque veniam voluptatem omnis et velit eu Et repellendus At pariatur Voluptate eaque veniam voluptatem omnis et velit eu Et repellendus At pariatur Volupt
                                     </div>
                                 </div>
                             </div>
-                            <div class="b-1-ddd mt-30">
-                                <div class="bg-eee p-10">
+                            <div className="b-1-ddd mt-30">
+                                <div className="bg-eee p-2.5">
                                     Ticket Information
                                 </div>
-                                <div class="p-10">
-                                    <div class="text-left-right">
+                                <div className="p-2.5">
+                                    <div className="text-left-right">
                                         <div>
                                             <div>
-                                                <span class="fa fa-hashtag"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-hashtag"></span>
+                                                <div className="overflow-hidden">
                                                     Ticket ID
                                                 </div>
                                             </div>
@@ -198,21 +198,21 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-asterisk"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-asterisk"></span>
+                                                <div className="overflow-hidden">
                                                     Status
                                                 </div>
                                             </div>
                                             <div>
-                                                <label class="label label-success label-sm">
+                                                <label className="label label-success label-sm">
                                                     Completed
                                                 </label>
                                             </div>
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-list"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-list"></span>
+                                                <div className="overflow-hidden">
                                                     Category
                                                 </div>
                                             </div>
@@ -222,8 +222,8 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-calendar"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-calendar"></span>
+                                                <div className="overflow-hidden">
                                                     Date Created
                                                 </div>
                                             </div>
@@ -233,8 +233,8 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-calendar"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-calendar"></span>
+                                                <div className="overflow-hidden">
                                                     Date Last Answered
                                                 </div>
                                             </div>
@@ -244,8 +244,8 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <span class="fa fa-user-circle"></span>
-                                                <div class="overflow-hidden">
+                                                <span className="fa fa-user-circle"></span>
+                                                <div className="overflow-hidden">
                                                     Last Message
                                                 </div>
                                             </div>
@@ -260,13 +260,13 @@
 
 
                     </div>
-                    <div class="col-md-7 col-lg-8">
+                    <div className="col-md-7 col-lg-8">
 
-                        <div class="d-block d-md-none mt-20 mb-10 font-15 font-bold text-center">
+                        <div className="d-block d-md-none mt-5 mb-10 font-15 font-bold text-center">
                             Conversation
                         </div>
                         
-                        <div class="b-1-ddd">
+                        <div className="b-1-ddd">
                             @include('front.common.ticket')
                         </div>
 

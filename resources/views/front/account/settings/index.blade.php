@@ -17,7 +17,7 @@
 
 
 @section('css')
-    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+    <link to="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <style>
         .account-sidebar-settings{
             color: #FF940A !important;
@@ -29,83 +29,83 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-3">
+    <div className="container">
+        <div className="row">
+            <div className="d-none d-md-block col-md-4 col-lg-3">
 
                 @include('front.common.account-sidebar')
 
             </div>
 
-            <div class="col-12 col-md-8 col-lg-9">
+            <div className="col-12 col-md-8 col-lg-9">
 
-                <div aria-label="breadcrumb" class="details-page-breadcrumb mb-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/account">Account</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                <div aria-label="breadcrumb" className="details-page-breadcrumb mb-10">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Settings</li>
                     </ol>
                 </div>
 
-                <div class="section">
-                    <div class="section-title section-title-sm">
+                <div className="section">
+                    <div className="section-title section-title-sm">
                         Account Settings
                     </div>
                     <div>
 
-                        <div class="row">
-                            <div class="col-sm-6 col-md-12 col-lg-6">
+                        <div className="row">
+                            <div className="col-sm-6 col-md-12 col-lg-6">
 
                                 
-                                <div class="b-1-ddd mt-10">
-                                    <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="b-1-ddd mt-2.5">
+                                    <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                         Edit Profile
                                     </div>
-                                    <div class="p-20">
+                                    <div className="p-5">
                                         Update your account information such as profile picture, name, description, and others.
-                                        <div class="mt-10">
-                                            <a href="/account/profile/edit" class="btn btn-blue btn-sm icon-right">
+                                        <div className="mt-2.5">
+                                            <Link to="/account/profile/edit" className="btn btn-blue btn-sm icon-right">
                                                 Continue
-                                                <span class="fa fa-angle-right"></span>
-                                            </a>
+                                                <span className="fa fa-angle-right"></span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <div class="b-1-ddd mt-30">
-                                    <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="b-1-ddd mt-30">
+                                    <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                         Change Password
                                     </div>
-                                    <div class="p-20">
+                                    <div className="p-5">
                                         Change your account login password
                                         with a few clicks
-                                        <div class="mt-10">
-                                            <a href="/account/settings/change-password" class="btn btn-blue btn-sm icon-right">
+                                        <div className="mt-2.5">
+                                            <Link to="/account/settings/change-password" className="btn btn-blue btn-sm icon-right">
                                                 Continue
-                                                <span class="fa fa-angle-right"></span>
-                                            </a>
+                                                <span className="fa fa-angle-right"></span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="col-sm-6 col-md-12 col-lg-6">
+                            <div className="col-sm-6 col-md-12 col-lg-6">
                                 
-                                <div class="mt-30 d-block d-sm-none d-md-block d-lg-none"></div>
+                                <div className="mt-30 d-block d-sm-none d-md-block d-lg-none"></div>
 
-                                <div class="b-1-ddd mt-10">
-                                    <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="b-1-ddd mt-2.5">
+                                    <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                         Withdrawal Information
                                     </div>
-                                    <div class="p-20">
+                                    <div className="p-5">
                                         View & Manage your withdrawal information.
                                         This withdrawal information will be used as the payment method & recipient information for all your withdrawals.
-                                        <div class="mt-10">
-                                            <a href="/account/settings/withdrawal-settings" class="btn btn-blue btn-sm icon-right">
+                                        <div className="mt-2.5">
+                                            <Link to="/account/settings/withdrawal-settings" className="btn btn-blue btn-sm icon-right">
                                                 Continue
-                                                <span class="fa fa-angle-right"></span>
-                                            </a>
+                                                <span className="fa fa-angle-right"></span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -113,22 +113,22 @@
                             </div>
                         </div>
 
-                        <hr>
+                        <hr />
 
-                        <div class="row">
-                            <div class="col-sm-6 col-md-12 col-lg-6">
+                        <div className="row">
+                            <div className="col-sm-6 col-md-12 col-lg-6">
 
-                                <div class="b-1-ddd">
-                                    <div class="bb-1-ddd font-bold pr-20 pl-20 pt-5 pb-5 bg-eee">
+                                <div className="b-1-ddd">
+                                    <div className="bb-1-ddd font-bold pr-5 pl-5 pt-1.5 pb-1.5 bg-eee">
                                         Vacation Mode
                                     </div>
-                                    <div class="p-20">
+                                    <div className="p-5">
                                         Want to put your account on hold? It’s easy. This will temporarily hide your deals, projects, and freelancer account from the entire public; until you reactivate your account, with just a click.
-                                        <div class="mt-10">
-                                            <a href="/account/settings/vacation-mode" class="btn btn-danger btn-sm icon-right">
+                                        <div className="mt-2.5">
+                                            <Link to="/account/settings/vacation-mode" className="btn btn-danger btn-sm icon-right">
                                                 Continue
-                                                <span class="fa fa-angle-right"></span>
-                                            </a>
+                                                <span className="fa fa-angle-right"></span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

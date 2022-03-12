@@ -13,29 +13,29 @@
 
 @section('content')
 @include('layouts.common.errors-messages')
-    <div class="box">
-        <div class="box-header">
-            <div class="box-title">
+    <div className="box">
+        <div className="box-header">
+            <div className="box-title">
                 Update Category - {{$category->name}}
             </div>
         </div>
-        <div class="box-body">
-            <form action="{{route('admin.categories.update', $category->id)}}" method="post" enctype="multipart/form-data" class="mx-auto mw-600">
+        <div className="box-body">
+            <form action="{{route('admin.categories.update', $category->id)}}" method="post" enctype="multipart/form-data" className="mx-auto mw-600">
                 @csrf
                 @method('put')
                 <input type="hidden" name="edit" value="1">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Name:</label>
-                            <input type="text" class="form-control" name="name" value="{{$category->name}}" />
+                            <input type="text" className="form-control" name="name" value="{{$category->name}}" />
                         </div>
                     </div>
                     @if(!$parents->isEmpty())
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <div className="col-md-6">
+                            <div className="form-group">
                                 <label>Parent Category:</label>
-                                <select name="parent_id" class="form-control" >
+                                <select name="parent_id" className="form-control" >
                                     <option  selected value="">-- None --</option>
                                     @foreach ($parents as $parent)
                                         <option  value="{{$parent->id}}" @if (isset($category->parent) && $category->parent->id == $parent->id) selected @endif>{{$parent->name}}</option>
@@ -47,17 +47,17 @@
                     @endif
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Position:</label>
-                            <input type="number" class="form-control" name="position" min="1" max="100" value="{{$category->position}}" />
+                            <input type="number" className="form-control" name="position" min="1" max="100" value="{{$category->position}}" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Status:</label>
-                            <select name="status" class="form-control" required>
+                            <select name="status" className="form-control" required>
                                 <option value="1"  @if ($category->status == 1) selected @endif>Active</option>
                                 <option value="0"  @if ($category->status == 0) selected @endif>Disable</option>
                             </select>
@@ -66,19 +66,19 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="form-group">
                             <label>Description:</label>
-                            <textarea class="form-control" name="description" style="height: 100px;">{{$category->description}}</textarea>
+                            <textarea className="form-control" name="description" style="height: 100px;">{{$category->description}}</textarea>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-footer">
-                    <input type="submit" name="" value="Update" class="btn btn-primary" />
-                    <a href="{{route('admin.categories.index')}}" class="btn btn-transparent-black">Cancel</a>
+                <div className="form-footer">
+                    <input type="submit" name="" value="Update" className="btn btn-primary" />
+                    <Link to="{{route('admin.categories.index')}}" className="btn btn-transparent-black">Cancel</Link>
                 </div>
 
             </form>

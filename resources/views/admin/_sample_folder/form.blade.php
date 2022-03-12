@@ -13,43 +13,43 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header">
-            <div class="box-title">
+    <div className="box">
+        <div className="box-header">
+            <div className="box-title">
                 Form Page
             </div>
-            <div class="box-tools pull-right">
-                <a href="" class="btn btn-box-tool">
-                    <i class="fa fa-plus"></i>
+            <div className="box-tools pull-right">
+                <Link to="" className="btn btn-box-tool">
+                    <i className="fa fa-plus"></i>
                     Link
-                </a>
+                </Link>
             </div>
         </div>
-        <div class="box-body">
+        <div className="box-body">
             
 
-            <form action="" method="post" enctype="multipart/form-data" class="mx-auto mw-600">
+            <form action="" method="post" enctype="multipart/form-data" className="mx-auto mw-600">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <input type="text" class="form-control" name="" value="" />
+                            <input type="text" className="form-control" name="" value="" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <input type="text" class="form-control" name="" value="" />
+                            <input type="text" className="form-control" name="" value="" />
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <select name="" class="form-control" required>
+                            <select name="" className="form-control" required>
                                 <option value="0">-- Select --</option>
                                 <option value="">Option 1</option>
                                 <option value="">Option 2</option>
@@ -57,10 +57,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <select name="" class="form-control" required>
+                            <select name="" className="form-control" required>
                                 <option value="0">-- Select --</option>
                                 <option value="">Option 1</option>
                                 <option value="">Option 2</option>
@@ -71,27 +71,27 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <textarea class="form-control" name="" style="height: 100px;"></textarea>
+                            <textarea className="form-control" name="" style="height: 100px;"></textarea>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="checkbox-inline">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <label className="checkbox-inline">
                                 <input type="checkbox" name="">
                                 Checkbox Label
                             </label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="radio-inline">
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <label className="radio-inline">
                                 <input type="radio" name="">
                                 Radio Label
                             </label>
@@ -99,26 +99,26 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <input type="text" class="form-control" name="" value="" />
+                            <input type="text" className="form-control" name="" value="" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
+                    <div className="col-md-6">
+                        <div className="form-group">
                             <label>Label:</label>
-                            <input type="text" class="form-control" name="" value="" />
+                            <input type="text" className="form-control" name="" value="" />
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-footer">
-                    <input type="submit" name="" value="Submit 1" class="btn btn-primary" />
-                    <input type="submit" name="" value="Submit 2" class="btn btn-orange" />
-                    <a href="" class="btn btn-transparent-black">Cancel</a>
+                <div className="form-footer">
+                    <input type="submit" name="" value="Submit 1" className="btn btn-primary" />
+                    <input type="submit" name="" value="Submit 2" className="btn btn-orange" />
+                    <Link to="" className="btn btn-transparent-black">Cancel</Link>
                 </div>
 
             </form>

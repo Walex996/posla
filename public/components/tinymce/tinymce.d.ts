@@ -78,7 +78,7 @@ interface EventDispatcherSettings {
 }
 interface EventDispatcherConstructor<T extends NativeEventMap> {
     readonly prototype: EventDispatcher<T>;
-    new (settings?: EventDispatcherSettings): EventDispatcher<T>;
+    new(settings?: EventDispatcherSettings): EventDispatcher<T>;
     isNative(name: string): boolean;
 }
 declare class EventDispatcher<T> {
@@ -108,7 +108,7 @@ interface UndoLevel {
 interface UndoManager {
     data: UndoLevel[];
     typing: boolean;
-    add: (level?: UndoLevel, event?: EditorEvent<any>) => UndoLevel;
+    add: (level?: UndoLevel, event?: EditorEvent<Linkny>) => UndoLevel;
     beforeChange: () => void;
     undo: () => UndoLevel;
     redo: () => UndoLevel;
@@ -159,7 +159,7 @@ declare type EventUtilsEvent<T> = T & {
 };
 interface EventUtilsConstructor {
     readonly prototype: EventUtils;
-    new (): EventUtils;
+    new(): EventUtils;
     Event: EventUtils;
 }
 declare class EventUtils {
@@ -394,7 +394,7 @@ declare type Attributes = Array<{
 };
 interface AstNodeConstructor {
     readonly prototype: AstNode;
-    new (name: string, type: number): AstNode;
+    new(name: string, type: number): AstNode;
     create(name: string, attrs?: Record<string, string>): AstNode;
 }
 declare class AstNode {
@@ -896,7 +896,7 @@ interface AutocompleterSpec {
     minChars?: number;
     columns?: ColumnTypes;
     matches?: (rng: Range, text: string, pattern: string) => boolean;
-    fetch: (pattern: string, maxResults: number, fetchOptions: Record<string, any>) => Promise<AutocompleterContents[]>;
+    fetch: (pattern: string, maxResults: number, fetchOptions: Record<string, any>) => Promise<LinkutocompleterContents[]>;
     onAction: (autocompleterApi: AutocompleterInstanceApi, rng: any, value: string, meta: Record<string, any>) => void;
     maxResults?: number;
     highlightOn?: string[];
@@ -1571,7 +1571,7 @@ declare type RunArguments<T extends Node = Node> = string | T | Array<string | T
 declare type BoundEvent = [
     Target,
     string,
-    EventUtilsCallback<any>,
+    EventUtilsCallback<Linkny>,
     any
 ];
 declare type Callback<K extends string> = EventUtilsCallback<MappedEvent<HTMLElementEventMap, K>>;
@@ -1695,7 +1695,7 @@ interface ControlSelection {
     isResizable(elm: Element): boolean;
     showResizeRect(elm: Element): void;
     hideResizeRect(): void;
-    updateResizeRect(evt: EditorEvent<any>): void;
+    updateResizeRect(evt: EditorEvent<Linkny>): void;
     destroy(): void;
 }
 interface ParserArgs {
@@ -1846,7 +1846,7 @@ interface Commands {
 }
 interface EditorCommandsConstructor {
     readonly prototype: EditorCommands;
-    new (editor: Editor): EditorCommands;
+    new(editor: Editor): EditorCommands;
 }
 declare class EditorCommands {
     private readonly editor;
@@ -1887,7 +1887,7 @@ interface WindowManagerImpl {
     openUrl: (config: UrlDialogSpec, closeWindow: (dialog: UrlDialogInstanceApi) => void) => UrlDialogInstanceApi;
     alert: (message: string, callback: () => void) => void;
     confirm: (message: string, callback: (state: boolean) => void) => void;
-    close: (dialog: InstanceApi<any>) => void;
+    close: (dialog: InstanceApi<Linkny>) => void;
 }
 declare type ExecCommandEvent = {
     command: string;
@@ -2018,8 +2018,8 @@ interface EditorEventMap extends Omit<NativeEventMap, 'blur' | 'focus'> {
     'Undo': UndoRedoEvent;
     'BeforeAddUndo': AddUndoEvent;
     'AddUndo': AddUndoEvent;
-    'CloseWindow': WindowEvent<any>;
-    'OpenWindow': WindowEvent<any>;
+    'CloseWindow': WindowEvent<Linkny>;
+    'OpenWindow': WindowEvent<Linkny>;
     'ProgressState': ProgressStateEvent;
     'PlaceholderToggle': PlaceholderToggleEvent;
     'tap': TouchEvent;
@@ -2090,7 +2090,7 @@ interface URISettings {
 }
 interface URIConstructor {
     readonly prototype: URI;
-    new (url: string, settings?: URISettings): URI;
+    new(url: string, settings?: URISettings): URI;
     getDocumentBaseUrl(loc: {
         protocol: string;
         host?: string;
@@ -2265,7 +2265,7 @@ interface Plugin {
 declare type PluginManager = AddOnManager<Plugin>;
 interface ShortcutsConstructor {
     readonly prototype: Shortcuts;
-    new (editor: Editor): Shortcuts;
+    new(editor: Editor): Shortcuts;
 }
 declare type CommandFunc = string | [
     string,
@@ -2304,7 +2304,7 @@ declare type Theme = {
 declare type ThemeManager = AddOnManager<Theme>;
 interface EditorConstructor {
     readonly prototype: Editor;
-    new (id: string, settings: RawEditorSettings, editorManager: EditorManager): Editor;
+    new(id: string, settings: RawEditorSettings, editorManager: EditorManager): Editor;
 }
 declare class Editor implements EditorObservable {
     documentBaseUrl: string;
@@ -2472,8 +2472,8 @@ declare namespace AddOnManager {
     let language: string;
     let languageLoad: boolean;
     let baseURL: string;
-    const PluginManager: AddOnManager<any>;
-    const ThemeManager: AddOnManager<any>;
+    const PluginManager: AddOnManager<Linkny>;
+    const ThemeManager: AddOnManager<Linkny>;
 }
 interface RangeUtils {
     walk(rng: Range, callback: (nodes: Node[]) => void): void;
@@ -2491,7 +2491,7 @@ interface ScriptLoaderSettings {
 }
 interface ScriptLoaderConstructor {
     readonly prototype: ScriptLoader;
-    new (): ScriptLoader;
+    new(): ScriptLoader;
     ScriptLoader: ScriptLoader;
 }
 declare class ScriptLoader {
@@ -2524,7 +2524,7 @@ interface TextSeeker {
 }
 interface DomTreeWalkerConstructor {
     readonly prototype: DomTreeWalker;
-    new (startNode: Node, rootNode: Node): DomTreeWalker;
+    new(startNode: Node, rootNode: Node): DomTreeWalker;
 }
 declare class DomTreeWalker {
     private readonly rootNode;
@@ -2651,8 +2651,8 @@ interface Resource {
     load<T = any>(id: string, url: string): Promise<T>;
     add(id: string, data: any): void;
 }
-declare type WithSubItems<T, K extends keyof T> = T[K] extends Array<any> ? (T & T[K][number]) : T;
-interface Props<A extends any[] = any[]> {
+declare type WithSubItems<T, K extends keyof T> = T[K] extends Array<Linkny> ? (T & T[K][number]) : T;
+interface Props<Link extends any[] = any[]> {
     Mixins?: Array<Record<string, any>>;
     Methods?: string;
     Properties?: string;
@@ -2660,14 +2660,14 @@ interface Props<A extends any[] = any[]> {
     Defaults?: Record<string, any>;
     init?: (...args: A) => void;
 }
-declare type ExtendedClass<T extends Props<A>, A extends any[]> = WithSubItems<T, 'Mixins'>;
-interface ExtendedClassConstructor<T extends Props<A>, A extends any[] = any[]> extends Class {
+declare type ExtendedClass<T extends Props<Link>, A extends any[]> = WithSubItems<T, 'Mixins'>;
+interface ExtendedClassConstructor<T extends Props<Link>, A extends any[] = any[]> extends Class {
     readonly prototype: ExtendedClass<T, A>;
-    new (...args: A): ExtendedClass<T, A>;
+    new(...args: A): ExtendedClass<T, A>;
     [key: string]: T['Statics'];
 }
 interface Class {
-    extend<T extends Props<A>, A extends any[] = any[]>(props: T): ExtendedClassConstructor<T, A>;
+    extend<T extends Props<Link>, A extends any[] = any[]>(props: T): ExtendedClassConstructor<T, A>;
 }
 interface RGB {
     r: number;
@@ -2735,7 +2735,7 @@ interface JSONRequestArgs extends JSONRequestSettings {
 }
 interface JSONRequestConstructor {
     readonly prototype: JSONRequest;
-    new (settings?: JSONRequestSettings): JSONRequest;
+    new(settings?: JSONRequestSettings): JSONRequest;
     sendRPC(o: JSONRequestArgs): void;
 }
 declare class JSONRequest {
@@ -2796,12 +2796,12 @@ interface XHR extends Observable<XHREventMap> {
     send(settings: XHRSettings): void;
 }
 interface DOMUtilsNamespace {
-    new (doc: Document, settings: Partial<DOMUtilsSettings>): DOMUtils;
+    new(doc: Document, settings: Partial<DOMUtilsSettings>): DOMUtils;
     DOM: DOMUtils;
     nodeIndex: (node: Node, normalized?: boolean) => number;
 }
 interface RangeUtilsNamespace {
-    new (dom: DOMUtils): RangeUtils;
+    new(dom: DOMUtils): RangeUtils;
     compareRanges: (rng1: RangeLikeObject, rng2: RangeLikeObject) => boolean;
     getCaretRangeFromPoint: (clientX: number, clientY: number, doc: Document) => Range;
     getSelectedNode: (range: Range) => Node;
@@ -2820,7 +2820,7 @@ interface BookmarkManagerNamespace {
     isBookmarkNode: (node: Node) => boolean;
 }
 interface SaxParserNamespace {
-    new (settings?: SaxParserSettings, schema?: Schema): SaxParser;
+    new(settings?: SaxParserSettings, schema?: Schema): SaxParser;
     findEndTag: (schema: Schema, html: string, startIndex: number) => number;
 }
 interface TinyMCE extends EditorManager {
@@ -2834,8 +2834,8 @@ interface TinyMCE extends EditorManager {
         VK: VK;
         URI: URIConstructor;
         Class: Class;
-        EventDispatcher: EventDispatcherConstructor<any>;
-        Observable: Observable<any>;
+        EventDispatcher: EventDispatcherConstructor<Linkny>;
+        Observable: Observable<Linkny>;
         I18n: I18n;
         XHR: XHR;
         JSON: JSONUtils;

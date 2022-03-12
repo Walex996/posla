@@ -17,36 +17,36 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="mw-600 pt-20 pb-50 mx-auto bg-fff">
+    <div className="container">
+        <div className="mw-600 pt-5 pb-1.50 mx-auto bg-fff">
             <form action="{{route('verification.resend')}}" method="POST">
                 @csrf
-                <div class="page-alert">
+                <div className="page-alert">
                     <div>
-                        <img src="{{ asset('/img/app/icons/envelope.jpg') }}" class="dp-contain" />
+                        <img src="{{ asset('/img/app/icons/envelope.jpg') }}" className="dp-contain" />
                     </div>
-                    <div class="pt-15">
+                    <div className="pt-15">
                         Password Reset Link Sent
                     </div>
                     <div>
                         A password reset link has been sent to your submitted email address.
                         Please click the link in the email to reset your password.
-                        <br>
+                        <br />
                         Didn't receive the email? Please click the resend button below.
                     </div>
-                    <div class="mt-10">
-                        <div class="mw-300 mx-auto text-center">
+                    <div className="mt-2.5">
+                        <div className="mw-300 mx-auto text-center">
                             <div>
-                                <a href="/" class="btn btn-blue btn-block m-0">
+                                <Link to="/" className="btn btn-blue btn-block m-0">
                                     Goto Homepage
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <div class="mw-300 mx-auto text-center">
+                    <div className="mt-1.5">
+                        <div className="mw-300 mx-auto text-center">
                             <div>
-                                <button type="submit" class="btn btn-orange btn-block m-0">
+                                <button type="submit" className="btn btn-orange btn-block m-0">
                                     Resend Link
                                 </button>
                             </div>

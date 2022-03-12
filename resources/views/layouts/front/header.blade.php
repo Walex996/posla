@@ -1,131 +1,131 @@
 {{-- header --}}
-<div class="navbar navbar-expand-md navbar-dark shadow-sm">
-    <div class="container">
+<div className="navbar navbar-expand-md navbar-dark shadow-sm">
+    <div className="container">
 
-        <a class="navbar-brand" href="/">
-            <img src="{{ asset('/img/app/icons/logo-full-fff.png') }}" class="dp-contain" alt="Posla">
-        </a>
+        <Link className="navbar-brand" to="/">
+            <img src="{{ asset('/img/app/icons/logo-full-fff.png') }}" className="dp-contain" alt="Posla">
+        </Link>
 
         <div>
-            {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> --}}
-                {{-- <span class="fa fa-navicon icon-25"></span> --}}
+            {{-- <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> --}}
+                {{-- <span className="fa fa-navicon icon-25"></span> --}}
             {{-- </button> --}}
-            <a href="/account" class="navbar-toggler mr-5">
-                <span class="fa fa-user-circle icon-25"></span>
-            </a>
-            <a class="navbar-toggler header_link_sidebar">
-                <span class="fa fa-bars icon-25"></span>
-            </a>
+            <Link to="/account" className="navbar-toggler mr-1.5">
+                <span className="fa fa-user-circle icon-25"></span>
+            </Link>
+            <Link className="navbar-toggler header_link_sidebar">
+                <span className="fa fa-bars icon-25"></span>
+            </Link>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
             
-            <div class="navbar-nav mr-auto ml-auto layout-search">
-                <form action="/search" method="get" class="input-group">
-                    <input type="search" name="q" class="form-control" placeholder="Search projects, deals, and freelancers..." />
-                    <div class="input-group-btn">
-                        <button type="submit" class="btn btn-default btn-md">
-                            <span class="fa fa-search"></span>
+            <div className="navbar-nav mr-auto ml-auto layout-search">
+                <form action="/search" method="get" className="input-group">
+                    <input type="search" name="q" className="form-control" placeholder="Search projects, deals, and freelancers..." />
+                    <div className="input-group-btn">
+                        <button type="submit" className="btn btn-default btn-md">
+                            <span className="fa fa-search"></span>
                         </button>
                     </div>
                 </form>
             </div>
 
 
-            <ul class="navbar-nav navbar-nav-links-nav ml-auto d-none d-lg-flex">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/account/deals/create">Post Deals</a>
+            <ul className="navbar-nav navbar-nav-links-nav ml-auto d-none d-lg-flex">
+                <li className="nav-item">
+                    <Link className="nav-link active" to="/account/deals/create">Post Deals</Link>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/deals">Find Deals</a>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/deals">Find Deals</Link>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Find Projects</a>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/">Find Projects</Link>
                 </li>
             </ul>
 
-            <ul class="navbar-nav navbar-nav-links-menu ml-auto d-none d-md-flex d-lg-none">
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle no-after nowrap floated-content" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        <span class="fa fa-caret-down icon-16 pull-right ml-5"></span>
+            <ul className="navbar-nav navbar-nav-links-menu ml-auto d-none d-md-flex d-lg-none">
+                <li className="nav-item dropdown">
+                    <Link id="navbarDropdown" className="nav-link dropdown-toggle no-after nowrap floated-content" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <span className="fa fa-caret-down icon-16 pull-right ml-1.5"></span>
                         Menu
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/account/deals/create">
+                    </Link>
+                    <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <Link className="dropdown-item" to="/account/deals/create">
                             Post Deals
-                        </a>
-                        <a class="dropdown-item" href="/deals">
+                        </Link>
+                        <Link className="dropdown-item" to="/deals">
                             Find Deals
-                        </a>
-                        <a class="dropdown-item" href="/">
+                        </Link>
+                        <Link className="dropdown-item" to="/">
                             Find Projects
-                        </a>
+                        </Link>
                     </div>
                 </li>    
             </ul>
 
-            <ul class="navbar-nav navbar-nav-links-auth ml-auto">
+            <ul className="navbar-nav navbar-nav-links-auth ml-auto">
                       
                     <!-- 
-                    <li class="nav-item">
-                        <a class="nav-link btn-login cursor-pointer">
+                    <li className="nav-item">
+                        <Link className="nav-link btn-login cursor-pointer">
                             Login
-                        </a>
+                        </Link>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-register cursor-pointer">
+                    <li className="nav-item">
+                        <Link className="nav-link btn-register cursor-pointer">
                             Register
-                        </a>
+                        </Link>
                     </li>
                     -->
 
                
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle no-after nowrap floated-content" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            <span class="fa fa-caret-down icon-16 pull-right ml-5"></span>
+                    <li className="nav-item dropdown">
+                        <Link id="navbarDropdown" className="nav-link dropdown-toggle no-after nowrap floated-content" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <span className="fa fa-caret-down icon-16 pull-right ml-1.5"></span>
                             Username
-                        </a>
+                        </Link>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/account/dashboard">
+                        <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <Link className="dropdown-item" to="/account/dashboard">
                                 Dashboard
-                            </a>
-                            <a class="dropdown-item" href="/account/profile">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/profile">
                                 Profile
-                            </a>
-                            <a class="dropdown-item" href="/account/orders">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/orders">
                                 My Orders
-                            </a>
-                            <a class="dropdown-item" href="/account/deals">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/deals">
                                 My Deals
-                            </a>
-                            <a class="dropdown-item" href="/account/projects">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/projects">
                                 My Projects
-                            </a>
-                            <a class="dropdown-item" href="/account/project-bids">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/project-bids">
                                 My Project Bids
-                            </a>
-                            <a class="dropdown-item" href="/account/favourites">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/favourites">
                                 Favourites
-                            </a>
-                            <a class="dropdown-item" href="/messages">
+                            </Link>
+                            <Link className="dropdown-item" to="/messages">
                                 Messages
-                            </a>
-                            <a class="dropdown-item" href="/account/earnings-withdrawals/">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/earnings-withdrawals/">
                                 Earnings & Withdrawals
-                            </a>
-                            <a class="dropdown-item" href="/account/wallet">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/wallet">
                                 My Wallet
-                            </a>
-                            <a class="dropdown-item" href="/account/reviews">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/reviews">
                                 My Reviews
-                            </a>
-                            <a class="dropdown-item" href="/account/settings">
+                            </Link>
+                            <Link className="dropdown-item" to="/account/settings">
                                 Account Settings
-                            </a>
-                            <a class="dropdown-item" href="">
+                            </Link>
+                            <Link className="dropdown-item" to="">
                                 Logout
-                            </a>
+                            </Link>
                         </div>
                     </li>
                     
@@ -145,321 +145,321 @@
 <div id="sidebar" style="display: none; left: -100%;">
 {{-- <div id="sidebar" style="display: block; left: 0;"> --}}
     <div>
-        <a href="/account" id="sidebar_login">
+        <Link to="/account" id="sidebar_login">
             <div></div>
             <div>
                 <div>
-                    <img src="{{ asset('/img/app/icons/logo.png') }}" class="dp-contain" alt="Posla">
+                    <img src="{{ asset('/img/app/icons/logo.png') }}" className="dp-contain" alt="Posla">
                 </div>
                 <div style="margin-top: 10px;">
                     @guest
-                        <div class="text-fff font-20 font-bold mt-2 mb-2" style="line-height: 20px;">
+                        <div className="text-fff font-20 font-bold mt-2 mb-2" style="line-height: 20px;">
                             POSLA
                         </div>
-                        <div class="text-fade">
+                        <div className="text-fade">
                             Work Smart; Earn Smart
                         </div>
                     @else
-                        <span class="fa fa-user-circle icon-fff"></span>
+                        <span className="fa fa-user-circle icon-fff"></span>
                         Walex996
-                        <br>
-                        <div class="text-fade">
+                        <br />
+                        <div className="text-fade">
                             {{-- Buyer --}}
                             Seller
                         </div>
                     @endguest
                 </div>
             </div>
-        </a>
+        </Link>
     </div>
     <div id="sidebar_links">
         <ul>
 
             <!--
-                <li class="sidebar-login nav-auth-out">
-                    <a class="btn-login">
-                        <span class="fa fa-user-circle" style="font-size: 17px;"></span>
+                <li className="sidebar-login nav-auth-out">
+                    <Link className="btn-login">
+                        <span className="fa fa-user-circle" style="font-size: 17px;"></span>
                         <span>Login</span>
-                    </a>
+                    </Link>
                 </li>
-                <li class="sidebar-register nav-auth-out">
-                    <a class="btn-register">
-                        <span class="fa fa-user-plus"></span>
+                <li className="sidebar-register nav-auth-out">
+                    <Link className="btn-register">
+                        <span className="fa fa-user-plus"></span>
                         <span>Register</span>
-                    </a>
+                    </Link>
                 </li>
             -->
 
 
-            <li class="dropdown">
-                <a class="dropdown-toggle no-after" data-toggle="dropdown">
-                    <span class="fa fa-user-circle" style="font-size: 17px;"></span>
+            <li className="dropdown">
+                <Link className="dropdown-toggle no-after" data-toggle="dropdown">
+                    <span className="fa fa-user-circle" style="font-size: 17px;"></span>
                     <span>My Account</span>
-                    <span class="fa fa-caret-down pull-right"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="sidebar-account-dashboard">
-                        <a href="/account/dashboard">
-                            <span class="fa fa-th-large"></span>
+                    <span className="fa fa-caret-down pull-right"></span>
+                </Link>
+                <ul className="dropdown-menu">
+                    <li className="sidebar-account-dashboard">
+                        <Link to="/account/dashboard">
+                            <span className="fa fa-th-large"></span>
                             <span>Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-profile">
-                        <a href="/account/profile">
-                            <span class="fa fa-user"></span>
+                    <li className="sidebar-account-profile">
+                        <Link to="/account/profile">
+                            <span className="fa fa-user"></span>
                             <span>Profile</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-orders">
-                        <a href="/account/orders">
-                            <span class="fa fa-shopping-cart"></span>
+                    <li className="sidebar-account-orders">
+                        <Link to="/account/orders">
+                            <span className="fa fa-shopping-cart"></span>
                             <span>My Orders</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-deals">
-                        <a href="/account/deals">
-                            <span class="fa fa-share-alt"></span>
+                    <li className="sidebar-account-deals">
+                        <Link to="/account/deals">
+                            <span className="fa fa-share-alt"></span>
                             <span>My Deals</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-projects">
-                        <a href="/account/projects">
-                            <span class="fa fa-star"></span>
+                    <li className="sidebar-account-projects">
+                        <Link to="/account/projects">
+                            <span className="fa fa-star"></span>
                             <span>My Projects</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-project-bids">
-                        <a href="/account/project-bids">
-                            <span class="fa fa-star-half-alt"></span>
+                    <li className="sidebar-account-project-bids">
+                        <Link to="/account/project-bids">
+                            <span className="fa fa-star-half-alt"></span>
                             <span>My Projects Bids</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-favourites">
-                        <a href="/account/favourites">
-                            <span class="fa fa-heart"></span>
+                    <li className="sidebar-account-favourites">
+                        <Link to="/account/favourites">
+                            <span className="fa fa-heart"></span>
                             <span>Favourites</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-messages">
-                        <a href="/messages">
-                            <span class="fa fa-envelope"></span>
+                    <li className="sidebar-account-messages">
+                        <Link to="/messages">
+                            <span className="fa fa-envelope"></span>
                             <span>Messages</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-earnings">
-                        <a href="/account/earnings-withdrawals/">
-                            <span class="fa fa-credit-card"></span>
+                    <li className="sidebar-account-earnings">
+                        <Link to="/account/earnings-withdrawals/">
+                            <span className="fa fa-credit-card"></span>
                             <span>Earnings & Withdrawals</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-wallet">
-                        <a href="/account/wallet">
-                            <span class="fa fa-wallet"></span>
+                    <li className="sidebar-account-wallet">
+                        <Link to="/account/wallet">
+                            <span className="fa fa-wallet"></span>
                             <span>My Wallet</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-reviews">
-                        <a href="/account/reviews">
-                            <span class="fa fa-star"></span>
+                    <li className="sidebar-account-reviews">
+                        <Link to="/account/reviews">
+                            <span className="fa fa-star"></span>
                             <span>My Reviews</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-account-settings">
-                        <a href="/account/settings" id="acc-sidebar-settings">
-                            <span class="fa fa-user-cog"></span>
+                    <li className="sidebar-account-settings">
+                        <Link to="/account/settings" id="acc-sidebar-settings">
+                            <span className="fa fa-user-cog"></span>
                             <span>Account Settings</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </li>
 
             
-            <hr class="hr-blue hr-2">
+            <hr className="hr-blue hr-2">
 
-            <li class="sidebar-home">
-                <a href="/">
-                    <span class="fa fa-home"></span>
+            <li className="sidebar-home">
+                <Link to="/">
+                    <span className="fa fa-home"></span>
                     <span>Home</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-post-deals dropdown">
-                <a class="dropdown-toggle no-after" data-toggle="dropdown">
-                    <span class="fa fa-list"></span>
+            <li className="sidebar-post-deals dropdown">
+                <Link className="dropdown-toggle no-after" data-toggle="dropdown">
+                    <span className="fa fa-list"></span>
                     <span>All Categories Deals</span>
-                    <span class="fa fa-caret-down pull-right"></span>
-                </a>
-                <ul class="dropdown-menu sidebar-category-all">
-                    <li class="sidebar-category-category-url">
-                        <a href="/category/business/projects">
-                            <span class="fa fa-list-alt"></span>
+                    <span className="fa fa-caret-down pull-right"></span>
+                </Link>
+                <ul className="dropdown-menu sidebar-category-all">
+                    <li className="sidebar-category-category-url">
+                        <Link to="/category/business/projects">
+                            <span className="fa fa-list-alt"></span>
                             <span>Category 1</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-category-category-url">
-                        <a href="/category/business/projects">
-                            <span class="fa fa-list-alt"></span>
+                    <li className="sidebar-category-category-url">
+                        <Link to="/category/business/projects">
+                            <span className="fa fa-list-alt"></span>
                             <span>Category 2</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-category-category-url">
-                        <a href="/category/business/projects">
-                            <span class="fa fa-list-alt"></span>
+                    <li className="sidebar-category-category-url">
+                        <Link to="/category/business/projects">
+                            <span className="fa fa-list-alt"></span>
                             <span>Category 3</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-category-category-url">
-                        <a href="/category/business/projects">
-                            <span class="fa fa-list-alt"></span>
+                    <li className="sidebar-category-category-url">
+                        <Link to="/category/business/projects">
+                            <span className="fa fa-list-alt"></span>
                             <span>Category 4</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li class="sidebar-category-category-url">
-                        <a href="/category/business/projects">
-                            <span class="fa fa-list-alt"></span>
+                    <li className="sidebar-category-category-url">
+                        <Link to="/category/business/projects">
+                            <span className="fa fa-list-alt"></span>
                             <span>Category 5</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </li>
-            <li class="sidebar-post-deals">
-                <a href="/account/deals/create">
-                    <span class="fa fa-star"></span>
+            <li className="sidebar-post-deals">
+                <Link to="/account/deals/create">
+                    <span className="fa fa-star"></span>
                     <span>Post Deals</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-find-deals">
-                <a href="/deals">
-                    <span class="fa fa-star"></span>
+            <li className="sidebar-find-deals">
+                <Link to="/deals">
+                    <span className="fa fa-star"></span>
                     <span>Find Deals</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-post-projects">
-                <a href="/">
-                    <span class="fa fa-star"></span>
+            <li className="sidebar-post-projects">
+                <Link to="/">
+                    <span className="fa fa-star"></span>
                     <span>Post Projects</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-find-projects">
-                <a href="/">
-                    <span class="fa fa-star"></span>
+            <li className="sidebar-find-projects">
+                <Link to="/">
+                    <span className="fa fa-star"></span>
                     <span>Find Projects</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-search">
-                <a href="/search">
-                    <span class="fa fa-search"></span>
+            <li className="sidebar-search">
+                <Link to="/search">
+                    <span className="fa fa-search"></span>
                     <span>Search</span>
-                </a>
+                </Link>
             </li>
 
-            <hr class="hr-blue hr-2">
+            <hr className="hr-blue hr-2">
 
-            <li class="sidebar-about">
-                <a href="/about">
-                    <span class="fa fa-align-left"></span>
+            <li className="sidebar-about">
+                <Link to="/about">
+                    <span className="fa fa-align-left"></span>
                     <span>About</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-contact">
-                <a href="/support">
-                    <span class="fa fa-desktop"></span>
+            <li className="sidebar-contact">
+                <Link to="/support">
+                    <span className="fa fa-desktop"></span>
                     <span>Support Center</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms">
+                    <span className="fa fa-file"></span>
                     <span>Terms</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Payment Policy</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Refund Policy</span>
-                </a>
+                </Link>
             </li>
 
-            <li class="sidebar-about">
-                <a href="/about">
-                    <span class="fa fa-align-left"></span>
+            <li className="sidebar-about">
+                <Link to="/about">
+                    <span className="fa fa-align-left"></span>
                     <span>About</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-contact">
-                <a href="/support">
-                    <span class="fa fa-desktop"></span>
+            <li className="sidebar-contact">
+                <Link to="/support">
+                    <span className="fa fa-desktop"></span>
                     <span>Support Center</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms">
+                    <span className="fa fa-file"></span>
                     <span>Terms</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Payment Policy</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Refund Policy</span>
-                </a>
+                </Link>
             </li>
 
-            <li class="sidebar-about">
-                <a href="/about">
-                    <span class="fa fa-align-left"></span>
+            <li className="sidebar-about">
+                <Link to="/about">
+                    <span className="fa fa-align-left"></span>
                     <span>About</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-contact">
-                <a href="/support">
-                    <span class="fa fa-desktop"></span>
+            <li className="sidebar-contact">
+                <Link to="/support">
+                    <span className="fa fa-desktop"></span>
                     <span>Support Center</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms">
+                    <span className="fa fa-file"></span>
                     <span>Terms</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Payment Policy</span>
-                </a>
+                </Link>
             </li>
-            <li class="sidebar-terms">
-                <a href="/terms#payment">
-                    <span class="fa fa-file"></span>
+            <li className="sidebar-terms">
+                <Link to="/terms#payment">
+                    <span className="fa fa-file"></span>
                     <span>Refund Policy</span>
-                </a>
+                </Link>
             </li>
 
-            <hr class="hr-blue hr-2">
-            <li class="nav-auth-in">
-                <a href="">
-                    <span class="fa fa-sign-out-alt"></span>
+            <hr className="hr-blue hr-2">
+            <li className="nav-auth-in">
+                <Link to="">
+                    <span className="fa fa-sign-out-alt"></span>
                     <span>Logout</span>
-                </a>
+                </Link>
             </li>
             
         </ul>
     </div>
 </div>
 
-<div id="sidebar_fade" class="bg-fade"></div>
+<div id="sidebar_fade" className="bg-fade"></div>
 
 
 
@@ -474,4 +474,4 @@
 
 
 {{-- faded background --}}
-<div class="bg-fade bg-fade-auth"></div>
+<div className="bg-fade bg-fade-auth"></div>

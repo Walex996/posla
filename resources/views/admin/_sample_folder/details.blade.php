@@ -13,24 +13,24 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header">
-            <div class="box-title">
+    <div className="box">
+        <div className="box-header">
+            <div className="box-title">
                 Details Page
             </div>
-            <div class="box-tools pull-right">
-                <a href="" class="btn btn-box-tool">
-                    <i class="fa fa-plus"></i>
+            <div className="box-tools pull-right">
+                <Link to="" className="btn btn-box-tool">
+                    <i className="fa fa-plus"></i>
                     Link
-                </a>
+                </Link>
             </div>
         </div>
-        <div class="box-body">
+        <div className="box-body">
         
             
-            <div class="mb-30">
-                <div class="mx-auto mw-800">
-                    <div class="order-details-information">
+            <div className="mb-30">
+                <div className="mx-auto mw-800">
+                    <div className="order-details-information">
 
                         <div>
                             <div>
@@ -82,12 +82,12 @@
             </div>
             
 
-            <div class="mb-30">
-                <div class="mx-auto mw-800 b-1-eee">
-                    <div class="bg-eee pt-10 pb-10 pl-20 font-bold">
+            <div className="mb-30">
+                <div className="mx-auto mw-800 b-1-eee">
+                    <div className="bg-eee pt-2.5 pb-10 pl-5 font-bold">
                         Section Title
                     </div>
-                    <div class="order-details-information">
+                    <div className="order-details-information">
 
                         <div>
                             <div>
