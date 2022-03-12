@@ -1,4 +1,4 @@
-{{-- @extends('layouts.front.app') --}}
+{/*@extends('layouts.front.app') */}
 
 
 @section('title')
@@ -13,7 +13,7 @@
     </style>
 @endsection
 
-{{-- @section('content') --}}
+{/*@section('content') */}
     
     <div className="container">
         <div className="mw-600 pt-5 pb-1.50 mx-auto bg-fff">
@@ -49,4 +49,4 @@
         </div>
     </div>
 
-{{-- @endsection --}}
+{/*@endsection */}

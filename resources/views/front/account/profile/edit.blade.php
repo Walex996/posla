@@ -119,7 +119,7 @@
                 <div className="section">
                     <div className="section-title section-title-sm">
                         Edit Profile
-                        {{-- <Link to="/account/profile/edit" className="btn btn-orange btn-sm pull-right hover-bg-orange">Save Profile</Link> --}}
+                        {/*<Link to="/account/profile/edit" className="btn btn-orange btn-sm pull-right hover-bg-orange">Save Profile</Link> */}
                     </div>
                     <div>
 
@@ -211,7 +211,7 @@
                                             <input type="file" name="profile" className="form-control">
                                         </div>
 
-                                        {{-- if profile picture exist --}}
+                                        {/*if profile picture exist */}
                                             <div className="">
                                                 <div className="pull-left mr-2.5">
                                                     <label className="control-label mt-15">
@@ -226,7 +226,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        {{-- end if --}}
+                                        {/*end if */}
 
                                     </div>
 

@@ -95,7 +95,7 @@
 
                             <hr className="hr-ddd">
 
-                            {{-- if paypal is selected default --}}
+                            {/*if paypal is selected default */}
                             <div className="row d-none">
                                 <div className="col-12 col-sm-6 col-md-12 col-lg-6">
                                     <div className="form-group">
@@ -116,10 +116,10 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- endif --}}
+                            {/*endif */}
                                 
 
-                            {{-- if bank wire transfer is selected default --}}
+                            {/*if bank wire transfer is selected default */}
                             <div className="row">
                                 <div className="col-12 col-sm-6 col-md-12 col-lg-6">
                                     <div className="form-group">
@@ -166,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- endif --}}
+                            {/*endif */}
 
                             
                             <div className="pt-5 mt-5 bt-1-ddd">

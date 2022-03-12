@@ -1,7 +1,7 @@
 <div className="section">
     <div className="account-sidebar-info text-center">
         <Link to="/user/abcde12345" className="d-block">
-            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-cover" />
+            <img src={user} alt="Firstname lastname" className="dp-cover" />
         </Link>
         <Link to="/user/abcde12345" className="font-bold hover-underline">
             Firstname lastname
@@ -13,7 +13,7 @@
             <div className="rating-box mt-1.5">
                 <div>
                     <div></div>
-                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                 </div>
                 <div>
                     <span className="font-bold text-orange">

@@ -317,7 +317,7 @@
                                                         <label for="tags" className="control-label">
                                                             Tags:
                                                         </label>
-                                                        {{-- let's do comman separated value for now.. onsave, explode input with comma --}}
+                                                        {/*let's do comman separated value for now.. onsave, explode input with comma */}
                                                         <input type="search" name="tags" className="form-control" placeholder="Search">
                                                     </div>
                                                     <div>

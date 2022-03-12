@@ -111,8 +111,8 @@
                     <input type="number" min="0" max="9900" oninput="validity.valid||(value='0');" id="min_price" className="posla-slider-min-input price-range-field" />
                     <input type="number" min="0" max="10000" oninput="validity.valid||(value='10000');" id="max_price" className="posla-slider-max-input price-range-field" />
                 </div>
-                {{-- <button className="price-range-search" id="price-range-submit">Search</button> --}}
-                {{-- <div id="searchResults" className="search-results-block"></div> --}}
+                {/*<button className="price-range-search" id="price-range-submit">Search</button> */}
+                {/*<div id="searchResults" className="search-results-block"></div> */}
             </div>
 
         </div>

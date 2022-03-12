@@ -1,6 +1,6 @@
 <Link to="/user/abcde12345" className="freelancer">
     <div>
-        <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
+        <img src={user} alt="Olawale Lawal" className="dp-contain" />
     </div>
     <div>
         <div className="font-bold">

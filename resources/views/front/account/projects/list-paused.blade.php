@@ -99,7 +99,7 @@
                                         </Link>
                                         <form id="resume-form" action="" method="POST" className="d-none">
                                             @csrf
-                                            {{-- hidden input with project id --}}
+                                            {/*hidden input with project id */}
                                         </form>
                                         <Link className="dropdown-item" to="/account/projects/edit/1234">
                                             Edit
@@ -130,7 +130,7 @@
                                         </Link>
                                         <form id="resume-form" action="" method="POST" className="d-none">
                                             @csrf
-                                            {{-- hidden input with project id --}}
+                                            {/*hidden input with project id */}
                                         </form>
                                         <Link className="dropdown-item" to="/account/projects/edit/1234">
                                             Edit

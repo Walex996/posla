@@ -61,7 +61,7 @@
                                         Edit
                                     </Link>
 
-                                    {{-- 
+                                    {/*
                                         <div className="dropdown">
                                             <button type="button" className="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown">
                                                 Action
@@ -72,7 +72,7 @@
                                                 </Link>
                                             </div>
                                         </div>
-                                    --}}
+                                    */}
                                 </td>
                             </tr> 
                         @empty

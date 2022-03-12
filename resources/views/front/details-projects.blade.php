@@ -109,7 +109,7 @@
                         <div className="pull-left">
                             <Link to="/user/abcde12345" className="user-img-text">
                                 <div>
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="hover-underline">
                                     Olawale Lawal
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <div className="col-6 col-sm-3 col-md-6 col-lg-3 text-center pt-2.5 pb-10">
-                            {{-- classes => status-open, status-closed --}}
+                            {/*classes => status-open, status-closed */}
                             <div className="font-20 font-bold status-open">
                                 Open
                             </div>
@@ -309,7 +309,7 @@
                     <div>
                         <Link to="/user/abcde12345" className="user-img-text user-img-text-md">
                             <div>
-                                <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                <img src={user} alt="Firstname lastname" className="dp-contain" />
                             </div>
                             <div className="pt-1.5 underline-none">
                                 Firstname lastname
@@ -428,11 +428,11 @@
                                                 <div>
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                                                 </div>
-                                                {{-- if attachment exists --}}
+                                                {/*if attachment exists */}
                                                 <div className="floated-content mt-2.5">
                                                     <Link to="" className="media">
                                                         <div className="text-center">
-                                                            {{-- if it's an image, display it directly --}}
+                                                            {/*if it's an image, display it directly */}
                                                             <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                         </div>
                                                         <div>
@@ -447,7 +447,7 @@
                                                     </Link>
                                                     <Link to="" className="media">
                                                         <div className="text-center">
-                                                            {{-- if it's an image, display it directly --}}
+                                                            {/*if it's an image, display it directly */}
                                                             <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                         </div>
                                                         <div>
@@ -461,7 +461,7 @@
                                                         </div>
                                                     </Link>
                                                 </div>
-                                                {{-- endif attachment exists --}}
+                                                {/*endif attachment exists */}
                                             </div>
 
                                             <div className="mt-5">
@@ -516,11 +516,11 @@
                                                 <div>
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                                                 </div>
-                                                {{-- if attachment exists --}}
+                                                {/*if attachment exists */}
                                                 <div className="floated-content mt-2.5">
                                                     <Link to="" className="media">
                                                         <div className="text-center">
-                                                            {{-- if it's an image, display it directly --}}
+                                                            {/*if it's an image, display it directly */}
                                                             <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                         </div>
                                                         <div>
@@ -535,7 +535,7 @@
                                                     </Link>
                                                     <Link to="" className="media">
                                                         <div className="text-center">
-                                                            {{-- if it's an image, display it directly --}}
+                                                            {/*if it's an image, display it directly */}
                                                             <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                                         </div>
                                                         <div>
@@ -549,7 +549,7 @@
                                                         </div>
                                                     </Link>
                                                 </div>
-                                                {{-- endif attachment exists --}}
+                                                {/*endif attachment exists */}
                                             </div>
 
                                             <div className="mt-5">
@@ -593,17 +593,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -633,10 +633,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -653,17 +653,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -693,10 +693,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -712,17 +712,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -752,10 +752,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -771,17 +771,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -811,10 +811,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -831,17 +831,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -871,10 +871,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -891,17 +891,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -931,10 +931,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -950,17 +950,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -990,10 +990,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1010,17 +1010,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1050,10 +1050,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1074,17 +1074,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1114,10 +1114,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1134,17 +1134,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1174,10 +1174,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1194,17 +1194,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1234,10 +1234,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1258,17 +1258,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1298,10 +1298,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1318,17 +1318,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1358,10 +1358,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1378,17 +1378,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1418,10 +1418,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1442,17 +1442,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1482,10 +1482,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1502,17 +1502,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1542,10 +1542,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1562,17 +1562,17 @@
                                 <form action="">
                                     <div className="user-img-text user-img-text-md bb-1-ddd proposal-list-each">
                                         <Link to="" className="pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </Link>
                                         <div className="pull-right d-none d-sm-block d-md-none d-lg-block ml-15">
                                             <div>
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>
@@ -1602,10 +1602,10 @@
                                                 <div className="rating-box">
                                                     <div>
                                                         <div></div>
-                                                        <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                        <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                     </div>
                                                     <div>
-                                                        {{-- <span className="fa fa-star"></span> --}}
+                                                        {/*<span className="fa fa-star"></span> */}
                                                         3.75
                                                     </div>
                                                 </div>

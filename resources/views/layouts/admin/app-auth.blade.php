@@ -34,7 +34,7 @@
         <link to="{{ asset('/components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet">
         <link to="{{ asset('/css/default.css') }}" rel="stylesheet">
         <link to="{{ asset('/components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
-        {{-- !! sticky-top --}}
+        {/*!! sticky-top */}
         <link rel="stylesheet" to="{{ asset('/css/AdminLTE.min.css') }}" type="text/css" />
         <link rel="stylesheet" to="{{ asset('/css/all-skins.min.css') }}" type="text/css" />
         <link rel="stylesheet" to="{{ asset('/css/toastr.css') }}" type="text/css" />

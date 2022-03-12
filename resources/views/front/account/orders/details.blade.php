@@ -170,8 +170,8 @@
                     </div>
 
                     
-                    {{-- order-status-not-started --}}
-                    {{--                     
+                    {/*order-status-not-started */}
+                    {/*                    
                     <div className="order-status order-status-not-started">
                         <div className="pull-right">
                             $45
@@ -181,9 +181,9 @@
                             Order Not Started
                         </div>
                     </div>
-                    --}}
+                    */}
 
-                    {{-- order-status-in-progress --}}
+                    {/*order-status-in-progress */}
                     <div className="order-status order-status-in-progress">
                         <div className="pull-right">
                             $45
@@ -194,8 +194,8 @@
                         </div>
                     </div>
                     
-                    {{-- order-status-completed --}}
-                    {{--                     
+                    {/*order-status-completed */}
+                    {/*                    
                     <div className="order-status order-status-completed">
                         <div className="pull-right">
                             $45
@@ -205,7 +205,7 @@
                             Order Completed
                         </div>
                     </div>
-                    --}}
+                    */}
 
 
                     <div className="mt-0">
@@ -319,7 +319,7 @@
                         <div className="row">
 
                             <div className="col-sm-6">
-                                {{-- for both seller & buyer --}}
+                                {/*for both seller & buyer */}
                                 <div className="section">
                                     <div className="section-title">
                                         Project Status
@@ -364,7 +364,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- order tracking --}}
+                                    {/*order tracking */}
                                     <div className="bt-1-ddd mt-5">
                                         <div className="pt-15 pb-15 font-bold">
                                             Order Tracking
@@ -524,15 +524,15 @@
                     
 
 
-                        {{-- countdown --}}
-                        {{-- 
+                        {/*countdown */}
+                        {/*
                             if deal,
                                 if there are requirement (questions)
                                 start countdown only after requirement is submitted
                             if project,
                                 start countdown after payment of deposit
-                        --}}
-                        {{-- visible to both seller & buyer --}}
+                        */}
+                        {/*visible to both seller & buyer */}
                         <div className="mb-10 text-center">
                             <div className="text-center font-bold bg-f00 text-fff d-inline-block mx-auto pr-2.5 pl-2.5">
                                 Project Deadline
@@ -543,12 +543,12 @@
                         </div>
                         
 
-                        {{-- conversation --}}
-                        {{-- from me (seller) --}}
+                        {/*conversation */}
+                        {/*from me (seller) */}
                         <div className="user-msg b-1-ddd">
                             <div className="overflow-hidden">
                                 <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </Link>
                                 <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
@@ -572,12 +572,12 @@
 
                         
 
-                        {{-- conversation --}}
-                        {{-- from customer (buyer) --}}
+                        {/*conversation */}
+                        {/*from customer (buyer) */}
                         <div className="user-msg b-1-ddd">
                             <div className="overflow-hidden">
                                 <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </Link>
                                 <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
@@ -601,12 +601,12 @@
 
                         
 
-                        {{-- conversation with attachment --}}
-                        {{-- from me (seller) --}}
+                        {/*conversation with attachment */}
+                        {/*from me (seller) */}
                         <div className="user-msg b-1-ddd">
                             <div className="overflow-hidden">
                                 <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </Link>
                                 <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
@@ -626,13 +626,13 @@
                             <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
-                            {{-- (with attachments) --}}
+                            {/*(with attachments) */}
                             <div className="floated-content mt-5">
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's an image, display it directly --}}
+                                        {/*if it's an image, display it directly */}
                                         <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                     </div>
                                     <div>
@@ -646,10 +646,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's a video, display this image --}}
+                                        {/*if it's a video, display this image */}
                                         <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -663,10 +663,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's an audio, display this image --}}
+                                        {/*if it's an audio, display this image */}
                                         <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -680,10 +680,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's anything else, display this image --}}
+                                        {/*if it's anything else, display this image */}
                                         <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -701,12 +701,12 @@
 
                         
 
-                        {{-- conversation with attachment --}}
-                        {{-- from customer (buyer) --}}
+                        {/*conversation with attachment */}
+                        {/*from customer (buyer) */}
                         <div className="user-msg b-1-ddd">
                             <div className="overflow-hidden">
                                 <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </Link>
                                 <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
@@ -726,13 +726,13 @@
                             <div className="mt-2.5 font-normal text-justify">
                                 I've worked with Kristen twice now. I have never worked with a graphic designer before and she's truly the best. Such a great lady and works really hard to make her customers satisfied. She is also really talented, open to ideas and works fast.
                             </div>
-                            {{-- (with attachments) --}}
+                            {/*(with attachments) */}
                             <div className="floated-content mt-5">
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's an image, display it directly --}}
+                                        {/*if it's an image, display it directly */}
                                         <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
                                     </div>
                                     <div>
@@ -746,10 +746,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's a video, display this image --}}
+                                        {/*if it's a video, display this image */}
                                         <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -763,10 +763,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's an audio, display this image --}}
+                                        {/*if it's an audio, display this image */}
                                         <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -780,10 +780,10 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media">
                                     <div className="text-center">
-                                        {{-- if it's anything else, display this image --}}
+                                        {/*if it's anything else, display this image */}
                                         <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" />
                                     </div>
                                     <div>
@@ -801,8 +801,8 @@
 
                         
 
-                        {{-- order requirement request --}}
-                        {{-- system generated --}}
+                        {/*order requirement request */}
+                        {/*system generated */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-clipboard icon-orange"></span>
@@ -825,8 +825,8 @@
 
 
 
-                        {{-- order requirement submitted --}}
-                        {{-- system generated --}}
+                        {/*order requirement submitted */}
+                        {/*system generated */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-clipboard icon-blue"></span>
@@ -849,8 +849,8 @@
 
 
 
-                        {{-- order started --}}
-                        {{-- system generated --}}
+                        {/*order started */}
+                        {/*system generated */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-hourglass-start icon-blue"></span>
@@ -869,9 +869,9 @@
                         </div>
 
 
-                        {{-- order download --}}
-                        {{-- system generated --}}
-                        {{-- only if "Delivery Format" != "Work & Deliver" --}}
+                        {/*order download */}
+                        {/*system generated */}
+                        {/*only if "Delivery Format" != "Work & Deliver" */}
                         <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
                             <div className="order-mgmt">
                                 <div>
@@ -889,15 +889,15 @@
                             </div>
                             <div className="p-5-10 b-1-ddd floated-content" style="margin-top: -20px;">
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media media-lg">
                                     <div className="text-center">
-                                        {{-- if it's an image, display it directly --}}
+                                        {/*if it's an image, display it directly */}
                                         <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
-                                        {{-- else, display the right icon --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
+                                        {/*else, display the right icon */}
+                                        {/*<img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> */}
+                                        {/*<img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> */}
+                                        {/*<img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> */}
                                     </div>
                                     <div>
                                         <div className="pull-right ml-1.5 pt-4">
@@ -910,15 +910,15 @@
                                     </div>
                                 </Link>
 
-                                {{-- click to download --}}
+                                {/*click to download */}
                                 <Link to="" className="media media-lg">
                                     <div className="text-center">
-                                        {{-- if it's an image, display it directly --}}
+                                        {/*if it's an image, display it directly */}
                                         <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
-                                        {{-- else, display the right stuff --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
-                                        {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
+                                        {/*else, display the right stuff */}
+                                        {/*<img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> */}
+                                        {/*<img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> */}
+                                        {/*<img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> */}
                                     </div>
                                     <div>
                                         <div className="pull-right ml-1.5 pt-4">
@@ -936,11 +936,11 @@
 
 
 
-                        {{-- conversation --}}
+                        {/*conversation */}
                         <div className="user-msg b-1-ddd">
                             <div className="overflow-hidden">
                                 <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </Link>
                                 <div className="pull-right mt-2.5 text-fade d-none d-sm-block">
                                     Jan 12, 2019 at 9:05pm
@@ -964,8 +964,8 @@
 
 
 
-                        {{-- for me (seller) to see --}}
-                        {{-- when status is after "requirement filled" but before "order completed"  --}}
+                        {/*for me (seller) to see */}
+                        {/*when status is after "requirement filled" but before "order completed"  */}
                         <div className="text-center bg-eee pt-1.50 pb-1.50 b-1-ddd">
                             <Link to="/account/orders/deliver/123456789012" className="btn btn-blue icon-left">
                                 <span className="fa fa-box-open"></span>
@@ -975,9 +975,9 @@
 
 
 
-                        {{-- order delivered --}}
-                        {{-- system generated --}}
-                        {{-- for both to see --}}
+                        {/*order delivered */}
+                        {/*system generated */}
+                        {/*for both to see */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-truck icon-blue"></span>
@@ -1121,9 +1121,9 @@
 
 
 
-                        {{-- order revision --}}
-                        {{-- system generated --}}
-                        {{-- only if revision was submitted for this delivery --}}
+                        {/*order revision */}
+                        {/*system generated */}
+                        {/*only if revision was submitted for this delivery */}
                         <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
                             <div className="order-mgmt">
                                 <div>
@@ -1139,18 +1139,18 @@
                                     <div>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                     </div>
-                                    {{-- if attachments were added, show the did below; else nothing --}}
+                                    {/*if attachments were added, show the did below; else nothing */}
                                     <div className="floated-content text-center mt-5">
         
-                                        {{-- click to download --}}
+                                        {/*click to download */}
                                         <Link to="" className="media media-sm">
                                             <div className="text-center">
-                                                {{-- if it's an image, display it directly --}}
+                                                {/*if it's an image, display it directly */}
                                                 <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
-                                                {{-- else, display the right stuff --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
+                                                {/*else, display the right stuff */}
+                                                {/*<img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> */}
+                                                {/*<img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> */}
+                                                {/*<img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> */}
                                             </div>
                                             <div>
                                                 <div className="pull-right ml-1.5 pt-4">
@@ -1163,15 +1163,15 @@
                                             </div>
                                         </Link>
         
-                                        {{-- click to download --}}
+                                        {/*click to download */}
                                         <Link to="" className="media media-sm">
                                             <div className="text-center">
-                                                {{-- if it's an image, display it directly --}}
+                                                {/*if it's an image, display it directly */}
                                                 <img src="{{asset('img/app/samples/boxes.jpg')}}" alt="" className="dp-contain" />
-                                                {{-- else, display the right stuff --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> --}}
-                                                {{-- <img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> --}}
+                                                {/*else, display the right stuff */}
+                                                {/*<img src="{{asset('img/app/bgs/media-audio.png')}}" alt="" className="dp-cover" /> */}
+                                                {/*<img src="{{asset('img/app/bgs/media-video.png')}}" alt="" className="dp-cover" /> */}
+                                                {/*<img src="{{asset('img/app/bgs/media-others.png')}}" alt="" className="dp-cover" /> */}
                                             </div>
                                             <div>
                                                 <div className="pull-right ml-1.5 pt-4">
@@ -1198,9 +1198,9 @@
 
 
 
-                        {{-- order review request --}}
-                        {{-- system generated --}}
-                        {{-- for customer (buyer) to see --}}
+                        {/*order review request */}
+                        {/*system generated */}
+                        {/*for customer (buyer) to see */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-star icon-orange"></span>
@@ -1224,9 +1224,9 @@
 
 
                         
-                        {{-- order review submitted --}}
-                        {{-- system generated --}}
-                        {{-- for me (seller) to see --}}
+                        {/*order review submitted */}
+                        {/*system generated */}
+                        {/*for me (seller) to see */}
                         <div className="order-mgmt text-left b-1-ddd pt-0 pb-30">
                             <div className="order-mgmt">
                                 <div>
@@ -1236,10 +1236,10 @@
                                     Buyer's Review
                                 </div>
                                 <div>
-                                    {{-- for me (seller) --}}
-                                    {{-- Here's the review Alex submitted in respect to your performance & delivery of this project. --}}
+                                    {/*for me (seller) */}
+                                    {/*Here's the review Alex submitted in respect to your performance & delivery of this project. */}
 
-                                    {{-- for customer (buyer) --}}
+                                    {/*for customer (buyer) */}
                                     Here's your review for Anthony, in respect to his/her ((check gender)) performance & delivery of the project.
                                 </div>
                             </div>
@@ -1307,13 +1307,13 @@
                             <div className="user-msg b-1-ddd">
                                 <div className="overflow-hidden">
                                     <Link to="/user/abcde12345" className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                        <img src={user} alt="Firstname lastname" className="dp-contain" />
                                     </Link>
                                     <div className="pull-right d-none d-sm-block">
                                         <div className="rating-box mt-1.5">
                                             <div>
                                                 <div></div>
-                                                <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                             </div>
                                             <div className="font-bold text-orange">
                                                 5.0
@@ -1330,7 +1330,7 @@
                                         <div className="rating-box d-block d-sm-none">
                                             <div>
                                                 <div></div>
-                                                <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                             </div>
                                             <div className="font-bold text-orange">
                                                 5.0
@@ -1346,9 +1346,9 @@
 
                         
 
-                        {{-- order completed --}}
-                        {{-- system generated --}}
-                        {{-- for both to see --}}
+                        {/*order completed */}
+                        {/*system generated */}
+                        {/*for both to see */}
                         <div className="order-mgmt pb-15 b-1-ddd">
                             <div>
                                 <span className="fa fa-hourglass-end icon-blue"></span>
@@ -1366,9 +1366,9 @@
 
 
 
-                        {{-- new conversation --}}
-                        {{-- for both to see --}}
-                        {{-- before order is completed --}}
+                        {/*new conversation */}
+                        {/*for both to see */}
+                        {/*before order is completed */}
                         <form action="">
                             <div className="order-mgmt-new-text p-15 b-1-ddd bg-eee">
                                 <div>
@@ -1462,7 +1462,7 @@
                     </div>
 
 
-                    {{-- order tracking --}}
+                    {/*order tracking */}
                     <div className="bt-1-ddd mt-5">
                         <div className="pt-15 pb-15 font-bold">
                             Order Tracking

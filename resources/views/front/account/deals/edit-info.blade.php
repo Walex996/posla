@@ -152,7 +152,7 @@
                                                                     Delete
                                                                 </button>
                                                                 <input type="checkbox" name="delete_image[]" value="" className="d-none">
-                                                                {{-- Hidden checkbox for delete --}}
+                                                                {/*Hidden checkbox for delete */}
                                                             </label>
                                                             <input type="file" name="picture_2" id="picture_2" accept="image/*" />
                                                         </div> 
@@ -223,7 +223,7 @@
                                                             Tags:
                                                         </label>
 
-                                                        {{-- let's do comman separated value for now.. onsave, explode input with comma --}}
+                                                        {/*let's do comman separated value for now.. onsave, explode input with comma */}
                                                         <input type="search" name="tags" className="form-control" placeholder="Search" value="">
                                                     </div>
                                                     <div>

@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        {{-- 
+        {/*
         <div className="page-alert page-alert-error mb-30">
             <span className="fa fa-times-circle"></span>
             <div className="pt-15">
@@ -62,7 +62,7 @@
                 Order Number : <code className="font-bold font-14 text-orange">#121212122112</code>
             </div>
         </div>
-         --}}
+         */}
 
         <div className="section mw-600 mx-auto">
             <div className="bg-eee p-2.5 text-center">
@@ -73,11 +73,11 @@
                     <Link className="deal pb-10 bg-fff" style="height: auto;">
                         <div className="deal-info-top">
                             <div>
-                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                             </div>
                             <div className="">
                                 <div>
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
+                                    <img src={user} alt="Olawale Lawal" className="dp-contain" />
                                 </div>
                                 <div className="text-fade font-13 ellipsis">
                                     Olawale Lawal

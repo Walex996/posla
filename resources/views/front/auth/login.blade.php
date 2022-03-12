@@ -1,4 +1,4 @@
-{{-- login box --}}
+{/*login box */}
 <div className="auth-modal auth-modal-login @if(session()->get('show-login-modal')) auth-show-default @endif" style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
 
     <button className="auth-modal-close">
@@ -57,5 +57,5 @@
 </div>
 
 
-{{-- if error occurs, add class "auth-show" to the div below --}}
+{/*if error occurs, add class "auth-show" to the div below */}
 <div className="bg-fade bg-fade-auth-backend @if(session()->get('show-login-modal')) auth-show @endif"></div>

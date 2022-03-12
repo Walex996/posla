@@ -3,11 +3,11 @@
     
     <div className="deal-info-top">
         <div>
-            <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+            <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
         </div>
         <div className="">
             <div>
-                <img src="{{asset('img/app/samples/user.png')}}" alt="Olawale Lawal" className="dp-contain" />
+                <img src={user} alt="Olawale Lawal" className="dp-contain" />
             </div>
             <div className="text-fade font-13 ellipsis">
                 Olawale Lawal

@@ -105,7 +105,7 @@
                         <div className="pull-left">
                             <Link to="/user/abcde12345" className="user-img-text">
                                 <div>
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="hover-underline">
                                     Olawale Lawal
@@ -147,10 +147,10 @@
                                 <img src="{{asset('img/app/bgs/posla-admin.jpg')}}" alt="name" className="dp-contain" />
                             </div> 
                             <div className="carousel-item">
-                                <img src="{{asset('img/app/samples/user.png')}}" alt="name" className="dp-contain" />
+                                <img src={user} alt="name" className="dp-contain" />
                             </div> 
                             <div className="carousel-item">
-                                <img src="{{asset('img/app/samples/deal-1.png')}}" alt="name" className="dp-contain" />
+                                <img src={deal1} alt="name" className="dp-contain" />
                             </div> 
                         </div>
                       
@@ -196,7 +196,7 @@
                 </div>
 
                 <div className="section d-block d-md-none">
-                    {{-- Mobile screen --}}
+                    {/*Mobile screen */}
                     <div>
                         <ul className="nav nav-tabs posla-tabs posla-tabs-3">
                             <li className="nav-item">
@@ -451,7 +451,7 @@
                     <div>
                         <Link to="/user/abcde12345" className="user-img-text user-img-text-md">
                             <div>
-                                <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                <img src={user} alt="Firstname lastname" className="dp-contain" />
                             </div>
                             <div className="pt-1.5 underline-none">
                                 Olawale Lawal
@@ -579,13 +579,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -602,7 +602,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -619,13 +619,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -642,7 +642,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -659,13 +659,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -682,7 +682,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -699,13 +699,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -722,7 +722,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -739,13 +739,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -762,7 +762,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -779,13 +779,13 @@
                         <div className="user-msg b-1-eee">
                             <div className="overflow-hidden">
                                 <div className="user-msg-img pull-left">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                    <img src={user} alt="Firstname lastname" className="dp-contain" />
                                 </div>
                                 <div className="pull-right d-none d-sm-block">
                                     <div className="rating-box mt-1.5">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -802,7 +802,7 @@
                                     <div className="rating-box d-block d-sm-none">
                                         <div>
                                             <div></div>
-                                            <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                            <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                         </div>
                                         <div className="font-bold text-orange">
                                             5.0
@@ -827,7 +827,7 @@
                     <div className="section">
                         <div>
 
-                            {{-- web --}}
+                            {/*web */}
                             <ul className="nav nav-tabs posla-tabs posla-tabs-3">
                                 <li className="nav-item">
                                     <Link className="nav-link active" data-toggle="tab" to="#price_2_basic">
@@ -1101,7 +1101,7 @@
 
                 <div className="sticky-top d-none d-md-block d-lg-none mb-0">
                     <div className="section">
-                        {{-- tab --}}
+                        {/*tab */}
                         <div>
                             <ul className="nav nav-tabs posla-tabs posla-tabs-3">
                                 <li className="nav-item">
@@ -1363,7 +1363,7 @@
             Other Deals from this seller
         </div>
         <div className="section">
-            {{-- -double, -lg-6  ||  -mini, -lg-3 --}}
+            {/*-double, -lg-6  ||  -mini, -lg-3 */}
             <div className="deal-list deal-list-mini row">
                 <div className="col-sm-6 col-lg-3">
                     @include('front.common.deal')

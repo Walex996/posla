@@ -84,7 +84,7 @@
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
                                         Pending Approval
-                                        {{-- Active --}}
+                                        {/*Active */}
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Manage
@@ -111,7 +111,7 @@
                                 @include('front.common.deal')
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
-                                        {{-- Pending Approval --}}
+                                        {/*Pending Approval */}
                                         Active
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -139,7 +139,7 @@
                                 @include('front.common.deal')
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
-                                        {{-- Pending Approval --}}
+                                        {/*Pending Approval */}
                                         Active
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -168,7 +168,7 @@
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
                                         Pending Approval
-                                        {{-- Active --}}
+                                        {/*Active */}
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Manage
@@ -195,7 +195,7 @@
                                 @include('front.common.deal')
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
-                                        {{-- Pending Approval --}}
+                                        {/*Pending Approval */}
                                         Active
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -223,7 +223,7 @@
                                 @include('front.common.deal')
                                 <div className="dropdown">
                                     <label className="label label-fff label-sm mr-1.5 pull-right" style="margin-top: 7px;">
-                                        {{-- Pending Approval --}}
+                                        {/*Pending Approval */}
                                         Active
                                     </label>
                                     <div id="navbarDropdown" className="nav-link bg-blue dropdown-toggle b-1-blue text-fff" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

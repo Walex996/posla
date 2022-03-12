@@ -99,11 +99,11 @@
                                 <Link to="/deal/0d8aa710-c3b7-4d4d-b7f0-61da7b23af9f" className="deal pb-10" style="height: auto;">
                                     <div className="deal-info-top">
                                         <div>
-                                            <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                            <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                         </div>
                                         <div className="">
                                             <div>
-                                                <img src="{{asset('img/app/samples/user.png')}}"  alt="Olawale Lawal" className="dp-contain" />
+                                                <img src={user}  alt="Olawale Lawal" className="dp-contain" />
                                             </div>
                                             <div className="text-fade font-13 ellipsis">
                                                 Olawale lawal

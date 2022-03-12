@@ -96,7 +96,7 @@
                                     Free Text
                                 </label>
 
-                                {{-- for V1, let's do only free text --}}
+                                {/*for V1, let's do only free text */}
                                 <!--
                                 <label className="checkbox-inline b-1-ddd pt-1.5 pb-1.5 mt-2.5 mr-2.5 pr-2.5 d-inline">
                                     <input type="radio" name="" className="ml-2.5">

@@ -107,10 +107,10 @@
                             </div>
                         </div>
                         <div className="overflow-hidden">
-                            {{-- 
+                            {/*
                             <Link to="/user/abcde12345" className="d-inline-block overflow-hidden">
                                 <div className="pull-left mr-2.5 br-50 overflow-hidden" style="width: 30px; height: 30px;">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-cover" />
+                                    <img src={user} alt="Firstname lastname" className="dp-cover" />
                                 </div>
                                 <div className="overflow-hidden">
                                     <div className="font-bold mt-1.5 ellipsis hover-underline">
@@ -118,7 +118,7 @@
                                     </div>
                                 </div>
                             </Link>
-                            --}}
+                            */}
                         </div>
                     </div>
 
@@ -132,7 +132,7 @@
                             <div>
                                 To start messaging, please select the user you'd like to send message to.
                             </div>
-                            {{-- 
+                            {/*
                             <div className="mt-2.5">
                                 <div className="mw-300 mx-auto text-center">
                                     <div>
@@ -142,10 +142,10 @@
                                     </div>
                                 </div>
                             </div>
-                             --}}
+                             */}
                         </div>
 
-                        {{-- @include('front.common.messages', ['scroll_type' => 'screen-scroll-sm']) --}}
+                        {/*@include('front.common.messages', ['scroll_type' => 'screen-scroll-sm']) */}
                     </div>
                     
                 </div>

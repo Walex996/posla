@@ -1,4 +1,4 @@
-{{-- @extends('layouts.front.app') --}}
+{/*@extends('layouts.front.app') */}
 
 
 @section('title')
@@ -13,7 +13,7 @@
     </style>
 @endsection
 
-{{-- @section('content') --}}
+{/*@section('content') */}
     
     <div className="container">
         <div className="mw-600 pt-5 pb-1.50 mx-auto bg-fff">
@@ -31,7 +31,7 @@
                 <div className="mt-2.5">
                     <div className="mw-300 mx-auto text-center">
                         <div>
-                            {{-- {{dd(url( "/password/reset/?token=" . $token ))}} --}}
+                            {/*{{dd(url( "/password/reset/?token=" . $token ))}} */}
                             <Link to="{{url( "/password/reset/?token=" . $token )}}" className="btn btn-blue btn-block">
                                 Reset Password
                             </Link>
@@ -51,4 +51,4 @@
         </div>
     </div>
 
-{{-- @endsection --}}
+{/*@endsection */}

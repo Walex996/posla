@@ -75,7 +75,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -94,13 +94,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -117,7 +117,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -135,7 +135,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -154,13 +154,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -177,7 +177,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -195,7 +195,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -214,13 +214,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -237,7 +237,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -255,7 +255,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -274,13 +274,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -297,7 +297,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -315,7 +315,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -334,13 +334,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -357,7 +357,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -375,7 +375,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -394,13 +394,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -417,7 +417,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -435,7 +435,7 @@
                             <div className="mb-5">
                                 <Link to="" className="p-5-10-responsive d-block b-1-ddd bb-none pt-2.5 pb-10 hover-bg-ddd">
                                     <div className="user-msg-img pull-left">
-                                        <img src="{{asset('img/app/samples/deal-1.png')}}" alt="Olawale Lawal" className="dp-cover" />
+                                        <img src={deal1} alt="Olawale Lawal" className="dp-cover" />
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="font-bold ellipsis">
@@ -454,13 +454,13 @@
                                 <div className="user-msg b-1-ddd">
                                     <div className="overflow-hidden">
                                         <div className="user-msg-img pull-left">
-                                            <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-contain" />
+                                            <img src={user} alt="Firstname lastname" className="dp-contain" />
                                         </div>
                                         <div className="pull-right d-none d-sm-block">
                                             <div className="rating-box mt-1.5">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0
@@ -477,7 +477,7 @@
                                             <div className="rating-box d-block d-sm-none">
                                                 <div>
                                                     <div></div>
-                                                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                                 </div>
                                                 <div className="font-bold text-orange">
                                                     5.0

@@ -664,7 +664,7 @@
         </div>
 
         <div className="section section-pagination">
-            {{-- pagination here --}}
+            {/*pagination here */}
         </div>
 
     </div>

@@ -1,4 +1,4 @@
-{{-- header --}}
+{/*header */}
 <div className="navbar navbar-expand-md navbar-dark shadow-sm">
     <div className="container">
 
@@ -7,9 +7,9 @@
         </Link>
 
         <div>
-            {{-- <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> --}}
-                {{-- <span className="fa fa-navicon icon-25"></span> --}}
-            {{-- </button> --}}
+            {/*<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> */}
+                {/*<span className="fa fa-navicon icon-25"></span> */}
+            {/*</button> */}
             <Link to="/account" className="navbar-toggler mr-1.5">
                 <span className="fa fa-user-circle icon-25"></span>
             </Link>
@@ -143,7 +143,7 @@
 
 
 <div id="sidebar" style="display: none; left: -100%;">
-{{-- <div id="sidebar" style="display: block; left: 0;"> --}}
+{/*<div id="sidebar" style="display: block; left: 0;"> */}
     <div>
         <Link to="/account" id="sidebar_login">
             <div></div>
@@ -164,7 +164,7 @@
                         Walex996
                         <br />
                         <div className="text-fade">
-                            {{-- Buyer --}}
+                            {/*Buyer */}
                             Seller
                         </div>
                     @endguest
@@ -473,5 +473,5 @@
 @include('front.auth.forgot-password')
 
 
-{{-- faded background --}}
+{/*faded background */}
 <div className="bg-fade bg-fade-auth"></div>

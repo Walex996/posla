@@ -1,4 +1,4 @@
-{{-- reset password box --}}
+{/*reset password box */}
 <div className="auth-modal auth-modal-forgot-password  @if (session()->get('show-forgot-password-modal') ) auth-show-default " @endif  style="background-image: url({{asset('/img/app/bgs/auth-bg-1.png')}});">
 
     <button className="auth-modal-close">
@@ -23,7 +23,7 @@
           <div></div>
           <div>
             Please enter the email address used in registering your account.
-            {{-- A password reset link will be sent to your registered email address. --}}
+            {/*A password reset link will be sent to your registered email address. */}
           </div>
         </div>
 
@@ -48,5 +48,5 @@
 </div>
 
 
-{{-- if error occurs, add class "auth-show" to the div below --}}
+{/*if error occurs, add class "auth-show" to the div below */}
 <div className="bg-fade bg-fade-auth-backend @if (session()->get('show-forgot-password-modal') ) auth-show-default @endif "></div>

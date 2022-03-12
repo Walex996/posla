@@ -95,7 +95,7 @@
                                     Free Text
                                 </label>
 
-                                {{-- for V1, let's do only free text --}}
+                                {/*for V1, let's do only free text */}
                                 <!--
                                 <label className="checkbox-inline b-1-ddd pt-1.5 pb-1.5 mt-2.5 mr-2.5 pr-2.5 d-inline">
                                     <input type="radio" name="" className="ml-2.5">
@@ -171,7 +171,7 @@
 
                                                 <div className="mt-5 deal-crud-requirement-all">
 
-                                                    {{-- start: foreach loop --}}
+                                                    {/*start: foreach loop */}
                                                         <div className="deal-crud-requirement">
                                                             <div>
                                                                 <div className="pull-right">
@@ -225,7 +225,7 @@
                                                             </div>
                                                             <input type="hidden" name="">
                                                         </div>
-                                                    {{-- end: foreach loop --}}
+                                                    {/*end: foreach loop */}
 
                                                 </div>
 

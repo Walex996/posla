@@ -170,7 +170,7 @@
                         <div className="col-sm-6 col-lg-12">
                             <div className="floated-content p-2.5 mb-30 b-1-ddd">
                                 <Link to="/user/abcde12345" className="pull-left mr-2.5 br-50" style="width: 70px; height: 70px;">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-cover" />
+                                    <img src={user} alt="Firstname lastname" className="dp-cover" />
                                 </Link>
                                 <div className="overflow-hidden">
                                     <Link to="/user/abcde12345" className="font-bold d-block hover-underline mt-1.5">
@@ -180,7 +180,7 @@
                                         <div className="rating-box rating-box-fff mt-2">
                                             <div>
                                                 <div></div>
-                                                <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                                                <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                                             </div>
                                             <div className="ml-0">
                                                 3.75 (233 reviews)

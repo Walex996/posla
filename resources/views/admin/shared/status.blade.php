@@ -8,5 +8,5 @@
     <label for="" className="label label-danger label-sm">
         <i className="fa fa-times icon-fff"></i>
     </label>
-    {{-- <button type="button" className="btn btn-danger btn-sm"><i className="fa fa-times"></i></button> --}}
+    {/*<button type="button" className="btn btn-danger btn-sm"><i className="fa fa-times"></i></button> */}
 @endif

@@ -62,7 +62,7 @@
                     </div>
 
                     <div className="section">
-                        {{-- //for pagination --}}
+                        {/*//for pagination */}
                     </div>
 
                 </div>

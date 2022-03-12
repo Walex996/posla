@@ -114,7 +114,7 @@
                         <div className="overflow-hidden">
                             <Link to="/user/abcde12345" className="d-inline-block overflow-hidden">
                                 <div className="pull-left mr-2.5 br-50 overflow-hidden" style="width: 30px; height: 30px;">
-                                    <img src="{{asset('img/app/samples/user.png')}}" alt="Firstname lastname" className="dp-cover" />
+                                    <img src={user} alt="Firstname lastname" className="dp-cover" />
                                 </div>
                                 <div className="overflow-hidden">
                                     <div className="font-bold mt-1.5 ellipsis hover-underline">

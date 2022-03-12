@@ -1,9 +1,9 @@
-{{-- <div className="section mb-0 account-sidebar" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"> --}}
+{/*<div className="section mb-0 account-sidebar" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"> */}
     <div className="section mb-0 account-sidebar">
 
     <div className="account-sidebar-info text-center">
         <div>
-            <img src="{{asset('img/app/samples/user.png')}}"alt="User name" className="dp-cover" />
+            <img src={user}alt="User name" className="dp-cover" />
         </div>
         <div className="font-bold">
             Olawale Lawal
@@ -15,7 +15,7 @@
             <div className="rating-box mt-1.5">
                 <div>
                     <div></div>
-                    <div style="width: 75%;"></div> {{-- put product rating here (in percentage) --}}
+                    <div style="width: 75%;"></div> {/*put product rating here (in percentage) */}
                 </div>
                 <div>
                     <span className="font-bold text-orange">
@@ -38,7 +38,7 @@
     </div>
 </div>
 
-{{-- if vacation mode is on --}}
+{/*if vacation mode is on */}
 
 <div className="section p-0 mt-0 mb-0 bg-red overflow-hidden" style="border-top-left-radius: 0; border-top-right-radius: 0;">
     <Link to="/account/settings/vacation-mode" className="pt-1.5 pb-1.5 pl-2.5 pr-2.5 d-block text-fff text-center">
@@ -46,7 +46,7 @@
     </Link>
 </div>
 
-{{-- end if --}}
+{/*end if */}
 
 <div className="section p-0 mt-1.5 account-sidebar-links overflow-hidden">
     <div>

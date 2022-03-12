@@ -7,9 +7,9 @@
       <Link to="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
         <span className="sr-only">Toggle navigation</span>
         <span className="fa fa-bars"></span>
-        {{-- <span className="icon-bar"></span> --}}
-        {{-- <span className="icon-bar"></span> --}}
-        {{-- <span className="icon-bar"></span> --}}
+        {/*<span className="icon-bar"></span> */}
+        {/*<span className="icon-bar"></span> */}
+        {/*<span className="icon-bar"></span> */}
       </Link>
 
       <div className="layout-mobile-title d-block d-md-none">
@@ -215,7 +215,7 @@
           <li className="dropdown user user-menu" style="min-height: 50px;">
             <Link to="#" className="dropdown-toggle" data-toggle="dropdown" style="height: 50px;">
               <img src="{{ asset('/img/app/samples/user.png') }}" className="user-image" alt="User Image">
-              {{-- <span className="fa fa-user"></span> --}}
+              {/*<span className="fa fa-user"></span> */}
               <span className="hidden-xs" style="position: relative; top: 2px;">Fname Lname</span>
               <span className="fa fa-angle-down" style="position: relative; top: 3px; margin-left: 5px;"></span>
             </Link>
