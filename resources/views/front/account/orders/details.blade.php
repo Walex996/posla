@@ -134,7 +134,7 @@
     <script>
         $(document).ready(function(){
             $('#simply-countdown-losange').simplyCountdown({
-                year: 2021,
+                year: 2024,
                 month: 10,
                 day:  29,
                 hours: 10,

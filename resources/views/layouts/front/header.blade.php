@@ -66,7 +66,6 @@
 
             <ul class="navbar-nav navbar-nav-links-auth ml-auto">
                       
-                    <!-- 
                     <li class="nav-item">
                         <a class="nav-link btn-login cursor-pointer">
                             Login
@@ -77,9 +76,8 @@
                             Register
                         </a>
                     </li>
-                    -->
 
-               
+                    <!-- 
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle no-after nowrap floated-content" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <span class="fa fa-caret-down icon-16 pull-right ml-5"></span>
@@ -128,6 +126,7 @@
                             </a>
                         </div>
                     </li>
+                    -->
                     
                 
             </ul>
