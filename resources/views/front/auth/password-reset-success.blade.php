@@ -25,11 +25,11 @@
                     <img src="{{ asset('/img/app/icons/unlock.png') }}" class="dp-contain" />
                 </div>
                 <div class="pt-15">
-                    Password Updated Successfully
+                    Email Verification Successful
                 </div>
                 <div>
-                    Your account password has been updated successfully.
-                    You can now login to your account with your registered username or email address or phone number, and your new password.
+                    Your email address has been verified successfully.
+                    You can now login to your account with your registered  email address new password.
                 </div>
                 <div class="mt-10">
                     <div class="mw-300 mx-auto text-center">

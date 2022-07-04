@@ -134,11 +134,11 @@
     <script>
         $(document).ready(function(){
             $('#simply-countdown-losange').simplyCountdown({
-                year: 2021,
-                month: 10,
-                day:  29,
-                hours: 10,
-                minutes: 05,
+                year: 2022,
+                month: 12,
+                day:  31,
+                hours: 00,
+                minutes: 00,
                 seconds: 00,
                 enableUtc: false,
             });
